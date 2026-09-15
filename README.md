@@ -1,5 +1,10 @@
 # EMCA / agent_arch — publication package, campaigns v1–v20
 
+**Published preprint and reproducibility archive:**
+[Zenodo — DOI: 10.5281/zenodo.22762848](https://doi.org/10.5281/zenodo.22762848).
+The Zenodo record contains the PDF and a ZIP of the complete package at
+commit [`678dee6`](https://github.com/oxunjonuz/emca-research/tree/678dee668bad6c4a237234ad818f1f5d3eb2896b).
+
 This folder is a **packaging** of work already done and already frozen. It adds no
 new measurement, moves no threshold, and softens no result. Every number in the
 section documents is quoted from a report that is itself in `reports/`, and every
