@@ -31,7 +31,7 @@ agent's task at all (v16). Two further rungs close the fork the preprint had nam
 as *not built*: **v17** buys the auditor and shows the v14 protection is worth
 exactly the attesting party's integrity, and **v18** puts the boundary in the world
 and shows a refusal is a different instrument from a scope. A **replication on 30
-fresh seeds** then confirms 26 of 27 headline verdicts and withdraws the absolute
+fresh seeds** then confirms 25 of 26 headline verdicts and withdraws the absolute
 form of v16's headline (**corrected in turn 152 — see `../ERRATA.md` §5**). Turn 154
 adds the last rung the preprint named as not-built — **v19**, where the attacker
 *learns* its own strategy instead of being given one — and it closes the arc with a
@@ -675,7 +675,7 @@ re-ran declared cells of already-preregistered campaigns, changing only the seed
 original 10 seeds are **not** re-run, so a verdict that held only because of the
 particular seeds it was first measured on is exactly what this can catch.
 
-**What replicated — 26 of 27 headline verdicts,** including the sharp ones: v10's rule
+**What replicated — 25 of 26 headline verdicts,** including the sharp ones: v10's rule
 and its coupling pair, v11's refuted non-monotone curve, v12's threshold at all four
 ticks, v13's hole and its honest control, v14's closure, v16's threshold pair, v17's
 two verifier modes, v18's boundary, and **v15's headline exactly** (indifference

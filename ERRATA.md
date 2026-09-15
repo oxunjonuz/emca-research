@@ -1,4 +1,4 @@
-# ERRATA — corrections to the publication package, turns 151–158
+# ERRATA — corrections to the publication package, turns 151–160
 
 **Turn 151 source:** owner priority update `op_5be643a623e8`. The owner re-read the
 package and raised four specific criticisms. **All four are correct**, I verified each
@@ -9,9 +9,14 @@ package to be brought up to the three rungs added in turn 152 (v17, v18, the 30-
 replication) before publication. That turn added errata 5 and 6 below.
 
 **Later turns:** errata 7 (turn 154, a preregistered prediction refuted by the author's
-own defect fix), erratum 8 (turn 157, v20's invisibility claim too strong), and
-**erratum 9 (turn 158, authorship)** — the last of these is not a correction of an
-over-claim but of the record of *who did the work*, at the owner's request.
+own defect fix), erratum 8 (turn 157, v20's invisibility claim too strong),
+**erratum 9 (turn 158, authorship)** — not a correction of an over-claim but of the
+record of *who did the work*, at the owner's request — and **errata 10 and 11 (turn
+160)**, both found by recounting numbers from the raw data rather than reading them: the
+replication count "26 of 27" was inflated by an analyzer line that counted its own
+meta-row as a verdict (the honest count is **25 of 26**), and the abstract's "learns its
+world to within 10 % of an oracle ceiling" was 11.3 % above the ceiling, not within
+10 % (0.0364 against 0.0327).
 
 The **frozen reports in `reports/`, `preregistrations/`, `evidence/` and the code are
 unchanged** — the owner's instruction was to package, not to re-assess, so nothing that
@@ -399,3 +404,98 @@ an over-claim: it is a correction of the *record of who did the work*. The prior
 itself the owner's, and it is the owner who lifts it. The reason it belongs in the errata
 rather than in silence is that a reader of the turn-151 package would otherwise find a
 contradiction between the archived instruction and the published title page.
+
+---
+
+## Erratum 10 (turn 160) — the replication count was inflated by a check that counted itself
+
+**Found by:** the author, while grounding a short announcement in the frozen numbers and
+re-running the replication analyzer against the raw cells. Not found by reading — found
+by recounting from the cells with fresh code (`verify_n40_count.py`).
+
+**What was wrong.** The package stated the n=40 replication result as **"26 of 27
+headline verdicts hold"** (in `00_OVERVIEW.md`, `sections/04`, `sections/06`,
+`REPRODUCE.md`, and the preprint). The frozen report `reports/RESULTS_N40_REPLICATION.md`
+states it as **"25 of 27"**. Both are wrong, and they are wrong in the same way.
+
+`analyze_n40.py` builds a list of checks and prints `"%d/%d replicated verdicts hold"`
+over **all** of them. One of those entries is not a replication verdict at all:
+
+```
+ck("REPLICATION FINDING: v16's doctor drains on a minority of FRESH seeds ...",
+   n_drain > 0, ...)
+```
+
+That check asserts *the refutation itself*, so it passes by construction. Counting it
+inflates the numerator by one and the denominator by one. The analyzer's own JSON
+artifact (`results/analyze_n40.json`) records the truth plainly: **27 checks, 26 pass,
+1 fail** — and the one failure is `v16 the doctor never drains (the harm is outside its
+scope)`. Removing the meta-row leaves **26 verdicts, 25 of which hold**.
+
+**The honest count, recounted independently from the raw cells:**
+
+| quantity | value |
+|---|---|
+| replication verdicts (real) | **26** |
+| hold | **25** |
+| do not hold | **1** — v16's absolute claim |
+| doctor drains on fresh seeds | **2 of 30** (3 of 70, 4.3 %) |
+
+`verify_n40_count.py` (turn 160, fresh process, reads only
+`evidence/results/replicate_n40/*.json`, imports no producer, no analyzer, no report)
+recomputes all 26 verdicts from the cells and returns **25 of 26**, exit 0 — that is,
+**26 replication verdicts, of which 25 hold**.
+
+**Why this is the same defect class as errata 6 and 9.** A check that counts itself
+cannot fail; a count that includes it is not a count. This campaign has now found that
+pattern four times in its own instrumentation — v17's placeholder hash, the preprint
+verifier's broken-toolchain "catch", the authorship check satisfied by any occurrence,
+and now a summary line that counts its own assertion. In every case the defect was
+invisible to reading and visible only to a recount from the raw data.
+
+**What was corrected.** `00_OVERVIEW.md`, `sections/04_v10_v16_safety_line.md` (two
+sites), `sections/06_limitations_and_honesty.md`, `REPRODUCE.md`, and the preprint
+`paper/emca_preprint.tex` (abstract + §5.10, plus a new paragraph in §5.10 recording the
+correction and the reason). **The frozen report is not edited** — it keeps its own
+"25 of 27" headline, and the package now states plainly that the report's headline and
+the analyzer's printed line disagree, and what the raw cells say.
+
+**What is NOT affected.** The finding itself is untouched and is unaffected in every
+direction: v16's absolute claim is still refuted on fresh seeds (2 of 30, 3 of 70 at
+4.3 %), the mechanism is still measured (the frozen survival layer parks a starving
+agent on the harmful tile, seed 25 at t = 3608 with energy 27.1), and the 25 verdicts
+that hold are the same 25. Only the *count of the count* changed.
+
+---
+
+## Erratum 11 (turn 160) — the v15 learning claim was stated as "within 10% of an oracle ceiling"
+
+**Found by:** the author, in the same recount that found erratum 10, while checking every
+number in a short announcement against the frozen reports.
+
+**What was wrong.** The preprint's abstract said the reward-free agent "learns its world
+**to within 10% of** an oracle ceiling". The frozen numbers are:
+
+| quantity | value | source |
+|---|---|---|
+| `ig_ctx` model error | **0.0364** | `reports/RESULTS_V15.md` §2, H1 |
+| oracle ceiling (`ig_ctx_oracle`) | **0.0327** | same row |
+| ratio | **1.1131** | 0.0364 / 0.0327 |
+
+The agent's error is **11.3 % above** the ceiling, not within 10 % of it. And no frozen
+report ever states "10 %": the report's own wording is *"model error 0.036, close to the
+oracle ceiling 0.033"*. The "within 10 %" phrasing was introduced in the writing of the
+paper and was never traced back to a number — exactly the kind of typed-in figure the
+package's number checks exist to catch, and which they did not catch because "10" was
+never in the pinned set for that site.
+
+**What was corrected.** `paper/emca_preprint.tex` abstract (vi) and
+`ANNOUNCEMENT.md`: both now state the claim with the report's own numbers — *"a model
+error of 0.036 against an oracle ceiling of 0.033"*. Two new checks pin it in
+`paper/verify_preprint.py` (the corrected phrasing present; the "within 10 %" phrasing
+refused), and one new negative control restores the old phrasing and must go red.
+
+**What is NOT affected.** The finding itself is untouched: the agent still learns the
+context-indexed structure with no reward anywhere (0.036 against 0.033), and still
+behaves indistinguishably from random (a0_share 0.250). Only the *description* of how
+close it gets changed, and it changed because the description was not the number.

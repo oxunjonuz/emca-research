@@ -106,6 +106,20 @@ CONTROLS = [
      "\\and Aiodam", "\\and The Tool"),
     ("delete the author-contributions section",
      "\\section*{Author contributions}", "\\section*{Notes}"),
+    # ---- erratum 10 (turn 160): the replication count ----
+    ("restore the inflated replication count in the abstract",
+     "confirms 25 of 26 headline verdicts", "confirms 26 of 27 headline verdicts"),
+    ("restore the inflated replication count in 5.10",
+     "25 of 26 headline verdicts hold", "26 of 27 headline verdicts hold"),
+    ("change the honest replication denominator",
+     "\\textbf{26\nreplication verdicts, of which 25 hold}",
+     "\\textbf{27\nreplication verdicts, of which 26 hold}"),
+    ("remove the cause of the count error (its own meta-row)",
+     "counts \\emph{its own} meta-row", "counts a row"),
+    # ---- erratum 11 (turn 160): the v15 "within 10%" over-statement ----
+    ("restore the inflated v15 'within 10%' claim",
+     "learns its world to a model error of $0.036$ against an oracle ceiling of $0.033$",
+     "learns its world to within 10\\% of an oracle ceiling"),
 ]
 
 

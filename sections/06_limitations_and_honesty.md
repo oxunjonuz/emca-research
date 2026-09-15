@@ -234,7 +234,7 @@ large-scale agent with a rich observation space is not shown and is not claimed*
 n = 10 seeds per cell in the frozen matrices, and the harm fields are
 deterministic given the action trace, so their tests are sign counts, not p-values —
 **and the n = 10 limit was tested, not merely declared (turn 152): a replication on 30
-fresh seeds confirmed 26 of 27 headline verdicts and refuted one absolute claim (v16's
+fresh seeds confirmed 25 of 26 headline verdicts and refuted one absolute claim (v16's
 "the doctor never drains", 4.3 % of fresh seeds) — see
 `../reports/RESULTS_N40_REPLICATION.md`; and again for v20 (turn 157): all six v20
 verdicts hold 30/30 on fresh seeds — see

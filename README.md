@@ -1,9 +1,18 @@
 # EMCA / agent_arch — publication package, campaigns v1–v20
 
-**Published preprint and reproducibility archive:**
-[Zenodo — DOI: 10.5281/zenodo.22762848](https://doi.org/10.5281/zenodo.22762848).
-The Zenodo record contains the PDF and a ZIP of the complete package at
-commit [`678dee6`](https://github.com/oxunjonuz/emca-research/tree/678dee668bad6c4a237234ad818f1f5d3eb2896b).
+**Corrected preprint and reproducibility archive — publication version 2:**
+[Zenodo — DOI: 10.5281/zenodo.22772224](https://doi.org/10.5281/zenodo.22772224).
+This version incorporates errata 10 and 11, updates the PDF and checking scripts,
+and corrects both language versions of the announcement. Frozen experimental
+code, reports, preregistrations and raw results are unchanged. The Zenodo record
+links to the exact Git commit contained in its ZIP archive.
+
+The original publication remains available at
+[DOI: 10.5281/zenodo.22762848](https://doi.org/10.5281/zenodo.22762848), with the
+original archive at commit
+[`678dee6`](https://github.com/oxunjonuz/emca-research/tree/678dee668bad6c4a237234ad818f1f5d3eb2896b).
+[The all-versions DOI](https://doi.org/10.5281/zenodo.22762847) resolves to the latest
+published version.
 
 This folder is a **packaging** of work already done and already frozen. It adds no
 new measurement, moves no threshold, and softens no result. Every number in the
@@ -52,7 +61,7 @@ If you are reading this for the first time, read in this order:
    artefacts.
 5. **`PACKAGING_NOTES.md`** — what was copied verbatim, and the two path-only edits
    made so the package runs from its own folder.
-6. **`ERRATA.md`** — **read this before quoting anything.** Eight over-statements in
+6. **`ERRATA.md`** — **read this before quoting anything.** Ten over-statements in
    this package's own section documents: four found by the owner's re-reading in turn
    151 and corrected here, two found in turn 152 — v16's withdrawn absolute
    headline (caught by the author's own fresh-seed replication) and the author's own
@@ -61,8 +70,12 @@ If you are reading this for the first time, read in this order:
    eight further defects of the checking layer recorded alongside it, and one in turn
    157: v20's preregistered invisibility claim (HV4's "`refused` is False in both")
    refuted by the author's own measurement — the flag does change; the invisibility is
-   a property of the agent not reading `o["scope"]` (the frozen reports themselves are
-   unchanged).
+   a property of the agent not reading `o["scope"]`; and two in turn 160, both found by
+   recounting from the raw data rather than reading it: the replication count "26 of 27"
+   was inflated by an analyzer line counting its own meta-row as a verdict — recounted
+   from the raw cells, the honest count is **25 of 26** — and the abstract's "learns its
+   world to within 10 % of an oracle ceiling" was **11.3 % above** the ceiling, not
+   within 10 % (0.0364 against 0.0327). The frozen reports themselves are unchanged.
 
 ## Directory map
 

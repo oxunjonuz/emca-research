@@ -12,6 +12,7 @@ A failure is a real finding: a broken pointer or a number I typed rather than
 quoted. Run: python3 verify_package.py
 """
 import fnmatch
+import json
 import os
 import re
 import sys
@@ -362,6 +363,82 @@ def check_authorship():
     return fails
 
 
+def check_replication_count():
+    """The n=40 replication count (erratum 10, turn 160).
+
+    The package stated this as "26 of 27" in five places, taken from the analyzer's
+    printed summary line — which counts its own meta-row (the line asserting the
+    refutation) as a verdict. Recounted from the raw cells by verify_n40_count.py,
+    the honest count is 25 of 26. This family pins the corrected count in every
+    editorial site and refuses the inflated one as a CLAIM; the correction paragraph
+    is allowed to quote the old number, because a correction that cannot name what it
+    corrects is not a correction.
+    """
+    fails = []
+    def norm(s):
+        return re.sub(r"\s+", " ", re.sub(r"(?m)^\s*>\s?", "", s))
+
+    # every editorial site that states the count must state the corrected one
+    for rel in ("00_OVERVIEW.md", "sections/04_v10_v16_safety_line.md",
+                "sections/06_limitations_and_honesty.md", "REPRODUCE.md",
+                "ERRATA.md"):
+        text = norm(read(os.path.join(PKG, rel)))
+        if "25 of 26" not in text and "25 of\n26" not in text:
+            fails.append(f"{rel}: the corrected replication count '25 of 26' is MISSING")
+
+    # the inflated count must never be stated AS A CLAIM. In ERRATA it may appear only
+    # as the thing being corrected, so ERRATA is checked by context: every occurrence
+    # must sit inside a correction sentence. Everywhere else it is a flat refusal.
+    for rel in ("00_OVERVIEW.md", "sections/04_v10_v16_safety_line.md",
+                "sections/06_limitations_and_honesty.md", "REPRODUCE.md"):
+        text = norm(read(os.path.join(PKG, rel)))
+        if "26 of 27 headline verdicts" in text or "26/27 replicated" in text:
+            fails.append(f"{rel}: the inflated count is stated as a CLAIM")
+
+    errata = norm(read(os.path.join(PKG, "ERRATA.md")))
+    for m in re.finditer(r"26 of 27", errata):
+        window = errata[max(0, m.start() - 200): m.end() + 200].lower()
+        if not any(k in window for k in ("wrong", "inflated", "stated", "said",
+                                         "correct", "honest count")):
+            fails.append("ERRATA.md: '26 of 27' appears outside a correction context")
+
+    # the cause must be named, and the honest denominator stated, in the errata
+    for needle in ("Erratum 10", "counts its own", "25 of 26",
+                   "26 replication verdicts"):
+        if needle not in errata:
+            fails.append(f"ERRATA.md: erratum 10 is missing {needle!r}")
+
+    # ---- erratum 11 (turn 160): the v15 "within 10%" over-statement ----
+    tex = norm(read(os.path.join(PKG, "paper", "emca_preprint.tex")))
+    if "within 10\\% of an oracle ceiling" in tex or \
+       "within 10% of an oracle ceiling" in tex:
+        fails.append("paper: the inflated 'within 10% of an oracle ceiling' claim is "
+                     "still stated")
+    if "model error of $0.036$ against an oracle ceiling of $0.033$" not in tex:
+        fails.append("paper: the v15 learning claim is not stated with the report's "
+                     "numbers")
+    if "Erratum 11" not in errata:
+        fails.append("ERRATA.md: erratum 11 is MISSING")
+    # the ratio the claim rests on must be the one the frozen report gives
+    v15 = read(os.path.join(PKG, "reports", "RESULTS_V15.md"))
+    if "0.0364" not in v15 or "0.0327" not in v15:
+        fails.append("reports/RESULTS_V15.md: the 0.0364 / 0.0327 pair is missing")
+
+    # and the independent recount must actually agree with the raw cells
+    raw = os.path.join(PKG, "evidence", "results", "replicate_n40")
+    n_doctor = 0
+    for s in range(10, 40):
+        p = os.path.join(raw, f"v16_n_doctor_rich_t0.30_{s}.json")
+        if os.path.exists(p):
+            with open(p) as fh:
+                if json.load(fh).get("commons_drains", 0) > 0:
+                    n_doctor += 1
+    if n_doctor != 2:
+        fails.append(f"raw cells: the doctor drains on {n_doctor} of 30 fresh "
+                     f"seeds, the package says 2")
+    return fails
+
+
 def main():
     f1 = check_links()
     f2 = check_numbers()
@@ -370,14 +447,15 @@ def main():
     f5 = check_phrases()
     f6 = check_v20_counts()
     f7 = check_authorship()
+    f8 = check_replication_count()
     for label, fails in (("LINKS", f1), ("NUMBERS", f2),
                          ("MATRIX COUNTS", f3), ("UNIQUE RATES", f4),
                          ("REQUIRED PHRASES", f5), ("V20 COUNTS", f6),
-                         ("AUTHORSHIP", f7)):
+                         ("AUTHORSHIP", f7), ("REPLICATION COUNT", f8)):
         print(f"=== {label}: {len(fails)} failure(s) ===")
         for x in fails:
             print("  ", x)
-    total = len(f1) + len(f2) + len(f3) + len(f4) + len(f5) + len(f6) + len(f7)
+    total = len(f1) + len(f2) + len(f3) + len(f4) + len(f5) + len(f6) + len(f7) + len(f8)
     print(f"TOTAL FAILURES: {total}")
     return 1 if total else 0
 

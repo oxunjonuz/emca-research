@@ -441,6 +441,40 @@ awk = set(re.findall(r"drains on \\?\textbf\{(\d+)\} of (?:them|(\d+))", flatz))
 check("the n=30 count is stated as 2 of 30", "2 of 30 fresh seeds" in flatz,
       "2 of 30 fresh seeds" in flatz)
 
+# ---------- the replication count (erratum 10, turn 160) ----------
+# The count was stated as "26 of 27" in the package and the paper, and it was wrong:
+# the analyzer's summary line counted its own meta-row as a verdict. The honest count,
+# recounted from the raw cells by verify_n40_count.py, is 25 of 26. This family pins
+# the corrected count and refuses the inflated one AS A CLAIM — the correction
+# paragraph is allowed to quote the old number, because a correction that cannot name
+# what it corrects is not a correction.
+check("the replication count is stated as 25 of 26",
+      "25 of 26 headline verdicts" in flatz,
+      "25 of 26 headline verdicts")
+check("the inflated count is never stated AS A CLAIM",
+      "26 of 27 headline verdicts" not in flatz
+      and "26 of 27 replicated" not in flatz,
+      "26 of 27 stated as a claim")
+check("the count correction names its cause (its own meta-row counted as a verdict)",
+      "counts its own meta-row" in flatz, "counts its own meta-row")
+check("the count correction states the honest denominator 26",
+      "26 replication verdicts" in flatz, "26 replication verdicts")
+check("the count correction is present in the replication subsection",
+      "An earlier version of this section" in flatz,
+      "the correction paragraph's opening")
+
+# ---------- the v15 learning claim (erratum 11, turn 160) ----------
+# The abstract said the agent "learns its world to within 10% of an oracle ceiling".
+# The frozen numbers are 0.0364 against a ceiling of 0.0327 — 11.3% ABOVE the ceiling,
+# not within 10% of it — and no frozen report ever states "10%". The claim is now
+# stated with the report's own numbers.
+check("the v15 learning claim is stated with the report's numbers",
+      "model error of 0.036 against an oracle ceiling of 0.033" in flatz,
+      "0.036 against 0.033")
+check("the inflated 'within 10%' v15 claim is NOT stated",
+      "within 10% of an oracle ceiling" not in flatz,
+      "within 10% of an oracle ceiling")
+
 print(f"\n{checks - len(fails)}/{checks} checks passed")
 if fails:
     print("FAILURES:")

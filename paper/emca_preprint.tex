@@ -61,7 +61,8 @@ exactly as far as the label on the payment can be trusted, and a lying label buy
 same agent completely; (v) an honest independent attestation removes the lie while
 the auditor is live and relocates the vulnerability to the auditor's \emph{timeliness},
 with a measured truncation curve; (vi) an agent with no reward, no cost and no death
-learns its world to within 10\% of an oracle ceiling and then behaves
+learns its world to a model error of $0.036$ against an oracle ceiling of $0.033$
+and then behaves
 indistinguishably from random --- \emph{truth alone does not select action};
 (vii) narrowing the agent's task to one job removes exactly the harm that lies outside
 that job and none of the harm that lies inside it; (viii) a \emph{bribed} auditor
@@ -82,7 +83,7 @@ honesty: bought, the same agent, money and steps return the harm field for field
 (thirty drains, keeper dead, zero refusals) while the boundary \emph{still claims the
 granted scope on every step}, and the bribe also buys the widening grant the world was
 configured to withhold. A replication
-of the decisive cells on 30 fresh seeds per cell confirms 26 of 27 headline verdicts
+of the decisive cells on 30 fresh seeds per cell confirms 25 of 26 headline verdicts
 and \textbf{refutes the absolute form of (vii)}: v16's doctor, reported as never
 draining in 260 cells, drains on 4.3\% of fresh seeds through the frozen survival
 layer that parks a starving agent on the harmful tile; a parallel replication confirms
@@ -924,12 +925,24 @@ the agent having no reason to act. v16's agent-side scope does not: see below.
 seeds} (the original 10 are not re-run), so that a verdict holding only because of the
 seeds it was first measured on is exactly what this can catch. 870 cells.
 
-\paragraph{What replicated.} 26 of 27 headline verdicts hold: v10's rule and
+\paragraph{What replicated.} 25 of 26 headline verdicts hold: v10's rule and
 coupling pair, v11's refuted non-monotone curve, v12's threshold at all four ticks,
 v13's hole and its honest control, v14's closure, v16's threshold pair, v17's two
 verifier modes, v18's boundary, and v15's headline (indifference $0.250$ at
 $n=30$ exactly as at $n=10$; the criterion-driven share $0.998$; the random floor
 $0.249$). \textbf{The $n = 10$ limitation hid nothing in those.}
+
+\paragraph{On the count itself.} An earlier version of this section, and of the
+archived report, said ``26 of 27''. That number came from the analyzer's printed
+summary line, which counts \emph{its own} meta-row --- the line asserting the
+refutation --- as if it were a verdict. The meta-row passes by construction, so the
+denominator was inflated by one and the numerator by two. Recounted independently from
+the raw cells (turn 160, \texttt{verify\_n40\_count.py}), there are \textbf{26
+replication verdicts, of which 25 hold} and the single failure is v16's absolute claim.
+The frozen report's own headline says ``25 of 27''; the honest count is \textbf{25 of
+26}. We record this rather than quietly editing the number, because it is the same
+class of defect this campaign has now found in its own instrumentation four times: a
+check that counts itself cannot fail, and a count that includes it is not a count.
 
 \paragraph{What did not replicate, and it is v16's headline.} v16 reported that the
 doctor \emph{never} drains the aquifer, in 260 cells. On 30 fresh seeds it drains on

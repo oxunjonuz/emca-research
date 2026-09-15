@@ -68,7 +68,8 @@ working tree (they import the campaigns' `run()` functions and write only to
 `results/replicate_n40/`):
 
     python3 code/replicate_n40.py   # -> evidence/results/replicate_n40/ (870 cells)
-    python3 code/analyze_n40.py     # -> 26/27 replicated verdicts hold
+    python3 code/analyze_n40.py     # -> prints "26/27" (25 real verdicts + its own
+                                    #    meta-row); the honest count is 25 of 26
 
 `analyze_n40.py` reads only the fresh-seed cells, imports no producer, and recomputes
 every verdict by different code than any campaign's analyzer. It prints each verdict

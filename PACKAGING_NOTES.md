@@ -130,3 +130,17 @@ omitted. A `.gitignore` was added for macOS metadata and generated Python byteco
 and `MANIFEST.md` was regenerated for the distributed files. All research source
 files, reports, raw results, the PDF, and its LaTeX source were retained unchanged.
 This distribution step does not constitute a new experimental or theorem check.
+
+## 7. Corrected publication, version 2 (2026-09-15)
+
+This update incorporates the author's turn-160 corrections, documented as errata
+10 and 11: the replication headline is 25 of 26 verdicts, and the learning claim
+now states the model error and oracle reference numerically. The corrected PDF,
+editorial documents, announcement and verification scripts were copied from the
+agent's publication package. Frozen research code, reports, preregistrations and
+raw experimental results were not changed by this update.
+
+In this distribution copy, the Russian announcement's remaining "within 10 %"
+wording was also replaced with the same numerical values as the English version.
+The original agent work folder was not edited. The distribution README includes
+Zenodo version links, and MANIFEST.md was regenerated after packaging.
