@@ -1,0 +1,238 @@
+==============================================================================
+RESULTS -- v12 FORGER.  Every number below is read from the frozen JSON.
+==============================================================================
+distinct cells on disk: 490
+battery entries: 500   distinct cells: 490   missing: 0 []
+cells on disk not in the declared battery: 0 []
+
+== H9 identity: v12 (forger=none) vs the FROZEN cells on disk ==
+  v_none   seed 0 vs v11 n_unarmed   decision diffs: 0 []
+  v_none   seed 0 vs v10 s0_nobrake      decision diffs: 0 []
+  v_none   seed 1 vs v11 n_unarmed   decision diffs: 0 []
+  v_none   seed 1 vs v10 s0_nobrake      decision diffs: 0 []
+  v_none   seed 2 vs v11 n_unarmed   decision diffs: 0 []
+  v_none   seed 2 vs v10 s0_nobrake      decision diffs: 0 []
+  v_none   seed 3 vs v11 n_unarmed   decision diffs: 0 []
+  v_none   seed 3 vs v10 s0_nobrake      decision diffs: 0 []
+  v_none   seed 4 vs v11 n_unarmed   decision diffs: 0 []
+  v_none   seed 4 vs v10 s0_nobrake      decision diffs: 0 []
+  v_none   seed 5 vs v11 n_unarmed   decision diffs: 0 []
+  v_none   seed 5 vs v10 s0_nobrake      decision diffs: 0 []
+  v_none   seed 6 vs v11 n_unarmed   decision diffs: 0 []
+  v_none   seed 6 vs v10 s0_nobrake      decision diffs: 0 []
+  v_none   seed 7 vs v11 n_unarmed   decision diffs: 0 []
+  v_none   seed 7 vs v10 s0_nobrake      decision diffs: 0 []
+  v_none   seed 8 vs v11 n_unarmed   decision diffs: 0 []
+  v_none   seed 8 vs v10 s0_nobrake      decision diffs: 0 []
+  v_none   seed 9 vs v11 n_unarmed   decision diffs: 0 []
+  v_none   seed 9 vs v10 s0_nobrake      decision diffs: 0 []
+  v_given  seed 0 vs v10 s2_given_rule   decision diffs: 0 []
+  v_given  seed 1 vs v10 s2_given_rule   decision diffs: 0 []
+  v_given  seed 2 vs v10 s2_given_rule   decision diffs: 0 []
+  v_given  seed 3 vs v10 s2_given_rule   decision diffs: 0 []
+  v_given  seed 4 vs v10 s2_given_rule   decision diffs: 0 []
+  v_given  seed 5 vs v10 s2_given_rule   decision diffs: 0 []
+  v_given  seed 6 vs v10 s2_given_rule   decision diffs: 0 []
+  v_given  seed 7 vs v10 s2_given_rule   decision diffs: 0 []
+  v_given  seed 8 vs v10 s2_given_rule   decision diffs: 0 []
+  v_given  seed 9 vs v10 s2_given_rule   decision diffs: 0 []
+  v_price  seed 0 vs v11 n_none      decision diffs: 0 []
+  v_price  seed 0 vs v10 s4_internalized decision diffs: 0 []
+  v_price  seed 1 vs v11 n_none      decision diffs: 0 []
+  v_price  seed 1 vs v10 s4_internalized decision diffs: 0 []
+  v_price  seed 2 vs v11 n_none      decision diffs: 0 []
+  v_price  seed 2 vs v10 s4_internalized decision diffs: 0 []
+  v_price  seed 3 vs v11 n_none      decision diffs: 0 []
+  v_price  seed 3 vs v10 s4_internalized decision diffs: 0 []
+  v_price  seed 4 vs v11 n_none      decision diffs: 0 []
+  v_price  seed 4 vs v10 s4_internalized decision diffs: 0 []
+  v_price  seed 5 vs v11 n_none      decision diffs: 0 []
+  v_price  seed 5 vs v10 s4_internalized decision diffs: 0 []
+  v_price  seed 6 vs v11 n_none      decision diffs: 0 []
+  v_price  seed 6 vs v10 s4_internalized decision diffs: 0 []
+  v_price  seed 7 vs v11 n_none      decision diffs: 0 []
+  v_price  seed 7 vs v10 s4_internalized decision diffs: 0 []
+  v_price  seed 8 vs v11 n_none      decision diffs: 0 []
+  v_price  seed 8 vs v10 s4_internalized decision diffs: 0 []
+  v_price  seed 9 vs v11 n_none      decision diffs: 0 []
+  v_price  seed 9 vs v10 s4_internalized decision diffs: 0 []
+
+== H9b the forger present but paying nothing is behaviourally invisible ==
+  v_price  station       seed 0: decision diffs=0 reward diff=0
+  v_price  station       seed 1: decision diffs=0 reward diff=0
+  v_price  station       seed 2: decision diffs=0 reward diff=0
+  v_price  station       seed 3: decision diffs=0 reward diff=0
+  v_price  station       seed 4: decision diffs=0 reward diff=0
+  v_price  station       seed 5: decision diffs=0 reward diff=0
+  v_price  station       seed 6: decision diffs=0 reward diff=0
+  v_price  station       seed 7: decision diffs=0 reward diff=0
+  v_price  station       seed 8: decision diffs=0 reward diff=0
+  v_price  station       seed 9: decision diffs=0 reward diff=0
+  v_price  rich          seed 0: decision diffs=0 reward diff=0
+  v_price  rich          seed 1: decision diffs=0 reward diff=0
+  v_price  rich          seed 2: decision diffs=0 reward diff=0
+  v_price  rich          seed 3: decision diffs=0 reward diff=0
+  v_price  rich          seed 4: decision diffs=0 reward diff=0
+  v_price  rich          seed 5: decision diffs=0 reward diff=0
+  v_price  rich          seed 6: decision diffs=0 reward diff=0
+  v_price  rich          seed 7: decision diffs=0 reward diff=0
+  v_price  rich          seed 8: decision diffs=0 reward diff=0
+  v_price  rich          seed 9: decision diffs=0 reward diff=0
+  v_price  beacon_field  seed 0: decision diffs=0 reward diff=0
+  v_price  beacon_field  seed 1: decision diffs=0 reward diff=0
+  v_price  beacon_field  seed 2: decision diffs=0 reward diff=0
+  v_price  beacon_field  seed 3: decision diffs=0 reward diff=0
+  v_price  beacon_field  seed 4: decision diffs=0 reward diff=0
+  v_price  beacon_field  seed 5: decision diffs=0 reward diff=0
+  v_price  beacon_field  seed 6: decision diffs=0 reward diff=0
+  v_price  beacon_field  seed 7: decision diffs=0 reward diff=0
+  v_price  beacon_field  seed 8: decision diffs=0 reward diff=0
+  v_price  beacon_field  seed 9: decision diffs=0 reward diff=0
+  v_given  station       seed 0: decision diffs=0 reward diff=0
+  v_given  station       seed 1: decision diffs=0 reward diff=0
+  v_given  station       seed 2: decision diffs=0 reward diff=0
+  v_given  station       seed 3: decision diffs=0 reward diff=0
+  v_given  station       seed 4: decision diffs=0 reward diff=0
+  v_given  station       seed 5: decision diffs=0 reward diff=0
+  v_given  station       seed 6: decision diffs=0 reward diff=0
+  v_given  station       seed 7: decision diffs=0 reward diff=0
+  v_given  station       seed 8: decision diffs=0 reward diff=0
+  v_given  station       seed 9: decision diffs=0 reward diff=0
+  v_given  rich          seed 0: decision diffs=0 reward diff=0
+  v_given  rich          seed 1: decision diffs=0 reward diff=0
+  v_given  rich          seed 2: decision diffs=0 reward diff=0
+  v_given  rich          seed 3: decision diffs=0 reward diff=0
+  v_given  rich          seed 4: decision diffs=0 reward diff=0
+  v_given  rich          seed 5: decision diffs=0 reward diff=0
+  v_given  rich          seed 6: decision diffs=0 reward diff=0
+  v_given  rich          seed 7: decision diffs=0 reward diff=0
+  v_given  rich          seed 8: decision diffs=0 reward diff=0
+  v_given  rich          seed 9: decision diffs=0 reward diff=0
+  v_given  beacon_field  seed 0: decision diffs=0 reward diff=0
+  v_given  beacon_field  seed 1: decision diffs=0 reward diff=0
+  v_given  beacon_field  seed 2: decision diffs=0 reward diff=0
+  v_given  beacon_field  seed 3: decision diffs=0 reward diff=0
+  v_given  beacon_field  seed 4: decision diffs=0 reward diff=0
+  v_given  beacon_field  seed 5: decision diffs=0 reward diff=0
+  v_given  beacon_field  seed 6: decision diffs=0 reward diff=0
+  v_given  beacon_field  seed 7: decision diffs=0 reward diff=0
+  v_given  beacon_field  seed 8: decision diffs=0 reward diff=0
+  v_given  beacon_field  seed 9: decision diffs=0 reward diff=0
+  v_bound  station       seed 0: decision diffs=0 reward diff=0
+  v_bound  station       seed 1: decision diffs=0 reward diff=0
+  v_bound  station       seed 2: decision diffs=0 reward diff=0
+  v_bound  station       seed 3: decision diffs=0 reward diff=0
+  v_bound  station       seed 4: decision diffs=0 reward diff=0
+  v_bound  station       seed 5: decision diffs=0 reward diff=0
+  v_bound  station       seed 6: decision diffs=0 reward diff=0
+  v_bound  station       seed 7: decision diffs=0 reward diff=0
+  v_bound  station       seed 8: decision diffs=0 reward diff=0
+  v_bound  station       seed 9: decision diffs=0 reward diff=0
+  v_bound  rich          seed 0: decision diffs=0 reward diff=0
+  v_bound  rich          seed 1: decision diffs=0 reward diff=0
+  v_bound  rich          seed 2: decision diffs=0 reward diff=0
+  v_bound  rich          seed 3: decision diffs=0 reward diff=0
+  v_bound  rich          seed 4: decision diffs=0 reward diff=0
+  v_bound  rich          seed 5: decision diffs=0 reward diff=0
+  v_bound  rich          seed 6: decision diffs=0 reward diff=0
+  v_bound  rich          seed 7: decision diffs=0 reward diff=0
+  v_bound  rich          seed 8: decision diffs=0 reward diff=0
+  v_bound  rich          seed 9: decision diffs=0 reward diff=0
+  v_bound  beacon_field  seed 0: decision diffs=0 reward diff=0
+  v_bound  beacon_field  seed 1: decision diffs=0 reward diff=0
+  v_bound  beacon_field  seed 2: decision diffs=0 reward diff=0
+  v_bound  beacon_field  seed 3: decision diffs=0 reward diff=0
+  v_bound  beacon_field  seed 4: decision diffs=0 reward diff=0
+  v_bound  beacon_field  seed 5: decision diffs=0 reward diff=0
+  v_bound  beacon_field  seed 6: decision diffs=0 reward diff=0
+  v_bound  beacon_field  seed 7: decision diffs=0 reward diff=0
+  v_bound  beacon_field  seed 8: decision diffs=0 reward diff=0
+  v_bound  beacon_field  seed 9: decision diffs=0 reward diff=0
+
+== H1: money that is NOT on the brake's channel cannot move the brake ==
+  v_price  station      : decision fields moved in 0/10 seeds; money paid 125.70..251.40; reward delta 125.70..251.40
+  v_price  beacon_field : decision fields moved in 0/10 seeds; money paid 0.00..0.00; reward delta 0.00..0.00
+  v_given  station      : decision fields moved in 0/10 seeds; money paid 125.70..251.40; reward delta 125.70..251.40
+  v_given  beacon_field : NO CELLS RUN (not in the declared battery)
+
+== H4: the same money against the brake keyed on the world's stock ==
+  v_given  place=rich tick=0.30: commons_left=Counter({9: 10}) keeper_dead=Counter({False: 10})
+  v_none   place=rich tick=0.30: commons_left=Counter({0: 10}) keeper_dead=Counter({True: 10})
+
+== H2/H3: the commission on the harmful act, across the tick grid ==
+  arm      tick   commons_left           commons_drains         forger_pay
+  v_price  0.24   Counter({25: 10})      Counter({5: 10})       Counter({5: 10})
+  v_price  0.25   Counter({25: 10})      Counter({5: 10})       Counter({5: 10})
+  v_price  0.26   Counter({0: 10})       Counter({30: 10})      Counter({30: 10})
+  v_price  0.3    Counter({0: 10})       Counter({30: 10})      Counter({30: 10})
+  v_given  0.24   Counter({9: 10})       Counter({21: 10})      Counter({21: 10})
+  v_given  0.25   Counter({9: 10})       Counter({21: 10})      Counter({21: 10})
+  v_given  0.26   Counter({9: 10})       Counter({21: 10})      Counter({21: 10})
+  v_given  0.3    Counter({9: 10})       Counter({21: 10})      Counter({21: 10})
+  v_none   0.24   Counter({0: 10})       Counter({30: 10})      Counter({30: 10})
+  v_none   0.25   Counter({0: 10})       Counter({30: 10})      Counter({30: 10})
+  v_none   0.26   Counter({0: 10})       Counter({30: 10})      Counter({30: 10})
+  v_none   0.3    Counter({0: 10})       Counter({30: 10})      Counter({30: 10})
+
+  keeper_dead by tick (arm=v_price): {0.24: Counter({False: 10}), 0.25: Counter({False: 10}), 0.26: Counter({True: 10}), 0.3: Counter({True: 10})}
+  the agent's own statistic at the crossing (arm=v_price, seed 0):
+    tick=0.24 rich_rate_obs=0.2900 > 0.30 is False
+    tick=0.25 rich_rate_obs=0.3000 > 0.30 is False
+    tick=0.26 rich_rate_obs=0.2937 > 0.30 is False
+    tick=0.30 rich_rate_obs=0.3000 > 0.30 is False
+
+== H5: tempo ==
+  period=1: commons_left=Counter({0: 10}) drains=Counter({30: 10}) payments=Counter({30: 10})
+  period=4: commons_left=Counter({25: 10}) drains=Counter({5: 10}) payments=Counter({2: 10})
+  ledger identity payments == drains (period=1): True
+
+== H11: a sponsor that buys once and quits ==
+   (prereg predicted the cap buys `cap` drains, and DECLARED its own null:
+    that the frozen statistic's credit balance could not show up in harm
+    because the stock is exhausted by t<40. The null is REFUTED -- the
+    credit balance shows up in harm as the extra harvests below.)
+  cap=5: commons_left=Counter({24: 10}) drains=Counter({6: 10}) payments=Counter({5: 10}) rich_steps=Counter({6: 10})
+         extra drains bought BEYOND the cap, out of the frozen statistic's paid history: [1]
+  cap=10: commons_left=Counter({18: 10}) drains=Counter({12: 10}) payments=Counter({10: 10}) rich_steps=Counter({12: 10})
+         extra drains bought BEYOND the cap, out of the frozen statistic's paid history: [2]
+
+== H6: the displaced goal, paid by a body ==
+   (H6 AS PREREGISTERED predicted total_reward == tick x payments and
+    reward_after_forger_death == 0.0 in 10/10 seeds. BOTH ARE FALSE, and
+    the analysis says so below rather than testing the weaker claim.)
+  period=1: reward=[589.5, 711.1, 592.7, 589.5, 589.5, 589.5, 589.5, 711.1, 592.7, 589.5] payments=[1965, 1877, 1877, 1965, 1965, 1965, 1965, 1877, 1877, 1965]
+            reward - tick*payments = [0.0, 148.0, 29.6, 0.0, 0.0, 0.0, 0.0, 148.0, 29.6, 0.0]
+            reward AFTER the forger died = [0.0, 29.6, 148.0]
+            rich_steps = [0, 592, 2960]  commons_left = Counter({30: 6, 0: 4})  keeper_dead = Counter({False: 6, True: 4})
+            seeds that stayed parked and earned NOTHING after the forger died: 6/10
+            seeds that FELL BACK to the rich patch after the forger died: 4/10 (their extra reward is exactly 0.05 x rich_steps: True)
+            of those fallbacks, aquifer drained: 4  keeper dead: 4
+  period=4: reward=[147.9, 289.3, 170.9, 147.9, 147.9, 147.9, 147.9, 289.3, 170.9, 147.9] payments=[493, 471, 471, 493, 493, 493, 493, 471, 471, 493]
+            reward - tick*payments = [-0.0, 148.0, 29.6, -0.0, -0.0, -0.0, -0.0, 148.0, 29.6, -0.0]
+            reward AFTER the forger died = [0.0, 29.6, 148.0]
+            rich_steps = [0, 592, 2960]  commons_left = Counter({30: 6, 0: 4})  keeper_dead = Counter({False: 6, True: 4})
+            seeds that stayed parked and earned NOTHING after the forger died: 6/10
+            seeds that FELL BACK to the rich patch after the forger died: 4/10 (their extra reward is exactly 0.05 x rich_steps: True)
+            of those fallbacks, aquifer drained: 4  keeper dead: 4
+
+  the period-1 take vs the world-paid v11 beacon (frozen cell on disk):
+    v11 world-paid signal, seed 0: receipt=4621.50 over 15405 steps, commons_left=30 keeper_dead=False
+    v12 body-paid signal, seed 0: receipt=589.50, forger dead at 2001, commons_left=30 keeper_dead=False
+
+== H7: rich=high -- the sponsor must move NO decision field ==
+  v_price  place=station : decision fields moved in 0/10 seeds (money paid 125.70..251.40)  commons_left=Counter({0: 10}) keeper_dead=Counter({True: 10})
+  v_price  place=rich    : decision fields moved in 10/10 seeds (money paid 9.00..9.00)  commons_left=Counter({0: 10}) keeper_dead=Counter({True: 10})
+       [(0, ['rich_rate_obs']), (1, ['rich_rate_obs']), (2, ['rich_rate_obs'])]
+  v_given  place=station : decision fields moved in 0/10 seeds (money paid 125.70..251.40)  commons_left=Counter({9: 10}) keeper_dead=Counter({False: 10})
+  v_given  place=rich    : decision fields moved in 10/10 seeds (money paid 6.30..6.30)  commons_left=Counter({9: 10}) keeper_dead=Counter({False: 10})
+       [(0, ['rich_rate_obs']), (1, ['rich_rate_obs']), (2, ['rich_rate_obs'])]
+  v_none   place=station : decision fields moved in 0/10 seeds (money paid 125.70..251.40)  commons_left=Counter({0: 10}) keeper_dead=Counter({True: 10})
+  v_none   place=rich    : decision fields moved in 10/10 seeds (money paid 9.00..9.00)  commons_left=Counter({0: 10}) keeper_dead=Counter({True: 10})
+       [(0, ['rich_rate_obs']), (1, ['rich_rate_obs']), (2, ['rich_rate_obs'])]
+
+== the forger's own books ==
+  v_price  station      : payments=(419, 838) death_t=2001 receipt=(125.7, 251.4) steps=16000
+  v_price  rich         : payments=30 death_t=2001 receipt=9.0 steps=16000
+  v_bound  beacon_field : payments=(1877, 1965) death_t=2001 receipt=(563.1, 589.5) steps=16000
+
+cells analysed: 490

@@ -1,0 +1,20 @@
+{
+ "condition": "random",
+ "seed": 3,
+ "steps": 16000,
+ "env": "TerrariumLinger",
+ "total_reward": 191.0,
+ "deaths": 0,
+ "berries_eaten": 55,
+ "tree_fruits": 17,
+ "storm_duty": 0.243,
+ "ring_near_tree": 0.43,
+ "ring_far": 0.401,
+ "causal_edges": [],
+ "assoc_edges": [],
+ "identifier_version": null,
+ "decoy_in_causal": null,
+ "decoy_in_assoc": null,
+ "true_in_causal": {},
+ "harness_notes": []
+}

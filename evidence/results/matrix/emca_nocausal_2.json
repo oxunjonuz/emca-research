@@ -1,0 +1,834 @@
+{
+ "condition": "emca_nocausal",
+ "seed": 2,
+ "steps": 6000,
+ "total_reward": 127.0,
+ "deaths": 19,
+ "berries_eaten": 182,
+ "lever_presses": 3,
+ "treasures": 2,
+ "regime_flips": 0,
+ "berries_by_window": {
+  "0": 12,
+  "1": 5,
+  "2": 13,
+  "3": 13,
+  "4": 5,
+  "5": 15,
+  "6": 11,
+  "7": 21,
+  "8": 27,
+  "9": 21,
+  "10": 15,
+  "11": 24
+ },
+ "deaths_by_window": {
+  "0": 2,
+  "1": 3,
+  "2": 2,
+  "3": 2,
+  "4": 3,
+  "5": 3,
+  "6": 2,
+  "9": 1,
+  "10": 1
+ },
+ "treasure_steps": [
+  2855,
+  4140
+ ],
+ "post_reset_recovery": 21,
+ "pre_reset_competence": 12,
+ "first_treasure_step": 2855,
+ "goals_generated": 115,
+ "non_survival_goals": 105,
+ "goals_achieved": 111,
+ "goals_active_before_reset": [
+  {
+   "id": "g1",
+   "kind": "explore",
+   "text": "open the door",
+   "status": "achieved"
+  },
+  {
+   "id": "g2",
+   "kind": "treasure",
+   "text": "obtain the treasure",
+   "status": "expired"
+  },
+  {
+   "id": "g3",
+   "kind": "treasure",
+   "text": "obtain the treasure",
+   "status": "expired"
+  },
+  {
+   "id": "g4",
+   "kind": "treasure",
+   "text": "obtain the treasure",
+   "status": "achieved"
+  },
+  {
+   "id": "g5",
+   "kind": "homeostasis",
+   "text": "restore energy",
+   "status": "achieved"
+  },
+  {
+   "id": "g6",
+   "kind": "curiosity",
+   "text": "find novel transitions",
+   "status": "achieved"
+  },
+  {
+   "id": "g7",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g8",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g9",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g10",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g11",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g12",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g13",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g14",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g15",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g16",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g17",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g18",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g19",
+   "kind": "homeostasis",
+   "text": "restore energy",
+   "status": "achieved"
+  },
+  {
+   "id": "g20",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g21",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g22",
+   "kind": "homeostasis",
+   "text": "restore energy",
+   "status": "achieved"
+  },
+  {
+   "id": "g23",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g24",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g25",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g26",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g27",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g28",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g29",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g30",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g31",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g32",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g33",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g34",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g35",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g36",
+   "kind": "homeostasis",
+   "text": "restore energy",
+   "status": "expired"
+  },
+  {
+   "id": "g37",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g38",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g39",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g40",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g41",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g42",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g43",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g44",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g45",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g46",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g47",
+   "kind": "homeostasis",
+   "text": "restore energy",
+   "status": "achieved"
+  },
+  {
+   "id": "g48",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g49",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g50",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g51",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g52",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g53",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g54",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g55",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g56",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g57",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g58",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g59",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g60",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g61",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  }
+ ],
+ "goals_active_after_reset": [
+  {
+   "id": "g62",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g63",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g64",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g65",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g66",
+   "kind": "homeostasis",
+   "text": "restore energy",
+   "status": "achieved"
+  },
+  {
+   "id": "g67",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g68",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g69",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g70",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g71",
+   "kind": "homeostasis",
+   "text": "restore energy",
+   "status": "achieved"
+  },
+  {
+   "id": "g72",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g73",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g74",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g75",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g76",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g77",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g78",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g79",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g80",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g81",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g82",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g83",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g84",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g85",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g86",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g87",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g88",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g89",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g90",
+   "kind": "homeostasis",
+   "text": "restore energy",
+   "status": "achieved"
+  },
+  {
+   "id": "g91",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g92",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g93",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g94",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g95",
+   "kind": "homeostasis",
+   "text": "restore energy",
+   "status": "achieved"
+  },
+  {
+   "id": "g96",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g97",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g98",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g99",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g100",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g101",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g102",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g103",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g104",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g105",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g106",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g107",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g108",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g109",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g110",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g111",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g112",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g113",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g114",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g115",
+   "kind": "homeostasis",
+   "text": "restore energy",
+   "status": "active"
+  }
+ ],
+ "goal_kinds": {
+  "explore": 1,
+  "treasure": 3,
+  "homeostasis": 10,
+  "curiosity": 1,
+  "empowerment": 100
+ },
+ "causal_edges": [
+  [
+   "eat",
+   "ate",
+   0.574
+  ],
+  [
+   "press",
+   "lever",
+   0.021
+  ],
+  [
+   "eat",
+   "energy_rose",
+   0.079
+  ],
+  [
+   "grasp",
+   "grasp",
+   1.0
+  ]
+ ],
+ "assoc_edges": [
+  [
+   "up",
+   "door_gone",
+   0.624
+  ],
+  [
+   "grasp",
+   "grasp",
+   1.0
+  ],
+  [
+   "right",
+   "door_gone",
+   0.727
+  ],
+  [
+   "eat",
+   "ate",
+   0.778
+  ],
+  [
+   "left",
+   "door_gone",
+   1.0
+  ]
+ ],
+ "harness_notes": [],
+ "goals_at_reset": [],
+ "self_model": {
+  "explore": [
+   1,
+   1
+  ],
+  "treasure": [
+   1,
+   3
+  ],
+  "homeostasis": [
+   8,
+   9
+  ],
+  "curiosity": [
+   1,
+   1
+  ],
+  "empowerment": [
+   100,
+   100
+  ]
+ },
+ "stats": {
+  "visits": 0,
+  "visits_(True, False, True, False, False)": 97,
+  "visits_(True, True, True, False, False)": 4,
+  "visits_(False, True, True, False, False)": 6,
+  "visits_(False, False, True, False, False)": 4,
+  "visits_(False, True, False, True, False)": 38,
+  "visits_(False, False, False, True, False)": 54,
+  "visits_(True, False, False, True, False)": 31,
+  "visits_(True, True, False, True, False)": 24,
+  "visits_(True, False, False, False, False)": 168,
+  "visits_(True, True, False, False, False)": 17,
+  "context_resets": 1.0
+ }
+}

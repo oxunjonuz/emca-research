@@ -1,0 +1,139 @@
+=== factcheck: numbers quoted in RESULTS_BAYES.md
+
+  [info] spearman(bayes) = -0.905   spearman(voi) = -0.881
+  [info] mask p=0.35 bayes-voi = -0.000661 [-0.002625, +0.000641]
+  [info] maskr p=0.35 bayes-voi = +0.000000 [+0.000000, +0.000000]
+  [info] mask p=0.15 bayes-voi = -0.000964 [-0.002516, +0.000000]
+  [info] mask p=0.25 bayes-voi = +0.000000 [-0.001875, +0.001875]
+  [info] pub m=8 bayes-frozen = -0.00195 [-0.00330, -0.00060]  probes 7.81 vs 8.89
+  [info] pub m=16 bayes-frozen = -0.01230 [-0.01560, -0.00900]  probes 8.31 vs 9.99
+  [info] pub m=49 bayes-frozen = -0.01215 [-0.01530, -0.00900]  probes 8.89 vs 9.99
+
+  [info] HI mask eps 0.35: bayes=0.00409 voi=0.00464 diff=-0.000548 [-0.001050, -0.000132]  probes 4.02 vs 3.98
+  [info] HI maskr bayes-frozen_rule = +0.00405 [+0.00358, +0.00451] sign 287+/2-
+  [info] HI maskr bayes-conf = +0.00989 [+0.00898, +0.01078] sign 844+/65-
+  [info] cost at 2000 sims: bayes 0.0805 s/cell, voi 0.0450 s/cell, ratio 1.79
+  [info] NOTE: in-matrix seconds are memo-WARM (the DP memo persists across seeds in one process), so the in-matrix ratio understates the cold per-cell cost. The cold single-cell figure is measured separately below.
+
+  PASS mask table bayes/mask regret                             claimed=0.00398  recomputed=0.00398
+  PASS mask table bayes/mask probes                             claimed=4.075  recomputed=4.075
+  PASS mask table bayes/maskr regret                            claimed=0.03100000000000001  recomputed=0.03100000000000001
+  PASS mask table bayes/maskr probes                            claimed=0.73  recomputed=0.73
+  PASS mask table voi/mask regret                               claimed=0.00464125  recomputed=0.00464125
+  PASS mask table voi/mask probes                               claimed=4.045  recomputed=4.045
+  PASS mask table voi/maskr regret                              claimed=0.03100000000000001  recomputed=0.03100000000000001
+  PASS mask table voi/maskr probes                              claimed=0.19  recomputed=0.19
+  PASS mask table conf/mask regret                              claimed=0.0026774999999999993  recomputed=0.0026774999999999993
+  PASS mask table conf/mask probes                              claimed=3.92  recomputed=3.92
+  PASS mask table conf/maskr regret                             claimed=0.02126875  recomputed=0.02126875
+  PASS mask table conf/maskr probes                             claimed=4.395  recomputed=4.395
+  PASS mask table frozen_rule/mask regret                       claimed=0.003105  recomputed=0.003105
+  PASS mask table frozen_rule/mask probes                       claimed=3.43  recomputed=3.43
+  PASS mask table frozen_rule/maskr regret                      claimed=0.02655625  recomputed=0.02655625
+  PASS mask table frozen_rule/maskr probes                      claimed=1.545  recomputed=1.545
+  PASS mask table union_nocost/mask regret                      claimed=0.0028912499999999997  recomputed=0.0028912499999999997
+  PASS mask table union_nocost/mask probes                      claimed=4.33  recomputed=4.33
+  PASS mask table union_nocost/maskr regret                     claimed=0.02126875  recomputed=0.02126875
+  PASS mask table union_nocost/maskr probes                     claimed=4.455  recomputed=4.455
+  PASS mask table pure/mask regret                              claimed=0.18036999999999995  recomputed=0.18036999999999995
+  PASS mask table pure/mask probes                              claimed=0.075  recomputed=0.075
+  PASS mask table pure/maskr regret                             claimed=0.034900000000000014  recomputed=0.034900000000000014
+  PASS mask table pure/maskr probes                             claimed=0.105  recomputed=0.105
+  PASS mask table beta0/mask regret                             claimed=0.17810499999999999  recomputed=0.17810499999999999
+  PASS mask table beta0/mask probes                             claimed=0.0  recomputed=0.0
+  PASS mask table beta0/maskr regret                            claimed=0.03100000000000001  recomputed=0.03100000000000001
+  PASS mask table beta0/maskr probes                            claimed=0.0  recomputed=0.0
+  PASS G1 probe frac mask eps=0.15 (claimed 0.995)              claimed=0.995  recomputed=0.995
+  PASS G1 probe frac mask eps=0.25 (claimed 0.995)              claimed=0.995  recomputed=0.995
+  PASS G1 probe frac mask eps=0.35 (claimed 0.995)              claimed=0.995  recomputed=0.995
+  PASS G2 bayes probes base=0.50                                claimed=4.075  recomputed=4.075
+  PASS G2 bayes probes base=0.60                                claimed=1.54  recomputed=1.54
+  PASS G2 bayes probes base=0.70                                claimed=0.46  recomputed=0.46
+  PASS G2 bayes probes base=0.75                                claimed=0.765  recomputed=0.765
+  PASS G2 bayes probes base=0.80                                claimed=0.73  recomputed=0.73
+  PASS G2 bayes probes base=0.85                                claimed=0.04  recomputed=0.04
+  PASS G2 bayes probes base=0.90                                claimed=0.0  recomputed=0.0
+  PASS G2 bayes probes base=0.95                                claimed=0.0  recomputed=0.0
+  PASS G2 rho(bayes) claimed -0.905                             claimed=-0.905  recomputed=-0.905
+  PASS G3 mask p=0.35 bayes-voi mean recomputed vs stored       claimed=0.0  recomputed=0.0
+  PASS G3 maskr p=0.35 bayes-voi mean recomputed vs stored      claimed=0.0  recomputed=0.0
+  PASS G3 mask p=0.15 bayes-voi mean recomputed vs stored       claimed=0.0  recomputed=-0.0
+  PASS G3 mask p=0.25 bayes-voi mean recomputed vs stored       claimed=0.0  recomputed=0.0
+  PASS pub m=2 bayes regret                                     claimed=0.0050999999999999995  recomputed=0.0050999999999999995
+  PASS pub m=2 bayes probes                                     claimed=6.6575  recomputed=6.6575
+  PASS pub m=2 voi regret                                       claimed=0.0050999999999999995  recomputed=0.0050999999999999995
+  PASS pub m=2 voi probes                                       claimed=6.4545  recomputed=6.4545
+  PASS pub m=2 conf regret                                      claimed=0.00525  recomputed=0.00525
+  PASS pub m=2 conf probes                                      claimed=8.7285  recomputed=8.7285
+  PASS pub m=2 frozen_rule regret                               claimed=0.00525  recomputed=0.00525
+  PASS pub m=2 frozen_rule probes                               claimed=8.728  recomputed=8.728
+  PASS pub m=8 bayes regret                                     claimed=0.010799999999999999  recomputed=0.010799999999999999
+  PASS pub m=8 bayes probes                                     claimed=7.8135  recomputed=7.8135
+  PASS pub m=8 voi regret                                       claimed=0.010799999999999999  recomputed=0.010799999999999999
+  PASS pub m=8 voi probes                                       claimed=7.8025  recomputed=7.8025
+  PASS pub m=8 conf regret                                      claimed=0.0126  recomputed=0.0126
+  PASS pub m=8 conf probes                                      claimed=8.8875  recomputed=8.8875
+  PASS pub m=8 frozen_rule regret                               claimed=0.01275  recomputed=0.01275
+  PASS pub m=8 frozen_rule probes                               claimed=8.8875  recomputed=8.8875
+  PASS pub m=16 bayes regret                                    claimed=0.0132  recomputed=0.0132
+  PASS pub m=16 bayes probes                                    claimed=8.306  recomputed=8.306
+  PASS pub m=16 voi regret                                      claimed=0.0132  recomputed=0.0132
+  PASS pub m=16 voi probes                                      claimed=8.298  recomputed=8.298
+  PASS pub m=16 conf regret                                     claimed=0.0255  recomputed=0.0255
+  PASS pub m=16 conf probes                                     claimed=10.0  recomputed=10.0
+  PASS pub m=16 frozen_rule regret                              claimed=0.0255  recomputed=0.0255
+  PASS pub m=16 frozen_rule probes                              claimed=9.9925  recomputed=9.9925
+  PASS pub m=49 bayes regret                                    claimed=0.0123  recomputed=0.0123
+  PASS pub m=49 bayes probes                                    claimed=8.89  recomputed=8.89
+  PASS pub m=49 voi regret                                      claimed=0.0123  recomputed=0.0123
+  PASS pub m=49 voi probes                                      claimed=8.8885  recomputed=8.8885
+  PASS pub m=49 conf regret                                     claimed=0.02445  recomputed=0.02445
+  PASS pub m=49 conf probes                                     claimed=10.0  recomputed=10.0
+  PASS pub m=49 frozen_rule regret                              claimed=0.02445  recomputed=0.02445
+  PASS pub m=49 frozen_rule probes                              claimed=9.9945  recomputed=9.9945
+  PASS hi bayes/mask p=0.35 base=0.6 regret                     claimed=0.07232887500000001  recomputed=0.07232887500000001
+  PASS hi voi/mask p=0.35 base=0.6 regret                       claimed=0.07891650000000001  recomputed=0.07891650000000001
+  PASS hi bayes/mask p=0.35 base=0.7 regret                     claimed=0.08148075  recomputed=0.08148075
+  PASS hi conf/mask p=0.35 base=0.7 regret                      claimed=0.004000500000000001  recomputed=0.004000500000000001
+  PASS hi voi/mask p=0.35 base=0.7 regret                       claimed=0.081520125  recomputed=0.081520125
+  PASS hi bayes/mask p=0.35 base=0.85 regret                    claimed=0.0059943750000000014  recomputed=0.0059943750000000014
+  PASS hi voi/mask p=0.35 base=0.85 regret                      claimed=0.0059943750000000014  recomputed=0.0059943750000000014
+  PASS hi bayes/mask p=0.35 base=0.8 regret                     claimed=0.03129025000000001  recomputed=0.03129025000000001
+  PASS hi conf/mask p=0.35 base=0.8 regret                      claimed=0.021404  recomputed=0.021404
+  PASS hi voi/mask p=0.35 base=0.8 regret                       claimed=0.03129025000000001  recomputed=0.03129025000000001
+  PASS hi bayes/mask p=0.35 base=None regret                    claimed=0.004086875  recomputed=0.004086875
+  PASS hi conf/mask p=0.35 base=None regret                     claimed=0.003213875  recomputed=0.003213875
+  PASS hi frozen_rule/mask p=0.35 base=None regret              claimed=0.0032993750000000002  recomputed=0.0032993750000000002
+  PASS hi union_nocost/mask p=0.35 base=None regret             claimed=0.0033634999999999997  recomputed=0.0033634999999999997
+  PASS hi voi/mask p=0.35 base=None regret                      claimed=0.0046352500000000005  recomputed=0.0046352500000000005
+  PASS hi bayes/maskr p=0.35 base=None regret                   claimed=0.03129025000000001  recomputed=0.03129025000000001
+  PASS hi conf/maskr p=0.35 base=None regret                    claimed=0.021404  recomputed=0.021404
+  PASS hi frozen_rule/maskr p=0.35 base=None regret             claimed=0.027237750000000005  recomputed=0.027237750000000005
+  PASS hi voi/maskr p=0.35 base=None regret                     claimed=0.03129025000000001  recomputed=0.03129025000000001
+  PASS hi bayes/pub p=16 base=None regret                       claimed=0.0132  recomputed=0.0132
+  PASS hi voi/pub p=16 base=None regret                         claimed=0.0132  recomputed=0.0132
+  PASS hi bayes/pub p=49 base=None regret                       claimed=0.0123  recomputed=0.0123
+  PASS hi voi/pub p=49 base=None regret                         claimed=0.0123  recomputed=0.0123
+  PASS HI mask bayes>voi probes (claimed bayes probes more)     claimed=True  recomputed=True
+  PASS HI maskr bayes-frozen_rule diff (claimed +0.00405)       claimed=0.00405  recomputed=0.00405
+  PASS HI maskr bayes-frozen_rule CI low (claimed +0.00358)     claimed=0.00358  recomputed=0.00358
+  PASS HI maskr bayes-frozen_rule CI high (claimed +0.00451)    claimed=0.00451  recomputed=0.00451
+  PASS HI maskr bayes-frozen_rule sign + (claimed 287)          claimed=287  recomputed=287
+  PASS HI maskr bayes-frozen_rule sign - (claimed 2)            claimed=2  recomputed=2
+  PASS HI maskr bayes-conf diff (claimed +0.00989)              claimed=0.00989  recomputed=0.00989
+  PASS HI maskr bayes-conf CI low (claimed +0.00898)            claimed=0.00898  recomputed=0.00898
+  PASS HI maskr bayes-conf CI high (claimed +0.01078)           claimed=0.01078  recomputed=0.01078
+  PASS HI maskr bayes-conf sign + (claimed 844)                 claimed=844  recomputed=844
+  PASS HI maskr bayes-conf sign - (claimed 65)                  claimed=65  recomputed=65
+  PASS HI mask base=None bayes-voi diff (claimed -0.000548)     claimed=-0.000548  recomputed=-0.000548
+  PASS HI mask base=None CI low (claimed -0.001050)             claimed=-0.00105  recomputed=-0.00105
+  PASS HI mask base=None CI high (claimed -0.000132)            claimed=-0.000132  recomputed=-0.000132
+  PASS HI mask base=0.6 bayes-voi diff (claimed -0.006588)      claimed=-0.006588  recomputed=-0.006588
+  PASS HI mask base=0.6 CI low (claimed -0.008054)              claimed=-0.008054  recomputed=-0.008054
+  PASS HI mask base=0.6 CI high (claimed -0.005123)             claimed=-0.005123  recomputed=-0.005123
+  PASS G6 bayes s/cell at 200 sims recomputed                   claimed=0.044003499999999994  recomputed=0.044003499999999994
+  PASS G6 cost ratio at 2000 sims, memo warm (claimed 1.79)     claimed=1.79  recomputed=1.79
+  PASS G6 cost ratio at 200 sims, memo warm (claimed 1.01)      claimed=1.01  recomputed=1.01
+
+ROWS CHECKED: 119   FAILURES: 0
+FACTCHECK PASSED

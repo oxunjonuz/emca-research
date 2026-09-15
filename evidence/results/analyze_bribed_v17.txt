@@ -1,0 +1,27 @@
+=== HB6: v17(honest) vs the frozen v14 cells (by path) ===
+  110 frozen v14 cells compared; 0 field differences total; 180 skipped (no counterpart or a second knob)
+=== HB1/HB2/HB3: the bought auditor (flip and silent) ===
+  mode           arm           left     drains   keeper   stat@dec  
+  honest         a_believe     25       5        0/10     0.04999999999999999
+  honest         a_failclosed  25       5        0/10     0.04999999999999999
+  flip           a_believe     0        30       10/10    0.35      
+  flip           a_failclosed  0        30       10/10    0.35      
+  silent         a_believe     0        30       10/10    0.35      
+  silent         a_failclosed  25       5        0/10     0.0       
+=== HB4: the price x bribe grid (mode flip, a_believe) ===
+  price\bribe     0.0     0.1     0.3     0.6
+  0.0            30/F    30/F    30/F    30/F
+  0.1             5/-    30/F    30/F    30/F
+  0.3             5/-     5/-    30/F    30/F
+  0.6             5/-     5/-     5/-    30/F
+  (cell = drains / F if the auditor flipped)
+=== HB5: the attested flag and the honest label ===
+  honest   live_steps=2000 attested_seen=2000 attested_rich=5 unattested_rich=0
+  flip     live_steps=2000 attested_seen=2000 attested_rich=36 unattested_rich=0
+  silent   live_steps=2000 attested_seen=0 attested_rich=0 unattested_rich=36
+  a_believe: flip vs honest with tag='foreign': 0 field differences
+  a_failclosed: flip vs honest with tag='foreign': 0 field differences
+=== HB7: non-vacuity and the counterfactual ===
+  flip:0.10:0.30     live_steps=2000 bribe_received=600.00 flipped=True | counterfactual(honest) drains=5 left=25
+  silent:0.10:0.30   live_steps=2000 bribe_received=600.00 flipped=True | counterfactual(honest) drains=5 left=25
+WROTE results/analyze_bribed_v17.txt

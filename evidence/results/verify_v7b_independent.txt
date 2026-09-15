@@ -1,0 +1,44 @@
+========================================================================
+V7B INDEPENDENT VERIFICATION (disk only, no analysis imports)
+========================================================================
+
+[1] frozen matrix: 110 files, 149 verdict rows, 6 glow-CAUSAL rows
+    recomputed p of the event: 0.000551 (recorded 0.00055)
+    VERDICT: p agreement PASS
+
+[2] held-out battery: 1000 files, 1471 verdict rows
+    null (glow) tests: 1030; FP events: 6
+    held-out FP rate: 6/1030 = 0.583%
+    true-edge tests (truth=on): 441, CAUSAL 439
+    events recomputed:
+      v7_full_29_on_low_on.json grasp->glow: p_re=0.00526 rr=1.315 rule-reproduces=True
+      v7_full_319_on_low_on.json press->glow: p_re=0.00170 rr=1.42 rule-reproduces=True
+      v7_full_31_on_low_on.json press->glow: p_re=0.01188 rr=1.303 rule-reproduces=True
+      v7_full_432_on_low_on.json press->glow: p_re=0.00038 rr=1.382 rule-reproduces=True
+      v7_full_493_off_low_on.json wait->glow: p_re=0.00286 rr=1.356 rule-reproduces=True
+      v7_full_493_on_low_on.json wait->glow: p_re=0.00286 rr=1.356 rule-reproduces=True
+
+[3] RATE TEST: agent side vs scripted protocol
+    scripted: 19/5000
+    agent   : 6/1030
+    one-sided Fisher (agent rate ABOVE scripted) p = 0.2457
+    VERDICT: NO INFLATION -- agent rate is consistent with the calibrated rule
+    (reference: 0.488% exact-null rate) one-sided p = 0.4090
+
+[4] NULL RATE OF THE FROZEN RULE -- simulated (different path)
+    simulated per-test FP rate = 177/40000 = 0.443%
+    primary pass enumerated 0.488%; campaign Monte-Carlo 0.51%
+    VERDICT: PASS (within 0.25pp)
+
+[5] FAMILY-WISE THRESHOLDS for the frozen-matrix event
+    alpha=0.05 : needs m >= 91
+    alpha=0.01 : needs m >= 19
+    alpha=0.001: needs m >= 2
+    agent-side tests per life: max 4 -> never sufficient
+
+[6] FROZEN MATRIX INTEGRITY
+    110 files, combined sha256 = 1f5a66e32c2cda4e19d30403a819feb581a3ae37ebf4238b75fefe77d3a179b0
+    expected 110 files, 1f5a66e32c2cda4e... 
+    VERDICT: PASS
+
+========================================================================

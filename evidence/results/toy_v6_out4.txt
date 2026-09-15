@@ -1,0 +1,15 @@
+toy_v6_check.py -- real agents on TerrariumV6, 8000 steps, 3 seeds
+============================================================================
+Traceback (most recent call last):
+  File "/work/Shopify/audit-work/agent_arch/toy_v6_check.py", line 107, in <module>
+    main()
+  File "/work/Shopify/audit-work/agent_arch/toy_v6_check.py", line 38, in main
+    log = run(arm, seed, 8000)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/work/Shopify/audit-work/agent_arch/run_life_v6.py", line 164, in run
+    agent.assoc_edges().items()]
+    ^^^^^^^^^^^^^^^^^^^
+  File "/work/Shopify/audit-work/agent_arch/agent_emca_v6.py", line 109, in assoc_edges
+    min_p = self.assoc_min_p
+            ^^^^^^^^^^^^^^^^
+AttributeError: 'AgentV6Prober' object has no attribute 'assoc_min_p'

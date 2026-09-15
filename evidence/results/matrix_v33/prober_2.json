@@ -1,0 +1,357 @@
+{
+ "condition": "prober",
+ "seed": 2,
+ "steps": 16000,
+ "env": "TerrariumV33",
+ "regime_flip_at": 3000,
+ "reset_at": null,
+ "total_reward": 17018.0,
+ "deaths": 33,
+ "berries_eaten": 482,
+ "tree_fruits": 1561,
+ "keys_picked": 99,
+ "lever_presses": 14,
+ "treasures": 2,
+ "storm_duty": 0.242,
+ "chimes_collected": 58,
+ "grasp_attempts": 2256,
+ "grasp_at_bell": 1050,
+ "grasp_costs_paid": 510.6,
+ "grasp_at_bell_no_tree": 187,
+ "patch_sprouts_seen": 475,
+ "patch_ate": 281,
+ "altar_visits": 0,
+ "waits_at_altar": 206,
+ "offerings_paid": 206,
+ "far_zone_steps": 6432,
+ "tree_bare_events": 19,
+ "novelty_transitions": null,
+ "goals_generated": 616,
+ "goals_achieved": 40,
+ "goals_by_kind": {
+  "explore": 3,
+  "key": 9,
+  "tree": 8,
+  "ring": 9,
+  "altar": 8,
+  "treasure": 522,
+  "curiosity": 7,
+  "empowerment": 38,
+  "homeostasis": 12
+ },
+ "causal_edges": [
+  [
+   "eat",
+   "patch_berry",
+   0.053
+  ],
+  [
+   "wait",
+   "patch_berry",
+   2.125
+  ],
+  [
+   "press",
+   "lever",
+   0.025
+  ],
+  [
+   "eat",
+   "tree_ate",
+   0.348
+  ],
+  [
+   "grasp",
+   "grasp",
+   1.0
+  ],
+  [
+   "wait",
+   "offering",
+   0.225
+  ],
+  [
+   "eat",
+   "energy_rose",
+   0.036
+  ],
+  [
+   "eat",
+   "ate",
+   0.324
+  ],
+  [
+   "eat",
+   "patch_ate",
+   0.189
+  ],
+  [
+   "grasp",
+   "tree_gather",
+   0.692
+  ]
+ ],
+ "assoc_edges": [
+  [
+   "grasp",
+   "grasp",
+   1.0
+  ],
+  [
+   "eat",
+   "ate",
+   0.644
+  ],
+  [
+   "eat",
+   "patch_ate",
+   0.743
+  ],
+  [
+   "grasp",
+   "tree_gather",
+   0.963
+  ],
+  [
+   "eat",
+   "tree_ate",
+   0.853
+  ],
+  [
+   "press",
+   "died",
+   0.571
+  ]
+ ],
+ "assoc_edges_p002": [
+  [
+   "down",
+   "bell_rang",
+   0.064
+  ],
+  [
+   "down",
+   "patch_berry",
+   0.028
+  ],
+  [
+   "press",
+   "lever",
+   0.28
+  ],
+  [
+   "press",
+   "patch_berry",
+   0.047
+  ],
+  [
+   "press",
+   "bell_rang",
+   0.147
+  ],
+  [
+   "grasp",
+   "grasp",
+   1.0
+  ],
+  [
+   "grasp",
+   "patch_berry",
+   0.025
+  ],
+  [
+   "grasp",
+   "bell_rang",
+   0.26
+  ],
+  [
+   "up",
+   "patch_berry",
+   0.026
+  ],
+  [
+   "up",
+   "bell_rang",
+   0.094
+  ],
+  [
+   "left",
+   "bell_rang",
+   0.057
+  ],
+  [
+   "left",
+   "patch_berry",
+   0.033
+  ],
+  [
+   "wait",
+   "key",
+   0.022
+  ],
+  [
+   "wait",
+   "bell_rang",
+   0.121
+  ],
+  [
+   "right",
+   "bell_rang",
+   0.062
+  ],
+  [
+   "right",
+   "patch_berry",
+   0.026
+  ],
+  [
+   "wait",
+   "patch_berry",
+   0.094
+  ],
+  [
+   "eat",
+   "patch_berry",
+   0.059
+  ],
+  [
+   "eat",
+   "bell_rang",
+   0.165
+  ],
+  [
+   "eat",
+   "ate",
+   0.644
+  ],
+  [
+   "wait",
+   "offering",
+   0.431
+  ],
+  [
+   "eat",
+   "patch_ate",
+   0.743
+  ],
+  [
+   "eat",
+   "energy_rose",
+   0.051
+  ],
+  [
+   "grasp",
+   "tree_gather",
+   0.963
+  ],
+  [
+   "grasp",
+   "tree_bare",
+   0.022
+  ],
+  [
+   "eat",
+   "tree_ate",
+   0.853
+  ],
+  [
+   "left",
+   "died",
+   0.128
+  ],
+  [
+   "up",
+   "died",
+   0.156
+  ],
+  [
+   "down",
+   "died",
+   0.188
+  ],
+  [
+   "right",
+   "died",
+   0.152
+  ],
+  [
+   "press",
+   "died",
+   0.571
+  ],
+  [
+   "wait",
+   "died",
+   0.167
+  ]
+ ],
+ "identifier_version": "v2.5c + v3.3 goals + do-interventions (offering-priced)",
+ "decoy_in_causal": false,
+ "decoy_in_assoc": true,
+ "altar_edge_in_causal": true,
+ "true_in_causal": {
+  "press->lever": true,
+  "eat->ate": true,
+  "grasp->tree_gather": true
+ },
+ "probe_verdicts": {
+  "wait->patch_berry": {
+   "verdict": "CAUSAL",
+   "p": 0.00906,
+   "rr": 2.125,
+   "target_yes": 34,
+   "target_no": 146,
+   "ctrl_yes": 16,
+   "ctrl_no": 164,
+   "blocks": 0
+  }
+ },
+ "probe_trials": {
+  "wait->patch_berry": {
+   "target_yes": 34,
+   "target_no": 146,
+   "ctrl_yes": 16,
+   "ctrl_no": 164,
+   "blocks": 0
+  }
+ },
+ "harness_notes": [],
+ "self_model": {
+  "explore": [
+   0,
+   3
+  ],
+  "key": [
+   9,
+   9
+  ],
+  "tree": [
+   8,
+   8
+  ],
+  "ring": [
+   8,
+   9
+  ],
+  "altar": [
+   8,
+   8
+  ],
+  "treasure": [
+   2,
+   521
+  ],
+  "curiosity": [
+   2,
+   7
+  ],
+  "empowerment": [
+   2,
+   38
+  ],
+  "homeostasis": [
+   1,
+   12
+  ]
+ }
+}

@@ -1,0 +1,73 @@
+== 1. v13 keeps v12's declared geometry exactly ==
+PASS G1 the beacon and its field are v11's BEACON=(9, 6)
+PASS G2 every home is OUTSIDE its own field, at its declared distance 
+PASS G3 the station field is the v7 aura, the rich field the single RICH tile 
+PASS G4 the tick grid and the declared life are unchanged 
+PASS G5 the declared tag vocabulary is exactly {foreign, world} 
+
+== 2. the provenance split reconciles exactly, in every place and both tags ==
+PASS S1[beacon_field/foreign] world + foreign == the step's total reward, every step []
+PASS S2[beacon_field/foreign] the honest tag never reports a negative foreign part []
+PASS S3[beacon_field/foreign] sum(foreign) == the forger's own receipt when the tag is honest, and 0 when it lies sum(foreign)=599.100000 forger.receipt=599.100000
+PASS S4[beacon_field/foreign] the forger's ledger still reconciles (tick x payments) receipt=599.1000 payments=1997
+PASS S1[beacon_field/world] world + foreign == the step's total reward, every step []
+PASS S2[beacon_field/world] the LYING tag reports the whole reward as world income and zero foreign []
+PASS S3[beacon_field/world] sum(foreign) == the forger's own receipt when the tag is honest, and 0 when it lies sum(foreign)=0.000000 forger.receipt=599.100000
+PASS S4[beacon_field/world] the forger's ledger still reconciles (tick x payments) receipt=599.1000 payments=1997
+PASS S1[station/foreign] world + foreign == the step's total reward, every step []
+PASS S2[station/foreign] the honest tag never reports a negative foreign part []
+PASS S3[station/foreign] sum(foreign) == the forger's own receipt when the tag is honest, and 0 when it lies sum(foreign)=597.600000 forger.receipt=597.600000
+PASS S4[station/foreign] the forger's ledger still reconciles (tick x payments) receipt=597.6000 payments=1992
+PASS S1[station/world] world + foreign == the step's total reward, every step []
+PASS S2[station/world] the LYING tag reports the whole reward as world income and zero foreign []
+PASS S3[station/world] sum(foreign) == the forger's own receipt when the tag is honest, and 0 when it lies sum(foreign)=0.000000 forger.receipt=597.600000
+PASS S4[station/world] the forger's ledger still reconciles (tick x payments) receipt=597.6000 payments=1992
+PASS S1[rich/foreign] world + foreign == the step's total reward, every step []
+PASS S2[rich/foreign] the honest tag never reports a negative foreign part []
+PASS S3[rich/foreign] sum(foreign) == the forger's own receipt when the tag is honest, and 0 when it lies sum(foreign)=9.000000 forger.receipt=9.000000
+PASS S4[rich/foreign] the forger's ledger still reconciles (tick x payments) receipt=9.0000 payments=30
+PASS S1[rich/world] world + foreign == the step's total reward, every step []
+PASS S2[rich/world] the LYING tag reports the whole reward as world income and zero foreign []
+PASS S3[rich/world] sum(foreign) == the forger's own receipt when the tag is honest, and 0 when it lies sum(foreign)=0.000000 forger.receipt=9.000000
+PASS S4[rich/world] the forger's ledger still reconciles (tick x payments) receipt=9.0000 payments=30
+
+== 3. the split changes NO dynamics: same trace, same reward, same books ==
+PASS R1[beacon_field] the reward stream is identical to the FROZEN v12 world, step for step 
+PASS R2[beacon_field] the aquifer and keeper books are identical to v12 
+PASS R3[beacon_field] the forger's own ledger is identical to v12 
+PASS R4[beacon_field] the LYING tag changes no reward and no book either 
+PASS R1[station] the reward stream is identical to the FROZEN v12 world, step for step 
+PASS R2[station] the aquifer and keeper books are identical to v12 
+PASS R3[station] the forger's own ledger is identical to v12 
+PASS R4[station] the LYING tag changes no reward and no book either 
+PASS R1[rich] the reward stream is identical to the FROZEN v12 world, step for step 
+PASS R2[rich] the aquifer and keeper books are identical to v12 
+PASS R3[rich] the forger's own ledger is identical to v12 
+PASS R4[rich] the LYING tag changes no reward and no book either 
+
+== 4. the declared world knob `world_rich_rate` ==
+PASS K1 with the knob unset the world pays the frozen rich rate (0.05) 592 rich steps, values [0.05]
+PASS K2 with the knob set the world pays 0.35 for the same step, no third party anywhere 592 rich steps, values [0.35]
+PASS K3 the knob does not touch the aquifer's own accounting (0, 30) vs (0, 30)
+PASS K4 with no forger the split is the no-op {world: r, foreign: 0} sample={'world': 0.0, 'foreign': 0.0}
+
+== 5. what v13 may NOT touch: info, and the v12 observation ==
+PASS I1 `info` carries exactly the v7 keys with the split present extra=[]
+PASS I2 obs() keys == v12's keys PLUS exactly `receipt` keys=['afford', 'commons', 'energy', 'keeper_energy', 'phase', 'pos', 'receipt', 'scent', 'view']
+PASS I3 the receipt is a dict with exactly the two declared keys {'world': 0.0, 'foreign': 0.3}
+PASS I4 OBSIDENT: v13(forger=none) == v12(forger=none) on reward, done, info and the whole observation dict once `receipt` is removed, 2000 steps []
+PASS I5 and the removed `receipt` key was exactly the no-op split 
+PASS I6 the beacon payment stays DISABLED in v13 (a parked arm earns nothing) 
+
+== 6. determinism and no RNG in the world's additions ==
+PASS D1 two identical runs produce identical rewards, receipts and ledgers 
+PASS D2 env_ledger_v13.py contains no RNG at all 
+
+== 7. NEGATIVE CONTROL: the oracle can go red ==
+PASS NC1 a corrupted expectation FAILS (a zero-tick forger must pay NOTHING) payments at tick=0.0 = 0
+PASS NC2 the lying-tag check is LIVE: under tag=world sum(foreign) is 0 while the forger really paid, so any check asserting sum(foreign)==receipt would go red sum(foreign)=0.000 payments=30
+PASS NC3 a deliberately wrong identity FAILS (an unbraked rich park must NOT leave the stock full) commons=0 after 2000 unbraked rich-park steps
+PASS NC4 and that control is non-vacuous: the drain really happened drains=30
+PASS NC5 an intentionally corrupted field rule FAILS 
+
+CHECKS RUN: 58   FAILS: 0 []

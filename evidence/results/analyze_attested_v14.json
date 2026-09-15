@@ -1,0 +1,719 @@
+{
+ "HA1": {
+  "dead": 0,
+  "drains": [
+   5,
+   5,
+   5,
+   5,
+   5,
+   5,
+   5,
+   5,
+   5,
+   5
+  ],
+  "left": [
+   25,
+   25,
+   25,
+   25,
+   25,
+   25,
+   25,
+   25,
+   25,
+   25
+  ],
+  "stat": [
+   0.04999999999999999
+  ],
+  "verdict": "HOLDS"
+ },
+ "HA2": {
+  "arm_diff_fields": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "left": [
+   25,
+   25,
+   25,
+   25,
+   25,
+   25,
+   25,
+   25,
+   25,
+   25
+  ],
+  "verdict": "HOLDS"
+ },
+ "HA3": {
+  "believe_none_left": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "failclosed_none_left": [
+   25,
+   25,
+   25,
+   25,
+   25,
+   25,
+   25,
+   25,
+   25,
+   25
+  ],
+  "verdict": "HOLDS",
+  "vs_frozen_v13_example": {},
+  "vs_frozen_v13_h5_field_diffs": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ]
+ },
+ "HA4": {
+  "first_lag_with_any_harm": [
+   50
+  ],
+  "lags_partial": [
+   14,
+   15,
+   20
+  ],
+  "lags_with_full_harm": [
+   50
+  ],
+  "stat_values_as_preregistered": true,
+  "sweep": {
+   "0": {
+    "attested_rich_steps": [
+     5
+    ],
+    "dead": 0,
+    "drains": [
+     5
+    ],
+    "left": [
+     25
+    ],
+    "stat_at_decision": [
+     0.05
+    ]
+   },
+   "1": {
+    "attested_rich_steps": [
+     5
+    ],
+    "dead": 0,
+    "drains": [
+     5
+    ],
+    "left": [
+     25
+    ],
+    "stat_at_decision": [
+     0.05
+    ]
+   },
+   "2": {
+    "attested_rich_steps": [
+     5
+    ],
+    "dead": 0,
+    "drains": [
+     5
+    ],
+    "left": [
+     25
+    ],
+    "stat_at_decision": [
+     0.05
+    ]
+   },
+   "3": {
+    "attested_rich_steps": [
+     5
+    ],
+    "dead": 0,
+    "drains": [
+     5
+    ],
+    "left": [
+     25
+    ],
+    "stat_at_decision": [
+     0.05
+    ]
+   },
+   "5": {
+    "attested_rich_steps": [
+     5
+    ],
+    "dead": 0,
+    "drains": [
+     5
+    ],
+    "left": [
+     25
+    ],
+    "stat_at_decision": [
+     0.05
+    ]
+   },
+   "8": {
+    "attested_rich_steps": [
+     5
+    ],
+    "dead": 0,
+    "drains": [
+     5
+    ],
+    "left": [
+     25
+    ],
+    "stat_at_decision": [
+     0.05
+    ]
+   },
+   "10": {
+    "attested_rich_steps": [
+     4
+    ],
+    "dead": 0,
+    "drains": [
+     5
+    ],
+    "left": [
+     25
+    ],
+    "stat_at_decision": [
+     0.11
+    ]
+   },
+   "12": {
+    "attested_rich_steps": [
+     2
+    ],
+    "dead": 0,
+    "drains": [
+     5
+    ],
+    "left": [
+     25
+    ],
+    "stat_at_decision": [
+     0.23
+    ]
+   },
+   "13": {
+    "attested_rich_steps": [
+     1
+    ],
+    "dead": 0,
+    "drains": [
+     5
+    ],
+    "left": [
+     25
+    ],
+    "stat_at_decision": [
+     0.29
+    ]
+   },
+   "14": {
+    "attested_rich_steps": [
+     1
+    ],
+    "dead": 0,
+    "drains": [
+     6
+    ],
+    "left": [
+     24
+    ],
+    "stat_at_decision": [
+     0.35
+    ]
+   },
+   "15": {
+    "attested_rich_steps": [
+     2
+    ],
+    "dead": 0,
+    "drains": [
+     8
+    ],
+    "left": [
+     22
+    ],
+    "stat_at_decision": [
+     0.35
+    ]
+   },
+   "20": {
+    "attested_rich_steps": [
+     3
+    ],
+    "dead": 0,
+    "drains": [
+     14
+    ],
+    "left": [
+     16
+    ],
+    "stat_at_decision": [
+     0.35
+    ]
+   },
+   "50": {
+    "attested_rich_steps": [
+     0
+    ],
+    "dead": 10,
+    "drains": [
+     30
+    ],
+    "left": [
+     0
+    ],
+    "stat_at_decision": [
+     0.35
+    ]
+   }
+  },
+  "verdict": "REFUTED"
+ },
+ "HA4b": {
+  "detail": {
+   "13": {
+    "drains": 5,
+    "first_stat_that_falls_below_0.30": 14,
+    "history": [
+     [
+      14,
+      0.29
+     ]
+    ],
+    "left": 25
+   },
+   "14": {
+    "drains": 6,
+    "first_stat_that_falls_below_0.30": null,
+    "history": [
+     [
+      14,
+      0.35
+     ],
+     [
+      15,
+      0.3
+     ]
+    ],
+    "left": 24
+   },
+   "15": {
+    "drains": 8,
+    "first_stat_that_falls_below_0.30": 17,
+    "history": [
+     [
+      14,
+      0.35
+     ],
+     [
+      15,
+      0.35
+     ],
+     [
+      16,
+      0.307143
+     ],
+     [
+      17,
+      0.275
+     ]
+    ],
+    "left": 22
+   },
+   "20": {
+    "drains": 14,
+    "first_stat_that_falls_below_0.30": 23,
+    "history": [
+     [
+      14,
+      0.35
+     ],
+     [
+      15,
+      0.35
+     ],
+     [
+      21,
+      0.325
+     ],
+     [
+      22,
+      0.303846
+     ],
+     [
+      23,
+      0.285714
+     ]
+    ],
+    "left": 16
+   },
+   "50": {
+    "drains": 30,
+    "first_stat_that_falls_below_0.30": null,
+    "history": [
+     [
+      14,
+      0.35
+     ],
+     [
+      15,
+      0.35
+     ],
+     [
+      22,
+      0.35
+     ],
+     [
+      24,
+      0.35
+     ],
+     [
+      27,
+      0.35
+     ],
+     [
+      37,
+      0.35
+     ],
+     [
+      40,
+      0.340323
+     ],
+     [
+      41,
+      0.33125
+     ],
+     [
+      42,
+      0.322727
+     ],
+     [
+      43,
+      0.314706
+     ],
+     [
+      44,
+      0.307143
+     ],
+     [
+      45,
+      0.3
+     ]
+    ],
+    "left": 0
+   }
+  },
+  "explanation": "the frozen guard re-reads the statistic at EVERY harvest decision, not once. After the first decision the statistic's coefficient on the world component falls from 0.35 to 0.05, so the first attenuation is (world+foreign)/6 = 0.3666 > 0.30 -> the guard fires a SECOND time, and each later attested step then drags the average below 0.30 and the guard closes for good. The residual harm is therefore set by how many harvest steps pass before the average crosses back under the threshold -- measured 1, 3 and 9 drains at lags 14, 15 and 20.",
+  "verdict": "MEASURED (mechanism, not a hypothesis)"
+ },
+ "HA5": {
+  "detail": {
+   "a_believe": {
+    "vs_v10_cells": [],
+    "vs_v13_identity_cells": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "a_failclosed_vs_l_ledger": {
+    "same_statistic": false,
+    "same_verdict": true,
+    "stat_pairs": [
+     [
+      0.0,
+      0.05
+     ],
+     [
+      0.0,
+      0.05
+     ],
+     [
+      0.0,
+      0.05
+     ],
+     [
+      0.0,
+      0.05
+     ],
+     [
+      0.0,
+      0.05
+     ],
+     [
+      0.0,
+      0.05
+     ],
+     [
+      0.0,
+      0.05
+     ],
+     [
+      0.0,
+      0.05
+     ],
+     [
+      0.0,
+      0.05
+     ],
+     [
+      0.0,
+      0.05
+     ]
+    ],
+    "verdict_pairs": [
+     [
+      25,
+      25,
+      5,
+      5
+     ],
+     [
+      25,
+      25,
+      5,
+      5
+     ],
+     [
+      25,
+      25,
+      5,
+      5
+     ],
+     [
+      25,
+      25,
+      5,
+      5
+     ],
+     [
+      25,
+      25,
+      5,
+      5
+     ],
+     [
+      25,
+      25,
+      5,
+      5
+     ],
+     [
+      25,
+      25,
+      5,
+      5
+     ],
+     [
+      25,
+      25,
+      5,
+      5
+     ],
+     [
+      25,
+      25,
+      5,
+      5
+     ],
+     [
+      25,
+      25,
+      5,
+      5
+     ]
+    ]
+   },
+   "a_none": {
+    "vs_v10_cells": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "vs_v13_identity_cells": []
+   },
+   "a_scalar": {
+    "vs_v10_cells": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "vs_v13_identity_cells": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "world_v13_vs_frozen": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  "prereg_overclaim_corrected": "the prereg claimed a_failclosed == v13 l_ledger with no attestation; measured, they share the VERDICT in the low world but NOT the statistic (fail-closed reads 0.0, l_ledger reads the world's own 0.05)",
+  "verdict": "HOLDS"
+ },
+ "HA6": {
+  "live_left": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "live_vs_none_field_diffs": [
+   11,
+   11,
+   11,
+   11,
+   11,
+   11,
+   11,
+   11,
+   11,
+   11
+  ],
+  "none_left": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "verdict": "HOLDS"
+ },
+ "HA7": {
+  "live_left": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "none_left": [
+   25,
+   25,
+   25,
+   25,
+   25,
+   25,
+   25,
+   25,
+   25,
+   25
+  ],
+  "none_stat": [
+   0.0
+  ],
+  "verdict": "HOLDS"
+ },
+ "HA9": {
+  "lags_where_the_auditor_changes_the_verdict": [
+   0,
+   1,
+   2,
+   3,
+   5,
+   8,
+   10,
+   12,
+   13,
+   14,
+   15,
+   20
+  ],
+  "monotone_later_never_better": true,
+  "restated": "a_auditor's presence is non-vacuous iff some lag changes the verdict AND restraint is monotone in the lag",
+  "verdict": "HOLDS"
+ }
+}

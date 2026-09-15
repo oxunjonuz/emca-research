@@ -1,0 +1,348 @@
+{
+ "condition": "emca_v25c",
+ "seed": 12,
+ "steps": 16000,
+ "env": "TerrariumV33",
+ "regime_flip_at": 3000,
+ "reset_at": null,
+ "total_reward": 18532.5,
+ "deaths": 40,
+ "berries_eaten": 707,
+ "tree_fruits": 1748,
+ "keys_picked": 40,
+ "lever_presses": 14,
+ "treasures": 0,
+ "storm_duty": 0.0,
+ "chimes_collected": 83,
+ "grasp_attempts": 2165,
+ "grasp_at_bell": 1339,
+ "grasp_costs_paid": 301.8,
+ "grasp_at_bell_no_tree": 63,
+ "patch_sprouts_seen": 732,
+ "patch_ate": 595,
+ "altar_visits": 0,
+ "waits_at_altar": 61,
+ "offerings_paid": 61,
+ "far_zone_steps": 8915,
+ "tree_bare_events": 128,
+ "novelty_transitions": null,
+ "goals_generated": 188,
+ "goals_achieved": 58,
+ "goals_by_kind": {
+  "explore": 3,
+  "key": 10,
+  "tree": 10,
+  "ring": 10,
+  "altar": 8,
+  "treasure": 3,
+  "curiosity": 9,
+  "homeostasis": 34,
+  "empowerment": 101
+ },
+ "causal_edges": [
+  [
+   "eat",
+   "ate",
+   0.468
+  ],
+  [
+   "grasp",
+   "grasp",
+   1.0
+  ],
+  [
+   "eat",
+   "patch_ate",
+   0.394
+  ],
+  [
+   "wait",
+   "offering",
+   0.095
+  ],
+  [
+   "eat",
+   "patch_berry",
+   0.08
+  ],
+  [
+   "press",
+   "lever",
+   0.046
+  ],
+  [
+   "eat",
+   "tree_ate",
+   0.331
+  ],
+  [
+   "grasp",
+   "tree_gather",
+   0.807
+  ],
+  [
+   "eat",
+   "energy_rose",
+   0.03
+  ],
+  [
+   "grasp",
+   "tree_bare",
+   0.059
+  ]
+ ],
+ "assoc_edges": [
+  [
+   "grasp",
+   "grasp",
+   1.0
+  ],
+  [
+   "eat",
+   "ate",
+   0.862
+  ],
+  [
+   "eat",
+   "patch_ate",
+   0.872
+  ],
+  [
+   "grasp",
+   "tree_gather",
+   0.921
+  ],
+  [
+   "eat",
+   "tree_ate",
+   0.911
+  ]
+ ],
+ "assoc_edges_p002": [
+  [
+   "down",
+   "patch_berry",
+   0.044
+  ],
+  [
+   "grasp",
+   "grasp",
+   1.0
+  ],
+  [
+   "up",
+   "bell_rang",
+   0.094
+  ],
+  [
+   "up",
+   "patch_berry",
+   0.037
+  ],
+  [
+   "left",
+   "patch_berry",
+   0.077
+  ],
+  [
+   "right",
+   "patch_berry",
+   0.054
+  ],
+  [
+   "press",
+   "patch_berry",
+   0.11
+  ],
+  [
+   "right",
+   "bell_rang",
+   0.055
+  ],
+  [
+   "down",
+   "bell_rang",
+   0.068
+  ],
+  [
+   "press",
+   "bell_rang",
+   0.15
+  ],
+  [
+   "press",
+   "lever",
+   0.452
+  ],
+  [
+   "left",
+   "bell_rang",
+   0.058
+  ],
+  [
+   "wait",
+   "bell_rang",
+   0.066
+  ],
+  [
+   "wait",
+   "patch_berry",
+   0.064
+  ],
+  [
+   "eat",
+   "ate",
+   0.862
+  ],
+  [
+   "eat",
+   "energy_rose",
+   0.046
+  ],
+  [
+   "eat",
+   "patch_berry",
+   0.087
+  ],
+  [
+   "eat",
+   "bell_rang",
+   0.126
+  ],
+  [
+   "grasp",
+   "bell_rang",
+   0.282
+  ],
+  [
+   "grasp",
+   "patch_berry",
+   0.021
+  ],
+  [
+   "left",
+   "chime",
+   0.029
+  ],
+  [
+   "wait",
+   "offering",
+   0.227
+  ],
+  [
+   "wait",
+   "key",
+   0.057
+  ],
+  [
+   "press",
+   "key_appeared",
+   0.021
+  ],
+  [
+   "eat",
+   "patch_ate",
+   0.872
+  ],
+  [
+   "grasp",
+   "tree_gather",
+   0.921
+  ],
+  [
+   "eat",
+   "tree_ate",
+   0.911
+  ],
+  [
+   "grasp",
+   "tree_bare",
+   0.146
+  ],
+  [
+   "right",
+   "key",
+   0.385
+  ],
+  [
+   "left",
+   "died",
+   0.167
+  ],
+  [
+   "up",
+   "died",
+   0.203
+  ],
+  [
+   "down",
+   "died",
+   0.145
+  ],
+  [
+   "right",
+   "died",
+   0.108
+  ],
+  [
+   "wait",
+   "tree_appeared",
+   0.038
+  ],
+  [
+   "grasp",
+   "energy_fell",
+   0.059
+  ]
+ ],
+ "identifier_version": "v2.5c-stratified-RR-doorgonefix + v3.3 scarcity goals",
+ "decoy_in_causal": false,
+ "decoy_in_assoc": true,
+ "altar_edge_in_causal": false,
+ "true_in_causal": {
+  "press->lever": true,
+  "eat->ate": true,
+  "grasp->tree_gather": true
+ },
+ "probe_verdicts": null,
+ "probe_trials": null,
+ "harness_notes": [],
+ "self_model": {
+  "explore": [
+   0,
+   3
+  ],
+  "key": [
+   10,
+   10
+  ],
+  "tree": [
+   10,
+   10
+  ],
+  "ring": [
+   8,
+   10
+  ],
+  "altar": [
+   8,
+   8
+  ],
+  "treasure": [
+   0,
+   3
+  ],
+  "curiosity": [
+   8,
+   9
+  ],
+  "homeostasis": [
+   5,
+   34
+  ],
+  "empowerment": [
+   9,
+   101
+  ]
+ }
+}

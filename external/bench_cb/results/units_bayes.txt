@@ -1,0 +1,27 @@
+=== W1 V >= commit at every state (the DP's own definition)
+  PASS W1 V >= commit  -- 0 violations
+=== W1b HORIZON IS EXACT: T4 and T2 agree at every state where the step count matters (no block quantisation)
+  PASS W1b no disagreement beyond ties at non-multiple horizons  -- 0 disagreements
+=== W1c NUMERIC DOMINANCE: probe_value_T4 >= probe_value_T2 at every state (the theorem's arithmetic, not just the decision)
+  PASS W1c probe_T4 >= probe_T2 everywhere  -- worst difference -8.527e-14 over 240 states
+=== W2 THE THEOREM: accept(T4) contains accept(T2) on the grid, up to indifference ties (|T2 margin| <= 1e-12)
+  PASS W2 T2-accepts => T4-accepts (ties excluded)  -- 0/240 violate beyond tolerance; 7 are ties: []
+  PASS W2b every excluded state is a genuine tie (|margin| <= 1e-12)  -- 7 ties, worst margin 2.22e-15
+=== W3 T4 accepts strictly more than T2 somewhere (the theorem is not vacuous)
+  PASS W3 strict gain exists  -- 18 states
+=== W4 L < n (cannot afford a whole probe) => never probe
+  PASS W4 no whole probe affordable => no probe
+=== W5 V is non-decreasing in L (more steps cannot hurt)
+  PASS W5 V monotone in L  -- []
+=== W6 source audit: no price constant, no RNG, no arbitration
+  PASS W6 no price/RNG/arbitration symbol  -- []
+=== W7 predictive cross-check: log-ratio pmf vs an independent lgamma pmf
+  PASS W7 pmf agrees to 1e-12 and sums to 1  -- worst=9.726e-14
+=== W8 determinism: two calls, identical decisions (no RNG)
+  PASS W8 deterministic
+=== W9 NEGATIVE CONTROL (must be RED): corrupt V := commit (i.e. never look ahead, so T4 never probes) and the inclusion check must FAIL
+  PASS W9 control is red-capable  -- 86 violations under corruption (beyond tolerance)
+=== W9b the same control must NOT be red for the T2 side alone (it is T4's lookahead that the corruption removes)
+  PASS W9b T2 compared with itself is never violated
+
+SUITE PASSED (9 groups)

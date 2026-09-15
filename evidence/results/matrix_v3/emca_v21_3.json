@@ -1,0 +1,691 @@
+{
+ "condition": "emca_v21",
+ "seed": 3,
+ "steps": 16000,
+ "env": "TerrariumV3",
+ "regime_flip_at": 3000,
+ "reset_at": null,
+ "total_reward": 16600.0,
+ "deaths": 2,
+ "berries_eaten": 378,
+ "tree_fruits": 2029,
+ "keys_picked": 1,
+ "lever_presses": 4,
+ "treasures": 0,
+ "storm_duty": 0.274,
+ "ring_near_storm_tree": 0.383,
+ "berries_by_window": {
+  "0": 19,
+  "1": 18,
+  "2": 10,
+  "3": 15,
+  "4": 35,
+  "5": 7,
+  "6": 8,
+  "7": 5,
+  "8": 16,
+  "9": 25,
+  "10": 10,
+  "11": 8,
+  "12": 10,
+  "13": 7,
+  "14": 24,
+  "15": 11,
+  "16": 6,
+  "17": 18,
+  "18": 11,
+  "19": 11,
+  "20": 12,
+  "21": 3,
+  "22": 8,
+  "23": 7,
+  "24": 4,
+  "25": 13,
+  "26": 4,
+  "27": 20,
+  "28": 12,
+  "29": 6,
+  "30": 7,
+  "31": 8
+ },
+ "deaths_by_window": {
+  "1": 1,
+  "17": 1
+ },
+ "goals_generated": 94,
+ "goals_achieved": 87,
+ "goals_at_reset": [],
+ "goals_active_after_reset": [
+  {
+   "id": "g7",
+   "kind": "treasure",
+   "status": "expired"
+  },
+  {
+   "id": "g8",
+   "kind": "treasure",
+   "status": "expired"
+  },
+  {
+   "id": "g9",
+   "kind": "curiosity",
+   "status": "achieved"
+  },
+  {
+   "id": "g10",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g11",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g12",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g13",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g14",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g15",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g16",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g17",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g18",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g19",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g20",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g21",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g22",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g23",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g24",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g25",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g26",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g27",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g28",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g29",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g30",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g31",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g32",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g33",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g34",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g35",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g36",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g37",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g38",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g39",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g40",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g41",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g42",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g43",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g44",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g45",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g46",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g47",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g48",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g49",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g50",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g51",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g52",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g53",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g54",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g55",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g56",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g57",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g58",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g59",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g60",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g61",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g62",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g63",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g64",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g65",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g66",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g67",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g68",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g69",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g70",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g71",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g72",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g73",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g74",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g75",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g76",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g77",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g78",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g79",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g80",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g81",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g82",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g83",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g84",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g85",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g86",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g87",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g88",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g89",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g90",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g91",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g92",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g93",
+   "kind": "empowerment",
+   "status": "achieved"
+  },
+  {
+   "id": "g94",
+   "kind": "empowerment",
+   "status": "active"
+  }
+ ],
+ "causal_edges": [
+  [
+   "eat",
+   "ate",
+   0.142
+  ],
+  [
+   "eat",
+   "bell_rang",
+   0.197
+  ],
+  [
+   "eat",
+   "tree_ate",
+   0.761
+  ],
+  [
+   "grasp",
+   "grasp",
+   1.0
+  ]
+ ],
+ "assoc_edges": [
+  [
+   "grasp",
+   "grasp",
+   1.0
+  ],
+  [
+   "up",
+   "door_gone",
+   1.0
+  ],
+  [
+   "left",
+   "door_gone",
+   1.0
+  ],
+  [
+   "right",
+   "door_gone",
+   1.0
+  ],
+  [
+   "eat",
+   "tree_ate",
+   0.982
+  ]
+ ],
+ "assoc_edges_p002": [
+  [
+   "down",
+   "bell_rang",
+   0.1
+  ],
+  [
+   "grasp",
+   "grasp",
+   1.0
+  ],
+  [
+   "grasp",
+   "bell_rang",
+   0.154
+  ],
+  [
+   "press",
+   "bell_rang",
+   0.165
+  ],
+  [
+   "press",
+   "lever",
+   0.111
+  ],
+  [
+   "press",
+   "key_appeared",
+   0.029
+  ],
+  [
+   "up",
+   "bell_rang",
+   0.115
+  ],
+  [
+   "wait",
+   "bell_rang",
+   0.155
+  ],
+  [
+   "eat",
+   "bell_rang",
+   0.22
+  ],
+  [
+   "left",
+   "bell_rang",
+   0.101
+  ],
+  [
+   "right",
+   "bell_rang",
+   0.105
+  ],
+  [
+   "grasp",
+   "tree_appeared",
+   0.133
+  ],
+  [
+   "up",
+   "door_gone",
+   1.0
+  ],
+  [
+   "left",
+   "door_gone",
+   1.0
+  ],
+  [
+   "eat",
+   "ate",
+   0.198
+  ],
+  [
+   "wait",
+   "key_appeared",
+   0.074
+  ],
+  [
+   "right",
+   "door_gone",
+   1.0
+  ],
+  [
+   "eat",
+   "tree_ate",
+   0.982
+  ],
+  [
+   "down",
+   "died",
+   0.022
+  ],
+  [
+   "up",
+   "died",
+   0.1
+  ],
+  [
+   "left",
+   "regime_flip",
+   0.067
+  ]
+ ],
+ "identifier_version": "v2.1-pooled (spec gate OFF)",
+ "decoy_in_causal": true,
+ "decoy_in_assoc": true,
+ "true_in_causal": {
+  "press->lever": false,
+  "eat->ate": true,
+  "eat->tree_ate": true
+ },
+ "harness_notes": [],
+ "self_model": {
+  "explore": [
+   1,
+   1
+  ],
+  "key": [
+   0,
+   3
+  ],
+  "tree": [
+   1,
+   1
+  ],
+  "treasure": [
+   0,
+   3
+  ],
+  "curiosity": [
+   1,
+   1
+  ],
+  "empowerment": [
+   84,
+   84
+  ]
+ }
+}

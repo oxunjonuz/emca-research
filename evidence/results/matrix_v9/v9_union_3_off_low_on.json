@@ -1,0 +1,878 @@
+{
+ "arm": "v9_union",
+ "seed": 3,
+ "steps": 16000,
+ "truth": false,
+ "rich": "low",
+ "decoy": true,
+ "edge_action": "wait",
+ "decoy_action": "grasp",
+ "total_reward": 369.10000000004965,
+ "deaths": 4,
+ "fruits_eaten": 0,
+ "fruit_blooms": 0,
+ "hums": 2351,
+ "glows": 1430,
+ "aura_steps": 5712,
+ "rich_steps": 7382,
+ "probe_trials": 2400,
+ "probe_blocks": 6,
+ "candidates_seen": [
+  [
+   "left",
+   "berry",
+   1.0,
+   693,
+   "thin-ctx"
+  ],
+  [
+   "grasp",
+   "glow",
+   1.0,
+   1340,
+   "thin-ctx"
+  ],
+  [
+   "grasp",
+   "hum",
+   1.0,
+   1340,
+   "thin-ctx"
+  ],
+  [
+   "press",
+   "glow",
+   1.0,
+   1340,
+   "thin-ctx"
+  ],
+  [
+   "press",
+   "hum",
+   1.0,
+   1340,
+   "thin-ctx"
+  ],
+  [
+   "grasp",
+   "berry",
+   0.9851,
+   1340,
+   "thin-ctx"
+  ],
+  [
+   "press",
+   "berry",
+   0.9851,
+   1340,
+   "thin-ctx"
+  ],
+  [
+   "left",
+   "hum",
+   0.5439,
+   693,
+   "thin-ctx"
+  ],
+  [
+   "left",
+   "glow",
+   0.5,
+   693,
+   "thin-ctx"
+  ],
+  [
+   "grasp",
+   "glow",
+   0.3262,
+   1340,
+   "(True,)"
+  ],
+  [
+   "press",
+   "glow",
+   0.3096,
+   1340,
+   "(True,)"
+  ]
+ ],
+ "n_candidates_total": 11,
+ "verdicts": {
+  "grasp->glow": {
+   "verdict": "REJECT",
+   "p": 0.87502,
+   "rr": 0.896,
+   "target_yes": 90,
+   "target_no": 110,
+   "ctrl_yes": 100,
+   "ctrl_no": 99,
+   "blocks": 80,
+   "phase": "warm"
+  },
+  "grasp->hum": {
+   "verdict": "REJECT",
+   "p": 0.1431,
+   "rr": 1.142,
+   "target_yes": 93,
+   "target_no": 107,
+   "ctrl_yes": 81,
+   "ctrl_no": 118,
+   "blocks": 80,
+   "phase": "warm"
+  },
+  "press->glow": {
+   "verdict": "REJECT",
+   "p": 0.55916,
+   "rr": 0.995,
+   "target_yes": 97,
+   "target_no": 103,
+   "ctrl_yes": 97,
+   "ctrl_no": 102,
+   "blocks": 80,
+   "phase": "warm"
+  },
+  "press->hum": {
+   "verdict": "REJECT",
+   "p": 0.77389,
+   "rr": 0.927,
+   "target_yes": 82,
+   "target_no": 118,
+   "ctrl_yes": 88,
+   "ctrl_no": 111,
+   "blocks": 80,
+   "phase": "warm"
+  },
+  "grasp->berry": {
+   "verdict": "REJECT",
+   "p": 1.0,
+   "rr": 0.0,
+   "target_yes": 0,
+   "target_no": 200,
+   "ctrl_yes": 0,
+   "ctrl_no": 199,
+   "blocks": 80,
+   "phase": "warm"
+  },
+  "press->berry": {
+   "verdict": "REJECT",
+   "p": 1.0,
+   "rr": 0.0,
+   "target_yes": 0,
+   "target_no": 200,
+   "ctrl_yes": 0,
+   "ctrl_no": 199,
+   "blocks": 80,
+   "phase": "warm"
+  }
+ },
+ "rich_rate_obs": 0.05,
+ "harness_notes": [],
+ "first_probe": [
+  "grasp",
+  "glow"
+ ],
+ "ranked_at_first_probe": [
+  [
+   "grasp",
+   "glow",
+   1.0,
+   140,
+   "thin-ctx"
+  ],
+  [
+   "grasp",
+   "hum",
+   1.0,
+   140,
+   "thin-ctx"
+  ],
+  [
+   "press",
+   "glow",
+   1.0,
+   140,
+   "thin-ctx"
+  ],
+  [
+   "press",
+   "hum",
+   1.0,
+   140,
+   "thin-ctx"
+  ],
+  [
+   "left",
+   "berry",
+   1.0,
+   606,
+   "thin-ctx"
+  ],
+  [
+   "down",
+   "berry",
+   1.0,
+   624,
+   "thin-ctx"
+  ],
+  [
+   "left",
+   "hum",
+   0.5857,
+   606,
+   "thin-ctx"
+  ],
+  [
+   "down",
+   "hum",
+   0.5857,
+   624,
+   "thin-ctx"
+  ],
+  [
+   "grasp",
+   "berry",
+   0.5,
+   140,
+   "thin-ctx"
+  ],
+  [
+   "press",
+   "berry",
+   0.5,
+   140,
+   "thin-ctx"
+  ],
+  [
+   "left",
+   "glow",
+   0.4357,
+   606,
+   "thin-ctx"
+  ],
+  [
+   "down",
+   "glow",
+   0.4357,
+   624,
+   "thin-ctx"
+  ]
+ ],
+ "probe_order_log": [
+  [
+   "grasp",
+   "glow",
+   [
+    [
+     "grasp",
+     "glow",
+     1.0,
+     140,
+     "thin-ctx"
+    ],
+    [
+     "grasp",
+     "hum",
+     1.0,
+     140,
+     "thin-ctx"
+    ],
+    [
+     "press",
+     "glow",
+     1.0,
+     140,
+     "thin-ctx"
+    ],
+    [
+     "press",
+     "hum",
+     1.0,
+     140,
+     "thin-ctx"
+    ],
+    [
+     "left",
+     "berry",
+     1.0,
+     606,
+     "thin-ctx"
+    ],
+    [
+     "down",
+     "berry",
+     1.0,
+     624,
+     "thin-ctx"
+    ],
+    [
+     "left",
+     "hum",
+     0.5857,
+     606,
+     "thin-ctx"
+    ],
+    [
+     "down",
+     "hum",
+     0.5857,
+     624,
+     "thin-ctx"
+    ],
+    [
+     "grasp",
+     "berry",
+     0.5,
+     140,
+     "thin-ctx"
+    ],
+    [
+     "press",
+     "berry",
+     0.5,
+     140,
+     "thin-ctx"
+    ],
+    [
+     "left",
+     "glow",
+     0.4357,
+     606,
+     "thin-ctx"
+    ],
+    [
+     "down",
+     "glow",
+     0.4357,
+     624,
+     "thin-ctx"
+    ]
+   ]
+  ],
+  [
+   "grasp",
+   "hum",
+   [
+    [
+     "grasp",
+     "glow",
+     1.0,
+     340,
+     "thin-ctx"
+    ],
+    [
+     "grasp",
+     "hum",
+     1.0,
+     340,
+     "thin-ctx"
+    ],
+    [
+     "press",
+     "glow",
+     1.0,
+     340,
+     "thin-ctx"
+    ],
+    [
+     "press",
+     "hum",
+     1.0,
+     340,
+     "thin-ctx"
+    ],
+    [
+     "left",
+     "berry",
+     1.0,
+     617,
+     "thin-ctx"
+    ],
+    [
+     "down",
+     "berry",
+     1.0,
+     635,
+     "thin-ctx"
+    ],
+    [
+     "left",
+     "hum",
+     0.5765,
+     617,
+     "thin-ctx"
+    ],
+    [
+     "down",
+     "hum",
+     0.5765,
+     635,
+     "thin-ctx"
+    ],
+    [
+     "left",
+     "glow",
+     0.4882,
+     617,
+     "thin-ctx"
+    ],
+    [
+     "down",
+     "glow",
+     0.4882,
+     635,
+     "thin-ctx"
+    ],
+    [
+     "grasp",
+     "berry",
+     0.4797,
+     340,
+     "thin-ctx"
+    ],
+    [
+     "press",
+     "berry",
+     0.4797,
+     340,
+     "thin-ctx"
+    ],
+    [
+     "press",
+     "glow",
+     0.2796,
+     340,
+     "(True,)"
+    ],
+    [
+     "grasp",
+     "glow",
+     0.2604,
+     340,
+     "(True,)"
+    ]
+   ]
+  ],
+  [
+   "press",
+   "glow",
+   [
+    [
+     "grasp",
+     "glow",
+     1.0,
+     540,
+     "thin-ctx"
+    ],
+    [
+     "grasp",
+     "hum",
+     1.0,
+     540,
+     "thin-ctx"
+    ],
+    [
+     "press",
+     "glow",
+     1.0,
+     540,
+     "thin-ctx"
+    ],
+    [
+     "press",
+     "hum",
+     1.0,
+     540,
+     "thin-ctx"
+    ],
+    [
+     "left",
+     "berry",
+     1.0,
+     632,
+     "thin-ctx"
+    ],
+    [
+     "down",
+     "berry",
+     1.0,
+     659,
+     "thin-ctx"
+    ],
+    [
+     "left",
+     "hum",
+     0.5833,
+     632,
+     "thin-ctx"
+    ],
+    [
+     "down",
+     "hum",
+     0.5833,
+     659,
+     "thin-ctx"
+    ],
+    [
+     "left",
+     "glow",
+     0.4889,
+     632,
+     "thin-ctx"
+    ],
+    [
+     "down",
+     "glow",
+     0.4889,
+     659,
+     "thin-ctx"
+    ],
+    [
+     "grasp",
+     "berry",
+     0.447,
+     540,
+     "thin-ctx"
+    ],
+    [
+     "press",
+     "berry",
+     0.447,
+     540,
+     "thin-ctx"
+    ],
+    [
+     "grasp",
+     "glow",
+     0.3192,
+     540,
+     "(True,)"
+    ],
+    [
+     "press",
+     "glow",
+     0.2954,
+     540,
+     "(True,)"
+    ]
+   ]
+  ],
+  [
+   "press",
+   "hum",
+   [
+    [
+     "left",
+     "berry",
+     1.0,
+     649,
+     "thin-ctx"
+    ],
+    [
+     "down",
+     "berry",
+     1.0,
+     685,
+     "thin-ctx"
+    ],
+    [
+     "grasp",
+     "glow",
+     1.0,
+     740,
+     "thin-ctx"
+    ],
+    [
+     "grasp",
+     "hum",
+     1.0,
+     740,
+     "thin-ctx"
+    ],
+    [
+     "press",
+     "glow",
+     1.0,
+     740,
+     "thin-ctx"
+    ],
+    [
+     "press",
+     "hum",
+     1.0,
+     740,
+     "thin-ctx"
+    ],
+    [
+     "left",
+     "hum",
+     0.575,
+     649,
+     "thin-ctx"
+    ],
+    [
+     "down",
+     "hum",
+     0.575,
+     685,
+     "thin-ctx"
+    ],
+    [
+     "left",
+     "glow",
+     0.4959,
+     649,
+     "thin-ctx"
+    ],
+    [
+     "down",
+     "glow",
+     0.4959,
+     685,
+     "thin-ctx"
+    ],
+    [
+     "grasp",
+     "berry",
+     0.4155,
+     740,
+     "thin-ctx"
+    ],
+    [
+     "press",
+     "berry",
+     0.4155,
+     740,
+     "thin-ctx"
+    ],
+    [
+     "grasp",
+     "glow",
+     0.3299,
+     740,
+     "(True,)"
+    ],
+    [
+     "press",
+     "glow",
+     0.3126,
+     740,
+     "(True,)"
+    ]
+   ]
+  ],
+  [
+   "grasp",
+   "berry",
+   [
+    [
+     "left",
+     "berry",
+     1.0,
+     657,
+     "thin-ctx"
+    ],
+    [
+     "grasp",
+     "glow",
+     1.0,
+     940,
+     "thin-ctx"
+    ],
+    [
+     "grasp",
+     "hum",
+     1.0,
+     940,
+     "thin-ctx"
+    ],
+    [
+     "press",
+     "glow",
+     1.0,
+     940,
+     "thin-ctx"
+    ],
+    [
+     "press",
+     "hum",
+     1.0,
+     940,
+     "thin-ctx"
+    ],
+    [
+     "left",
+     "hum",
+     0.5734,
+     657,
+     "thin-ctx"
+    ],
+    [
+     "left",
+     "glow",
+     0.4936,
+     657,
+     "thin-ctx"
+    ],
+    [
+     "grasp",
+     "berry",
+     0.4014,
+     940,
+     "thin-ctx"
+    ],
+    [
+     "press",
+     "berry",
+     0.4014,
+     940,
+     "thin-ctx"
+    ],
+    [
+     "grasp",
+     "glow",
+     0.3116,
+     940,
+     "(True,)"
+    ],
+    [
+     "press",
+     "glow",
+     0.2819,
+     940,
+     "(True,)"
+    ]
+   ]
+  ],
+  [
+   "press",
+   "berry",
+   [
+    [
+     "left",
+     "berry",
+     1.0,
+     674,
+     "thin-ctx"
+    ],
+    [
+     "grasp",
+     "glow",
+     1.0,
+     1140,
+     "thin-ctx"
+    ],
+    [
+     "grasp",
+     "hum",
+     1.0,
+     1140,
+     "thin-ctx"
+    ],
+    [
+     "press",
+     "glow",
+     1.0,
+     1140,
+     "thin-ctx"
+    ],
+    [
+     "press",
+     "hum",
+     1.0,
+     1140,
+     "thin-ctx"
+    ],
+    [
+     "left",
+     "hum",
+     0.54,
+     674,
+     "thin-ctx"
+    ],
+    [
+     "left",
+     "glow",
+     0.5026,
+     674,
+     "thin-ctx"
+    ],
+    [
+     "grasp",
+     "berry",
+     0.3758,
+     1140,
+     "thin-ctx"
+    ],
+    [
+     "press",
+     "berry",
+     0.3758,
+     1140,
+     "thin-ctx"
+    ],
+    [
+     "grasp",
+     "glow",
+     0.3155,
+     1140,
+     "(True,)"
+    ],
+    [
+     "press",
+     "glow",
+     0.2994,
+     1140,
+     "(True,)"
+    ]
+   ]
+  ]
+ ],
+ "first_causal_t": null,
+ "deaths_agent": 4,
+ "probe_keys": [
+  [
+   "grasp",
+   "glow",
+   "thin-ctx",
+   1.0,
+   140
+  ],
+  [
+   "grasp",
+   "hum",
+   "thin-ctx",
+   1.0,
+   340
+  ],
+  [
+   "press",
+   "glow",
+   "thin-ctx",
+   1.0,
+   540
+  ],
+  [
+   "press",
+   "hum",
+   "thin-ctx",
+   1.0,
+   740
+  ],
+  [
+   "grasp",
+   "berry",
+   "thin-ctx",
+   0.4014,
+   940
+  ],
+  [
+   "press",
+   "berry",
+   "thin-ctx",
+   0.3758,
+   1140
+  ]
+ ],
+ "n_skipped_not_probeable": 3,
+ "n_explore_picks": 6
+}

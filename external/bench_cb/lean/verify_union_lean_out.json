@@ -1,0 +1,46 @@
+{
+ "checks": [
+  {
+   "tag": "C1_compiles_fresh",
+   "pass": true,
+   "evidence": "exit=0, stdout/stderr bytes=0"
+  },
+  {
+   "tag": "C2_no_sorry_axiom_token",
+   "pass": true,
+   "evidence": "tokens found: none"
+  },
+  {
+   "tag": "C3_no_sorryAx_in_kernel",
+   "pass": true,
+   "evidence": "exit=0, 15/15 axiom lines, sorryAx=False"
+  },
+  {
+   "tag": "C3b_only_standard_axioms",
+   "pass": true,
+   "evidence": "unexpected axioms: none"
+  },
+  {
+   "tag": "C4_all_declarations_exist",
+   "pass": true,
+   "evidence": "exit=0, missing=none"
+  },
+  {
+   "tag": "C5_mutation_summary_matches_disk",
+   "pass": true,
+   "evidence": "10 rows, mismatches=none"
+  },
+  {
+   "tag": "C6_m10_survivor_confirmed",
+   "pass": true,
+   "evidence": "m10_followup exit=0 -> loosened constant IS provable -> M10 red is an artefact"
+  },
+  {
+   "tag": "C7_nonvacuity_compiles",
+   "pass": true,
+   "evidence": "exit=0, bytes=0"
+  }
+ ],
+ "passed": 8,
+ "total": 8
+}

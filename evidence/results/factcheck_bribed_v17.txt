@@ -1,0 +1,22 @@
+PASS cell count 360 unique -- 360
+PASS flip:0.10:0.30 a_believe -> 0/30/dead 10/10 -- left={0} drains={30} dead=10
+PASS flip:0.10:0.30 a_failclosed -> 0/30/dead 10/10 -- left={0} drains={30} dead=10
+PASS silent:0.10:0.30 a_believe -> 0/30/dead 10/10 -- left={0} drains={30} dead=10
+PASS silent:0.10:0.30 a_failclosed -> 25/5/dead 0/10 -- left={25} drains={5} dead=0
+PASS HB4 the flip and the harm happen iff bribe >= price
+PASS HB5 flip: attested_steps_seen == auditor_live_steps -- 2000/2000
+PASS HB5 silent: attested_steps_seen == 0
+PASS HB6 identity: 0 field differences over the 110 comparable v14 cells -- 0 diffs
+PASS report mentions 25
+PASS report mentions 5
+PASS report mentions 30
+PASS report mentions 0.35
+PASS report mentions 0.04999999999999999
+PASS report mentions 0.10
+PASS report mentions 0.30
+PASS report mentions 2000
+PASS report mentions 110
+PASS report mentions 360
+
+19/19 checks passed
+ALL GREEN

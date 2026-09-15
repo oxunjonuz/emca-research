@@ -1,0 +1,126 @@
+=== C1: every cell mean/sem re-derived from raw rows ===
+  ok    C1 mask_p0p15_beta0.json
+  ok    C1 mask_p0p15_budget_pub.json
+  ok    C1 mask_p0p15_pure.json
+  ok    C1 mask_p0p15_uniform_policy.json
+  ok    C1 mask_p0p15_union.json
+  ok    C1 mask_p0p15_union_nocost.json
+  ok    C1 mask_p0p15_union_noctx.json
+  ok    C1 mask_p0p15_union_noexp.json
+  ok    C1 mask_p0p15_union_pooledexp.json
+  ok    C1 mask_p0p25_beta0.json
+  ok    C1 mask_p0p25_budget_pub.json
+  ok    C1 mask_p0p25_pure.json
+  ok    C1 mask_p0p25_uniform_policy.json
+  ok    C1 mask_p0p25_union.json
+  ok    C1 mask_p0p25_union_nocost.json
+  ok    C1 mask_p0p25_union_noctx.json
+  ok    C1 mask_p0p25_union_noexp.json
+  ok    C1 mask_p0p25_union_pooledexp.json
+  ok    C1 mask_p0p35_beta0.json
+  ok    C1 mask_p0p35_budget_pub.json
+  ok    C1 mask_p0p35_pure.json
+  ok    C1 mask_p0p35_uniform_policy.json
+  ok    C1 mask_p0p35_union.json
+  ok    C1 mask_p0p35_union_nocost.json
+  ok    C1 mask_p0p35_union_noctx.json
+  ok    C1 mask_p0p35_union_noexp.json
+  ok    C1 mask_p0p35_union_pooledexp.json
+  ok    C1 maskr_p0p25_beta0.json
+  ok    C1 maskr_p0p25_budget_pub.json
+  ok    C1 maskr_p0p25_pure.json
+  ok    C1 maskr_p0p25_uniform_policy.json
+  ok    C1 maskr_p0p25_union.json
+  ok    C1 maskr_p0p25_union_nocost.json
+  ok    C1 maskr_p0p25_union_noctx.json
+  ok    C1 maskr_p0p25_union_noexp.json
+  ok    C1 maskr_p0p25_union_pooledexp.json
+  ok    C1 maskr_p0p35_beta0.json
+  ok    C1 maskr_p0p35_budget_pub.json
+  ok    C1 maskr_p0p35_pure.json
+  ok    C1 maskr_p0p35_uniform_policy.json
+  ok    C1 maskr_p0p35_union.json
+  ok    C1 maskr_p0p35_union_nocost.json
+  ok    C1 maskr_p0p35_union_noctx.json
+  ok    C1 maskr_p0p35_union_noexp.json
+  ok    C1 maskr_p0p35_union_pooledexp.json
+  ok    C1 pub_p16_alg1_pub.json
+  ok    C1 pub_p16_alg2_pub.json
+  ok    C1 pub_p16_pure.json
+  ok    C1 pub_p16_sr_pub.json
+  ok    C1 pub_p16_ucb_pub.json
+  ok    C1 pub_p16_union.json
+  ok    C1 pub_p16_union_noctx.json
+  ok    C1 pub_p16_union_noexp.json
+  ok    C1 pub_p25_alg1_pub.json
+  ok    C1 pub_p25_alg2_pub.json
+  ok    C1 pub_p25_pure.json
+  ok    C1 pub_p25_sr_pub.json
+  ok    C1 pub_p25_ucb_pub.json
+  ok    C1 pub_p25_union.json
+  ok    C1 pub_p25_union_noctx.json
+  ok    C1 pub_p25_union_noexp.json
+  ok    C1 pub_p2_alg1_pub.json
+  ok    C1 pub_p2_alg2_pub.json
+  ok    C1 pub_p2_pure.json
+  ok    C1 pub_p2_sr_pub.json
+  ok    C1 pub_p2_ucb_pub.json
+  ok    C1 pub_p2_union.json
+  ok    C1 pub_p2_union_noctx.json
+  ok    C1 pub_p2_union_noexp.json
+  ok    C1 pub_p40_alg1_pub.json
+  ok    C1 pub_p40_alg2_pub.json
+  ok    C1 pub_p40_pure.json
+  ok    C1 pub_p40_sr_pub.json
+  ok    C1 pub_p40_ucb_pub.json
+  ok    C1 pub_p40_union.json
+  ok    C1 pub_p40_union_noctx.json
+  ok    C1 pub_p40_union_noexp.json
+  ok    C1 pub_p49_alg1_pub.json
+  ok    C1 pub_p49_alg2_pub.json
+  ok    C1 pub_p49_pure.json
+  ok    C1 pub_p49_sr_pub.json
+  ok    C1 pub_p49_ucb_pub.json
+  ok    C1 pub_p49_union.json
+  ok    C1 pub_p49_union_noctx.json
+  ok    C1 pub_p49_union_noexp.json
+  ok    C1 pub_p8_alg1_pub.json
+  ok    C1 pub_p8_alg2_pub.json
+  ok    C1 pub_p8_pure.json
+  ok    C1 pub_p8_sr_pub.json
+  ok    C1 pub_p8_ucb_pub.json
+  ok    C1 pub_p8_union.json
+  ok    C1 pub_p8_union_noctx.json
+  ok    C1 pub_p8_union_noexp.json
+  (93 cells)
+=== C2: instance structure, Monte-Carlo, independent of producer ===
+  ok    C2 pooled margin of true arm is ZERO
+  ok    C2 ctx0 true arm pays base+eps+decoy·seg
+  ok    C2 ctx1 true arm pays base-eps (decoy rare there)
+  ok    C2 pooled analytic == Monte-Carlo
+  ok    C2 ctx0 do(A=0) pays base+decoy·seg
+  ok    C2 analytic er_ctx[0][A1] == MC ctx0
+=== C3: published instance reproduces turn-128's frozen numbers ===
+  ok    C3 pure == 0.3000 at every m
+  ok    C3 alg1_pub matches turn-128 frozen column
+=== C4: determinism (fresh process, bit-for-bit) ===
+  ok    C4 union mask eps=0.35 seed=7 deterministic
+=== C5: are the pieces MUTUALLY NECESSARY? (ablation test) ===
+  ok    C5 mask eps=0.15: removing EITHER piece collapses the union
+  ok    C5 mask eps=0.15: union << best single-feature arm
+  ok    C5 mask eps=0.25: removing EITHER piece collapses the union
+  ok    C5 mask eps=0.25: union << best single-feature arm
+  ok    C5 mask eps=0.35: removing EITHER piece collapses the union
+  ok    C5 mask eps=0.35: union << best single-feature arm
+=== C5b: the RICH regime (honest boundary; may FAIL the union) ===
+  maskr eps=0.25: union=0.0313 best_part=0.0210 (union_nocost)  -> union LOSES
+  maskr eps=0.35: union=0.0313 best_part=0.0210 (union_nocost)  -> union LOSES
+=== C6: is the cost-aware arbiter load-bearing? (honest, may FAIL) ===
+  ok    C6 union==union_nocost at eps=0.15 (arbiter inert?)
+  ok    C6 union==union_nocost at eps=0.25 (arbiter inert?)
+  ok    C6 union==union_nocost at eps=0.35 (arbiter inert?)
+=== NEGATIVE CONTROL: must FAIL ===
+  negative control (union==union_noctx on mask): asserted  -> RED as required
+
+=== RESULT: 111 checks, 0 failures ===
+ALL AGREE

@@ -1,0 +1,171 @@
+{
+ "verdicts": [
+  {
+   "claim": "v10 B2 the given rule stops the harm",
+   "holds": true,
+   "detail": "n=30 commons_left=['9'] keeper_dead=['false']"
+  },
+  {
+   "claim": "v10 B3 coupling=0 the victim-keyed rule is INERT",
+   "holds": true,
+   "detail": "n=30 commons_left=['0'] keeper_dead=['true']"
+  },
+  {
+   "claim": "v10 B3 coupling=1 the same rule WORKS",
+   "holds": true,
+   "detail": "n=30 commons_left=['17'] keeper_dead=['false']"
+  },
+  {
+   "claim": "v10 B4 low: the internalized value restrains",
+   "holds": true,
+   "detail": "n=30 commons_left=['25']"
+  },
+  {
+   "claim": "v10 B4 high: the same rule does NOT restrain",
+   "holds": true,
+   "detail": "n=30 commons_left=['0']"
+  },
+  {
+   "claim": "v11 the unbraked arm's harm is 5",
+   "holds": true,
+   "detail": "n=30 drains=['5']"
+  },
+  {
+   "claim": "v11 n_inflate_g6: the inflated appraisal drains everything (W6 stays refuted)",
+   "holds": true,
+   "detail": "n=30 drains=['30']"
+  },
+  {
+   "claim": "v11 n_inflate_g10: the inflated appraisal drains everything (W6 stays refuted)",
+   "holds": true,
+   "detail": "n=30 drains=['30']"
+  },
+  {
+   "claim": "v12 the bribe threshold at tick 0.24 -> 5 drains",
+   "holds": true,
+   "detail": "n=30 drains=['5']"
+  },
+  {
+   "claim": "v12 the bribe threshold at tick 0.25 -> 5 drains",
+   "holds": true,
+   "detail": "n=30 drains=['5']"
+  },
+  {
+   "claim": "v12 the bribe threshold at tick 0.26 -> 30 drains",
+   "holds": true,
+   "detail": "n=30 drains=['30']"
+  },
+  {
+   "claim": "v12 the bribe threshold at tick 0.30 -> 30 drains",
+   "holds": true,
+   "detail": "n=30 drains=['30']"
+  },
+  {
+   "claim": "v13 H5 the lie buys the ledger arm completely",
+   "holds": true,
+   "detail": "n=30 {'commons_drains': ['30'], 'keeper_dead': ['true']}"
+  },
+  {
+   "claim": "v13 the honest label restrains",
+   "holds": true,
+   "detail": "n=30 {'commons_drains': ['5'], 'commons_left': ['25']}"
+  },
+  {
+   "claim": "v14 HA1 the honest auditor closes the hole (the lie fails)",
+   "holds": true,
+   "detail": "n=30 {'commons_drains': ['5'], 'keeper_dead': ['false'], 'rate_at_first_decision': ['0.04999999999999999']}"
+  },
+  {
+   "claim": "v14 HA3 with no auditor the lie works again",
+   "holds": true,
+   "detail": "n=30 {'commons_drains': ['30']}"
+  },
+  {
+   "claim": "v16 t=0.25 below the threshold -> 5 drains",
+   "holds": true,
+   "detail": "n=30 {'commons_drains': ['5']}"
+  },
+  {
+   "claim": "v16 t=0.26 above the threshold -> 30 drains",
+   "holds": true,
+   "detail": "n=30 {'commons_drains': ['30']}"
+  },
+  {
+   "claim": "v16 the doctor never drains (the harm is outside its scope)",
+   "holds": false,
+   "detail": "n=30 {'commons_drains': ['0', '30'], 'keeper_dead': ['false', 'true']}"
+  },
+  {
+   "claim": "REPLICATION FINDING: v16's doctor drains on a minority of FRESH seeds (the frozen matrix had no such cell)",
+   "holds": true,
+   "detail": "2 of 30 fresh seeds drain (the frozen v16: 0 of 260 cells)"
+  },
+  {
+   "claim": "v17 HB1 the bought auditor buys the believe arm",
+   "holds": true,
+   "detail": "n=30 {'commons_drains': ['30'], 'keeper_dead': ['true']}"
+  },
+  {
+   "claim": "v17 HB3 the silenced auditor does not buy the cautious arm",
+   "holds": true,
+   "detail": "n=30 {'commons_drains': ['5']}"
+  },
+  {
+   "claim": "v18 HE1 the world's refusal stops the willing agent",
+   "holds": true,
+   "detail": "n=30 {'commons_drains': ['0'], 'enforcer_refusals': ['30', '4842', '6378', '6379']}"
+  },
+  {
+   "claim": "v18 the widen arm with no scope drains everything",
+   "holds": true,
+   "detail": "n=30 {'commons_drains': ['30']}"
+  },
+  {
+   "claim": "v15 H2 pure information gain is indifferent on fresh seeds (mean 0.250)",
+   "holds": true,
+   "detail": "shares=['0.250', '0.250', '0.250', '0.250', '0.250', '0.249']"
+  },
+  {
+   "claim": "v15 H3 the relevance criterion restores the preference on fresh seeds (mean 0.998)",
+   "holds": true,
+   "detail": "min=0.993"
+  },
+  {
+   "claim": "v15 H6 random stays at the coin floor (mean 0.249)",
+   "holds": true,
+   "detail": ""
+  }
+ ],
+ "seeds": [
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  16,
+  17,
+  18,
+  19,
+  20,
+  21,
+  22,
+  23,
+  24,
+  25,
+  26,
+  27,
+  28,
+  29,
+  30,
+  31,
+  32,
+  33,
+  34,
+  35,
+  36,
+  37,
+  38,
+  39
+ ]
+}

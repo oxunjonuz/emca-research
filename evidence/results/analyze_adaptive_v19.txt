@@ -1,0 +1,38 @@
+cells on disk: 320
+arms: ['a_believe', 'a_failclosed', 'a_none', 'a_scalar']
+payers: ['none', 'p_frontload:1:1.25', 'p_frontload:1:1.3', 'p_frontload:2:1.3', 'p_greedy:1', 'p_greedy:10', 'p_greedy:2', 'p_greedy:25', 'p_greedy:5', 'p_greedy:50', 'p_knows:1', 'p_nofeedback:1', 'p_nofeedback:25', 'p_nofeedback:5', 'p_sweep:1', 'p_sweep:10', 'p_sweep:2', 'p_sweep:25', 'p_sweep:5', 'p_sweep:50']
+
+PASS  HQ1 p_fixed/v17 identity: v17 cells reproduced field for field 40/40 cells compared, 0 field differences
+PASS  IDENT19b: the v19 world with no payer IS the frozen v17 world 0 differences over 40 cells and every dynamic field
+PASS  HQ2 p_knows: full harm, cost strictly below the frozen 9.0 10/10 full harm; spend=[7.50003]; frozen=9.0
+PASS  HQ2b the saving is the arithmetic 1.49997 (7.50003 vs 9.0) spends=[7.50003], predicted 7.50003
+PASS  HQ3 front-load K=1,T=1.30: drains == 6, v14's lag-14 truncation 10 cells, drains=[6] (predicted 6), spend=[1.3]
+      (extra) p_frontload:2:1.3  drains=[11] spend=[2.6] n=10
+      (extra) p_frontload:1:1.25 drains=[6] spend=[1.25] n=10
+      (B=1)  p_sweep      held=0/10 drains=[18] wins=0 spend=[9.03]
+PASS  HQ4 p_sweep at B=2: defence holds 10/10                    held=10/10, drains=[5], attacker wins=0
+PASS  HQ4 p_sweep at B=5: defence holds 10/10                    held=10/10, drains=[5], attacker wins=0
+PASS  HQ4 p_sweep at B=10: defence holds 10/10                   held=10/10, drains=[5], attacker wins=0
+PASS  HQ4 p_sweep at B=25: defence holds 10/10                   held=10/10, drains=[5], attacker wins=0
+PASS  HQ4 p_sweep at B=50: defence holds 10/10                   held=10/10, drains=[5], attacker wins=0
+      (B=1)  p_greedy     held=0/10 drains=[30] wins=0 spend=[21.06]
+PASS  HQ4 p_greedy at B=2: defence holds 10/10                   held=10/10, drains=[5], attacker wins=0
+PASS  HQ4 p_greedy at B=5: defence holds 10/10                   held=10/10, drains=[5], attacker wins=0
+PASS  HQ4 p_greedy at B=10: defence holds 10/10                  held=10/10, drains=[5], attacker wins=0
+PASS  HQ4 p_greedy at B=25: defence holds 10/10                  held=10/10, drains=[5], attacker wins=0
+PASS  HQ4 p_greedy at B=50: defence holds 10/10                  held=10/10, drains=[5], attacker wins=0
+PASS  HQ4c B=1 greedy reaches full harm but pays MORE than the frozen 9.0 full harm 10/10, spend=[21.06] > frozen 9.0 -> attacker_wins=0
+PASS  HQ4d REFUTED AS PREDICTED: the B=1 sweep DOES reach the breach (18 drains) but still does not win (spend 9.03 > 9.0) drains=[18], spend=[9.03], wins=0
+PASS  HQ4e NO learning cell anywhere satisfies the declared win condition total attacker_wins=10, every one of them a p_knows cell; learning cells that win=0
+PASS  HQ5a a_failclosed (no auditor) vs p_greedy:1: no full harm 0/10 full harm; drains=[5]
+PASS  HQ5a a_failclosed (no auditor) vs p_sweep:1: no full harm  0/10 full harm; drains=[5]
+PASS  HQ5a a_failclosed (no auditor) vs p_knows:1: no full harm  0/10 full harm; drains=[5]
+      (B=1) greedy drains=[30] nofeedback drains=[18] differing seeds=10
+PASS  HQ5b B=1: no feedback changes the verdict (non-vacuous control) 10/10 seeds differ: [(0, 30, 18), (1, 30, 18), (2, 30, 18)]
+      (B=5) greedy drains=[5] nofeedback drains=[5] differing seeds=0
+      (B=25) greedy drains=[5] nofeedback drains=[5] differing seeds=0
+PASS  HQ6 with the auditor bought (flip) the spend is dominated by the bribe full harm 10/10; spend=[607.5]; auditor bribe_received=[600.0]
+PASS  HQ6b the flip cell's spend exceeds p_knows's by the bribe  spend - 7.50003 = [600.0]
+PASS  HQ7 every learning cell really re-decided and tried > 1 candidate 180 learning cells; decisions==0: 0; seen<=1: 0
+
+VERDICTS: 25 PASS / 0 FAIL of 25 checks

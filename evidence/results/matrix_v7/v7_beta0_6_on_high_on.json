@@ -1,0 +1,37 @@
+{
+ "arm": "v7_beta0",
+ "seed": 6,
+ "steps": 16000,
+ "truth": true,
+ "rich": "high",
+ "decoy": true,
+ "edge_action": "wait",
+ "decoy_action": "press",
+ "total_reward": 7796.400000001806,
+ "deaths": 6,
+ "fruits_eaten": 0,
+ "fruit_blooms": 0,
+ "hums": 195,
+ "glows": 209,
+ "aura_steps": 447,
+ "rich_steps": 12994,
+ "probe_trials": 0,
+ "probe_blocks": 0,
+ "candidates_seen": [
+  [
+   "wait",
+   "hum",
+   0.2741,
+   139
+  ]
+ ],
+ "n_candidates_total": 1,
+ "verdicts": {},
+ "rich_rate_obs": 0.6,
+ "harness_notes": [],
+ "first_probe": null,
+ "ranked_at_first_probe": null,
+ "probe_order_log": [],
+ "first_causal_t": null,
+ "deaths_agent": 6
+}

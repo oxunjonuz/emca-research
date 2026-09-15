@@ -1,0 +1,23 @@
+=== v15 world oracle ===
+  [PASS] O1 f0 channel of a0 
+  [PASS] O2 f1 channel of a1 
+  [PASS] O3 fnoise channel of a2 
+  [PASS] O4 fconst channel of a3 (decoy off) 
+  [PASS] O5 fdecoy channel of a3 (decoy on) 
+  [PASS] O6 phase A on [0,span) 
+  [PASS] O7 phase B on [span,2span) 
+  [PASS] O8 phase A again on [2span,3span) 
+  [PASS] O9 P(val|a0,A) ~ 0.9 measured 0.8985
+  [PASS] O10 P(val|a0,B) ~ 0.1 measured 0.0988
+  [PASS] O11 P(val|a1,A) ~ 0.5 measured 0.5029
+  [PASS] O12 P(val|a2,B) ~ 0.5 measured 0.4963
+  [PASS] O13 P(val|a3,A) == 0.0 (parking) measured 0.0
+  [PASS] O14 pooled P(val|a0) ~ 0.5 (pooled trap) pooled 0.4987
+  [PASS] O15 pooled contrast a0 vs a1 ~ 0 |0.4987-0.5029|
+  [PASS] O16 decoy rate 0.9 then 0.1 (non-stationary) early 43/50 late 3/50
+  [PASS] O17 determinism (same seed, same bytes) 
+  [PASS] O18 different seeds differ 
+  [PASS] O19 observation has exactly {phase,feat,val} 
+  [PASS] O20 no 'reward'/'energy'/'alive' key 
+  [PASS] NV1 perturbed world FAILS the true-rate check measured 0.5042
+=== 0 failures ===

@@ -1,0 +1,385 @@
+{
+ "condition": "v4_believer",
+ "seed": 4,
+ "steps": 16000,
+ "env": "TerrariumV4",
+ "regime_flip_at": 3000,
+ "total_reward": 12530.0,
+ "deaths": 67,
+ "berries_eaten": 319,
+ "tree_fruits": 1066,
+ "keys_picked": 41,
+ "lever_presses": 6,
+ "treasures": 0,
+ "chimes_collected": 40,
+ "grasp_attempts": 4189,
+ "grasp_costs_paid": 0.0,
+ "torches_collected": 14,
+ "treasury_eaten": 0,
+ "scorch_paid": 215.6,
+ "scorch_steps": 0,
+ "grasps_near_torch": 1894,
+ "near_trap_steps": 3349,
+ "torch_goal_steps": 5081,
+ "goals_generated": 293,
+ "goals_achieved": 44,
+ "goals_by_kind": {
+  "explore": 3,
+  "key": 8,
+  "homeostasis": 18,
+  "tree": 8,
+  "ring": 8,
+  "altar": 8,
+  "torch": 9,
+  "treasure": 3,
+  "curiosity": 3,
+  "empowerment": 225
+ },
+ "causal_edges": [
+  [
+   "eat",
+   "ate",
+   0.283
+  ],
+  [
+   "grasp",
+   "tree_gather",
+   0.254
+  ],
+  [
+   "grasp",
+   "grasp",
+   1.0
+  ],
+  [
+   "left",
+   "door_gone",
+   0.116
+  ],
+  [
+   "grasp",
+   "torch_lit",
+   0.204
+  ],
+  [
+   "eat",
+   "torch_lit",
+   0.401
+  ],
+  [
+   "eat",
+   "tree_ate",
+   0.449
+  ],
+  [
+   "wait",
+   "offering",
+   0.053
+  ],
+  [
+   "grasp",
+   "bell_rang",
+   0.094
+  ],
+  [
+   "eat",
+   "bell_rang",
+   0.154
+  ],
+  [
+   "eat",
+   "energy_rose",
+   0.032
+  ],
+  [
+   "eat",
+   "patch_ate",
+   0.192
+  ]
+ ],
+ "assoc_edges": [
+  [
+   "grasp",
+   "grasp",
+   1.0
+  ],
+  [
+   "left",
+   "door_gone",
+   1.0
+  ],
+  [
+   "up",
+   "door_gone",
+   1.0
+  ],
+  [
+   "eat",
+   "ate",
+   0.839
+  ],
+  [
+   "eat",
+   "patch_ate",
+   0.621
+  ],
+  [
+   "grasp",
+   "tree_gather",
+   0.923
+  ],
+  [
+   "eat",
+   "tree_ate",
+   0.966
+  ],
+  [
+   "right",
+   "door_gone",
+   1.0
+  ]
+ ],
+ "assoc_edges_p002": [
+  [
+   "down",
+   "patch_berry",
+   0.033
+  ],
+  [
+   "right",
+   "bell_rang",
+   0.044
+  ],
+  [
+   "right",
+   "patch_berry",
+   0.039
+  ],
+  [
+   "up",
+   "patch_berry",
+   0.034
+  ],
+  [
+   "grasp",
+   "grasp",
+   1.0
+  ],
+  [
+   "grasp",
+   "bell_rang",
+   0.098
+  ],
+  [
+   "wait",
+   "patch_berry",
+   0.036
+  ],
+  [
+   "press",
+   "lever",
+   0.094
+  ],
+  [
+   "press",
+   "bell_rang",
+   0.081
+  ],
+  [
+   "press",
+   "torch_lit",
+   0.164
+  ],
+  [
+   "up",
+   "torch_lit",
+   0.181
+  ],
+  [
+   "up",
+   "bell_rang",
+   0.079
+  ],
+  [
+   "down",
+   "torch_lit",
+   0.11
+  ],
+  [
+   "down",
+   "bell_rang",
+   0.053
+  ],
+  [
+   "wait",
+   "bell_rang",
+   0.034
+  ],
+  [
+   "wait",
+   "torch_lit",
+   0.05
+  ],
+  [
+   "wait",
+   "energy_fell",
+   0.067
+  ],
+  [
+   "right",
+   "torch_lit",
+   0.096
+  ],
+  [
+   "eat",
+   "energy_fell",
+   0.025
+  ],
+  [
+   "left",
+   "torch_lit",
+   0.092
+  ],
+  [
+   "left",
+   "patch_berry",
+   0.035
+  ],
+  [
+   "left",
+   "bell_rang",
+   0.043
+  ],
+  [
+   "grasp",
+   "torch_lit",
+   0.233
+  ],
+  [
+   "left",
+   "door_gone",
+   1.0
+  ],
+  [
+   "up",
+   "door_gone",
+   1.0
+  ],
+  [
+   "eat",
+   "torch_lit",
+   0.451
+  ],
+  [
+   "eat",
+   "bell_rang",
+   0.172
+  ],
+  [
+   "eat",
+   "patch_berry",
+   0.059
+  ],
+  [
+   "wait",
+   "offering",
+   0.068
+  ],
+  [
+   "eat",
+   "ate",
+   0.839
+  ],
+  [
+   "eat",
+   "energy_rose",
+   0.069
+  ],
+  [
+   "eat",
+   "patch_ate",
+   0.621
+  ],
+  [
+   "down",
+   "died",
+   0.16
+  ],
+  [
+   "right",
+   "died",
+   0.083
+  ],
+  [
+   "up",
+   "died",
+   0.023
+  ],
+  [
+   "grasp",
+   "died",
+   0.039
+  ],
+  [
+   "press",
+   "died",
+   0.111
+  ],
+  [
+   "press",
+   "scorched",
+   0.111
+  ],
+  [
+   "press",
+   "key_appeared",
+   0.111
+  ],
+  [
+   "left",
+   "died",
+   0.096
+  ],
+  [
+   "eat",
+   "key",
+   0.067
+  ],
+  [
+   "grasp",
+   "tree_gather",
+   0.923
+  ],
+  [
+   "grasp",
+   "key",
+   0.026
+  ],
+  [
+   "eat",
+   "tree_ate",
+   0.966
+  ],
+  [
+   "grasp",
+   "tree_bare",
+   0.097
+  ],
+  [
+   "right",
+   "door_gone",
+   1.0
+  ]
+ ],
+ "identifier_version": "v2.1-pooled + v4 torch goals (ARMOUR OFF)",
+ "decoy_torch_in_causal": true,
+ "decoy_torch_in_assoc": true,
+ "decoy_bell_in_causal": true,
+ "true_in_causal": {
+  "press->lever": false,
+  "eat->ate": true,
+  "grasp->tree_gather": true,
+  "eat->treasury_ate": false
+ },
+ "harness_notes": []
+}

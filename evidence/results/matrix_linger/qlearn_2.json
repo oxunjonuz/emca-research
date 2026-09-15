@@ -1,0 +1,20 @@
+{
+ "condition": "qlearn",
+ "seed": 2,
+ "steps": 16000,
+ "env": "TerrariumLinger",
+ "total_reward": 138.0,
+ "deaths": 0,
+ "berries_eaten": 34,
+ "tree_fruits": 13,
+ "storm_duty": 0.236,
+ "ring_near_tree": 0.429,
+ "ring_far": 0.404,
+ "causal_edges": [],
+ "assoc_edges": [],
+ "identifier_version": null,
+ "decoy_in_causal": null,
+ "decoy_in_assoc": null,
+ "true_in_causal": {},
+ "harness_notes": []
+}

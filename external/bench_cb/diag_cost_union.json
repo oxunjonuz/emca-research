@@ -1,0 +1,8 @@
+{
+ "kind": "union",
+ "n_decisions": 39981,
+ "mean_rhs": 40.824855418823944,
+ "mean_rich": 0.9206213684359181,
+ "zero_clear_frac": 0.9999749881193567,
+ "mean_probes": 0.005
+}

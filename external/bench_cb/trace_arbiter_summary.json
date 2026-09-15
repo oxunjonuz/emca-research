@@ -1,0 +1,28 @@
+{
+ "mask_base0.5": {
+  "n": 13984,
+  "rich_mean": 0.648229033124474,
+  "rich_max": 0.7478260869565218,
+  "top_score_mean": 0.015877674485125857,
+  "top_score_max": 0.5,
+  "top_value_max": 100.0,
+  "rhs_old_mean": 29.929161324978956,
+  "rhs_new_mean": 16.964580662489478,
+  "frac_cleared_old": 0.022382723112128147,
+  "frac_would_clear_new": 0.0556350114416476,
+  "n_in_band": 0
+ },
+ "maskr_base0.8": {
+  "n": 19962,
+  "rich_mean": 0.9231918446032301,
+  "rich_max": 0.984,
+  "top_score_mean": 0.10491939184450456,
+  "top_score_max": 0.22,
+  "top_value_max": 44.0,
+  "rhs_old_mean": 40.9276737841292,
+  "rhs_new_mean": 22.4638368920646,
+  "frac_cleared_old": 0.00010019036168720569,
+  "frac_would_clear_new": 0.41624085762949603,
+  "n_in_band": 503
+ }
+}

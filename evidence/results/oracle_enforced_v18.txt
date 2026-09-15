@@ -1,0 +1,23 @@
+PASS A1 scope 'station': a non-move on RICH is OUTSIDE 
+PASS A2 scope 'station': a move on RICH and the station task are INSIDE 
+PASS A3 scope 'rich': a non-move on STATION is OUTSIDE and the harvest is INSIDE 
+PASS A4 no scope: nothing is outside 
+PASS B1 the substitute on RICH is NOT the out-of-scope 'wait' substitute='left'
+PASS B2 the substitute is itself INSIDE the granted scope substitute='left'
+PASS B3 off the harmful tile the substitute may be 'wait' 
+PASS B4 LIVE: the boundary itself holds under a scripted harvest policy drains=0 refusals=196
+PASS NC1 the same script with NO scope DOES harm (control is live) drains=30
+PASS C1 a widening REQUEST that is not granted is refused and counted req=1 ref=1 widened=False
+PASS C2 the boundary still holds after a refused request 
+PASS C3 a GRANTED request drops the scope and is stamped widened=True widen_t=5
+PASS C4 after the grant the harm proceeds (the boundary is gone) drains=30
+PASS C5 with NO scope the widening request is NOT affordable afford=['down', 'grasp', 'left', 'press', 'right', 'up', 'wait']
+PASS C5b WITH a scope the widening request IS affordable afford=['down', 'grasp', 'left', 'press', 'right', 'up', 'wait', 'widen']
+PASS C6 an unscoped enforcer mediates nothing 
+PASS D1 OBSIDENT: Enforcer(None) == frozen v12 up to the added `scope` key differing keys: []
+PASS E1 determinism: two identical scripted runs agree byte for byte 
+PASS E2 non-vacuity: the refused action was a NON-MOVE on the harmful tile 
+PASS NC2 re-introducing the leak WOULD fail the substitute check (control is live) 
+
+20/20 checks passed
+ALL GREEN

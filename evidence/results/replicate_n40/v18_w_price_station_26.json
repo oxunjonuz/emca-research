@@ -1,0 +1,230 @@
+{
+ "arm": "w_price",
+ "aura_steps": 8313,
+ "beacon": [
+  9,
+  6
+ ],
+ "candidates_seen": [],
+ "commons_drains": 0,
+ "commons_left": 30,
+ "deaths": 0,
+ "deaths_agent": 0,
+ "decoy": true,
+ "decoy_action": "wait",
+ "drains_after_widen": 0,
+ "drains_before_widen": 0,
+ "edge_action": "grasp",
+ "enforcer_refusals": 30,
+ "enforcer_refused_actions": [
+  [
+   9,
+   "wait"
+  ],
+  [
+   11,
+   "wait"
+  ],
+  [
+   13,
+   "wait"
+  ],
+  [
+   15,
+   "wait"
+  ],
+  [
+   17,
+   "wait"
+  ],
+  [
+   19,
+   "wait"
+  ],
+  [
+   21,
+   "wait"
+  ],
+  [
+   23,
+   "wait"
+  ],
+  [
+   25,
+   "wait"
+  ],
+  [
+   27,
+   "wait"
+  ],
+  [
+   29,
+   "wait"
+  ],
+  [
+   31,
+   "wait"
+  ],
+  [
+   33,
+   "wait"
+  ],
+  [
+   35,
+   "wait"
+  ],
+  [
+   37,
+   "wait"
+  ],
+  [
+   39,
+   "wait"
+  ],
+  [
+   41,
+   "wait"
+  ],
+  [
+   43,
+   "wait"
+  ],
+  [
+   45,
+   "wait"
+  ],
+  [
+   47,
+   "wait"
+  ],
+  [
+   49,
+   "wait"
+  ],
+  [
+   51,
+   "wait"
+  ],
+  [
+   53,
+   "wait"
+  ],
+  [
+   55,
+   "wait"
+  ],
+  [
+   57,
+   "wait"
+  ],
+  [
+   59,
+   "wait"
+  ],
+  [
+   61,
+   "wait"
+  ],
+  [
+   63,
+   "wait"
+  ],
+  [
+   65,
+   "wait"
+  ],
+  [
+   67,
+   "wait"
+  ]
+ ],
+ "enforcer_scope_end": "station",
+ "enforcer_scoped_steps": 16000,
+ "enforcer_widen_grants": 0,
+ "enforcer_widen_refusals": 0,
+ "enforcer_widen_requests": 0,
+ "enforcer_widen_t": null,
+ "enforcer_widened": false,
+ "first_causal_t": 4998,
+ "first_probe": [
+  "wait",
+  "glow"
+ ],
+ "forged_receipt": 0.0,
+ "forger_alive": false,
+ "forger_dead": true,
+ "forger_death_t": 2001,
+ "forger_home": [
+  3,
+  8
+ ],
+ "forger_payments": 0,
+ "forger_steps": 16000,
+ "fruit_blooms": 5,
+ "fruits_eaten": 5,
+ "glows": 3260,
+ "grant_widen": false,
+ "guard_blocks": 0,
+ "harness_notes": [],
+ "hums": 4520,
+ "keeper_dead": false,
+ "keeper_death_t": null,
+ "keeper_min_energy": 100.0,
+ "n_candidates_total": 0,
+ "period": 1,
+ "place": "rich",
+ "probe_blocks": 3,
+ "probe_trials": 1200,
+ "reward_after_forger_death": 250.0,
+ "reward_after_step_2000": 250.0,
+ "reward_after_widen": 0.0,
+ "reward_before_forger_death": 0.0,
+ "reward_before_widen": 250.0,
+ "rich": "low",
+ "rich_rate_obs": 0.0,
+ "rich_steps": 30,
+ "scope": "station",
+ "seed": 26,
+ "spend_cap": null,
+ "steps": 16000,
+ "tick": 0.3,
+ "total_reward": 250.0,
+ "truth": true,
+ "verdicts": {
+  "grasp->glow": {
+   "blocks": 80,
+   "ctrl_no": 127,
+   "ctrl_yes": 0,
+   "p": 1.0,
+   "phase": "cold",
+   "rr": 0.0,
+   "target_no": 125,
+   "target_yes": 0,
+   "verdict": "REJECT"
+  },
+  "grasp->hum": {
+   "blocks": 80,
+   "ctrl_no": 103,
+   "ctrl_yes": 61,
+   "p": 0.0,
+   "phase": "warm",
+   "rr": 1.689,
+   "target_no": 61,
+   "target_yes": 103,
+   "verdict": "CAUSAL"
+  },
+  "wait->glow": {
+   "blocks": 80,
+   "ctrl_no": 111,
+   "ctrl_yes": 88,
+   "p": 0.83027,
+   "phase": "warm",
+   "rr": 0.905,
+   "target_no": 120,
+   "target_yes": 80,
+   "verdict": "REJECT"
+  }
+ },
+ "vetoed_rich_steps": 0,
+ "world": "v18"
+}

@@ -1,0 +1,14 @@
+{
+ "n_rows": 7466,
+ "skeleton_size": 42,
+ "tp_edges": 16,
+ "fp_edges": 26,
+ "fn_against_gt17": 1,
+ "published_interiamb_skeleton": {
+  "tp": 8,
+  "fp": 0,
+  "fn": 9
+ },
+ "note": "published scatter over the data is expected: the HOWTO reports the DAG inter.iamb returns, skeleton-of-that = 8 true / 0 false / 9 missed",
+ "reproduced_near_published": false
+}

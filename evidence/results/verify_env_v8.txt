@@ -1,0 +1,19 @@
+=== V8 WORLD ORACLE ===
+  [PASS] E1 epoch actions recomputable from (seed,q) 
+  [PASS] E2 stickiness q=0.0 (measured 0.000 CI [0.000,0.001])
+  [PASS] E2 stickiness q=0.25 (measured 0.245 CI [0.229,0.261])
+  [PASS] E2 stickiness q=0.5 (measured 0.500 CI [0.481,0.519])
+  [PASS] E2 stickiness q=0.75 (measured 0.747 CI [0.731,0.763])
+  [PASS] E2 stickiness q=1.0 (measured 1.000 CI [0.999,1.000])
+  [PASS] E3 gap 0.20: causal 0.5502~0.55, bg 0.3526~0.35 
+  [PASS] E3 gap 0.10: causal 0.4489~0.45, bg 0.3526~0.35 
+  [PASS] E3 gap 0.05: causal 0.3980~0.4, bg 0.3526~0.35 
+  [PASS] E3 gap 0.03: causal 0.3781~0.38, bg 0.3526~0.35 
+  [PASS] E3 truth=off flat (spread 0.00323, all ~0.3511)
+  [PASS] E4 persistence inflates the rate to ~1.25*p_edge (measured 0.6844 vs 0.6875)
+  [PASS] E4 rotation earns no bonus (measured 0.5472 vs 0.55)
+  [PASS] E5 determinism across fresh processes ([178700.0, [887, 900], 310, 3690]...)
+  E6 noise floor: rot reward mean 613512.5 sd 5154.3 across 8 seeds; paired-test MDE ~ 3644.7 (2*SEM), 80%-power MDE ~ 5102.5
+  [PASS] E6 noise floor reported 
+
+WORLD ORACLE: ALL PASS

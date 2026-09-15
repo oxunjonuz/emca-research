@@ -1,0 +1,19 @@
+=== v15 factcheck ===
+  [PASS] F ig_ctx base a0 ~ 0.25 measured 0.2504
+  [PASS] F ig_relevant base a0 ~ 0.998 measured 0.9979
+  [PASS] F rand base a0 ~ 0.25 measured 0.2495
+  [PASS] F naive_info tv a3 ~ 0.3 measured 0.2996
+  [PASS] F naive_info base a3 ~ 0.0 measured 0.0003
+  [PASS] F ig_ctx base err ~ 0.036 measured 0.0364
+  [PASS] F ig_pooled base err ~ 0.8 measured 0.8000
+  [PASS] F confirm base a0 ~ 0.5 measured 0.5000
+  [PASS] F report states there is no reward 
+  [PASS] F report contains 0.250 (ig_ctx base a0)
+  [PASS] F report contains 0.998 (ig_relevant base a0)
+  [PASS] F report contains 0.250 (rand base a0)
+  [PASS] F report contains 0.300 (naive_info tv a3)
+  [PASS] F report contains 0.000 (naive_info base a3)
+  [PASS] F report contains 0.036 (ig_ctx base err)
+  [PASS] F report contains 0.800 (ig_pooled base err)
+  [PASS] F report contains 0.500 (confirm base a0)
+=== 0 failures ===

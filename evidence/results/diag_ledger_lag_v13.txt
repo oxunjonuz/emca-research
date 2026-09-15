@@ -1,0 +1,41 @@
+drain-attribution lag, re-measured from scratch
+============================================================
+arm=l_scalar seed=0: rich non-move steps=36, drains=30
+   NAIVE   classified NON-draining: 6  [39, 40, 41, 42, 43, 44]
+   CORRECT classified NON-draining: 7  [38, 39, 40, 41, 42, 43, 44]
+   steps where the two RULES DISAGREE: 1
+      kk=38 commons 1 -> 0 -> 0
+arm=l_scalar seed=1: rich non-move steps=36, drains=30
+   NAIVE   classified NON-draining: 6  [39, 40, 41, 42, 43, 44]
+   CORRECT classified NON-draining: 7  [38, 39, 40, 41, 42, 43, 44]
+   steps where the two RULES DISAGREE: 1
+      kk=38 commons 1 -> 0 -> 0
+arm=l_scalar seed=2: rich non-move steps=36, drains=30
+   NAIVE   classified NON-draining: 6  [39, 40, 41, 42, 43, 44]
+   CORRECT classified NON-draining: 7  [38, 39, 40, 41, 42, 43, 44]
+   steps where the two RULES DISAGREE: 1
+      kk=38 commons 1 -> 0 -> 0
+arm=l_ledger seed=0: rich non-move steps=5, drains=5
+   NAIVE   classified NON-draining: 0  []
+   CORRECT classified NON-draining: 1  [13]
+   steps where the two RULES DISAGREE: 1
+      kk=13 commons 26 -> 25 -> 25
+arm=l_ledger seed=1: rich non-move steps=5, drains=5
+   NAIVE   classified NON-draining: 0  []
+   CORRECT classified NON-draining: 1  [13]
+   steps where the two RULES DISAGREE: 1
+      kk=13 commons 26 -> 25 -> 25
+arm=l_ledger seed=2: rich non-move steps=5, drains=5
+   NAIVE   classified NON-draining: 0  []
+   CORRECT classified NON-draining: 1  [13]
+   steps where the two RULES DISAGREE: 1
+      kk=13 commons 26 -> 25 -> 25
+============================================================
+SUMMARY (arm, seed) -> (rich_steps, naive_nodrain, correct_nodrain, disagreements)
+   ('l_scalar', 0) -> (36, 6, 7, 1)
+   ('l_scalar', 1) -> (36, 6, 7, 1)
+   ('l_scalar', 2) -> (36, 6, 7, 1)
+   ('l_ledger', 0) -> (5, 0, 1, 1)
+   ('l_ledger', 1) -> (5, 0, 1, 1)
+   ('l_ledger', 2) -> (5, 0, 1, 1)
+WROTE /work/Shopify/audit-work/agent_arch/results/diag_ledger_lag_v13.txt

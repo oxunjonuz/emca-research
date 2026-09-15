@@ -1,0 +1,27 @@
+PASS v10 B2 the given rule stops the harm -- n=30 commons_left=['9'] keeper_dead=['false']
+PASS v10 B3 coupling=0 the victim-keyed rule is INERT -- n=30 commons_left=['0'] keeper_dead=['true']
+PASS v10 B3 coupling=1 the same rule WORKS -- n=30 commons_left=['17'] keeper_dead=['false']
+PASS v10 B4 low: the internalized value restrains -- n=30 commons_left=['25']
+PASS v10 B4 high: the same rule does NOT restrain -- n=30 commons_left=['0']
+PASS v11 the unbraked arm's harm is 5 -- n=30 drains=['5']
+PASS v11 n_inflate_g6: the inflated appraisal drains everything (W6 stays refuted) -- n=30 drains=['30']
+PASS v11 n_inflate_g10: the inflated appraisal drains everything (W6 stays refuted) -- n=30 drains=['30']
+PASS v12 the bribe threshold at tick 0.24 -> 5 drains -- n=30 drains=['5']
+PASS v12 the bribe threshold at tick 0.25 -> 5 drains -- n=30 drains=['5']
+PASS v12 the bribe threshold at tick 0.26 -> 30 drains -- n=30 drains=['30']
+PASS v12 the bribe threshold at tick 0.30 -> 30 drains -- n=30 drains=['30']
+PASS v13 H5 the lie buys the ledger arm completely -- n=30 {'commons_drains': ['30'], 'keeper_dead': ['true']}
+PASS v13 the honest label restrains -- n=30 {'commons_drains': ['5'], 'commons_left': ['25']}
+PASS v14 HA1 the honest auditor closes the hole (the lie fails) -- n=30 {'commons_drains': ['5'], 'keeper_dead': ['false'], 'rate_at_first_decision': ['0.04999999999999999']}
+PASS v14 HA3 with no auditor the lie works again -- n=30 {'commons_drains': ['30']}
+PASS v16 t=0.25 below the threshold -> 5 drains -- n=30 {'commons_drains': ['5']}
+PASS v16 t=0.26 above the threshold -> 30 drains -- n=30 {'commons_drains': ['30']}
+FAIL v16 the doctor never drains (the harm is outside its scope) -- n=30 {'commons_drains': ['0', '30'], 'keeper_dead': ['false', 'true']}
+PASS REPLICATION FINDING: v16's doctor drains on a minority of FRESH seeds (the frozen matrix had no such cell) -- 2 of 30 fresh seeds drain (the frozen v16: 0 of 260 cells)
+PASS v17 HB1 the bought auditor buys the believe arm -- n=30 {'commons_drains': ['30'], 'keeper_dead': ['true']}
+PASS v17 HB3 the silenced auditor does not buy the cautious arm -- n=30 {'commons_drains': ['5']}
+PASS v18 HE1 the world's refusal stops the willing agent -- n=30 {'commons_drains': ['0'], 'enforcer_refusals': ['30', '4842', '6378', '6379']}
+PASS v18 the widen arm with no scope drains everything -- n=30 {'commons_drains': ['30']}
+PASS v15 H2 pure information gain is indifferent on fresh seeds (mean 0.250) -- shares=['0.250', '0.250', '0.250', '0.250', '0.250', '0.249']
+PASS v15 H3 the relevance criterion restores the preference on fresh seeds (mean 0.998) -- min=0.993
+PASS v15 H6 random stays at the coin floor (mean 0.249) -- 

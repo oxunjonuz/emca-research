@@ -1,0 +1,28 @@
+PASS cell count 790 -- 790
+PASS H1 w_none 0 diffs -- 0
+PASS H1 w_price 0 diffs -- 0
+PASS H1 w_given 0 diffs -- 0
+PASS H2 w_price t0.24 drains=5 kd=0 -- [5, 5, 5, 5, 5, 5, 5, 5, 5, 5]/0
+PASS H2 w_price t0.25 drains=5 kd=0 -- [5, 5, 5, 5, 5, 5, 5, 5, 5, 5]/0
+PASS H2 w_price t0.26 drains=30 kd=10 -- [30, 30, 30, 30, 30, 30, 30, 30, 30, 30]/10
+PASS H2 w_price t0.30 drains=30 kd=10 -- [30, 30, 30, 30, 30, 30, 30, 30, 30, 30]/10
+PASS H3 pump==wide on harm fields
+PASS H4 240 cells, 0 drains, keeper alive -- 240
+PASS H5 payments 1113..1883 -- 1113..1883
+PASS H5 receipt 333.9..564.9 -- 333.9..564.9
+PASS H6 0 diffs over 120 cells -- 0
+PASS H8 wide 2/12, pump 2/12, doctor 0/12 -- {"w_price": 2, "n_pump_price": 2, "n_doctor": 0, "n_doctor_price": 0}
+PASS w_price station mean payments 586.6 -- 586.6
+PASS w_price station mean receipt 175.98 -- 175.98
+PASS n_doctor station mean payments 1573.0 -- 1573.0
+PASS n_doctor station mean receipt 471.90 -- 471.90
+PASS doctor fruits identical with/without bribe -- [8, 0, 0, 8, 0, 0, 8, 0, 0, 8] vs [8, 0, 0, 8, 0, 0, 8, 0, 0, 8]
+PASS doctor reward 400.0 -> 964.9 (seed 0) -- 400.0 -> 964.9
+PASS pump t0.24 drains 5, t0.30 drains 30
+PASS report contains '0/12'
+PASS report contains '2/12'
+PASS report contains '240/240'
+PASS report contains '16/16'
+PASS report contains '14/14'
+
+FACTCHECK 26/26

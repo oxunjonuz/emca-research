@@ -1,0 +1,24 @@
+IV: 80/80 runs loaded, steps-audit clean
+IV V1: rejector lotus>=1 in 10/10 (gate >=8) -> PASS; assoc(0.5) lotuses 3 in 2 seeds (gate <=2) -> FAIL
+IV V1 detail: rejector per-seed [5, 6, 7, 7, 5, 7, 6, 6, 5, 8]
+IV V1 detail: assoc(0.5) per-seed [0, 2, 0, 0, 0, 0, 0, 1, 0, 0]
+IV V2: D mean -1008 sd 2884 CI [-2671,+737] sign 3+/7- p=1.000 -> FAIL
+IV V3: D2 mean -1314 (no gate; lotus channel vs fruit channel)
+IV V4: spring rejector 10/10 (>=8), assoc(0.5) 2/10 (==0), assoc02 10/10 (>=8); decoy believer 9/10 (>=8), rejector 0/10 (==0); true edges rejector 10/10 (>=8)
+IV V4 -> FAIL
+IV V5: waits_in_aura rejector 540 vs assoc(0.5) 345 vs assoc02 372 vs believer 539
+
+IV decomposition D(rej - assoc02), totals over 10 seeds:
+  fruits*8     rej     81416  a02     92848  D    -11432
+  berries*1    rej      3106  a02      2060  D     +1046
+  lotus*8      rej       496  a02       400  D       +96
+  treasury*1   rej         3  a02         5  D        -2
+  deaths*-5    rej     -3420  a02     -3490  D       +70
+  scorch*-1    rej     -2754  a02     -2246  D      -508
+  TOTAL        rej     81509  a02     91590  D    -10082
+IV corr(D, fruit_gap*8) = 0.999 (turn-104 weather noise analogue)
+IV baseline random: reward -329 deaths 99.7 lotus 0
+IV baseline qlearn: reward -173 deaths 98.7 lotus 1
+IV baseline ngram: reward -138 deaths 101.5 lotus 0
+
+IV: all numbers recomputed from disk, fresh code.

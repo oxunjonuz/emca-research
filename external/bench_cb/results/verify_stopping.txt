@@ -1,0 +1,21 @@
+=== independent verification of the stopping-rule result ===
+dir: /work/Shopify/audit-work/agent_arch/bench_cb/results_stopping_hi   nsim claimed: 2000
+
+cells on disk: 85
+
+PASS V1 every cell's mean and sem recomputed from its own raw rows  0 mismatches
+PASS V2 the generated v3 agent with the OLD rule reproduces the FROZEN v2 producer cell-for-cell (25 cells)  differ: []
+PASS V3 info >= 0 on an independent implementation  min -7.994e-14
+PASS V3 risk >= 0  min 0.000e+00
+PASS V3 identity probe_value - exploit == info - risk  max 3.375e-14
+PASS V3 T2's accept set over the alternative's rate is an INTERVAL  [0.002, 0.852]
+PASS V4 voi beats the frozen rule on the published instance, recomputed from raw rows at every m  4/4 m-values
+PASS V4 voi probe count is BELOW the frozen rule's on pub m=16 (it stops earlier)
+PASS V5 voi's probe count falls as the world gets richer (Spearman < 0)  rho = -0.976
+PASS V5 and it falls to ESSENTIALLY zero above base 0.85 (mean probes <= 0.05 -- a derived near-silence, not exact zero)  [0.0045, 0.004, 0.002]
+PASS V0 NEGATIVE CONTROL: a corrupted mean is detected by the same recomputation V1 uses
+PASS V6 a fresh voi cell is bit-identical across three processes / seeds
+PASS V7 the frozen producers carry the hashes recorded on turn 132  {'candidate_gen.py': 'fa9721ae816c3c42', 'arbitration.py': '2d3d825bcfc83cc8', 'union_agent_v2.py': '76bfe972bde4963c'}
+
+0 failure(s)
+ALL PASS

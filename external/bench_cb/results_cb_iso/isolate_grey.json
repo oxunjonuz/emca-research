@@ -1,0 +1,3626 @@
+{
+ "what": "isolate_grey",
+ "nsim": 300,
+ "cells": {
+  "none": {
+   "n": 300,
+   "mean_regret": 0.22700000000000006,
+   "sem_regret": 0.0006987805910164304,
+   "frac_optimal": 0.0,
+   "mean_probes": 0.48333333333333334,
+   "mean_opt_trials": 0.0,
+   "rows": [
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 4,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.30000000000000004,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 1,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 1,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 1,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.30000000000000004,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 2,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.30000000000000004,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 5,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 2,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 4,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 7,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 2,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 2,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 1,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 1,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 3,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 10,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.30000000000000004,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 10,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 1,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 4,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 6,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 2,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.30000000000000004,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.30000000000000004,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 2,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 5,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 6,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 2,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 7,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 4,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 8,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 2,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 8,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 5,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 1,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.30000000000000004,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 4,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 8,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 4,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 3,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 1,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 6,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.30000000000000004,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 0,
+     "opt_trials": 0,
+     "chosen_is_optimal": 0
+    }
+   ]
+  },
+  "inject_true": {
+   "n": 300,
+   "mean_regret": 0.0007499999999999999,
+   "sem_regret": 0.00075,
+   "frac_optimal": 0.9966666666666667,
+   "mean_probes": 10.0,
+   "mean_opt_trials": 200.0,
+   "rows": [
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.22499999999999998,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 0
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    },
+    {
+     "regret": 0.0,
+     "probes": 10,
+     "opt_trials": 200,
+     "chosen_is_optimal": 1
+    }
+   ]
+  }
+ }
+}

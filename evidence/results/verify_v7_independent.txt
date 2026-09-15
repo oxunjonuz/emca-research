@@ -1,0 +1,22 @@
+runs loaded: 110
+  [PASS] all runs 16000 steps 
+  [PASS] no unaffordable actions in the epistemic arms (random-baseline substitutions: 29549)
+  [PASS] C2 on nomination >= 8 (9/10)
+  [PASS] C2 off nomination <= 2 (0/10)
+  [PASS] C2 nomination follows randomised edge (>=2 distinct actions) (['grasp', 'press', 'wait'])
+  [FAIL] C3 zero false positives (all arms, all regimes) (fp=6)
+     distinct FP events: 1 [(8, 'wait->glow')] | verdicts issued: 149
+     nominal per-test rate at n=200/arm (Monte-Carlo, 40000 draws): 0.0051 -> E[FP] = 149 x 0.0051 = 0.76; P(>=1 FP) = 0.53
+     => ONE FP event is the EXPECTED outcome of a calibrated test at this test count; see calib_v7_fprate.py
+  [PASS] C3 false negatives <= 2 (1/10)
+  [PASS] C3 no injected edge outside the oracle arm ([])
+  [PASS] C1-i full probes in >=8 conflict seeds (9/10)
+  [PASS] C1-i beta0 never probes in conflict (beta0 probes=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
+  [PASS] C1-ii perm first probe follows ranking (18/18)
+  [PASS] C1-iii probes(high) < probes(low) and > 0 (high 880 < low 1080)
+  note: perm vs full first-probe differs in 2/10 seeds (permutation is observable in the decision)
+  [PASS] economy: oracle eats >= full eats 
+  [PASS] economy: forager never probes 
+  [PASS] economy: random never probes 
+
+INDEPENDENT VERIFY: FAIL ['C3 zero false positives (all arms, all regimes)']

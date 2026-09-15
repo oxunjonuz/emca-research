@@ -1,0 +1,26 @@
+PASS A1 outside_scope is v18's predicate (imported, not re-defined) 
+PASS A2 HONEST identity: v20(honest) and v18 agree on drains and refusals v18 drains=0 ref=196 | v20 drains=0 ref=196
+PASS A3 OBSIDENT: v20(no scope) == v18(no scope) observation key for key differing keys: []
+PASS B1 HONEST never flips, whatever the bribe 
+PASS B2 OPEN below the price does not flip 
+PASS B3 OPEN: the rule is PER-OFFER, so two offers of 0.05 do NOT sum to the price (the world is right; my first check expected a sum) 
+PASS B3b OPEN at the price flips 
+PASS B4 DARK at/above the price flips and DROPS the scope 
+PASS B5 the flip is exactly `bribe >= price` over the whole 4x4 grid 0 cells off
+PASS C1 OPEN bought: the harm proceeds (the boundary stopped refusing) drains=30 refusals=0
+PASS C2 OPEN bought: the boundary STILL CLAIMS the scope on every step claimed=['station']
+PASS C3 HONEST: 0 drains, refusals > 0, and the SAME claimed scope drains=0 ref=196 claimed=['station']
+PASS C4 INVISIBILITY (HV4): the claimed scope is IDENTICAL bought vs honest bought=['station'] honest=['station']
+PASS C5 DARK bought: the harm proceeds drains=30
+PASS C6 DARK bought: the boundary ANNOUNCES it is gone (task None) claimed=['None']
+PASS C7 CONTRAST: open hides the failure, dark announces it 
+PASS D1 HONEST: the widen request is refused and the boundary holds req=1 ref=1 widened=False drains=0
+PASS D2 BOUGHT (open): the widen request is GRANTED though grant_widen=False widened=True grants=1
+PASS D3 BOUGHT (open): after the grant the harm proceeds drains=30
+PASS E1 determinism: two identical scripted runs agree byte for byte 
+PASS E2 non-vacuity: the bribe was received and the flip recorded 
+PASS NC1 below the price the OPEN enforcer still refuses (control is live) 
+PASS NC2 a leak of the failure into the claimed scope WOULD fail C2 (control is live) 
+
+23/23 checks passed
+ALL GREEN

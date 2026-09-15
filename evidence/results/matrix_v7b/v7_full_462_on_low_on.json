@@ -1,0 +1,150 @@
+{
+ "arm": "v7_full",
+ "seed": 462,
+ "steps": 16000,
+ "truth": true,
+ "rich": "low",
+ "decoy": true,
+ "edge_action": "wait",
+ "decoy_action": "press",
+ "total_reward": 302.95,
+ "deaths": 0,
+ "fruits_eaten": 6,
+ "fruit_blooms": 7,
+ "hums": 7400,
+ "glows": 3285,
+ "aura_steps": 12962,
+ "rich_steps": 59,
+ "probe_trials": 1200,
+ "probe_blocks": 3,
+ "candidates_seen": [
+  [
+   "wait",
+   "hum",
+   0.2517,
+   11383
+  ],
+  [
+   "press",
+   "glow",
+   0.2187,
+   540
+  ],
+  [
+   "grasp",
+   "glow",
+   0.1268,
+   740
+  ]
+ ],
+ "n_candidates_total": 3,
+ "verdicts": {
+  "wait->hum": {
+   "verdict": "CAUSAL",
+   "p": 1e-05,
+   "rr": 1.673,
+   "target_yes": 111,
+   "target_no": 89,
+   "ctrl_yes": 66,
+   "ctrl_no": 133,
+   "blocks": 80,
+   "phase": "cold"
+  },
+  "press->glow": {
+   "verdict": "REJECT",
+   "p": 0.98003,
+   "rr": 0.823,
+   "target_yes": 91,
+   "target_no": 109,
+   "ctrl_yes": 110,
+   "ctrl_no": 89,
+   "blocks": 80,
+   "phase": "warm"
+  },
+  "grasp->glow": {
+   "verdict": "REJECT",
+   "p": 0.55916,
+   "rr": 0.995,
+   "target_yes": 97,
+   "target_no": 103,
+   "ctrl_yes": 97,
+   "ctrl_no": 102,
+   "blocks": 80,
+   "phase": "warm"
+  }
+ },
+ "rich_rate_obs": 0.05,
+ "harness_notes": [],
+ "first_probe": [
+  "wait",
+  "hum"
+ ],
+ "ranked_at_first_probe": [
+  [
+   "wait",
+   "hum",
+   0.2377,
+   139
+  ]
+ ],
+ "probe_order_log": [
+  [
+   "wait",
+   "hum",
+   [
+    [
+     "wait",
+     "hum",
+     0.2377,
+     139
+    ]
+   ]
+  ],
+  [
+   "press",
+   "glow",
+   [
+    [
+     "press",
+     "glow",
+     0.23,
+     140
+    ],
+    [
+     "wait",
+     "hum",
+     0.2197,
+     339
+    ]
+   ]
+  ],
+  [
+   "grasp",
+   "glow",
+   [
+    [
+     "wait",
+     "hum",
+     0.2549,
+     907
+    ],
+    [
+     "press",
+     "glow",
+     0.2233,
+     340
+    ],
+    [
+     "grasp",
+     "glow",
+     0.0939,
+     540
+    ]
+   ]
+  ]
+ ],
+ "first_causal_t": 3402,
+ "deaths_agent": 0,
+ "battery": "BA",
+ "held_out": true
+}

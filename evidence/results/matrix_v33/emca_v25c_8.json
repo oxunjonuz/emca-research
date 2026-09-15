@@ -1,0 +1,353 @@
+{
+ "condition": "emca_v25c",
+ "seed": 8,
+ "steps": 16000,
+ "env": "TerrariumV33",
+ "regime_flip_at": 3000,
+ "reset_at": null,
+ "total_reward": 12189.0,
+ "deaths": 53,
+ "berries_eaten": 808,
+ "tree_fruits": 1192,
+ "keys_picked": 27,
+ "lever_presses": 65,
+ "treasures": 0,
+ "storm_duty": 0.0,
+ "chimes_collected": 92,
+ "grasp_attempts": 1587,
+ "grasp_at_bell": 858,
+ "grasp_costs_paid": 293.4,
+ "grasp_at_bell_no_tree": 30,
+ "patch_sprouts_seen": 827,
+ "patch_ate": 704,
+ "altar_visits": 0,
+ "waits_at_altar": 106,
+ "offerings_paid": 106,
+ "far_zone_steps": 11326,
+ "tree_bare_events": 128,
+ "novelty_transitions": null,
+ "goals_generated": 232,
+ "goals_achieved": 64,
+ "goals_by_kind": {
+  "explore": 3,
+  "key": 10,
+  "tree": 10,
+  "ring": 10,
+  "altar": 10,
+  "treasure": 3,
+  "curiosity": 12,
+  "empowerment": 126,
+  "homeostasis": 48
+ },
+ "causal_edges": [
+  [
+   "press",
+   "lever",
+   0.185
+  ],
+  [
+   "eat",
+   "patch_berry",
+   0.097
+  ],
+  [
+   "eat",
+   "patch_ate",
+   0.515
+  ],
+  [
+   "wait",
+   "offering",
+   0.24
+  ],
+  [
+   "eat",
+   "tree_ate",
+   0.189
+  ],
+  [
+   "grasp",
+   "tree_bare",
+   0.081
+  ],
+  [
+   "grasp",
+   "grasp",
+   1.0
+  ],
+  [
+   "eat",
+   "energy_rose",
+   0.044
+  ],
+  [
+   "eat",
+   "ate",
+   0.591
+  ],
+  [
+   "grasp",
+   "tree_gather",
+   0.751
+  ]
+ ],
+ "assoc_edges": [
+  [
+   "press",
+   "lever",
+   0.802
+  ],
+  [
+   "grasp",
+   "grasp",
+   1.0
+  ],
+  [
+   "eat",
+   "ate",
+   0.884
+  ],
+  [
+   "eat",
+   "patch_ate",
+   0.859
+  ],
+  [
+   "grasp",
+   "tree_gather",
+   0.893
+  ],
+  [
+   "eat",
+   "tree_ate",
+   0.902
+  ]
+ ],
+ "assoc_edges_p002": [
+  [
+   "down",
+   "patch_berry",
+   0.044
+  ],
+  [
+   "down",
+   "bell_rang",
+   0.064
+  ],
+  [
+   "left",
+   "bell_rang",
+   0.049
+  ],
+  [
+   "left",
+   "patch_berry",
+   0.108
+  ],
+  [
+   "up",
+   "patch_berry",
+   0.046
+  ],
+  [
+   "up",
+   "bell_rang",
+   0.112
+  ],
+  [
+   "press",
+   "lever",
+   0.802
+  ],
+  [
+   "press",
+   "key_appeared",
+   0.031
+  ],
+  [
+   "press",
+   "patch_berry",
+   0.068
+  ],
+  [
+   "press",
+   "bell_rang",
+   0.108
+  ],
+  [
+   "right",
+   "patch_berry",
+   0.06
+  ],
+  [
+   "right",
+   "bell_rang",
+   0.056
+  ],
+  [
+   "grasp",
+   "grasp",
+   1.0
+  ],
+  [
+   "grasp",
+   "bell_rang",
+   0.269
+  ],
+  [
+   "grasp",
+   "energy_fell",
+   0.023
+  ],
+  [
+   "wait",
+   "bell_rang",
+   0.076
+  ],
+  [
+   "wait",
+   "patch_berry",
+   0.091
+  ],
+  [
+   "wait",
+   "offering",
+   0.348
+  ],
+  [
+   "eat",
+   "bell_rang",
+   0.1
+  ],
+  [
+   "eat",
+   "patch_berry",
+   0.122
+  ],
+  [
+   "eat",
+   "ate",
+   0.884
+  ],
+  [
+   "eat",
+   "key",
+   0.026
+  ],
+  [
+   "eat",
+   "patch_ate",
+   0.859
+  ],
+  [
+   "eat",
+   "energy_rose",
+   0.072
+  ],
+  [
+   "press",
+   "chime",
+   0.111
+  ],
+  [
+   "right",
+   "died",
+   0.186
+  ],
+  [
+   "left",
+   "died",
+   0.143
+  ],
+  [
+   "down",
+   "died",
+   0.083
+  ],
+  [
+   "press",
+   "died",
+   0.214
+  ],
+  [
+   "up",
+   "died",
+   0.105
+  ],
+  [
+   "grasp",
+   "tree_gather",
+   0.893
+  ],
+  [
+   "eat",
+   "tree_ate",
+   0.902
+  ],
+  [
+   "grasp",
+   "tree_bare",
+   0.21
+  ],
+  [
+   "press",
+   "energy_fell",
+   0.062
+  ],
+  [
+   "grasp",
+   "died",
+   0.2
+  ]
+ ],
+ "identifier_version": "v2.5c-stratified-RR-doorgonefix + v3.3 scarcity goals",
+ "decoy_in_causal": false,
+ "decoy_in_assoc": true,
+ "altar_edge_in_causal": false,
+ "true_in_causal": {
+  "press->lever": true,
+  "eat->ate": true,
+  "grasp->tree_gather": true
+ },
+ "probe_verdicts": null,
+ "probe_trials": null,
+ "harness_notes": [],
+ "self_model": {
+  "explore": [
+   0,
+   3
+  ],
+  "key": [
+   10,
+   10
+  ],
+  "tree": [
+   10,
+   10
+  ],
+  "ring": [
+   10,
+   10
+  ],
+  "altar": [
+   10,
+   10
+  ],
+  "treasure": [
+   0,
+   3
+  ],
+  "curiosity": [
+   10,
+   12
+  ],
+  "empowerment": [
+   8,
+   126
+  ],
+  "homeostasis": [
+   6,
+   48
+  ]
+ }
+}

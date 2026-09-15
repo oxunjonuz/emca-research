@@ -1,0 +1,383 @@
+{
+ "condition": "emca_v25c",
+ "seed": 11,
+ "steps": 16000,
+ "env": "TerrariumV33",
+ "regime_flip_at": 3000,
+ "reset_at": null,
+ "total_reward": 15254.5,
+ "deaths": 50,
+ "berries_eaten": 709,
+ "tree_fruits": 1538,
+ "keys_picked": 47,
+ "lever_presses": 8,
+ "treasures": 0,
+ "storm_duty": 0.215,
+ "chimes_collected": 71,
+ "grasp_attempts": 1984,
+ "grasp_at_bell": 810,
+ "grasp_costs_paid": 310.8,
+ "grasp_at_bell_no_tree": 32,
+ "patch_sprouts_seen": 745,
+ "patch_ate": 621,
+ "altar_visits": 0,
+ "waits_at_altar": 95,
+ "offerings_paid": 95,
+ "far_zone_steps": 11167,
+ "tree_bare_events": 192,
+ "novelty_transitions": null,
+ "goals_generated": 229,
+ "goals_achieved": 56,
+ "goals_by_kind": {
+  "explore": 3,
+  "key": 10,
+  "tree": 10,
+  "ring": 10,
+  "altar": 9,
+  "treasure": 3,
+  "curiosity": 3,
+  "homeostasis": 45,
+  "empowerment": 136
+ },
+ "causal_edges": [
+  [
+   "eat",
+   "patch_ate",
+   0.474
+  ],
+  [
+   "grasp",
+   "tree_gather",
+   0.775
+  ],
+  [
+   "eat",
+   "ate",
+   0.541
+  ],
+  [
+   "eat",
+   "tree_ate",
+   0.234
+  ],
+  [
+   "grasp",
+   "tree_bare",
+   0.097
+  ],
+  [
+   "press",
+   "lever",
+   0.026
+  ],
+  [
+   "eat",
+   "patch_berry",
+   0.081
+  ],
+  [
+   "eat",
+   "energy_rose",
+   0.041
+  ],
+  [
+   "wait",
+   "offering",
+   0.244
+  ],
+  [
+   "grasp",
+   "grasp",
+   1.0
+  ]
+ ],
+ "assoc_edges": [
+  [
+   "grasp",
+   "grasp",
+   1.0
+  ],
+  [
+   "eat",
+   "ate",
+   0.887
+  ],
+  [
+   "eat",
+   "patch_ate",
+   0.876
+  ],
+  [
+   "grasp",
+   "tree_gather",
+   0.835
+  ],
+  [
+   "right",
+   "key",
+   0.8
+  ],
+  [
+   "left",
+   "key",
+   0.8
+  ],
+  [
+   "eat",
+   "tree_ate",
+   0.872
+  ]
+ ],
+ "assoc_edges_p002": [
+  [
+   "down",
+   "patch_berry",
+   0.04
+  ],
+  [
+   "left",
+   "bell_rang",
+   0.051
+  ],
+  [
+   "grasp",
+   "grasp",
+   1.0
+  ],
+  [
+   "grasp",
+   "patch_berry",
+   0.029
+  ],
+  [
+   "press",
+   "bell_rang",
+   0.117
+  ],
+  [
+   "up",
+   "patch_berry",
+   0.093
+  ],
+  [
+   "right",
+   "patch_berry",
+   0.078
+  ],
+  [
+   "right",
+   "bell_rang",
+   0.057
+  ],
+  [
+   "press",
+   "lever",
+   0.364
+  ],
+  [
+   "down",
+   "bell_rang",
+   0.066
+  ],
+  [
+   "up",
+   "bell_rang",
+   0.122
+  ],
+  [
+   "eat",
+   "bell_rang",
+   0.12
+  ],
+  [
+   "eat",
+   "patch_berry",
+   0.092
+  ],
+  [
+   "left",
+   "patch_berry",
+   0.06
+  ],
+  [
+   "press",
+   "patch_berry",
+   0.101
+  ],
+  [
+   "grasp",
+   "bell_rang",
+   0.283
+  ],
+  [
+   "wait",
+   "offering",
+   0.424
+  ],
+  [
+   "wait",
+   "bell_rang",
+   0.201
+  ],
+  [
+   "wait",
+   "patch_berry",
+   0.08
+  ],
+  [
+   "eat",
+   "ate",
+   0.887
+  ],
+  [
+   "eat",
+   "patch_ate",
+   0.876
+  ],
+  [
+   "eat",
+   "tree_appeared",
+   0.02
+  ],
+  [
+   "eat",
+   "energy_rose",
+   0.087
+  ],
+  [
+   "grasp",
+   "key",
+   0.029
+  ],
+  [
+   "grasp",
+   "tree_gather",
+   0.835
+  ],
+  [
+   "right",
+   "tree_appeared",
+   0.021
+  ],
+  [
+   "wait",
+   "energy_fell",
+   0.047
+  ],
+  [
+   "grasp",
+   "energy_fell",
+   0.111
+  ],
+  [
+   "right",
+   "key",
+   0.8
+  ],
+  [
+   "down",
+   "key",
+   0.143
+  ],
+  [
+   "left",
+   "key",
+   0.8
+  ],
+  [
+   "eat",
+   "tree_ate",
+   0.872
+  ],
+  [
+   "up",
+   "died",
+   0.094
+  ],
+  [
+   "down",
+   "died",
+   0.138
+  ],
+  [
+   "left",
+   "died",
+   0.159
+  ],
+  [
+   "right",
+   "died",
+   0.114
+  ],
+  [
+   "wait",
+   "died",
+   0.4
+  ],
+  [
+   "grasp",
+   "tree_bare",
+   0.175
+  ],
+  [
+   "press",
+   "key",
+   0.056
+  ],
+  [
+   "wait",
+   "key",
+   0.056
+  ]
+ ],
+ "identifier_version": "v2.5c-stratified-RR-doorgonefix + v3.3 scarcity goals",
+ "decoy_in_causal": false,
+ "decoy_in_assoc": true,
+ "altar_edge_in_causal": false,
+ "true_in_causal": {
+  "press->lever": true,
+  "eat->ate": true,
+  "grasp->tree_gather": true
+ },
+ "probe_verdicts": null,
+ "probe_trials": null,
+ "harness_notes": [],
+ "self_model": {
+  "explore": [
+   0,
+   3
+  ],
+  "key": [
+   10,
+   10
+  ],
+  "tree": [
+   10,
+   10
+  ],
+  "ring": [
+   9,
+   10
+  ],
+  "altar": [
+   9,
+   9
+  ],
+  "treasure": [
+   0,
+   3
+  ],
+  "curiosity": [
+   0,
+   3
+  ],
+  "homeostasis": [
+   5,
+   45
+  ],
+  "empowerment": [
+   13,
+   136
+  ]
+ }
+}

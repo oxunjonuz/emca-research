@@ -1,0 +1,156 @@
+{
+ "arm": "v7_full",
+ "seed": 495,
+ "steps": 16000,
+ "truth": true,
+ "rich": "low",
+ "decoy": true,
+ "edge_action": "wait",
+ "decoy_action": "grasp",
+ "total_reward": 252.95,
+ "deaths": 0,
+ "fruits_eaten": 5,
+ "fruit_blooms": 22,
+ "hums": 7366,
+ "glows": 3269,
+ "aura_steps": 12901,
+ "rich_steps": 59,
+ "probe_trials": 1200,
+ "probe_blocks": 3,
+ "candidates_seen": [
+  [
+   "wait",
+   "hum",
+   0.2814,
+   11314
+  ],
+  [
+   "grasp",
+   "glow",
+   0.2559,
+   740
+  ],
+  [
+   "press",
+   "glow",
+   0.2458,
+   540
+  ]
+ ],
+ "n_candidates_total": 3,
+ "verdicts": {
+  "wait->hum": {
+   "verdict": "CAUSAL",
+   "p": 0.0,
+   "rr": 2.189,
+   "target_yes": 121,
+   "target_no": 79,
+   "ctrl_yes": 55,
+   "ctrl_no": 144,
+   "blocks": 80,
+   "phase": "warm"
+  },
+  "grasp->glow": {
+   "verdict": "REJECT",
+   "p": 0.70827,
+   "rr": 0.952,
+   "target_yes": 89,
+   "target_no": 111,
+   "ctrl_yes": 93,
+   "ctrl_no": 106,
+   "blocks": 80,
+   "phase": "warm"
+  },
+  "press->glow": {
+   "verdict": "REJECT",
+   "p": 0.59984,
+   "rr": 0.986,
+   "target_yes": 104,
+   "target_no": 96,
+   "ctrl_yes": 105,
+   "ctrl_no": 94,
+   "blocks": 80,
+   "phase": "warm"
+  }
+ },
+ "rich_rate_obs": 0.05,
+ "harness_notes": [],
+ "first_probe": [
+  "wait",
+  "hum"
+ ],
+ "ranked_at_first_probe": [
+  [
+   "wait",
+   "hum",
+   0.3103,
+   139
+  ]
+ ],
+ "probe_order_log": [
+  [
+   "wait",
+   "hum",
+   [
+    [
+     "wait",
+     "hum",
+     0.3103,
+     139
+    ]
+   ]
+  ],
+  [
+   "grasp",
+   "glow",
+   [
+    [
+     "wait",
+     "hum",
+     0.3318,
+     935
+    ],
+    [
+     "grasp",
+     "glow",
+     0.2692,
+     340
+    ],
+    [
+     "press",
+     "glow",
+     0.2016,
+     140
+    ]
+   ]
+  ],
+  [
+   "press",
+   "glow",
+   [
+    [
+     "wait",
+     "hum",
+     0.3127,
+     1477
+    ],
+    [
+     "grasp",
+     "glow",
+     0.2907,
+     540
+    ],
+    [
+     "press",
+     "glow",
+     0.2501,
+     340
+    ]
+   ]
+  ]
+ ],
+ "first_causal_t": 4042,
+ "deaths_agent": 0,
+ "battery": "BA",
+ "held_out": true
+}

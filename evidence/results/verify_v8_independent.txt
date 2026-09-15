@@ -1,0 +1,50 @@
+runs loaded: 404
+  [PASS] A1 ground truth = f(seed,q) in every file (0 mismatches: [])
+  [PASS] B1 reward == K * pays_world in every file (0 violations)
+  [PASS] B2 action counts sum to steps (0 violations)
+  [PASS] B3 per-epoch pays sum to the world total (0 violations)
+  [PASS] B4 trace length == steps 
+  [PASS] C1 fresh arms: agent counts == raw trace (no agent log used) (0 mismatches: [])
+  [PASS] C2 carry arm: counts == int(kappa*previous) + raw (the reuse mechanism itself) (960/960 rows match the declared carry arithmetic)
+  [PASS] D1 fresh arms: agent per-epoch hit totals == the world's own pay counts (0 mismatches: [])
+
+  D2 end-of-epoch contrast rebuilt from the agent's own counts, checked against the analytic value (A1):
+  [PASS] D2 graded gap 0.20 persist=on (measured 0.3273 vs analytic 0.3375)
+  [PASS] D2 graded gap 0.20 persist=off (measured 0.2130 vs analytic 0.2000)
+  [PASS] D2 graded gap 0.10 persist=on (measured 0.1868 vs analytic 0.2125)
+  [PASS] D2 graded gap 0.10 persist=off (measured 0.1224 vs analytic 0.1000)
+
+  E) frozen rule on the raw trace (fires / epochs), per gap:
+    gap 0.20: 48/64 = 0.750
+    gap 0.10: 31/64 = 0.484
+    gap 0.05: 3/64 = 0.047
+    gap 0.03: 2/64 = 0.031
+
+  F) primary contrast signs recomputed from raw totals:
+    gap 0.20: graded-threshold mean +7288 (8/8 positive); graded-coin mean +203350 (8/8 positive)
+    gap 0.10: graded-threshold mean +28150 (8/8 positive); graded-coin mean +86275 (8/8 positive)
+    gap 0.05: graded-threshold mean +15488 (8/8 positive); graded-coin mean +26312 (8/8 positive)
+    gap 0.03: graded-threshold mean +7550 (8/8 positive); graded-coin mean +7738 (7/8 positive)
+
+  G) amortization curve recomputed from raw totals:
+    q=0.0: carry-fresh mean -48162 (0/8 positive)
+    q=0.25: carry-fresh mean -36688 (0/8 positive)
+    q=0.5: carry-fresh mean -25762 (0/8 positive)
+    q=0.75: carry-fresh mean -10125 (2/8 positive)
+    q=1.0: carry-fresh mean +11838 (8/8 positive)
+
+  H) direction agreement recomputed from the raw trace:
+    graded   gap 0.20: 64/64 = 1.000
+    graded   gap 0.10: 64/64 = 1.000
+    coin     gap 0.20: 21/64 = 0.328
+    coin     gap 0.10: 23/64 = 0.359
+
+  I) determinism (fresh processes):
+  [PASS] I graded seed 3 byte-identical (faba82f5b2cbfa22 / faba82f5b2cbfa22)
+  [PASS] I threshold seed 5 byte-identical (b8fab9573c209aa4 / b8fab9573c209aa4)
+  [PASS] I f_carry seed 2 byte-identical (ccd12bf277662c9b / ccd12bf277662c9b)
+
+  J) cross-check: the frozen rule's own recomputed firing rate vs the analysis report
+     (values printed above; the analysis report's C4 table for the threshold arm's gathering share is the same quantity seen from the other side)
+
+INDEPENDENT VERIFY V8: ALL PASS

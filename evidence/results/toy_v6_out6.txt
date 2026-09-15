@@ -1,0 +1,36 @@
+toy_v6_check.py -- real agents on TerrariumV6, 8000 steps, 3 seeds
+============================================================================
+seed 1 v6_prober     reward=    7820 deaths= 23 fruits= 879 lotus=  1 waits=  424 aura= 1798 lotusGoal= 3603 probe= 1524 verdict=REJECT     springC=False
+seed 1 v6_oracle     reward=   11721 deaths= 11 fruits=1358 lotus=  1 waits=  258 aura=  732 lotusGoal= 3428 probe=    0 verdict=-          springC=True
+seed 1 v6_rejector   reward=    7771 deaths= 22 fruits= 972 lotus=  0 waits=  246 aura= 1392 lotusGoal= 3603 probe=    0 verdict=-          springC=False
+seed 1 v6_assoc02    reward=    6998 deaths= 25 fruits= 875 lotus=  0 waits=   10 aura=  661 lotusGoal= 3603 probe=    0 verdict=-          springC=False
+seed 1 v6_assoc      reward=   11112 deaths= 11 fruits=1385 lotus=  0 waits=  217 aura= 1088 lotusGoal= 3603 probe=    0 verdict=-          springC=False
+seed 1 v6_believer   reward=    8888 deaths= 26 fruits=1019 lotus=  1 waits=  323 aura=  707 lotusGoal= 3467 probe=    0 verdict=-          springC=True
+seed 1 v6_nocausal   reward=    7771 deaths= 22 fruits= 972 lotus=  0 waits=  226 aura= 1392 lotusGoal= 3603 probe=    0 verdict=-          springC=False
+seed 1 random        reward=     -90 deaths= 48 fruits=  15 lotus=  0 waits=   39 aura=  232 lotusGoal=    0 probe=    0 verdict=-          springC=None
+seed 2 v6_prober     reward=    7658 deaths= 21 fruits= 957 lotus=  0 waits=  529 aura= 1953 lotusGoal= 3603 probe= 1093 verdict=UNRESOLVED springC=False
+seed 2 v6_oracle     reward=    9922 deaths= 24 fruits= 938 lotus=  3 waits=  382 aura= 1425 lotusGoal= 2387 probe=    0 verdict=-          springC=True
+seed 2 v6_rejector   reward=    9766 deaths= 17 fruits=1220 lotus=  0 waits=  280 aura= 1639 lotusGoal= 3603 probe=    0 verdict=-          springC=False
+seed 2 v6_assoc02    reward=    9110 deaths= 24 fruits= 945 lotus=  2 waits=  275 aura=  762 lotusGoal= 2490 probe=    0 verdict=-          springC=False
+seed 2 v6_assoc      reward=    6532 deaths= 25 fruits= 824 lotus=  0 waits=  267 aura= 1315 lotusGoal= 3603 probe=    0 verdict=-          springC=False
+seed 2 v6_believer   reward=    5648 deaths= 33 fruits= 722 lotus=  0 waits=  294 aura= 1478 lotusGoal= 3603 probe=    0 verdict=-          springC=False
+seed 2 v6_nocausal   reward=    7835 deaths= 22 fruits= 977 lotus=  0 waits=  284 aura= 1744 lotusGoal= 3603 probe=    0 verdict=-          springC=False
+seed 2 random        reward=    -200 deaths= 50 fruits=   2 lotus=  0 waits=   63 aura=  380 lotusGoal=    0 probe=    0 verdict=-          springC=None
+seed 3 v6_prober     reward=    8154 deaths= 21 fruits= 925 lotus=  1 waits=  966 aura= 2356 lotusGoal= 5154 probe=  688 verdict=CAUSAL     springC=True
+seed 3 v6_oracle     reward=   10452 deaths= 19 fruits=1100 lotus=  2 waits=  450 aura= 1236 lotusGoal= 3393 probe=    0 verdict=-          springC=True
+seed 3 v6_rejector   reward=   10148 deaths= 16 fruits=1264 lotus=  0 waits=  326 aura= 1478 lotusGoal= 3603 probe=    0 verdict=-          springC=False
+seed 3 v6_assoc02    reward=    8065 deaths= 26 fruits= 713 lotus=  3 waits=  640 aura=  965 lotusGoal= 2263 probe=    0 verdict=-          springC=False
+seed 3 v6_assoc      reward=    5104 deaths= 28 fruits= 639 lotus=  0 waits=  191 aura= 1132 lotusGoal= 3603 probe=    0 verdict=-          springC=False
+seed 3 v6_believer   reward=    9582 deaths= 23 fruits=1007 lotus=  2 waits=  418 aura= 1261 lotusGoal= 3589 probe=    0 verdict=-          springC=False
+seed 3 v6_nocausal   reward=    6491 deaths= 21 fruits= 811 lotus=  0 waits=  158 aura=  915 lotusGoal= 3603 probe=    0 verdict=-          springC=False
+seed 3 random        reward=    -207 deaths= 51 fruits=   3 lotus=  0 waits=   53 aura=  461 lotusGoal=    0 probe=    0 verdict=-          springC=None
+============================================================================
+W1 prober spring verdict CAUSAL: 1/3 FAIL
+W2 prober lotus 2/3, rejector total lotuses 0 PASS
+W3 assoc02 lotus 2/3 PASS
+W4 decoy believer 2/3, rejector clean 3/3, prober clean 3/3 PASS
+W5 survival: prober deaths [23, 21, 21] (ctrl max 26) PASS
+W6 no None actions: PASS
+W7 determinism re-run: PASS
+informative: v6_believer lotuses [1, 0, 2], spring-in-causal [True, False, False]
+informative: v6_oracle lotuses [1, 3, 2], spring-in-causal [True, True, True]

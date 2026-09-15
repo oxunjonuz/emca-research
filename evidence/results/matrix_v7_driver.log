@@ -1,0 +1,115 @@
+skip v7_full 0 on low on
+skip v7_full 1 on low on
+skip v7_full 2 on low on
+skip v7_full 3 on low on
+skip v7_full 4 on low on
+skip v7_full 5 on low on
+skip v7_full 6 on low on
+skip v7_full 7 on low on
+skip v7_full 8 on low on
+skip v7_full 9 on low on
+skip v7_beta0 0 on low on
+skip v7_beta0 1 on low on
+skip v7_beta0 2 on low on
+skip v7_beta0 3 on low on
+skip v7_beta0 4 on low on
+skip v7_beta0 5 on low on
+skip v7_beta0 6 on low on
+skip v7_beta0 7 on low on
+[19/110] v7_beta0 8 on low on OK
+[20/110] v7_beta0 9 on low on OK
+[21/110] v7_perm 0 on low on OK
+[22/110] v7_perm 1 on low on OK
+[23/110] v7_perm 2 on low on OK
+[24/110] v7_perm 3 on low on OK
+[25/110] v7_perm 4 on low on OK
+[26/110] v7_perm 5 on low on OK
+[27/110] v7_perm 6 on low on OK
+[28/110] v7_perm 7 on low on OK
+[29/110] v7_perm 8 on low on OK
+[30/110] v7_perm 9 on low on OK
+skip v7_nogen 0 on low on
+[32/110] v7_nogen 1 on low on OK
+[33/110] v7_nogen 2 on low on OK
+[34/110] v7_nogen 3 on low on OK
+[35/110] v7_nogen 4 on low on OK
+[36/110] v7_nogen 5 on low on OK
+[37/110] v7_nogen 6 on low on OK
+[38/110] v7_nogen 7 on low on OK
+[39/110] v7_nogen 8 on low on OK
+[40/110] v7_nogen 9 on low on OK
+[41/110] v7_oracle 0 on low on OK
+[42/110] v7_oracle 1 on low on OK
+[43/110] v7_oracle 2 on low on OK
+[44/110] v7_oracle 3 on low on OK
+[45/110] v7_oracle 4 on low on OK
+[46/110] v7_oracle 5 on low on OK
+[47/110] v7_oracle 6 on low on OK
+[48/110] v7_oracle 7 on low on OK
+[49/110] v7_oracle 8 on low on OK
+[50/110] v7_oracle 9 on low on OK
+[51/110] v7_forager 0 on low on OK
+[52/110] v7_forager 1 on low on OK
+[53/110] v7_forager 2 on low on OK
+[54/110] v7_forager 3 on low on OK
+[55/110] v7_forager 4 on low on OK
+[56/110] v7_forager 5 on low on OK
+[57/110] v7_forager 6 on low on OK
+[58/110] v7_forager 7 on low on OK
+[59/110] v7_forager 8 on low on OK
+[60/110] v7_forager 9 on low on OK
+[61/110] v7_random 0 on low on OK
+[62/110] v7_random 1 on low on OK
+[63/110] v7_random 2 on low on OK
+[64/110] v7_random 3 on low on OK
+[65/110] v7_random 4 on low on OK
+[66/110] v7_random 5 on low on OK
+[67/110] v7_random 6 on low on OK
+[68/110] v7_random 7 on low on OK
+[69/110] v7_random 8 on low on OK
+[70/110] v7_random 9 on low on OK
+[71/110] v7_full 0 on high on OK
+[72/110] v7_full 1 on high on OK
+[73/110] v7_full 2 on high on OK
+[74/110] v7_full 3 on high on OK
+[75/110] v7_full 4 on high on OK
+[76/110] v7_full 5 on high on OK
+[77/110] v7_full 6 on high on OK
+[78/110] v7_full 7 on high on OK
+[79/110] v7_full 8 on high on OK
+[80/110] v7_full 9 on high on OK
+[81/110] v7_beta0 0 on high on OK
+[82/110] v7_beta0 1 on high on OK
+[83/110] v7_beta0 2 on high on OK
+[84/110] v7_beta0 3 on high on OK
+[85/110] v7_beta0 4 on high on OK
+[86/110] v7_beta0 5 on high on OK
+[87/110] v7_beta0 6 on high on OK
+[88/110] v7_beta0 7 on high on OK
+[89/110] v7_beta0 8 on high on OK
+[90/110] v7_beta0 9 on high on OK
+[91/110] v7_perm 0 on high on OK
+[92/110] v7_perm 1 on high on OK
+[93/110] v7_perm 2 on high on OK
+[94/110] v7_perm 3 on high on OK
+ v7_perm 0 on high on OK
+[92/110] v7_perm 1 on high on OK
+[93/110] v7_perm 2 on high on OK
+[94/110] v7_perm 3 on high on OK
+[95/110] v7_perm 4 on high on OK
+[96/110] v7_perm 5 on high on OK
+[97/110] v7_perm 6 on high on OK
+[98/110] v7_perm 7 on high on OK
+[99/110] v7_perm 8 on high on OK
+[100/110] v7_perm 9 on high on OK
+[101/110] v7_full 0 off low on OK
+[102/110] v7_full 1 off low on OK
+[103/110] v7_full 2 off low on OK
+[104/110] v7_full 3 off low on OK
+[105/110] v7_full 4 off low on OK
+[106/110] v7_full 5 off low on OK
+[107/110] v7_full 6 off low on OK
+[108/110] v7_full 7 off low on OK
+[109/110] v7_full 8 off low on OK
+[110/110] v7_full 9 off low on OK
+DONE 110 / 110

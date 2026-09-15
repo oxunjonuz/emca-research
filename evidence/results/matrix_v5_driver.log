@@ -1,0 +1,686 @@
+v5_believer 1 OK
+v5_believer 2 OK
+v5_believer 3 OK
+v5_believer 4 OK
+v5_believer 5 OK
+v5_believer 6 OK
+v5_believer 7 OK
+v5_believer 8 OK
+v5_believer 9 OK
+v5_believer 10 OK
+v5_spec 1 OK
+v5_spec 2 OK
+v5_spec 3 OK
+v5_spec 4 OK
+v5_spec 5 OK
+v5_spec 6 OK
+v5_spec 7 OK
+v5_spec 8 OK
+v5_spec 9 OK
+v5_spec 10 OK
+v5_assoc 1 OK
+v5_assoc 2 OK
+v5_assoc 3 OK
+v5_assoc 4 OK
+v5_assoc 5 OK
+v5_assoc 6 OK
+v5_assoc 7 OK
+v5_assoc 8 OK
+v5_assoc 9 OK
+v5_assoc 10 OK
+v5_assoc02 1 OK
+v5_assoc02 2 OK
+v5_assoc02 3 OK
+v5_assoc02 4 OK
+v5_assoc02 5 OK
+v5_assoc02 6 OK
+v5_assoc02 7 OK
+v5_assoc02 8 OK
+v5_assoc02 9 OK
+v5_assoc02 10 OK
+v5_rejector 1 OK
+v5_rejector 2 OK
+v5_rejector 3 OK
+v5_rejector 4 OK
+v5_rejector 5 OK
+v5_rejector 6 OK
+v5_rejector 7 OK
+v5_rejector 8 OK
+v5_rejector 9 OK
+v5_rejector 10 OK
+random 1 FAIL rc=0
+ "waits_in_aura": 56,
+ "aura_steps": 417,
+ "goals_generated": 0,
+ "goals_achieved": 0,
+ "goals_by_kind": {},
+ "causal_edges": [],
+ "assoc_edges": [],
+ "assoc_edges_p002": [],
+ "identifier_version": null,
+ "decoy_torch_in_causal": null,
+ "decoy_torch_in_assoc": null,
+ "decoy_bell_in_causal": null,
+ "spring_in_causal": null,
+ "spring_in_assoc": null,
+ "spring_in_assoc002": null,
+ "true_in_causal": {},
+ "harness_notes": []
+}
+WROTE /work/Shopify/audit-work/agent_arch/results/matrix_v5/random_1.json
+ 
+random 2 FAIL rc=0
+"waits_in_aura": 137,
+ "aura_steps": 985,
+ "goals_generated": 0,
+ "goals_achieved": 0,
+ "goals_by_kind": {},
+ "causal_edges": [],
+ "assoc_edges": [],
+ "assoc_edges_p002": [],
+ "identifier_version": null,
+ "decoy_torch_in_causal": null,
+ "decoy_torch_in_assoc": null,
+ "decoy_bell_in_causal": null,
+ "spring_in_causal": null,
+ "spring_in_assoc": null,
+ "spring_in_assoc002": null,
+ "true_in_causal": {},
+ "harness_notes": []
+}
+WROTE /work/Shopify/audit-work/agent_arch/results/matrix_v5/random_2.json
+ 
+random 3 FAIL rc=0
+ "waits_in_aura": 74,
+ "aura_steps": 644,
+ "goals_generated": 0,
+ "goals_achieved": 0,
+ "goals_by_kind": {},
+ "causal_edges": [],
+ "assoc_edges": [],
+ "assoc_edges_p002": [],
+ "identifier_version": null,
+ "decoy_torch_in_causal": null,
+ "decoy_torch_in_assoc": null,
+ "decoy_bell_in_causal": null,
+ "spring_in_causal": null,
+ "spring_in_assoc": null,
+ "spring_in_assoc002": null,
+ "true_in_causal": {},
+ "harness_notes": []
+}
+WROTE /work/Shopify/audit-work/agent_arch/results/matrix_v5/random_3.json
+ 
+random 4 FAIL rc=0
+ "waits_in_aura": 76,
+ "aura_steps": 640,
+ "goals_generated": 0,
+ "goals_achieved": 0,
+ "goals_by_kind": {},
+ "causal_edges": [],
+ "assoc_edges": [],
+ "assoc_edges_p002": [],
+ "identifier_version": null,
+ "decoy_torch_in_causal": null,
+ "decoy_torch_in_assoc": null,
+ "decoy_bell_in_causal": null,
+ "spring_in_causal": null,
+ "spring_in_assoc": null,
+ "spring_in_assoc002": null,
+ "true_in_causal": {},
+ "harness_notes": []
+}
+WROTE /work/Shopify/audit-work/agent_arch/results/matrix_v5/random_4.json
+ 
+random 5 FAIL rc=0
+ "waits_in_aura": 80,
+ "aura_steps": 690,
+ "goals_generated": 0,
+ "goals_achieved": 0,
+ "goals_by_kind": {},
+ "causal_edges": [],
+ "assoc_edges": [],
+ "assoc_edges_p002": [],
+ "identifier_version": null,
+ "decoy_torch_in_causal": null,
+ "decoy_torch_in_assoc": null,
+ "decoy_bell_in_causal": null,
+ "spring_in_causal": null,
+ "spring_in_assoc": null,
+ "spring_in_assoc002": null,
+ "true_in_causal": {},
+ "harness_notes": []
+}
+WROTE /work/Shopify/audit-work/agent_arch/results/matrix_v5/random_5.json
+ 
+random 6 FAIL rc=0
+ "waits_in_aura": 64,
+ "aura_steps": 485,
+ "goals_generated": 0,
+ "goals_achieved": 0,
+ "goals_by_kind": {},
+ "causal_edges": [],
+ "assoc_edges": [],
+ "assoc_edges_p002": [],
+ "identifier_version": null,
+ "decoy_torch_in_causal": null,
+ "decoy_torch_in_assoc": null,
+ "decoy_bell_in_causal": null,
+ "spring_in_causal": null,
+ "spring_in_assoc": null,
+ "spring_in_assoc002": null,
+ "true_in_causal": {},
+ "harness_notes": []
+}
+WROTE /work/Shopify/audit-work/agent_arch/results/matrix_v5/random_6.json
+ 
+random 7 FAIL rc=0
+ "waits_in_aura": 96,
+ "aura_steps": 845,
+ "goals_generated": 0,
+ "goals_achieved": 0,
+ "goals_by_kind": {},
+ "causal_edges": [],
+ "assoc_edges": [],
+ "assoc_edges_p002": [],
+ "identifier_version": null,
+ "decoy_torch_in_causal": null,
+ "decoy_torch_in_assoc": null,
+ "decoy_bell_in_causal": null,
+ "spring_in_causal": null,
+ "spring_in_assoc": null,
+ "spring_in_assoc002": null,
+ "true_in_causal": {},
+ "harness_notes": []
+}
+WROTE /work/Shopify/audit-work/agent_arch/results/matrix_v5/random_7.json
+ 
+random 8 FAIL rc=0
+ "waits_in_aura": 91,
+ "aura_steps": 764,
+ "goals_generated": 0,
+ "goals_achieved": 0,
+ "goals_by_kind": {},
+ "causal_edges": [],
+ "assoc_edges": [],
+ "assoc_edges_p002": [],
+ "identifier_version": null,
+ "decoy_torch_in_causal": null,
+ "decoy_torch_in_assoc": null,
+ "decoy_bell_in_causal": null,
+ "spring_in_causal": null,
+ "spring_in_assoc": null,
+ "spring_in_assoc002": null,
+ "true_in_causal": {},
+ "harness_notes": []
+}
+WROTE /work/Shopify/audit-work/agent_arch/results/matrix_v5/random_8.json
+ 
+random 9 FAIL rc=0
+ "waits_in_aura": 94,
+ "aura_steps": 696,
+ "goals_generated": 0,
+ "goals_achieved": 0,
+ "goals_by_kind": {},
+ "causal_edges": [],
+ "assoc_edges": [],
+ "assoc_edges_p002": [],
+ "identifier_version": null,
+ "decoy_torch_in_causal": null,
+ "decoy_torch_in_assoc": null,
+ "decoy_bell_in_causal": null,
+ "spring_in_causal": null,
+ "spring_in_assoc": null,
+ "spring_in_assoc002": null,
+ "true_in_causal": {},
+ "harness_notes": []
+}
+WROTE /work/Shopify/audit-work/agent_arch/results/matrix_v5/random_9.json
+ 
+random 10 FAIL rc=0
+"waits_in_aura": 52,
+ "aura_steps": 464,
+ "goals_generated": 0,
+ "goals_achieved": 0,
+ "goals_by_kind": {},
+ "causal_edges": [],
+ "assoc_edges": [],
+ "assoc_edges_p002": [],
+ "identifier_version": null,
+ "decoy_torch_in_causal": null,
+ "decoy_torch_in_assoc": null,
+ "decoy_bell_in_causal": null,
+ "spring_in_causal": null,
+ "spring_in_assoc": null,
+ "spring_in_assoc002": null,
+ "true_in_causal": {},
+ "harness_notes": []
+}
+WROTE /work/Shopify/audit-work/agent_arch/results/matrix_v5/random_10.json
+ 
+qlearn 1 FAIL rc=0
+ "waits_in_aura": 43,
+ "aura_steps": 452,
+ "goals_generated": 0,
+ "goals_achieved": 0,
+ "goals_by_kind": {},
+ "causal_edges": [],
+ "assoc_edges": [],
+ "assoc_edges_p002": [],
+ "identifier_version": null,
+ "decoy_torch_in_causal": null,
+ "decoy_torch_in_assoc": null,
+ "decoy_bell_in_causal": null,
+ "spring_in_causal": null,
+ "spring_in_assoc": null,
+ "spring_in_assoc002": null,
+ "true_in_causal": {},
+ "harness_notes": []
+}
+WROTE /work/Shopify/audit-work/agent_arch/results/matrix_v5/qlearn_1.json
+ 
+qlearn 2 FAIL rc=0
+ "waits_in_aura": 13,
+ "aura_steps": 203,
+ "goals_generated": 0,
+ "goals_achieved": 0,
+ "goals_by_kind": {},
+ "causal_edges": [],
+ "assoc_edges": [],
+ "assoc_edges_p002": [],
+ "identifier_version": null,
+ "decoy_torch_in_causal": null,
+ "decoy_torch_in_assoc": null,
+ "decoy_bell_in_causal": null,
+ "spring_in_causal": null,
+ "spring_in_assoc": null,
+ "spring_in_assoc002": null,
+ "true_in_causal": {},
+ "harness_notes": []
+}
+WROTE /work/Shopify/audit-work/agent_arch/results/matrix_v5/qlearn_2.json
+ 
+qlearn 3 FAIL rc=0
+waits_in_aura": 238,
+ "aura_steps": 1671,
+ "goals_generated": 0,
+ "goals_achieved": 0,
+ "goals_by_kind": {},
+ "causal_edges": [],
+ "assoc_edges": [],
+ "assoc_edges_p002": [],
+ "identifier_version": null,
+ "decoy_torch_in_causal": null,
+ "decoy_torch_in_assoc": null,
+ "decoy_bell_in_causal": null,
+ "spring_in_causal": null,
+ "spring_in_assoc": null,
+ "spring_in_assoc002": null,
+ "true_in_causal": {},
+ "harness_notes": []
+}
+WROTE /work/Shopify/audit-work/agent_arch/results/matrix_v5/qlearn_3.json
+ 
+qlearn 4 FAIL rc=0
+ "waits_in_aura": 39,
+ "aura_steps": 678,
+ "goals_generated": 0,
+ "goals_achieved": 0,
+ "goals_by_kind": {},
+ "causal_edges": [],
+ "assoc_edges": [],
+ "assoc_edges_p002": [],
+ "identifier_version": null,
+ "decoy_torch_in_causal": null,
+ "decoy_torch_in_assoc": null,
+ "decoy_bell_in_causal": null,
+ "spring_in_causal": null,
+ "spring_in_assoc": null,
+ "spring_in_assoc002": null,
+ "true_in_causal": {},
+ "harness_notes": []
+}
+WROTE /work/Shopify/audit-work/agent_arch/results/matrix_v5/qlearn_4.json
+ 
+qlearn 5 FAIL rc=0
+ "waits_in_aura": 36,
+ "aura_steps": 337,
+ "goals_generated": 0,
+ "goals_achieved": 0,
+ "goals_by_kind": {},
+ "causal_edges": [],
+ "assoc_edges": [],
+ "assoc_edges_p002": [],
+ "identifier_version": null,
+ "decoy_torch_in_causal": null,
+ "decoy_torch_in_assoc": null,
+ "decoy_bell_in_causal": null,
+ "spring_in_causal": null,
+ "spring_in_assoc": null,
+ "spring_in_assoc002": null,
+ "true_in_causal": {},
+ "harness_notes": []
+}
+WROTE /work/Shopify/audit-work/agent_arch/results/matrix_v5/qlearn_5.json
+ 
+qlearn 6 FAIL rc=0
+ "waits_in_aura": 79,
+ "aura_steps": 806,
+ "goals_generated": 0,
+ "goals_achieved": 0,
+ "goals_by_kind": {},
+ "causal_edges": [],
+ "assoc_edges": [],
+ "assoc_edges_p002": [],
+ "identifier_version": null,
+ "decoy_torch_in_causal": null,
+ "decoy_torch_in_assoc": null,
+ "decoy_bell_in_causal": null,
+ "spring_in_causal": null,
+ "spring_in_assoc": null,
+ "spring_in_assoc002": null,
+ "true_in_causal": {},
+ "harness_notes": []
+}
+WROTE /work/Shopify/audit-work/agent_arch/results/matrix_v5/qlearn_6.json
+ 
+qlearn 7 FAIL rc=0
+ "waits_in_aura": 39,
+ "aura_steps": 532,
+ "goals_generated": 0,
+ "goals_achieved": 0,
+ "goals_by_kind": {},
+ "causal_edges": [],
+ "assoc_edges": [],
+ "assoc_edges_p002": [],
+ "identifier_version": null,
+ "decoy_torch_in_causal": null,
+ "decoy_torch_in_assoc": null,
+ "decoy_bell_in_causal": null,
+ "spring_in_causal": null,
+ "spring_in_assoc": null,
+ "spring_in_assoc002": null,
+ "true_in_causal": {},
+ "harness_notes": []
+}
+WROTE /work/Shopify/audit-work/agent_arch/results/matrix_v5/qlearn_7.json
+ 
+qlearn 8 FAIL rc=0
+ "waits_in_aura": 47,
+ "aura_steps": 431,
+ "goals_generated": 0,
+ "goals_achieved": 0,
+ "goals_by_kind": {},
+ "causal_edges": [],
+ "assoc_edges": [],
+ "assoc_edges_p002": [],
+ "identifier_version": null,
+ "decoy_torch_in_causal": null,
+ "decoy_torch_in_assoc": null,
+ "decoy_bell_in_causal": null,
+ "spring_in_causal": null,
+ "spring_in_assoc": null,
+ "spring_in_assoc002": null,
+ "true_in_causal": {},
+ "harness_notes": []
+}
+WROTE /work/Shopify/audit-work/agent_arch/results/matrix_v5/qlearn_8.json
+ 
+qlearn 9 FAIL rc=0
+ "waits_in_aura": 45,
+ "aura_steps": 732,
+ "goals_generated": 0,
+ "goals_achieved": 0,
+ "goals_by_kind": {},
+ "causal_edges": [],
+ "assoc_edges": [],
+ "assoc_edges_p002": [],
+ "identifier_version": null,
+ "decoy_torch_in_causal": null,
+ "decoy_torch_in_assoc": null,
+ "decoy_bell_in_causal": null,
+ "spring_in_causal": null,
+ "spring_in_assoc": null,
+ "spring_in_assoc002": null,
+ "true_in_causal": {},
+ "harness_notes": []
+}
+WROTE /work/Shopify/audit-work/agent_arch/results/matrix_v5/qlearn_9.json
+ 
+qlearn 10 FAIL rc=0
+"waits_in_aura": 64,
+ "aura_steps": 240,
+ "goals_generated": 0,
+ "goals_achieved": 0,
+ "goals_by_kind": {},
+ "causal_edges": [],
+ "assoc_edges": [],
+ "assoc_edges_p002": [],
+ "identifier_version": null,
+ "decoy_torch_in_causal": null,
+ "decoy_torch_in_assoc": null,
+ "decoy_bell_in_causal": null,
+ "spring_in_causal": null,
+ "spring_in_assoc": null,
+ "spring_in_assoc002": null,
+ "true_in_causal": {},
+ "harness_notes": []
+}
+WROTE /work/Shopify/audit-work/agent_arch/results/matrix_v5/qlearn_10.json
+ 
+ngram 1 FAIL rc=0
+ 0,
+ "waits_in_aura": 0,
+ "aura_steps": 0,
+ "goals_generated": 0,
+ "goals_achieved": 0,
+ "goals_by_kind": {},
+ "causal_edges": [],
+ "assoc_edges": [],
+ "assoc_edges_p002": [],
+ "identifier_version": null,
+ "decoy_torch_in_causal": null,
+ "decoy_torch_in_assoc": null,
+ "decoy_bell_in_causal": null,
+ "spring_in_causal": null,
+ "spring_in_assoc": null,
+ "spring_in_assoc002": null,
+ "true_in_causal": {},
+ "harness_notes": []
+}
+WROTE /work/Shopify/audit-work/agent_arch/results/matrix_v5/ngram_1.json
+ 
+ngram 2 FAIL rc=0
+
+ "waits_in_aura": 58,
+ "aura_steps": 113,
+ "goals_generated": 0,
+ "goals_achieved": 0,
+ "goals_by_kind": {},
+ "causal_edges": [],
+ "assoc_edges": [],
+ "assoc_edges_p002": [],
+ "identifier_version": null,
+ "decoy_torch_in_causal": null,
+ "decoy_torch_in_assoc": null,
+ "decoy_bell_in_causal": null,
+ "spring_in_causal": null,
+ "spring_in_assoc": null,
+ "spring_in_assoc002": null,
+ "true_in_causal": {},
+ "harness_notes": []
+}
+WROTE /work/Shopify/audit-work/agent_arch/results/matrix_v5/ngram_2.json
+ 
+ngram 3 FAIL rc=0
+0,
+ "waits_in_aura": 0,
+ "aura_steps": 48,
+ "goals_generated": 0,
+ "goals_achieved": 0,
+ "goals_by_kind": {},
+ "causal_edges": [],
+ "assoc_edges": [],
+ "assoc_edges_p002": [],
+ "identifier_version": null,
+ "decoy_torch_in_causal": null,
+ "decoy_torch_in_assoc": null,
+ "decoy_bell_in_causal": null,
+ "spring_in_causal": null,
+ "spring_in_assoc": null,
+ "spring_in_assoc002": null,
+ "true_in_causal": {},
+ "harness_notes": []
+}
+WROTE /work/Shopify/audit-work/agent_arch/results/matrix_v5/ngram_3.json
+ 
+ngram 4 FAIL rc=0
+ "waits_in_aura": 32,
+ "aura_steps": 1142,
+ "goals_generated": 0,
+ "goals_achieved": 0,
+ "goals_by_kind": {},
+ "causal_edges": [],
+ "assoc_edges": [],
+ "assoc_edges_p002": [],
+ "identifier_version": null,
+ "decoy_torch_in_causal": null,
+ "decoy_torch_in_assoc": null,
+ "decoy_bell_in_causal": null,
+ "spring_in_causal": null,
+ "spring_in_assoc": null,
+ "spring_in_assoc002": null,
+ "true_in_causal": {},
+ "harness_notes": []
+}
+WROTE /work/Shopify/audit-work/agent_arch/results/matrix_v5/ngram_4.json
+ 
+ngram 5 FAIL rc=0
+
+ "waits_in_aura": 10,
+ "aura_steps": 120,
+ "goals_generated": 0,
+ "goals_achieved": 0,
+ "goals_by_kind": {},
+ "causal_edges": [],
+ "assoc_edges": [],
+ "assoc_edges_p002": [],
+ "identifier_version": null,
+ "decoy_torch_in_causal": null,
+ "decoy_torch_in_assoc": null,
+ "decoy_bell_in_causal": null,
+ "spring_in_causal": null,
+ "spring_in_assoc": null,
+ "spring_in_assoc002": null,
+ "true_in_causal": {},
+ "harness_notes": []
+}
+WROTE /work/Shopify/audit-work/agent_arch/results/matrix_v5/ngram_5.json
+ 
+ngram 6 FAIL rc=0
+,
+ "waits_in_aura": 31,
+ "aura_steps": 40,
+ "goals_generated": 0,
+ "goals_achieved": 0,
+ "goals_by_kind": {},
+ "causal_edges": [],
+ "assoc_edges": [],
+ "assoc_edges_p002": [],
+ "identifier_version": null,
+ "decoy_torch_in_causal": null,
+ "decoy_torch_in_assoc": null,
+ "decoy_bell_in_causal": null,
+ "spring_in_causal": null,
+ "spring_in_assoc": null,
+ "spring_in_assoc002": null,
+ "true_in_causal": {},
+ "harness_notes": []
+}
+WROTE /work/Shopify/audit-work/agent_arch/results/matrix_v5/ngram_6.json
+ 
+ngram 7 FAIL rc=0
+ "waits_in_aura": 105,
+ "aura_steps": 164,
+ "goals_generated": 0,
+ "goals_achieved": 0,
+ "goals_by_kind": {},
+ "causal_edges": [],
+ "assoc_edges": [],
+ "assoc_edges_p002": [],
+ "identifier_version": null,
+ "decoy_torch_in_causal": null,
+ "decoy_torch_in_assoc": null,
+ "decoy_bell_in_causal": null,
+ "spring_in_causal": null,
+ "spring_in_assoc": null,
+ "spring_in_assoc002": null,
+ "true_in_causal": {},
+ "harness_notes": []
+}
+WROTE /work/Shopify/audit-work/agent_arch/results/matrix_v5/ngram_7.json
+ 
+ngram 8 FAIL rc=0
+ "waits_in_aura": 108,
+ "aura_steps": 844,
+ "goals_generated": 0,
+ "goals_achieved": 0,
+ "goals_by_kind": {},
+ "causal_edges": [],
+ "assoc_edges": [],
+ "assoc_edges_p002": [],
+ "identifier_version": null,
+ "decoy_torch_in_causal": null,
+ "decoy_torch_in_assoc": null,
+ "decoy_bell_in_causal": null,
+ "spring_in_causal": null,
+ "spring_in_assoc": null,
+ "spring_in_assoc002": null,
+ "true_in_causal": {},
+ "harness_notes": []
+}
+WROTE /work/Shopify/audit-work/agent_arch/results/matrix_v5/ngram_8.json
+ 
+ngram 9 FAIL rc=0
+,
+ "waits_in_aura": 32,
+ "aura_steps": 58,
+ "goals_generated": 0,
+ "goals_achieved": 0,
+ "goals_by_kind": {},
+ "causal_edges": [],
+ "assoc_edges": [],
+ "assoc_edges_p002": [],
+ "identifier_version": null,
+ "decoy_torch_in_causal": null,
+ "decoy_torch_in_assoc": null,
+ "decoy_bell_in_causal": null,
+ "spring_in_causal": null,
+ "spring_in_assoc": null,
+ "spring_in_assoc002": null,
+ "true_in_causal": {},
+ "harness_notes": []
+}
+WROTE /work/Shopify/audit-work/agent_arch/results/matrix_v5/ngram_9.json
+ 
+ngram 10 FAIL rc=0
+ "waits_in_aura": 15,
+ "aura_steps": 153,
+ "goals_generated": 0,
+ "goals_achieved": 0,
+ "goals_by_kind": {},
+ "causal_edges": [],
+ "assoc_edges": [],
+ "assoc_edges_p002": [],
+ "identifier_version": null,
+ "decoy_torch_in_causal": null,
+ "decoy_torch_in_assoc": null,
+ "decoy_bell_in_causal": null,
+ "spring_in_causal": null,
+ "spring_in_assoc": null,
+ "spring_in_assoc002": null,
+ "true_in_causal": {},
+ "harness_notes": []
+}
+WROTE /work/Shopify/audit-work/agent_arch/results/matrix_v5/ngram_10.json
+ 

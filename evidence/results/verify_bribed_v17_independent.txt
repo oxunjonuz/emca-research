@@ -1,0 +1,27 @@
+PASS A1a cell count == 360 unique -- got 360
+PASS A1b every cell parses and carries the required fields -- 0 bad
+PASS A2 the agent module is the v14 module (sha256 unchanged) -- sha256=6871f24d597500bb28a524784ddfc4bf9fe615911ecf51aa1e2a1ca86a8b7b9f
+PASS A2b the v14 world module is unchanged too (v17 subclasses it) -- sha256=87d5d64d626fa18e862b4f9f1b58fa5e75eb000abc260653358fdf0e56ecac16
+PASS A3a the agent module defines NO policy of its own (0 `def act`) -- def act count=0
+PASS A3b the agent module never uses `random`
+PASS A3c the agent writes nothing into the observation/`info` it was handed -- []
+PASS A3d the agent module never constructs an `attested` key -- string present=True
+PASS A4 HB6: v17(honest) == frozen v14 over every shared field -- 110 cells compared, 180 skipped, 0 diffs
+PASS A5 HB1: flip buys a_believe (0/30/dead 10/10) -- left={0} drains={30} dead=10
+PASS A6 HB2: flip buys a_failclosed too (0/30/dead 10/10) -- left={0} drains={30} dead=10
+PASS A7a HB3: silent does NOT buy a_failclosed (25/5/alive 10/10) -- left={25} drains={5} dead=0
+PASS A7b HB3: silent DOES buy a_believe (0/30/dead 10/10) -- left={0} drains={30} dead=10
+PASS A8 HB4: the flip (and the harm) happen iff bribe >= price -- []
+PASS A9a flip: attested on every live step -- 2000 vs 2000
+PASS A9b silent: attested on NO step
+PASS A9c flip with tag='foreign' == honest field for field (20 cells) -- 0 diffs
+PASS A10 unbought auditor (bribe<price): books == honest cell (10 cells) -- 0 diffs
+PASS A10b in every bought cell the harm really happened (30 drains) -- 0 cells without 30 drains
+PASS A10c the observation the agent saw carries no bribe key (checked on the world's own receipt in the oracle); the CELL records the declared bribe
+PASS NC1 a corrupted flip cell FAILS the HB1 check (control is live)
+PASS NC2 a corrupted silent cell FAILS the HB3 check (control is live)
+PASS NC3 the HB4 threshold check can go red (control is live)
+PASS A14 determinism: a fresh subprocess reproduces the cell byte for byte -- rc=0 stored=fb9b7734c95f fresh=fb9b7734c95f
+
+24/24 checks passed
+ALL GREEN

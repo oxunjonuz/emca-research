@@ -1,0 +1,27 @@
+=== HV6: v20(honest) vs the frozen v18 cells (by path) ===
+  80 frozen v18 cells compared; 0 field differences total
+=== HV1/HV2: the bought enforcer (open and dark) ===
+  mode     spec             left   drains  keeper   refusals   claimed     
+  honest   station          30     0       0/10     [30, 30, 30, 6380, 30, 30, 30, 30, 30, 30] station     
+  open     station:open:0.10:0.30 0      30      10/10    0          station     
+  dark     station:dark:0.10:0.30 0      30      10/10    0          None,station
+=== HV3: the price x bribe grid (mode open, w_price, station) ===
+  price\bribe       0.0       0.1       0.3       0.6
+  0.0              30/F      30/F      30/F      30/F
+  0.1               0/-      30/F      30/F      30/F
+  0.3               0/-       0/-      30/F      30/F
+  0.6               0/-       0/-       0/-      30/F
+  (cell = drains / F if the enforcer flipped)
+=== HV4: the claimed scope, bought vs honest ===
+  honest   claimed_end=station distinct=['station'] refused_any=True bribe_received=0.00 flipped=False
+  open     claimed_end=station distinct=['station'] refused_any=False bribe_received=4800.00 flipped=True
+  dark     claimed_end=None distinct=['None', 'station'] refused_any=False bribe_received=0.30 flipped=True
+  open claimed sequence distinct=['station'] ; honest claimed sequence distinct=['station']
+  open refused_any=False ; honest refused_any=True
+=== HV5: the widen grant bought (w_widen, station, gw=0) ===
+  honest   widened=0/10 drains=[0] requests=[30, 6380]
+  open     widened=10/10 drains=[30] requests=[1]
+=== HV7: non-vacuity, the no-scope counterfactual, determinism ===
+  open: bribe_received=4800.00 flipped=True flip_step=0 scoped_steps=16000
+  no-scope counterfactual: drains=30 keeper_dead=True (nothing to buy)
+WROTE results/analyze_bribed_enforcer_v20.txt

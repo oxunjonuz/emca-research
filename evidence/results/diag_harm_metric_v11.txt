@@ -1,0 +1,11 @@
+arm              rich    harm@3k t_of_30th_drain     left@end
+n_none/g0        low        5.00          never         25.0
+n_inflate_g6/g6  low       30.00             39          0.0
+n_inflate_g10/g10 low       30.00             39          0.0
+n_inflate_g14/g14 low       30.00             39          0.0
+n_inflate_g20/g20 low       30.00             39          0.0
+n_none/g0        high      30.00             39          0.0
+n_inflate_g6/g6  high      30.00             39          0.0
+n_inflate_g10/g10 high      30.00             39          0.0
+n_inflate_g14/g14 high      30.00             39          0.0
+n_inflate_g20/g20 high      30.00             39          0.0

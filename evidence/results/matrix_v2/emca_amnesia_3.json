@@ -1,0 +1,230 @@
+{
+ "condition": "emca_amnesia",
+ "seed": 3,
+ "steps": 6000,
+ "env": "TerrariumV2",
+ "regime_flip_at": 3000,
+ "reset_at": 4500,
+ "total_reward": 353.0,
+ "deaths": 10,
+ "berries_eaten": 231,
+ "tree_fruits": 19,
+ "keys_picked": 0,
+ "lever_presses": 3,
+ "treasures": 1,
+ "regime_flips": 0,
+ "berries_by_window": {
+  "0": 23,
+  "1": 20,
+  "2": 11,
+  "3": 12,
+  "4": 21,
+  "5": 17,
+  "6": 18,
+  "7": 21,
+  "8": 45,
+  "9": 16,
+  "10": 11,
+  "11": 16
+ },
+ "deaths_by_window": {
+  "0": 1,
+  "1": 1,
+  "2": 1,
+  "3": 1,
+  "4": 1,
+  "5": 1,
+  "6": 1,
+  "7": 1,
+  "8": 1,
+  "10": 1
+ },
+ "treasure_steps": [
+  4997
+ ],
+ "post_reset_recovery": 16,
+ "pre_reset_competence": 23,
+ "first_treasure_step": 4997,
+ "goals_generated": 4,
+ "non_survival_goals": 3,
+ "goals_achieved": 3,
+ "goals_active_before_reset": [
+  {
+   "id": "g6",
+   "kind": "treasure",
+   "text": "obtain the treasure",
+   "status": "achieved"
+  }
+ ],
+ "goals_active_after_reset": [
+  {
+   "id": "g7",
+   "kind": "explore",
+   "text": "open the door",
+   "status": "achieved"
+  },
+  {
+   "id": "g8",
+   "kind": "homeostasis",
+   "text": "restore energy",
+   "status": "achieved"
+  },
+  {
+   "id": "g9",
+   "kind": "key",
+   "text": "obtain the key",
+   "status": "active"
+  }
+ ],
+ "goal_kinds": {
+  "treasure": 1,
+  "explore": 1,
+  "homeostasis": 1,
+  "key": 1
+ },
+ "causal_edges": [
+  [
+   "wait",
+   "key_appeared",
+   0.023
+  ],
+  [
+   "eat",
+   "ate",
+   0.494
+  ],
+  [
+   "grasp",
+   "grasp",
+   1.0
+  ],
+  [
+   "press",
+   "tree_appeared",
+   0.031
+  ],
+  [
+   "wait",
+   "energy_fell",
+   0.047
+  ],
+  [
+   "press",
+   "energy_fell",
+   0.031
+  ],
+  [
+   "eat",
+   "tree_ate",
+   0.207
+  ],
+  [
+   "eat",
+   "energy_rose",
+   0.057
+  ],
+  [
+   "press",
+   "lever",
+   0.031
+  ]
+ ],
+ "assoc_edges": [
+  [
+   "eat",
+   "ate",
+   0.796
+  ],
+  [
+   "up",
+   "bell_rang",
+   0.528
+  ],
+  [
+   "grasp",
+   "grasp",
+   1.0
+  ],
+  [
+   "right",
+   "bell_rang",
+   0.52
+  ],
+  [
+   "eat",
+   "bell_rang",
+   0.593
+  ],
+  [
+   "press",
+   "bell_rang",
+   0.591
+  ],
+  [
+   "wait",
+   "bell_rang",
+   0.611
+  ],
+  [
+   "grasp",
+   "bell_rang",
+   0.765
+  ],
+  [
+   "eat",
+   "tree_ate",
+   0.857
+  ],
+  [
+   "up",
+   "door_gone",
+   1.0
+  ],
+  [
+   "left",
+   "door_gone",
+   1.0
+  ]
+ ],
+ "identifier_version": "v2.2-spec",
+ "decoy_in_causal": false,
+ "decoy_in_assoc": true,
+ "harness_notes": [],
+ "goals_at_reset": [
+  {
+   "id": "g6",
+   "kind": "treasure",
+   "target": "treasure"
+  }
+ ],
+ "self_model": {
+  "treasure": [
+   1,
+   1
+  ],
+  "explore": [
+   1,
+   1
+  ],
+  "homeostasis": [
+   1,
+   1
+  ],
+  "key": [
+   0,
+   0
+  ]
+ },
+ "stats": {
+  "visits": 0,
+  "visits_(False, False, True, False, False, False, False, False, False)": 56,
+  "visits_(False, True, True, False, False, False, False, False, False)": 6,
+  "visits_(True, False, False, True, False, False, False, False, False)": 4,
+  "context_resets": 1.0,
+  "full_wipes": 1.0,
+  "visits_(False, False, False, True, False, False, False, False, False)": 4,
+  "visits_(False, False, True, False, False, False, False, True, False)": 2,
+  "visits_(True, False, False, False, False, True, False, False, False)": 5,
+  "visits_(True, False, False, False, False, False, False, False, False)": 3
+ }
+}

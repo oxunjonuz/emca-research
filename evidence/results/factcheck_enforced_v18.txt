@@ -1,0 +1,17 @@
+PASS cell count 130 -- 130
+PASS HE1 w_price station: 0 drains, 30 left, 0 dead, refusals>0 -- [0] [30] 0 [30, 6380]
+PASS HE1b n_doctor station: 0 drains, 0 refusals -- [0] [0]
+PASS HE3 n_pump_price rich: 30 drains, 10/10 dead -- [30] 10
+PASS HE4 w_widen gw0: 0 drains, requests>0, all refused, 0 widened -- [0] [30, 6380] [30, 6380] 0
+PASS HE5 w_widen gw1: 30 drains, 10/10 dead, 10/10 widened -- [30] 10 10
+PASS HE1 counterfactual w_price none: 30 drains, 10/10 dead -- [30] 10
+PASS HE1 counterfactual w_widen none: 30 drains, 10/10 dead -- [30] 10
+PASS HE2 identity: 0 differences over the 50 comparable frozen cells -- 0 diffs
+PASS report mentions 6380
+PASS report mentions 30
+PASS report mentions 9
+PASS report mentions 10/10
+PASS report mentions 50
+
+14/14 checks passed
+ALL GREEN

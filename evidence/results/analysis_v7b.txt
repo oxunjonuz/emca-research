@@ -1,0 +1,64 @@
+==========================================================================
+V7B ANALYSIS -- closure of C3's open item (PREREG_V7B.md)
+==========================================================================
+
+### H2  THE FAMILY (what does 149 count?)
+  fits           : 110
+  verdict ROWS   : 149   <- the denominator V7 used
+  distinct worlds: 23  (seed x truth x rich)
+  tests per life : mean 1.35, max 4
+  the single FP event appears in 6 rows / 3 world(s)
+  conventions for the study family:
+    (a) distinct FP EVENTS as the unit         -> m = 23
+    (b) runs (over-)counting the coupled rows   -> m = 149
+  V7 quoted (b). Under (a) the event rate is 1/10, not 1/149.
+
+### H1  CAN (A) EVER BE THE ANSWER TO C3's CAUSE?
+  observed FP: seed 8 wait->glow, 114/86 vs 80/119
+  p recorded = 0.00055   p recomputed = 0.000551
+  Bonferroni-style family needed to reject it:
+    alpha=0.05 : reject only if m >= 91
+    alpha=0.01 : reject only if m >= 19
+    alpha=0.001: reject only if m >= 2
+  real agent-side family per life: 1.35 (max 4)
+  real study-side families: 23 worlds, 149 rows
+  => the ONLY convention that rejects the event is the study-level family (149 rows, threshold 0.000336); the agent's own per-life family (4) is far too small. (A) as stated -- capping the agent's block budget -- cannot touch it.
+
+### H3  EXACT NULL RATE OF THE FROZEN RULE + POWER OF PAST CHECKS
+  P(p<0.05, greater)        = 4.430%
+  P(p<0.05 AND RR>=1.3)     = 0.488%  <- the rule's per-test FP rate
+  P(p <= the observed FP)   = 0.0386%
+  E[FP] over 149 rows (V7's denominator)      = 0.73
+  E[FP] over 23 worlds (the honest count)  = 0.11
+  observed: 6 row(s), 3 distinct event(s)
+  campaign Monte-Carlo said 0.51%; scripted 0/400 and 0/160:
+    expected hits at the exact rate: 1.95 and 0.78 -> both checks are UNDERPOWERED to speak at this rate (0 hits is the likely outcome even if calibrated)
+  P(>=1 event at least as strong as observed, across 149 tests, if independence) = 0.056
+  P(>=1 such event across 23 worlds)      = 0.0088
+
+### H4  HELD-OUT SEEDS 10..29 (fresh worlds, same code)
+  runs 1000, verdict rows 1471, null (glow) tests 1030, FP events 6
+    FP: seed 29 truth=True grasp->glow p=0.00526 rr=1.315 111/89 vs 84/115
+    FP: seed 319 truth=True press->glow p=0.0017 rr=1.42 96/81 vs 68/110
+    FP: seed 31 truth=True press->glow p=0.01188 rr=1.303 98/87 vs 74/108
+    FP: seed 432 truth=True press->glow p=0.00038 rr=1.382 125/75 vs 90/109
+    FP: seed 493 truth=False wait->glow p=0.00286 rr=1.356 109/91 vs 80/119
+    FP: seed 493 truth=True wait->glow p=0.00286 rr=1.356 109/91 vs 80/119
+  observed held-out rate: 6/1030 = 0.58%  (calibrated expectation 0.488%)
+  decision rule (frozen): 0 -> re-characterize + close; >=2 -> real defect; 1 -> indeterminate
+  true-edge (hum) rows: 441; CAUSAL 439
+
+### H5  LARGE-SCALE SCRIPTED CALIBRATION
+=== LARGE-SCALE SCRIPTED CALIBRATION (PREREG_V7B H5) ===
+  protocol: 5/5 alternation, affordability gate, pinned on the station, respawn, scored inside warm, exact Fisher, p<0.05 AND RR>=1.3
+  N = 5000 windows at n = 200/arm (null regime, truth=off)
+  CALIBRATED: 19/5000 = 0.380%  Wilson 95% CI [0.243%, 0.593%]
+  expected under the exact null rate 0.488%: 24.40 passes
+  ARM-PERMUTATION CONTROL: 4/1250 = 0.320%  Wilson 95% CI [0.125%, 0.820%]
+  (both arms should agree if the measurement is driven by the stream, not the label assignment)
+
+  POWER OF THE OLD CHECKS (the honest corollary):
+    calib_v7_fprate 0/400: E[hits] = 1.52 at the measured rate -> P(0 hits) = 0.22
+    diag_w4 replicas 0/160: E[hits] = 0.61 at the measured rate -> P(0 hits) = 0.54
+
+==========================================================================

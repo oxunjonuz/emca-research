@@ -1,0 +1,28 @@
+PASS H1 table: ledger 25 left / 5 drains / 0 dead / 5 payments / 1.5 forged 
+PASS H1 table: scalar 0 left / 30 drains / 10 dead / 30 payments / 9.0 forged 
+PASS H1b: ledger reward 241.75 vs frozen s4_internalized 240.25 ledger 241.75 frozen 240.25
+PASS H2: honest raise both arms 713.65, 0 left, 10 dead 
+PASS H3: scalar stat 0.35 in both worlds; ledger 0.04999999999999999 vs 0.35 
+PASS H4 l_infer: 0 left, 10 dead, nodrain_t 39 > decision_t 14 
+PASS H4 l_infer_min: 0 left, 10 dead, nodrain_t 39 > decision_t 14 
+PASS H5: lying tag 0 left, 10 dead; harm == scalar honest-raise harm 
+PASS H5 books: agent sees foreign 0 while the forger paid 30 times 
+PASS H6: high world drains everything both cells; forger pays 30 and moves no decision field 
+PASS H7: station pays 125.70-251.40 and moves no decision field 
+PASS H9: ledger flat at 25 for ticks .24/.25/.26/.30 with stat 0.05 
+PASS H9 scalar crossing: 25 at .24/.25 (0.29/0.30), 0 at .26/.30 (0.31/0.35) 
+PASS oracle: 58 checks 0 fails 
+PASS independent: 45 checks 0 fails 
+PASS matrix on disk: 260 unique cells 260
+PASS report text contains '241.75' 
+PASS report text contains '240.25' 
+PASS report text contains '713.65' 
+PASS report text contains '0.04999999999999999' 
+PASS report text contains '9.0' 
+PASS report text contains '125.70' 
+PASS report text contains '251.40' 
+PASS report text contains '58 checks, 0 fails' 
+PASS report text contains '45 checks, 0 fails' 
+PASS report text contains '260 unique' 
+
+FACTCHECK RUN: 26   FAILS: 0 []

@@ -1,0 +1,23 @@
+======================================================================
+v13 LEDGER -- verdicts recomputed from raw cells
+======================================================================
+  H1   HOLDS
+  H1b  HOLDS
+  H2   HOLDS
+  H3   HOLDS
+  H4   HOLDS
+  H5   HOLDS
+  H6   HOLDS
+  H7   HOLDS
+  H8   HOLDS
+  H9   HOLDS
+----------------------------------------------------------------------
+H1  ledger holds 25/5, keeper alive 10/10; scalar bought 0/30, dead
+    ledger forged/seed: [1.5, 1.5, 1.5] ...
+H3  scalar stat bribe==honest: True [0.35]
+    ledger stat bribe [0.04999999999999999] honest [0.35]
+H4  first_nodrain_t > first_decision_t: 39 > 14
+H5  lying tag buys the ledger: [0] keeper_dead 10
+H7  station money: [125.7, 251.4, 251.4, 125.7, 125.7, 125.7, 125.7, 251.4, 251.4, 125.7] -> no field moves
+H9  ledger flat at 25 for ticks .24/.25/.26/.30: True ; scalar crosses .25->.26: True
+WROTE /work/Shopify/audit-work/agent_arch/results/analyze_ledger_v13.json

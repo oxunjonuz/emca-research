@@ -1,0 +1,15 @@
+=== v15 independent pass (disk only) ===
+  [PASS] A1 210 cells present got 210
+  [PASS] A2 a0_steps agrees with the trace, all cells 0 mismatches
+  [PASS] A3 no reward/energy/death key anywhere in the cells keys seen: ['a0_steps', 'a3_steps', 'ctx_span', 'decoy', 'decoy_reset', 'discount', 'final', 'ig_eps', 'mode', 'oracle', 'seed', 'steps', 'trace', 'tv', 'unmotivated_steps']
+  [PASS] A4 trace schema is exactly {t,phase,feat,val,action,pred_f0} ['action', 'feat', 'phase', 'pred_f0', 't', 'val']
+  [PASS] A5 ig_ctx learns the true structure (mean err < 0.08) mean 0.0364
+  [PASS] A6 ig_relevant learns it too mean 0.0318
+  [PASS] A7 pure IG a0_share ~ 0.25 (indifferent), 10/10 range [0.246,0.255]
+  [PASS] A8 random a0_share ~ 0.25 
+  [PASS] A9 criterion arm a0_share > 0.95, 10/10 range [0.995,1.000]
+  [PASS] A10 naive_info is drawn to the noisy TV (a3_share > 0.2) mean 0.300
+  [PASS] A11 ...and NOT in the base regime (parking channel) mean 0.000
+  [PASS] A12 trace timestamps are 1..N in every cell 
+  [PASS] NV1 corrupted cell FAILS the indifference check corrupted a0 0.000
+=== 0 failures ===

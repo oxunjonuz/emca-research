@@ -1,0 +1,15 @@
+A. all cells complete (steps==16000, keys present)         PASS  180 cells, 0 bad
+B. transplant control: v9_old == frozen v7 cell (behaviour) PASS  10/10; 
+B2. transplant control: log rows equal modulo the SOURCE label FAIL  0/10
+C. noexp == old on every non-log field                     PASS  10/10
+C2. noexp == old: log rows equal modulo the SOURCE label   FAIL  0/10
+D. H1 reward: recomputed independently                     PASS  mean=-104.7150 CI=[-184.145,-55.000] perm_p=0.0020 pos=0/10
+D. H2 fruits: recomputed independently                     PASS  mean=-0.8000 CI=[-1.600,+0.400] perm_p=0.2480 pos=1/10
+D. H1b reward (stop): recomputed independently             PASS  mean=-59.7150 CI=[-154.145,+5.000] perm_p=0.2812 pos=2/10
+D. H5a union vs noexp: recomputed independently            PASS  mean=-104.7150 CI=[-184.145,-55.000] perm_p=0.0020 pos=0/10
+D. H5b union vs noctx: recomputed independently            PASS  mean=+0.0000 CI=[+0.000,+0.000] perm_p=1.0000 pos=0/10
+E. H4 true-edge CAUSAL and decoy FP (recounted)            PASS  true CAUSAL 10/10, decoy CAUSAL rows 0, 87 verdicts, E[FP]=0.42
+F. union limb arithmetic (scores bounded; first probe = top probeable) PASS  scores ok 10/10, first-probe ok 10/10
+G. NEGATIVE CONTROL: corruption flips the H1 reading       PASS  clean mean=-104.7 (CI lo -184.1); corrupt mean=+395.3 (CI lo -174.1)
+
+SUMMARY: 13 checks, 2 failures

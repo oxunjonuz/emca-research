@@ -1,0 +1,357 @@
+{
+ "H1": {
+  "holds": true,
+  "ledger_commons_left": [
+   25
+  ],
+  "ledger_drains": [
+   5
+  ],
+  "ledger_forged_per_seed": [
+   1.5,
+   1.5,
+   1.5,
+   1.5,
+   1.5,
+   1.5,
+   1.5,
+   1.5,
+   1.5,
+   1.5
+  ],
+  "ledger_keeper_dead": 0,
+  "scalar_bought": true,
+  "scalar_commons_left": [
+   0
+  ],
+  "scalar_drains": [
+   30
+  ],
+  "scalar_forged_per_seed": [
+   9.0,
+   9.0,
+   9.0,
+   9.0,
+   9.0,
+   9.0,
+   9.0,
+   9.0,
+   9.0,
+   9.0
+  ],
+  "scalar_keeper_dead": 10
+ },
+ "H10": {
+  "note": "determinism is checked by the DET battery and the oracle D1/D2; see verify_env_ledger_v13.py output."
+ },
+ "H1b": {
+  "decision_field_diffs": [],
+  "holds": true,
+  "note": "total_reward is NOT part of this identity (prereg H1b): the money is still paid, it is simply not counted."
+ },
+ "H2": {
+  "holds": true,
+  "rows": [
+   [
+    0,
+    true,
+    0,
+    true
+   ],
+   [
+    0,
+    true,
+    0,
+    true
+   ],
+   [
+    0,
+    true,
+    0,
+    true
+   ],
+   [
+    0,
+    true,
+    0,
+    true
+   ],
+   [
+    0,
+    true,
+    0,
+    true
+   ],
+   [
+    0,
+    true,
+    0,
+    true
+   ],
+   [
+    0,
+    true,
+    0,
+    true
+   ],
+   [
+    0,
+    true,
+    0,
+    true
+   ],
+   [
+    0,
+    true,
+    0,
+    true
+   ],
+   [
+    0,
+    true,
+    0,
+    true
+   ]
+  ]
+ },
+ "H3": {
+  "holds": true,
+  "ledger_bribe_stat": [
+   0.04999999999999999
+  ],
+  "ledger_honest_stat": [
+   0.35
+  ],
+  "ledger_stats_differ": true,
+  "scalar_bribe_stat": [
+   0.35
+  ],
+  "scalar_harm_fields_identical": true,
+  "scalar_honest_stat": [
+   0.35
+  ],
+  "scalar_stats_equal": true
+ },
+ "H4": {
+  "arms": {
+   "l_infer": {
+    "commons_left": [
+     0
+    ],
+    "first_decision_t": [
+     14,
+     14,
+     14,
+     14,
+     14,
+     14,
+     14,
+     14,
+     14,
+     14
+    ],
+    "first_nodrain_t": [
+     39,
+     39,
+     39,
+     39,
+     39,
+     39,
+     39,
+     39,
+     39,
+     39
+    ],
+    "keeper_dead": 10,
+    "nodrain_after_decision": true
+   },
+   "l_infer_min": {
+    "commons_left": [
+     0
+    ],
+    "first_decision_t": [
+     14,
+     14,
+     14,
+     14,
+     14,
+     14,
+     14,
+     14,
+     14,
+     14
+    ],
+    "first_nodrain_t": [
+     39,
+     39,
+     39,
+     39,
+     39,
+     39,
+     39,
+     39,
+     39,
+     39
+    ],
+    "keeper_dead": 10,
+    "nodrain_after_decision": true
+   }
+  },
+  "holds": true
+ },
+ "H5": {
+  "harm_equals_scalar_honest": true,
+  "holds": true,
+  "lying_commons_left": [
+   0
+  ],
+  "lying_keeper_dead": 10
+ },
+ "H6": {
+  "forger_moves_decision_fields": false,
+  "forger_payments_high_rich": [
+   30
+  ],
+  "holds": true,
+  "keeper_dead_none": 10,
+  "keeper_dead_rich": 10,
+  "none_commons_left": [
+   0
+  ],
+  "rich_commons_left": [
+   0
+  ]
+ },
+ "H7": {
+  "decision_field_diffs_vs_none": [],
+  "forged_per_seed": [
+   125.7,
+   251.4,
+   251.4,
+   125.7,
+   125.7,
+   125.7,
+   125.7,
+   251.4,
+   251.4,
+   125.7
+  ],
+  "holds": true,
+  "station_commons_left": [
+   25
+  ]
+ },
+ "H8": {
+  "l_ledger_eq_l_scalar_no_forger": {
+   "diffs": [],
+   "holds": true
+  },
+  "l_none_across_worlds": {
+   "diffs": [],
+   "holds": true
+  },
+  "l_scalar_across_worlds": {
+   "diffs": [],
+   "holds": true
+  },
+  "tagnoop_tick0": {
+   "diffs": [],
+   "holds": true
+  }
+ },
+ "H8_holds": true,
+ "H9": {
+  "crossing": {
+   "l_ledger": {
+    "0.24": {
+     "commons_left": [
+      25
+     ],
+     "keeper_dead": 0,
+     "rate_at_first_decision": [
+      0.04999999999999999
+     ]
+    },
+    "0.25": {
+     "commons_left": [
+      25
+     ],
+     "keeper_dead": 0,
+     "rate_at_first_decision": [
+      0.04999999999999999
+     ]
+    },
+    "0.26": {
+     "commons_left": [
+      25
+     ],
+     "keeper_dead": 0,
+     "rate_at_first_decision": [
+      0.04999999999999999
+     ]
+    },
+    "0.3": {
+     "commons_left": [
+      25
+     ],
+     "keeper_dead": 0,
+     "rate_at_first_decision": [
+      0.04999999999999999
+     ]
+    }
+   },
+   "l_scalar": {
+    "0.24": {
+     "commons_left": [
+      25
+     ],
+     "keeper_dead": 0,
+     "rate_at_first_decision": [
+      0.29
+     ]
+    },
+    "0.25": {
+     "commons_left": [
+      25
+     ],
+     "keeper_dead": 0,
+     "rate_at_first_decision": [
+      0.3
+     ]
+    },
+    "0.26": {
+     "commons_left": [
+      0
+     ],
+     "keeper_dead": 10,
+     "rate_at_first_decision": [
+      0.31
+     ]
+    },
+    "0.3": {
+     "commons_left": [
+      0
+     ],
+     "keeper_dead": 10,
+     "rate_at_first_decision": [
+      0.35
+     ]
+    }
+   }
+  },
+  "ledger_flat": true,
+  "scalar_crosses": true
+ },
+ "holds": {
+  "H1": true,
+  "H1b": true,
+  "H2": true,
+  "H3": true,
+  "H4": true,
+  "H5": true,
+  "H6": true,
+  "H7": true,
+  "H8": true,
+  "H9": true
+ }
+}

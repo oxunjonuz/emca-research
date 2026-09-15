@@ -1,0 +1,42 @@
+==========================================================================
+v14 ATTESTED -- analysis from raw cells
+==========================================================================
+HA1 HOLDS  the LIE with the auditor LIVE -> left={25} drains={5} dead=0/10 stat=[0.04999999999999999]
+HA2 HOLDS  honest label, auditor live: left={25} ; a_believe vs a_failclosed field diffs=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+HA3 HOLDS  LIE with NO auditor -> a_believe left={0} (frozen v13 H5 diffs={0}) ; a_failclosed left={25}
+HA4 REFUTED  single-step cliff: first lag with ANY harm=[50] (prereg said 14). FULL harm (30/30 dead) at lags=[50] ; PARTIAL harm at lags=[14, 15, 20]
+     lag=0   left=[25]           dead= 0 stat@decision=[0.05] attested_rich=[5]
+     lag=1   left=[25]           dead= 0 stat@decision=[0.05] attested_rich=[5]
+     lag=2   left=[25]           dead= 0 stat@decision=[0.05] attested_rich=[5]
+     lag=3   left=[25]           dead= 0 stat@decision=[0.05] attested_rich=[5]
+     lag=5   left=[25]           dead= 0 stat@decision=[0.05] attested_rich=[5]
+     lag=8   left=[25]           dead= 0 stat@decision=[0.05] attested_rich=[5]
+     lag=10  left=[25]           dead= 0 stat@decision=[0.11] attested_rich=[4]
+     lag=12  left=[25]           dead= 0 stat@decision=[0.23] attested_rich=[2]
+     lag=13  left=[25]           dead= 0 stat@decision=[0.29] attested_rich=[1]
+     lag=14  left=[24]           dead= 0 stat@decision=[0.35] attested_rich=[1]
+     lag=15  left=[22]           dead= 0 stat@decision=[0.35] attested_rich=[2]
+     lag=20  left=[16]           dead= 0 stat@decision=[0.35] attested_rich=[3]
+     lag=50  left=[0]            dead=10 stat@decision=[0.35] attested_rich=[0]
+HA5 HOLDS  identity vs frozen IDENTITY cells: {'a_believe': {'vs_v13_identity_cells': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'vs_v10_cells': []}, 'a_scalar': {'vs_v13_identity_cells': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'vs_v10_cells': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]}, 'a_none': {'vs_v13_identity_cells': [], 'vs_v10_cells': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]}, 'world_v13_vs_frozen': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'a_failclosed_vs_l_ledger': {'stat_pairs': [(0.0, 0.05), (0.0, 0.05), (0.0, 0.05), (0.0, 0.05), (0.0, 0.05), (0.0, 0.05), (0.0, 0.05), (0.0, 0.05), (0.0, 0.05), (0.0, 0.05)], 'verdict_pairs': [(25, 25, 5, 5), (25, 25, 5, 5), (25, 25, 5, 5), (25, 25, 5, 5), (25, 25, 5, 5), (25, 25, 5, 5), (25, 25, 5, 5), (25, 25, 5, 5), (25, 25, 5, 5), (25, 25, 5, 5)], 'same_verdict': True, 'same_statistic': False}}
+     NOTE (my prereg over-claimed): a_failclosed vs l_ledger with no attestation -> same verdict=True, same statistic=False
+HA6 HOLDS  honest raise wr=0.35: live left={0} none left={0} diffs={11}
+HA7 HOLDS  cautious reading, wr=0.35: auditor NONE left={25} stat=[0.0] ; auditor LIVE left={0}
+HA9 HOLDS  the auditor changes the verdict at lags [0, 1, 2, 3, 5, 8, 10, 12, 13, 14, 15, 20], and restraint is monotone in the lag=True (restated check; the first version asked the wrong question and called itself REFUTED)
+HA4b MEASURED  the crossing self-corrects; per-lag (left, drains, first statistic < 0.30):
+     lag=13  left=25  drains=5   below_at_t=14  history=[(14, 0.29)]
+     lag=14  left=24  drains=6   below_at_t=None  history=[(14, 0.35), (15, 0.3)]
+     lag=15  left=22  drains=8   below_at_t=17  history=[(14, 0.35), (15, 0.35), (16, 0.307143), (17, 0.275)]
+     lag=20  left=16  drains=14  below_at_t=23  history=[(14, 0.35), (15, 0.35), (21, 0.325), (22, 0.303846), (23, 0.285714)]
+     lag=50  left=0   drains=30  below_at_t=None  history=[(14, 0.35), (15, 0.35), (22, 0.35), (24, 0.35), (27, 0.35), (37, 0.35)]
+--------------------------------------------------------------------------
+HYPOTHESES HOLDING: 7 / 8
+  HA1   HOLDS
+  HA2   HOLDS
+  HA3   HOLDS
+  HA4   REFUTED
+  HA5   HOLDS
+  HA6   HOLDS
+  HA7   HOLDS
+  HA9   HOLDS
+WROTE results/analyze_attested_v14.json

@@ -1,0 +1,839 @@
+{
+ "mask|0.15|beta0": {
+  "mean_regret": 0.07764900000000001,
+  "sem_regret": 0.00014484570852903888,
+  "sd_regret": 0.004580423482526401,
+  "frac_optimal": 0.0,
+  "mean_probes": 0.0,
+  "mean_explore": 0.0,
+  "nsim": 1000
+ },
+ "mask|0.15|budget_pub": {
+  "mean_regret": 0.080448,
+  "sem_regret": 0.00033854010900542553,
+  "sd_regret": 0.010705578237788251,
+  "frac_optimal": 0.0,
+  "mean_probes": 0.0,
+  "mean_explore": 0.0,
+  "nsim": 1000
+ },
+ "mask|0.15|pure": {
+  "mean_regret": 0.080448,
+  "sem_regret": 0.00033854010900542553,
+  "sd_regret": 0.010705578237788251,
+  "frac_optimal": 0.0,
+  "mean_probes": 0.05,
+  "mean_explore": 0.0,
+  "nsim": 1000
+ },
+ "mask|0.15|uniform_policy": {
+  "mean_regret": 0.088989,
+  "sem_regret": 0.0005659834063081852,
+  "sd_regret": 0.01789796681794377,
+  "frac_optimal": 0.0,
+  "mean_probes": 0.0,
+  "mean_explore": 0.0,
+  "nsim": 1000
+ },
+ "mask|0.15|union": {
+  "mean_regret": 0.030920249999999993,
+  "sem_regret": 0.0012206637425638191,
+  "sd_regret": 0.03860077683687091,
+  "frac_optimal": 0.0,
+  "mean_probes": 4.071,
+  "mean_explore": 3.805,
+  "nsim": 1000
+ },
+ "mask|0.15|union_nocost": {
+  "mean_regret": 0.03126299999999999,
+  "sem_regret": 0.0012225306385371952,
+  "sd_regret": 0.03865981327117556,
+  "frac_optimal": 0.0,
+  "mean_probes": 4.113,
+  "mean_explore": 3.852,
+  "nsim": 1000
+ },
+ "mask|0.15|union_noctx": {
+  "mean_regret": 0.079824,
+  "sem_regret": 0.0003063566196092038,
+  "sd_regret": 0.009687846942348873,
+  "frac_optimal": 0.0,
+  "mean_probes": 3.845,
+  "mean_explore": 3.807,
+  "nsim": 1000
+ },
+ "mask|0.15|union_noexp": {
+  "mean_regret": 0.07764900000000001,
+  "sem_regret": 0.00014484570852903888,
+  "sd_regret": 0.004580423482526401,
+  "frac_optimal": 0.0,
+  "mean_probes": 0.092,
+  "mean_explore": 0.0,
+  "nsim": 1000
+ },
+ "mask|0.15|union_pooledexp": {
+  "mean_regret": 0.03241349999999999,
+  "sem_regret": 0.0012241398147417788,
+  "sd_regret": 0.038710699890805854,
+  "frac_optimal": 0.0,
+  "mean_probes": 4.123,
+  "mean_explore": 3.846,
+  "nsim": 1000
+ },
+ "mask|0.25|beta0": {
+  "mean_regret": 0.12764900000000004,
+  "sem_regret": 0.0001448457085290389,
+  "sd_regret": 0.004580423482526402,
+  "frac_optimal": 0.0,
+  "mean_probes": 0.0,
+  "mean_explore": 0.0,
+  "nsim": 1000
+ },
+ "mask|0.25|budget_pub": {
+  "mean_regret": 0.13044800000000004,
+  "sem_regret": 0.00033854010900542564,
+  "sd_regret": 0.010705578237788255,
+  "frac_optimal": 0.0,
+  "mean_probes": 0.0,
+  "mean_explore": 0.0,
+  "nsim": 1000
+ },
+ "mask|0.25|pure": {
+  "mean_regret": 0.13044800000000004,
+  "sem_regret": 0.00033854010900542564,
+  "sd_regret": 0.010705578237788255,
+  "frac_optimal": 0.0,
+  "mean_probes": 0.05,
+  "mean_explore": 0.0,
+  "nsim": 1000
+ },
+ "mask|0.25|uniform_policy": {
+  "mean_regret": 0.13898900000000003,
+  "sem_regret": 0.0005659834063081852,
+  "sd_regret": 0.01789796681794377,
+  "frac_optimal": 0.0,
+  "mean_probes": 0.0,
+  "mean_explore": 0.0,
+  "nsim": 1000
+ },
+ "mask|0.25|union": {
+  "mean_regret": 0.013321999999999997,
+  "sem_regret": 0.0011422329062025888,
+  "sd_regret": 0.036120576019936505,
+  "frac_optimal": 0.0,
+  "mean_probes": 3.911,
+  "mean_explore": 3.511,
+  "nsim": 1000
+ },
+ "mask|0.25|union_nocost": {
+  "mean_regret": 0.013364749999999996,
+  "sem_regret": 0.0011426180336877275,
+  "sd_regret": 0.03613275482036221,
+  "frac_optimal": 0.0,
+  "mean_probes": 4.225,
+  "mean_explore": 3.851,
+  "nsim": 1000
+ },
+ "mask|0.25|union_noctx": {
+  "mean_regret": 0.13001900000000002,
+  "sem_regret": 0.0003168975592570304,
+  "sd_regret": 0.010021180722003925,
+  "frac_optimal": 0.0,
+  "mean_probes": 3.548,
+  "mean_explore": 3.519,
+  "nsim": 1000
+ },
+ "mask|0.25|union_noexp": {
+  "mean_regret": 0.12764900000000004,
+  "sem_regret": 0.0001448457085290389,
+  "sd_regret": 0.004580423482526402,
+  "frac_optimal": 0.0,
+  "mean_probes": 0.092,
+  "mean_explore": 0.0,
+  "nsim": 1000
+ },
+ "mask|0.25|union_pooledexp": {
+  "mean_regret": 0.013404249999999998,
+  "sem_regret": 0.001121199517389878,
+  "sd_regret": 0.035455441864335795,
+  "frac_optimal": 0.0,
+  "mean_probes": 4.212,
+  "mean_explore": 3.847,
+  "nsim": 1000
+ },
+ "mask|0.35|beta0": {
+  "mean_regret": 0.17764899999999995,
+  "sem_regret": 0.00014484570852903888,
+  "sd_regret": 0.004580423482526401,
+  "frac_optimal": 0.0,
+  "mean_probes": 0.0,
+  "mean_explore": 0.0,
+  "nsim": 1000
+ },
+ "mask|0.35|budget_pub": {
+  "mean_regret": 0.18044799999999994,
+  "sem_regret": 0.00033854010900542564,
+  "sd_regret": 0.010705578237788255,
+  "frac_optimal": 0.0,
+  "mean_probes": 0.0,
+  "mean_explore": 0.0,
+  "nsim": 1000
+ },
+ "mask|0.35|pure": {
+  "mean_regret": 0.18044799999999994,
+  "sem_regret": 0.00033854010900542564,
+  "sd_regret": 0.010705578237788255,
+  "frac_optimal": 0.0,
+  "mean_probes": 0.05,
+  "mean_explore": 0.0,
+  "nsim": 1000
+ },
+ "mask|0.35|uniform_policy": {
+  "mean_regret": 0.18898899999999996,
+  "sem_regret": 0.0005659834063081852,
+  "sd_regret": 0.01789796681794377,
+  "frac_optimal": 0.0,
+  "mean_probes": 0.0,
+  "mean_explore": 0.0,
+  "nsim": 1000
+ },
+ "mask|0.35|union": {
+  "mean_regret": 0.0032800000000000004,
+  "sem_regret": 0.00025725771423133563,
+  "sd_regret": 0.008135203226197336,
+  "frac_optimal": 0.0,
+  "mean_probes": 3.312,
+  "mean_explore": 2.852,
+  "nsim": 1000
+ },
+ "mask|0.35|union_nocost": {
+  "mean_regret": 0.00340825,
+  "sem_regret": 0.00026718679462263986,
+  "sd_regret": 0.008449188317271709,
+  "frac_optimal": 0.0,
+  "mean_probes": 4.266,
+  "mean_explore": 3.849,
+  "nsim": 1000
+ },
+ "mask|0.35|union_noctx": {
+  "mean_regret": 0.17943399999999998,
+  "sem_regret": 0.0002837016577861868,
+  "sd_regret": 0.008971434145699932,
+  "frac_optimal": 0.0,
+  "mean_probes": 2.878,
+  "mean_explore": 2.853,
+  "nsim": 1000
+ },
+ "mask|0.35|union_noexp": {
+  "mean_regret": 0.17764899999999995,
+  "sem_regret": 0.00014484570852903888,
+  "sd_regret": 0.004580423482526401,
+  "frac_optimal": 0.0,
+  "mean_probes": 0.092,
+  "mean_explore": 0.0,
+  "nsim": 1000
+ },
+ "mask|0.35|union_pooledexp": {
+  "mean_regret": 0.0034937500000000003,
+  "sem_regret": 0.00027357264195808747,
+  "sd_regret": 0.008651126540973025,
+  "frac_optimal": 0.0,
+  "mean_probes": 4.288,
+  "mean_explore": 3.845,
+  "nsim": 1000
+ },
+ "maskr|0.25|beta0": {
+  "mean_regret": 0.03129550000000002,
+  "sem_regret": 0.00013722385046024304,
+  "sd_regret": 0.004339399167527129,
+  "frac_optimal": 0.0,
+  "mean_probes": 0.0,
+  "mean_explore": 0.0,
+  "nsim": 1000
+ },
+ "maskr|0.25|budget_pub": {
+  "mean_regret": 0.03474400000000001,
+  "sem_regret": 0.00036349772295654706,
+  "sd_regret": 0.011494807288275634,
+  "frac_optimal": 0.0,
+  "mean_probes": 0.0,
+  "mean_explore": 0.0,
+  "nsim": 1000
+ },
+ "maskr|0.25|pure": {
+  "mean_regret": 0.03474400000000001,
+  "sem_regret": 0.00036349772295654706,
+  "sd_regret": 0.011494807288275634,
+  "frac_optimal": 0.0,
+  "mean_probes": 0.058,
+  "mean_explore": 0.0,
+  "nsim": 1000
+ },
+ "maskr|0.25|uniform_policy": {
+  "mean_regret": 0.056389000000000016,
+  "sem_regret": 0.0005881458956709592,
+  "sd_regret": 0.018598806267999965,
+  "frac_optimal": 0.0,
+  "mean_probes": 0.0,
+  "mean_explore": 0.0,
+  "nsim": 1000
+ },
+ "maskr|0.25|union": {
+  "mean_regret": 0.026983000000000004,
+  "sem_regret": 0.00035272262367085175,
+  "sd_regret": 0.011154068730703128,
+  "frac_optimal": 0.0,
+  "mean_probes": 1.461,
+  "mean_explore": 1.267,
+  "nsim": 1000
+ },
+ "maskr|0.25|union_nocost": {
+  "mean_regret": 0.02101475,
+  "sem_regret": 0.0006648608010872067,
+  "sd_regret": 0.021024744583997265,
+  "frac_optimal": 0.0,
+  "mean_probes": 4.398,
+  "mean_explore": 3.799,
+  "nsim": 1000
+ },
+ "maskr|0.25|union_noctx": {
+  "mean_regret": 0.03579200000000001,
+  "sem_regret": 0.0004314535179345953,
+  "sd_regret": 0.01364375821165628,
+  "frac_optimal": 0.0,
+  "mean_probes": 1.287,
+  "mean_explore": 1.268,
+  "nsim": 1000
+ },
+ "maskr|0.25|union_noexp": {
+  "mean_regret": 0.03129550000000002,
+  "sem_regret": 0.00013722385046024304,
+  "sd_regret": 0.004339399167527129,
+  "frac_optimal": 0.0,
+  "mean_probes": 0.257,
+  "mean_explore": 0.0,
+  "nsim": 1000
+ },
+ "maskr|0.25|union_pooledexp": {
+  "mean_regret": 0.028634250000000007,
+  "sem_regret": 0.00033361555535717496,
+  "sd_regret": 0.010549850177906616,
+  "frac_optimal": 0.0,
+  "mean_probes": 0.688,
+  "mean_explore": 0.439,
+  "nsim": 1000
+ },
+ "maskr|0.35|beta0": {
+  "mean_regret": 0.03129550000000002,
+  "sem_regret": 0.00013722385046024304,
+  "sd_regret": 0.004339399167527129,
+  "frac_optimal": 0.0,
+  "mean_probes": 0.0,
+  "mean_explore": 0.0,
+  "nsim": 1000
+ },
+ "maskr|0.35|budget_pub": {
+  "mean_regret": 0.03474400000000001,
+  "sem_regret": 0.00036349772295654706,
+  "sd_regret": 0.011494807288275634,
+  "frac_optimal": 0.0,
+  "mean_probes": 0.0,
+  "mean_explore": 0.0,
+  "nsim": 1000
+ },
+ "maskr|0.35|pure": {
+  "mean_regret": 0.03474400000000001,
+  "sem_regret": 0.00036349772295654706,
+  "sd_regret": 0.011494807288275634,
+  "frac_optimal": 0.0,
+  "mean_probes": 0.058,
+  "mean_explore": 0.0,
+  "nsim": 1000
+ },
+ "maskr|0.35|uniform_policy": {
+  "mean_regret": 0.056389000000000016,
+  "sem_regret": 0.0005881458956709592,
+  "sd_regret": 0.018598806267999965,
+  "frac_optimal": 0.0,
+  "mean_probes": 0.0,
+  "mean_explore": 0.0,
+  "nsim": 1000
+ },
+ "maskr|0.35|union": {
+  "mean_regret": 0.027186750000000006,
+  "sem_regret": 0.0003817930760115882,
+  "sd_regret": 0.012073357150784133,
+  "frac_optimal": 0.0,
+  "mean_probes": 1.459,
+  "mean_explore": 1.268,
+  "nsim": 1000
+ },
+ "maskr|0.35|union_nocost": {
+  "mean_regret": 0.020972,
+  "sem_regret": 0.000664691398812754,
+  "sd_regret": 0.02101938761371643,
+  "frac_optimal": 0.0,
+  "mean_probes": 4.396,
+  "mean_explore": 3.8,
+  "nsim": 1000
+ },
+ "maskr|0.35|union_noctx": {
+  "mean_regret": 0.035962750000000016,
+  "sem_regret": 0.0004649628914525631,
+  "sd_regret": 0.014703417644477353,
+  "frac_optimal": 0.0,
+  "mean_probes": 1.286,
+  "mean_explore": 1.269,
+  "nsim": 1000
+ },
+ "maskr|0.35|union_noexp": {
+  "mean_regret": 0.03129550000000002,
+  "sem_regret": 0.00013722385046024304,
+  "sd_regret": 0.004339399167527129,
+  "frac_optimal": 0.0,
+  "mean_probes": 0.257,
+  "mean_explore": 0.0,
+  "nsim": 1000
+ },
+ "maskr|0.35|union_pooledexp": {
+  "mean_regret": 0.028634250000000007,
+  "sem_regret": 0.00033361555535717496,
+  "sd_regret": 0.010549850177906616,
+  "frac_optimal": 0.0,
+  "mean_probes": 0.683,
+  "mean_explore": 0.439,
+  "nsim": 1000
+ },
+ "pub|16|alg1_pub": {
+  "mean_regret": 0.10560000000000003,
+  "sem_regret": 0.004533121351694569,
+  "sd_regret": 0.1433498838129602,
+  "frac_optimal": 0.0,
+  "mean_probes": 0.0,
+  "mean_explore": 0.0,
+  "nsim": 1000
+ },
+ "pub|16|alg2_pub": {
+  "mean_regret": 0.16860000000000003,
+  "sem_regret": 0.0047091630059083985,
+  "sd_regret": 0.14891680971675503,
+  "frac_optimal": 0.0,
+  "mean_probes": 0.0,
+  "mean_explore": 0.0,
+  "nsim": 1000
+ },
+ "pub|16|pure": {
+  "mean_regret": 0.2999999999999999,
+  "sem_regret": 3.512590202971636e-18,
+  "sd_regret": 1.110778552818352e-16,
+  "frac_optimal": 0.0,
+  "mean_probes": 0.03,
+  "mean_explore": 0.0,
+  "nsim": 1000
+ },
+ "pub|16|sr_pub": {
+  "mean_regret": 0.1638,
+  "sem_regret": 0.004725663116631558,
+  "sd_regret": 0.14943858903205656,
+  "frac_optimal": 0.0,
+  "mean_probes": 0.0,
+  "mean_explore": 0.0,
+  "nsim": 1000
+ },
+ "pub|16|ucb_pub": {
+  "mean_regret": 0.23609999999999998,
+  "sem_regret": 0.0038861152700211932,
+  "sd_regret": 0.12288975503227229,
+  "frac_optimal": 0.0,
+  "mean_probes": 0.0,
+  "mean_explore": 0.0,
+  "nsim": 1000
+ },
+ "pub|16|union": {
+  "mean_regret": 0.027600000000000003,
+  "sem_regret": 0.002743312917945338,
+  "sd_regret": 0.08675117155269874,
+  "frac_optimal": 0.908,
+  "mean_probes": 9.993,
+  "mean_explore": 9.937,
+  "nsim": 1000
+ },
+ "pub|16|union_noctx": {
+  "mean_regret": 0.027600000000000003,
+  "sem_regret": 0.002743312917945338,
+  "sd_regret": 0.08675117155269874,
+  "frac_optimal": 0.908,
+  "mean_probes": 9.993,
+  "mean_explore": 9.937,
+  "nsim": 1000
+ },
+ "pub|16|union_noexp": {
+  "mean_regret": 0.2999999999999999,
+  "sem_regret": 3.512590202971636e-18,
+  "sd_regret": 1.110778552818352e-16,
+  "frac_optimal": 0.0,
+  "mean_probes": 0.03,
+  "mean_explore": 0.0,
+  "nsim": 1000
+ },
+ "pub|25|alg1_pub": {
+  "mean_regret": 0.1755,
+  "sem_regret": 0.004676710555681377,
+  "sd_regret": 0.14789057313304868,
+  "frac_optimal": 0.0,
+  "mean_probes": 0.0,
+  "mean_explore": 0.0,
+  "nsim": 1000
+ },
+ "pub|25|alg2_pub": {
+  "mean_regret": 0.21059999999999998,
+  "sem_regret": 0.004341254022340376,
+  "sd_regret": 0.1372825061196309,
+  "frac_optimal": 0.0,
+  "mean_probes": 0.0,
+  "mean_explore": 0.0,
+  "nsim": 1000
+ },
+ "pub|25|pure": {
+  "mean_regret": 0.2999999999999999,
+  "sem_regret": 3.512590202971636e-18,
+  "sd_regret": 1.110778552818352e-16,
+  "frac_optimal": 0.0,
+  "mean_probes": 0.023,
+  "mean_explore": 0.0,
+  "nsim": 1000
+ },
+ "pub|25|sr_pub": {
+  "mean_regret": 0.1638,
+  "sem_regret": 0.004725663116631558,
+  "sd_regret": 0.14943858903205656,
+  "frac_optimal": 0.0,
+  "mean_probes": 0.0,
+  "mean_explore": 0.0,
+  "nsim": 1000
+ },
+ "pub|25|ucb_pub": {
+  "mean_regret": 0.23609999999999998,
+  "sem_regret": 0.0038861152700211932,
+  "sd_regret": 0.12288975503227229,
+  "frac_optimal": 0.0,
+  "mean_probes": 0.0,
+  "mean_explore": 0.0,
+  "nsim": 1000
+ },
+ "pub|25|union": {
+  "mean_regret": 0.027600000000000003,
+  "sem_regret": 0.002743312917945338,
+  "sd_regret": 0.08675117155269874,
+  "frac_optimal": 0.908,
+  "mean_probes": 9.993,
+  "mean_explore": 9.937,
+  "nsim": 1000
+ },
+ "pub|25|union_noctx": {
+  "mean_regret": 0.027600000000000003,
+  "sem_regret": 0.002743312917945338,
+  "sd_regret": 0.08675117155269874,
+  "frac_optimal": 0.908,
+  "mean_probes": 9.993,
+  "mean_explore": 9.937,
+  "nsim": 1000
+ },
+ "pub|25|union_noexp": {
+  "mean_regret": 0.2999999999999999,
+  "sem_regret": 3.512590202971636e-18,
+  "sd_regret": 1.110778552818352e-16,
+  "frac_optimal": 0.0,
+  "mean_probes": 0.023,
+  "mean_explore": 0.0,
+  "nsim": 1000
+ },
+ "pub|2|alg1_pub": {
+  "mean_regret": 0.0,
+  "sem_regret": 0.0,
+  "sd_regret": 0.0,
+  "frac_optimal": 0.0,
+  "mean_probes": 0.0,
+  "mean_explore": 0.0,
+  "nsim": 1000
+ },
+ "pub|2|alg2_pub": {
+  "mean_regret": 0.016200000000000003,
+  "sem_regret": 0.0021452650563886424,
+  "sd_regret": 0.06783923762957662,
+  "frac_optimal": 0.0,
+  "mean_probes": 0.0,
+  "mean_explore": 0.0,
+  "nsim": 1000
+ },
+ "pub|2|pure": {
+  "mean_regret": 0.2999999999999999,
+  "sem_regret": 3.512590202971636e-18,
+  "sd_regret": 1.110778552818352e-16,
+  "frac_optimal": 0.0,
+  "mean_probes": 0.033,
+  "mean_explore": 0.0,
+  "nsim": 1000
+ },
+ "pub|2|sr_pub": {
+  "mean_regret": 0.1638,
+  "sem_regret": 0.004725663116631558,
+  "sd_regret": 0.14943858903205656,
+  "frac_optimal": 0.0,
+  "mean_probes": 0.0,
+  "mean_explore": 0.0,
+  "nsim": 1000
+ },
+ "pub|2|ucb_pub": {
+  "mean_regret": 0.23609999999999998,
+  "sem_regret": 0.0038861152700211932,
+  "sd_regret": 0.12288975503227229,
+  "frac_optimal": 0.0,
+  "mean_probes": 0.0,
+  "mean_explore": 0.0,
+  "nsim": 1000
+ },
+ "pub|2|union": {
+  "mean_regret": 0.0069,
+  "sem_regret": 0.0014228191783970353,
+  "sd_regret": 0.044993493023040725,
+  "frac_optimal": 0.977,
+  "mean_probes": 8.686,
+  "mean_explore": 1.993,
+  "nsim": 1000
+ },
+ "pub|2|union_noctx": {
+  "mean_regret": 0.0069,
+  "sem_regret": 0.0014228191783970353,
+  "sd_regret": 0.044993493023040725,
+  "frac_optimal": 0.977,
+  "mean_probes": 8.686,
+  "mean_explore": 1.993,
+  "nsim": 1000
+ },
+ "pub|2|union_noexp": {
+  "mean_regret": 0.2999999999999999,
+  "sem_regret": 3.512590202971636e-18,
+  "sd_regret": 1.110778552818352e-16,
+  "frac_optimal": 0.0,
+  "mean_probes": 0.033,
+  "mean_explore": 0.0,
+  "nsim": 1000
+ },
+ "pub|40|alg1_pub": {
+  "mean_regret": 0.23939999999999997,
+  "sem_regret": 0.0038107954762965396,
+  "sd_regret": 0.12050793402163265,
+  "frac_optimal": 0.0,
+  "mean_probes": 0.0,
+  "mean_explore": 0.0,
+  "nsim": 1000
+ },
+ "pub|40|alg2_pub": {
+  "mean_regret": 0.23999999999999996,
+  "sem_regret": 0.003796631983009997,
+  "sd_regret": 0.12006004503753287,
+  "frac_optimal": 0.0,
+  "mean_probes": 0.0,
+  "mean_explore": 0.0,
+  "nsim": 1000
+ },
+ "pub|40|pure": {
+  "mean_regret": 0.2999999999999999,
+  "sem_regret": 3.512590202971636e-18,
+  "sd_regret": 1.110778552818352e-16,
+  "frac_optimal": 0.0,
+  "mean_probes": 0.014,
+  "mean_explore": 0.0,
+  "nsim": 1000
+ },
+ "pub|40|sr_pub": {
+  "mean_regret": 0.1638,
+  "sem_regret": 0.004725663116631558,
+  "sd_regret": 0.14943858903205656,
+  "frac_optimal": 0.0,
+  "mean_probes": 0.0,
+  "mean_explore": 0.0,
+  "nsim": 1000
+ },
+ "pub|40|ucb_pub": {
+  "mean_regret": 0.23609999999999998,
+  "sem_regret": 0.0038861152700211932,
+  "sd_regret": 0.12288975503227229,
+  "frac_optimal": 0.0,
+  "mean_probes": 0.0,
+  "mean_explore": 0.0,
+  "nsim": 1000
+ },
+ "pub|40|union": {
+  "mean_regret": 0.027299999999999998,
+  "sem_regret": 0.0027298648615201016,
+  "sd_regret": 0.08632590666863664,
+  "frac_optimal": 0.909,
+  "mean_probes": 9.994,
+  "mean_explore": 9.946,
+  "nsim": 1000
+ },
+ "pub|40|union_noctx": {
+  "mean_regret": 0.027299999999999998,
+  "sem_regret": 0.0027298648615201016,
+  "sd_regret": 0.08632590666863664,
+  "frac_optimal": 0.909,
+  "mean_probes": 9.994,
+  "mean_explore": 9.946,
+  "nsim": 1000
+ },
+ "pub|40|union_noexp": {
+  "mean_regret": 0.2999999999999999,
+  "sem_regret": 3.512590202971636e-18,
+  "sd_regret": 1.110778552818352e-16,
+  "frac_optimal": 0.0,
+  "mean_probes": 0.014,
+  "mean_explore": 0.0,
+  "nsim": 1000
+ },
+ "pub|49|alg1_pub": {
+  "mean_regret": 0.25739999999999996,
+  "sem_regret": 0.003313037309813492,
+  "sd_regret": 0.10476743872127552,
+  "frac_optimal": 0.0,
+  "mean_probes": 0.0,
+  "mean_explore": 0.0,
+  "nsim": 1000
+ },
+ "pub|49|alg2_pub": {
+  "mean_regret": 0.24959999999999996,
+  "sem_regret": 0.0035485817494363067,
+  "sd_regret": 0.11221600791523657,
+  "frac_optimal": 0.0,
+  "mean_probes": 0.0,
+  "mean_explore": 0.0,
+  "nsim": 1000
+ },
+ "pub|49|pure": {
+  "mean_regret": 0.2999999999999999,
+  "sem_regret": 3.512590202971636e-18,
+  "sd_regret": 1.110778552818352e-16,
+  "frac_optimal": 0.0,
+  "mean_probes": 0.006,
+  "mean_explore": 0.0,
+  "nsim": 1000
+ },
+ "pub|49|sr_pub": {
+  "mean_regret": 0.1638,
+  "sem_regret": 0.004725663116631558,
+  "sd_regret": 0.14943858903205656,
+  "frac_optimal": 0.0,
+  "mean_probes": 0.0,
+  "mean_explore": 0.0,
+  "nsim": 1000
+ },
+ "pub|49|ucb_pub": {
+  "mean_regret": 0.23609999999999998,
+  "sem_regret": 0.0038861152700211932,
+  "sd_regret": 0.12288975503227229,
+  "frac_optimal": 0.0,
+  "mean_probes": 0.0,
+  "mean_explore": 0.0,
+  "nsim": 1000
+ },
+ "pub|49|union": {
+  "mean_regret": 0.026400000000000003,
+  "sem_regret": 0.0026889161887776033,
+  "sd_regret": 0.08503099593836515,
+  "frac_optimal": 0.912,
+  "mean_probes": 9.996,
+  "mean_explore": 9.964,
+  "nsim": 1000
+ },
+ "pub|49|union_noctx": {
+  "mean_regret": 0.026400000000000003,
+  "sem_regret": 0.0026889161887776033,
+  "sd_regret": 0.08503099593836515,
+  "frac_optimal": 0.912,
+  "mean_probes": 9.996,
+  "mean_explore": 9.964,
+  "nsim": 1000
+ },
+ "pub|49|union_noexp": {
+  "mean_regret": 0.2999999999999999,
+  "sem_regret": 3.512590202971636e-18,
+  "sd_regret": 1.110778552818352e-16,
+  "frac_optimal": 0.0,
+  "mean_probes": 0.006,
+  "mean_explore": 0.0,
+  "nsim": 1000
+ },
+ "pub|8|alg1_pub": {
+  "mean_regret": 0.018900000000000004,
+  "sem_regret": 0.0023061023628859383,
+  "sd_regret": 0.07292535984215716,
+  "frac_optimal": 0.0,
+  "mean_probes": 0.0,
+  "mean_explore": 0.0,
+  "nsim": 1000
+ },
+ "pub|8|alg2_pub": {
+  "mean_regret": 0.10050000000000003,
+  "sem_regret": 0.0044799352472797895,
+  "sd_regret": 0.14166799151473783,
+  "frac_optimal": 0.0,
+  "mean_probes": 0.0,
+  "mean_explore": 0.0,
+  "nsim": 1000
+ },
+ "pub|8|pure": {
+  "mean_regret": 0.2999999999999999,
+  "sem_regret": 3.512590202971636e-18,
+  "sd_regret": 1.110778552818352e-16,
+  "frac_optimal": 0.0,
+  "mean_probes": 0.033,
+  "mean_explore": 0.0,
+  "nsim": 1000
+ },
+ "pub|8|sr_pub": {
+  "mean_regret": 0.1638,
+  "sem_regret": 0.004725663116631558,
+  "sd_regret": 0.14943858903205656,
+  "frac_optimal": 0.0,
+  "mean_probes": 0.0,
+  "mean_explore": 0.0,
+  "nsim": 1000
+ },
+ "pub|8|ucb_pub": {
+  "mean_regret": 0.23609999999999998,
+  "sem_regret": 0.0038861152700211932,
+  "sd_regret": 0.12288975503227229,
+  "frac_optimal": 0.0,
+  "mean_probes": 0.0,
+  "mean_explore": 0.0,
+  "nsim": 1000
+ },
+ "pub|8|union": {
+  "mean_regret": 0.0132,
+  "sem_regret": 0.0019466765395282162,
+  "sd_regret": 0.06155931732523965,
+  "frac_optimal": 0.956,
+  "mean_probes": 8.88,
+  "mean_explore": 7.951,
+  "nsim": 1000
+ },
+ "pub|8|union_noctx": {
+  "mean_regret": 0.0132,
+  "sem_regret": 0.0019466765395282162,
+  "sd_regret": 0.06155931732523965,
+  "frac_optimal": 0.956,
+  "mean_probes": 8.88,
+  "mean_explore": 7.951,
+  "nsim": 1000
+ },
+ "pub|8|union_noexp": {
+  "mean_regret": 0.2999999999999999,
+  "sem_regret": 3.512590202971636e-18,
+  "sd_regret": 1.110778552818352e-16,
+  "frac_optimal": 0.0,
+  "mean_probes": 0.033,
+  "mean_explore": 0.0,
+  "nsim": 1000
+ }
+}

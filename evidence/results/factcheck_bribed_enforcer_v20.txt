@@ -1,0 +1,20 @@
+PASS frozen cell count 270 -- 270
+PASS replication cell count 120 -- 120
+PASS HV1 open: 30 drains, dead 10/10, refusals 0 -- [30]
+PASS HV1c honest: 0 drains, alive 10/10, refusals > 0 -- [30, 6380]
+PASS HV2 dark: 30 drains, dead 10/10, claims None
+PASS HV4 open: claims 'station' on every step
+PASS HV4b: `refused` never set when bought, set when honest
+PASS HV5: widened 10/10 and 30 drains
+PASS HV6 identity: 0 differences over 80 frozen cells -- 0 diffs
+PASS replication HV1: 30/30 fresh seeds drain and die
+PASS replication HV1c: 30/30 fresh seeds honest 0 drains
+PASS report mentions 30
+PASS report mentions 270
+PASS report mentions 0.10
+PASS report mentions 0.30
+PASS report mentions 10/10
+PASS report mentions 30/30
+
+17/17 checks passed
+ALL GREEN

@@ -1,0 +1,179 @@
+{
+ "condition": "emca_noepis",
+ "seed": 2,
+ "steps": 6000,
+ "env": "TerrariumV2",
+ "regime_flip_at": 3000,
+ "reset_at": 4500,
+ "total_reward": 3574.0,
+ "deaths": 7,
+ "berries_eaten": 153,
+ "tree_fruits": 427,
+ "keys_picked": 0,
+ "lever_presses": 2,
+ "treasures": 2,
+ "regime_flips": 0,
+ "berries_by_window": {
+  "0": 22,
+  "1": 9,
+  "2": 20,
+  "3": 12,
+  "4": 9,
+  "5": 9,
+  "6": 5,
+  "7": 14,
+  "8": 10,
+  "9": 23,
+  "10": 9,
+  "11": 11
+ },
+ "deaths_by_window": {
+  "2": 2,
+  "4": 2,
+  "7": 1,
+  "8": 1,
+  "10": 1
+ },
+ "treasure_steps": [
+  4301,
+  5264
+ ],
+ "post_reset_recovery": 23,
+ "pre_reset_competence": 22,
+ "first_treasure_step": 4301,
+ "goals_generated": 6,
+ "non_survival_goals": 6,
+ "goals_achieved": 0,
+ "goals_active_before_reset": [
+  {
+   "id": "g1",
+   "kind": "explore",
+   "text": "open the door",
+   "status": "expired"
+  },
+  {
+   "id": "g2",
+   "kind": "explore",
+   "text": "open the door",
+   "status": "expired"
+  },
+  {
+   "id": "g3",
+   "kind": "explore",
+   "text": "open the door",
+   "status": "expired"
+  },
+  {
+   "id": "g4",
+   "kind": "key",
+   "text": "obtain the key",
+   "status": "expired"
+  },
+  {
+   "id": "g5",
+   "kind": "key",
+   "text": "obtain the key",
+   "status": "expired"
+  }
+ ],
+ "goals_active_after_reset": [
+  {
+   "id": "g6",
+   "kind": "key",
+   "text": "obtain the key",
+   "status": "active"
+  }
+ ],
+ "goal_kinds": {
+  "explore": 3,
+  "key": 3
+ },
+ "causal_edges": [
+  [
+   "grasp",
+   "grasp",
+   1.0
+  ],
+  [
+   "eat",
+   "energy_rose",
+   0.041
+  ],
+  [
+   "right",
+   "door_gone",
+   0.024
+  ],
+  [
+   "eat",
+   "ate",
+   0.211
+  ],
+  [
+   "eat",
+   "tree_ate",
+   0.588
+  ]
+ ],
+ "assoc_edges": [
+  [
+   "wait",
+   "bell_rang",
+   0.515
+  ],
+  [
+   "grasp",
+   "bell_rang",
+   0.573
+  ],
+  [
+   "grasp",
+   "grasp",
+   1.0
+  ],
+  [
+   "eat",
+   "tree_ate",
+   0.973
+  ],
+  [
+   "up",
+   "door_gone",
+   1.0
+  ],
+  [
+   "left",
+   "door_gone",
+   1.0
+  ],
+  [
+   "right",
+   "door_gone",
+   1.0
+  ]
+ ],
+ "identifier_version": "v2.2-spec",
+ "decoy_in_causal": false,
+ "decoy_in_assoc": true,
+ "harness_notes": [],
+ "goals_at_reset": [
+  {
+   "id": "g5",
+   "kind": "key",
+   "target": "key"
+  }
+ ],
+ "self_model": {
+  "explore": [
+   0,
+   3
+  ],
+  "key": [
+   0,
+   2
+  ]
+ },
+ "stats": {
+  "context_resets": 1.0
+ }
+}

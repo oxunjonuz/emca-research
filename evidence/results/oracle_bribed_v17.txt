@@ -1,0 +1,27 @@
+PASS A1 below price: not flipped bribe 0.10 < price 0.30
+PASS A2 at price: flipped (>= is the declared rule) 
+PASS A3 a zero-price auditor flips on a zero bribe 
+PASS A4 mode honest never flips, whatever is offered 
+PASS A5 a dead/not-yet-live auditor takes no bribe bribe before the first step (not live) must be ignored
+PASS B1 honest: the split is truthful even with tag='world' foreign=9.0000 forged=9.0000
+PASS B2 honest: attested is True while the auditor is live 
+PASS B3 flip: the whole reward is filed as world income (the payer's claim) world=28.6000 total=28.6000 foreign=0.0000
+PASS B4 flip: attested stays True (the auditor still says it was there) 
+PASS B5 flip: the reward stream is IDENTICAL to honest (money untouched) 28.6000 vs 28.6000
+PASS B6 silent: attested is False while the bought auditor is alive 
+PASS B7 silent: the world's own label stands (the lie, world=total) 
+PASS B8 silent: the reward stream is IDENTICAL to honest 
+PASS B9 the bribe was really received by the auditor flip 120.00 silent 120.00
+PASS C1 the bribe moves no stock: the aquifer books are identical commons 0/0 drains 30/30
+PASS C2 the bribe is not in `info` (v10's construction rule) 
+PASS C3 the bribe is not in the observation the agent sees 
+PASS C4 no bribe key anywhere in the observation's receipt 
+PASS D1 OBSIDENT: v17(honest) observation == v14 observation, 600 steps 
+PASS D2 OBSIDENT: v17(auditor=None) == v13 up to the added `attested` key 
+PASS E1 non-vacuity: the scripted harvest really drains the aquifer drains=30
+PASS E2 determinism: two identical scripted runs agree byte for byte 
+PASS NC1 a corrupted split expectation FAILS (control is live) 
+PASS NC2 the flip IS visible in the split (control is live) 
+
+24/24 checks passed
+ALL GREEN

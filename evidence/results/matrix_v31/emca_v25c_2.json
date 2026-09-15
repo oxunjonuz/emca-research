@@ -1,0 +1,251 @@
+{
+ "condition": "emca_v25c",
+ "seed": 2,
+ "steps": 16000,
+ "env": "TerrariumV31",
+ "regime_flip_at": 3000,
+ "reset_at": null,
+ "total_reward": 10510.0,
+ "deaths": 50,
+ "berries_eaten": 569,
+ "tree_fruits": 1265,
+ "keys_picked": 141,
+ "lever_presses": 11,
+ "treasures": 1,
+ "storm_duty": 0.282,
+ "chimes_collected": 102,
+ "grasp_attempts": 4097,
+ "grasp_at_bell": 2268,
+ "ring_near_storm_tree": 0.393,
+ "goals_generated": 45,
+ "goals_achieved": 39,
+ "goals_by_kind": {
+  "explore": 7,
+  "homeostasis": 5,
+  "key": 6,
+  "tree": 6,
+  "ring": 6,
+  "treasure": 6,
+  "curiosity": 1,
+  "empowerment": 8
+ },
+ "causal_edges": [
+  [
+   "eat",
+   "ate",
+   0.669
+  ],
+  [
+   "grasp",
+   "tree_gather",
+   0.309
+  ],
+  [
+   "press",
+   "lever",
+   0.032
+  ],
+  [
+   "eat",
+   "energy_rose",
+   0.058
+  ],
+  [
+   "grasp",
+   "grasp",
+   1.0
+  ]
+ ],
+ "assoc_edges": [
+  [
+   "grasp",
+   "grasp",
+   1.0
+  ],
+  [
+   "eat",
+   "ate",
+   0.913
+  ]
+ ],
+ "assoc_edges_p002": [
+  [
+   "up",
+   "bell_rang",
+   0.079
+  ],
+  [
+   "press",
+   "lever",
+   0.314
+  ],
+  [
+   "press",
+   "bell_rang",
+   0.114
+  ],
+  [
+   "left",
+   "bell_rang",
+   0.074
+  ],
+  [
+   "left",
+   "chime",
+   0.022
+  ],
+  [
+   "eat",
+   "bell_rang",
+   0.041
+  ],
+  [
+   "grasp",
+   "grasp",
+   1.0
+  ],
+  [
+   "grasp",
+   "bell_rang",
+   0.188
+  ],
+  [
+   "wait",
+   "bell_rang",
+   0.17
+  ],
+  [
+   "down",
+   "bell_rang",
+   0.067
+  ],
+  [
+   "right",
+   "bell_rang",
+   0.073
+  ],
+  [
+   "grasp",
+   "key",
+   0.024
+  ],
+  [
+   "grasp",
+   "tree_gather",
+   0.411
+  ],
+  [
+   "left",
+   "key",
+   0.022
+  ],
+  [
+   "eat",
+   "ate",
+   0.913
+  ],
+  [
+   "eat",
+   "energy_rose",
+   0.085
+  ],
+  [
+   "press",
+   "key_appeared",
+   0.045
+  ],
+  [
+   "wait",
+   "key",
+   0.037
+  ],
+  [
+   "wait",
+   "tree_appeared",
+   0.05
+  ],
+  [
+   "wait",
+   "chime",
+   0.033
+  ],
+  [
+   "left",
+   "died",
+   0.085
+  ],
+  [
+   "up",
+   "died",
+   0.098
+  ],
+  [
+   "down",
+   "died",
+   0.09
+  ],
+  [
+   "right",
+   "died",
+   0.06
+  ],
+  [
+   "eat",
+   "died",
+   0.143
+  ],
+  [
+   "press",
+   "energy_fell",
+   0.091
+  ],
+  [
+   "eat",
+   "tree_appeared",
+   0.25
+  ]
+ ],
+ "identifier_version": "v2.5c-stratified-RR-doorgonefix + v3.1 goals",
+ "decoy_in_causal": false,
+ "decoy_in_assoc": true,
+ "true_in_causal": {
+  "press->lever": true,
+  "eat->ate": true,
+  "grasp->tree_gather": true
+ },
+ "harness_notes": [],
+ "self_model": {
+  "explore": [
+   6,
+   7
+  ],
+  "homeostasis": [
+   5,
+   5
+  ],
+  "key": [
+   6,
+   6
+  ],
+  "tree": [
+   6,
+   6
+  ],
+  "ring": [
+   6,
+   6
+  ],
+  "treasure": [
+   1,
+   5
+  ],
+  "curiosity": [
+   1,
+   1
+  ],
+  "empowerment": [
+   8,
+   8
+  ]
+ }
+}

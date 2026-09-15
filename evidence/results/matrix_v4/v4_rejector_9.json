@@ -1,0 +1,355 @@
+{
+ "condition": "v4_rejector",
+ "seed": 9,
+ "steps": 16000,
+ "env": "TerrariumV4",
+ "regime_flip_at": 3000,
+ "total_reward": 9848.0,
+ "deaths": 60,
+ "berries_eaten": 456,
+ "tree_fruits": 908,
+ "keys_picked": 33,
+ "lever_presses": 8,
+ "treasures": 0,
+ "chimes_collected": 62,
+ "grasp_attempts": 1223,
+ "grasp_costs_paid": 0.0,
+ "torches_collected": 19,
+ "treasury_eaten": 0,
+ "scorch_paid": 191.4,
+ "scorch_steps": 0,
+ "grasps_near_torch": 99,
+ "near_trap_steps": 1697,
+ "torch_goal_steps": 1182,
+ "goals_generated": 256,
+ "goals_achieved": 67,
+ "goals_by_kind": {
+  "explore": 3,
+  "key": 10,
+  "tree": 10,
+  "ring": 9,
+  "altar": 8,
+  "torch": 8,
+  "treasure": 3,
+  "curiosity": 9,
+  "empowerment": 159,
+  "homeostasis": 37
+ },
+ "causal_edges": [
+  [
+   "press",
+   "lever",
+   0.027
+  ],
+  [
+   "eat",
+   "energy_rose",
+   0.051
+  ],
+  [
+   "eat",
+   "patch_berry",
+   0.069
+  ],
+  [
+   "eat",
+   "patch_ate",
+   0.363
+  ],
+  [
+   "eat",
+   "tree_ate",
+   0.285
+  ],
+  [
+   "eat",
+   "ate",
+   0.427
+  ],
+  [
+   "grasp",
+   "tree_gather",
+   0.742
+  ],
+  [
+   "wait",
+   "offering",
+   0.046
+  ],
+  [
+   "grasp",
+   "grasp",
+   1.0
+  ]
+ ],
+ "assoc_edges": [
+  [
+   "grasp",
+   "grasp",
+   1.0
+  ],
+  [
+   "grasp",
+   "torch_lit",
+   0.703
+  ],
+  [
+   "eat",
+   "ate",
+   0.778
+  ],
+  [
+   "eat",
+   "patch_ate",
+   0.683
+  ],
+  [
+   "eat",
+   "tree_ate",
+   0.644
+  ],
+  [
+   "grasp",
+   "tree_gather",
+   0.963
+  ]
+ ],
+ "assoc_edges_p002": [
+  [
+   "down",
+   "bell_rang",
+   0.057
+  ],
+  [
+   "down",
+   "patch_berry",
+   0.031
+  ],
+  [
+   "down",
+   "torch_lit",
+   0.125
+  ],
+  [
+   "left",
+   "patch_berry",
+   0.049
+  ],
+  [
+   "left",
+   "torch_lit",
+   0.092
+  ],
+  [
+   "left",
+   "bell_rang",
+   0.051
+  ],
+  [
+   "up",
+   "bell_rang",
+   0.096
+  ],
+  [
+   "up",
+   "patch_berry",
+   0.034
+  ],
+  [
+   "up",
+   "scorched",
+   0.021
+  ],
+  [
+   "up",
+   "torch_lit",
+   0.211
+  ],
+  [
+   "wait",
+   "torch_lit",
+   0.044
+  ],
+  [
+   "wait",
+   "bell_rang",
+   0.034
+  ],
+  [
+   "press",
+   "lever",
+   0.2
+  ],
+  [
+   "press",
+   "scorched",
+   0.025
+  ],
+  [
+   "press",
+   "torch_lit",
+   0.161
+  ],
+  [
+   "press",
+   "patch_berry",
+   0.081
+  ],
+  [
+   "eat",
+   "patch_berry",
+   0.075
+  ],
+  [
+   "eat",
+   "torch_lit",
+   0.308
+  ],
+  [
+   "grasp",
+   "grasp",
+   1.0
+  ],
+  [
+   "grasp",
+   "patch_berry",
+   0.026
+  ],
+  [
+   "grasp",
+   "bell_rang",
+   0.288
+  ],
+  [
+   "grasp",
+   "torch_lit",
+   0.703
+  ],
+  [
+   "right",
+   "patch_berry",
+   0.044
+  ],
+  [
+   "right",
+   "bell_rang",
+   0.053
+  ],
+  [
+   "right",
+   "torch_lit",
+   0.096
+  ],
+  [
+   "press",
+   "bell_rang",
+   0.101
+  ],
+  [
+   "eat",
+   "bell_rang",
+   0.13
+  ],
+  [
+   "wait",
+   "patch_berry",
+   0.027
+  ],
+  [
+   "wait",
+   "offering",
+   0.053
+  ],
+  [
+   "eat",
+   "ate",
+   0.778
+  ],
+  [
+   "eat",
+   "patch_ate",
+   0.683
+  ],
+  [
+   "eat",
+   "energy_rose",
+   0.1
+  ],
+  [
+   "eat",
+   "tree_ate",
+   0.644
+  ],
+  [
+   "press",
+   "energy_fell",
+   0.026
+  ],
+  [
+   "grasp",
+   "tree_gather",
+   0.963
+  ],
+  [
+   "grasp",
+   "energy_rose",
+   0.022
+  ],
+  [
+   "grasp",
+   "key",
+   0.03
+  ],
+  [
+   "down",
+   "died",
+   0.139
+  ],
+  [
+   "grasp",
+   "tree_bare",
+   0.033
+  ],
+  [
+   "down",
+   "key",
+   0.188
+  ],
+  [
+   "left",
+   "key",
+   0.333
+  ],
+  [
+   "right",
+   "key",
+   0.333
+  ],
+  [
+   "up",
+   "died",
+   0.198
+  ],
+  [
+   "right",
+   "died",
+   0.167
+  ],
+  [
+   "left",
+   "died",
+   0.156
+  ]
+ ],
+ "identifier_version": "v2.5c-stratified + v4 torch goals (world route)",
+ "decoy_torch_in_causal": false,
+ "decoy_torch_in_assoc": true,
+ "decoy_bell_in_causal": false,
+ "true_in_causal": {
+  "press->lever": true,
+  "eat->ate": true,
+  "grasp->tree_gather": true,
+  "eat->treasury_ate": false
+ },
+ "harness_notes": []
+}

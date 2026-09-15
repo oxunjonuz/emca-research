@@ -1,0 +1,24 @@
+cells loaded: 119
+
+  PASS V1 mean/sem/probes recomputed from raw rows          119 cells, 0 mismatches
+
+   running cross-producer transplant control (v4 vs v3 driver)...
+  PASS V2 v4 driver + OLD rule == v3 producer (3 cells)     []
+
+  PASS V3 T4 margin >= T2 margin AND T2-accepts => T4-accepts 750 states compared, 0 violations []
+
+  PASS V4 mask p=0.35: bayes-voi mean recomputed            diff=-0.000661  CI-free
+  PASS V4 maskr p=0.35: bayes-voi mean recomputed           diff=+0.000000  CI-free
+  PASS V4 pub p=16: bayes-voi mean recomputed               diff=+0.000000  CI-free
+
+  PASS V5 G2: rho(bayes probes, richness) <= 0              rho=-0.922 (scipy), voi rho=-0.952
+
+  PASS V6 bayes cell bit-identical across 3 hash seeds      
+
+  PASS V7 frozen producers unchanged                        []
+
+  PASS V8 quantised first pass preserved as evidence        119 files
+
+  PASS V0 NEGATIVE CONTROL: corrupted mean must be DETECTED detected a 0.500 discrepancy
+
+VERIFICATION PASSED

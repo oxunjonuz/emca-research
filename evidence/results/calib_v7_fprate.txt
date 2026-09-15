@@ -1,0 +1,20 @@
+=== 1. DETERMINISM: one cell, byte hash across a fresh process ===
+   frozen cell sha256 : 3d15afa4986e9295b49caa158bf7de725bbf7744ae861d2b2b7b3c21591c16b1
+   fresh  cell sha256 : 3d15afa4986e9295b49caa158bf7de725bbf7744ae861d2b2b7b3c21591c16b1
+   byte-identical     : True
+   frozen cell untouched by this script: True
+
+=== 2. how many tests did the matrix actually issue? ===
+   verdicts issued across the matrix: 149
+
+=== 3. NOMINAL per-test false-positive rate (matched n) ===
+   n=100/arm: scripted pass rate 4/400 = 1.00%
+   n=200/arm: scripted pass rate 0/400 = 0.00%
+   n=400/arm: scripted pass rate 0/400 = 0.00%
+   analytic Monte-Carlo at n=200/arm: 202/40000 = 0.51%
+
+=== 4. expected FP count vs observed ===
+   Monte-Carlo n=200: E[FP] = 149 x 0.0050 = 0.75
+      P(at least one FP) = 0.53 ; observed distinct FP events = 1
+   frozen nominal 0.43%: E[FP] = 149 x 0.0043 = 0.64
+      P(at least one FP) = 0.47 ; observed distinct FP events = 1

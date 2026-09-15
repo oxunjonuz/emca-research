@@ -1,0 +1,192 @@
+[OK ] grid files present found 72
+[OK ] mean alg1_pub m16 stored 0.1056000000 recomputed 0.1056000000
+[OK ] nsim alg1_pub m16 1000 rows
+[OK ] mean alg1_pub m2 stored 0.0000000000 recomputed 0.0000000000
+[OK ] nsim alg1_pub m2 1000 rows
+[OK ] mean alg1_pub m25 stored 0.1755000000 recomputed 0.1755000000
+[OK ] nsim alg1_pub m25 1000 rows
+[OK ] mean alg1_pub m40 stored 0.2394000000 recomputed 0.2394000000
+[OK ] nsim alg1_pub m40 1000 rows
+[OK ] mean alg1_pub m49 stored 0.2574000000 recomputed 0.2574000000
+[OK ] nsim alg1_pub m49 1000 rows
+[OK ] mean alg1_pub m8 stored 0.0189000000 recomputed 0.0189000000
+[OK ] nsim alg1_pub m8 1000 rows
+[OK ] mean alg2_pub m16 stored 0.1686000000 recomputed 0.1686000000
+[OK ] nsim alg2_pub m16 1000 rows
+[OK ] mean alg2_pub m2 stored 0.0162000000 recomputed 0.0162000000
+[OK ] nsim alg2_pub m2 1000 rows
+[OK ] mean alg2_pub m25 stored 0.2106000000 recomputed 0.2106000000
+[OK ] nsim alg2_pub m25 1000 rows
+[OK ] mean alg2_pub m40 stored 0.2400000000 recomputed 0.2400000000
+[OK ] nsim alg2_pub m40 1000 rows
+[OK ] mean alg2_pub m49 stored 0.2496000000 recomputed 0.2496000000
+[OK ] nsim alg2_pub m49 1000 rows
+[OK ] mean alg2_pub m8 stored 0.1005000000 recomputed 0.1005000000
+[OK ] nsim alg2_pub m8 1000 rows
+[OK ] mean beta0 m16 stored 0.3000000000 recomputed 0.3000000000
+[OK ] nsim beta0 m16 1000 rows
+[OK ] mean beta0 m2 stored 0.3000000000 recomputed 0.3000000000
+[OK ] nsim beta0 m2 1000 rows
+[OK ] mean beta0 m25 stored 0.3000000000 recomputed 0.3000000000
+[OK ] nsim beta0 m25 1000 rows
+[OK ] mean beta0 m40 stored 0.3000000000 recomputed 0.3000000000
+[OK ] nsim beta0 m40 1000 rows
+[OK ] mean beta0 m49 stored 0.3000000000 recomputed 0.3000000000
+[OK ] nsim beta0 m49 1000 rows
+[OK ] mean beta0 m8 stored 0.3000000000 recomputed 0.3000000000
+[OK ] nsim beta0 m8 1000 rows
+[OK ] mean boot1 m16 stored 0.1380000000 recomputed 0.1380000000
+[OK ] nsim boot1 m16 1000 rows
+[OK ] mean boot1 m2 stored 0.1281000000 recomputed 0.1281000000
+[OK ] nsim boot1 m2 1000 rows
+[OK ] mean boot1 m25 stored 0.1476000000 recomputed 0.1476000000
+[OK ] nsim boot1 m25 1000 rows
+[OK ] mean boot1 m40 stored 0.1554000000 recomputed 0.1554000000
+[OK ] nsim boot1 m40 1000 rows
+[OK ] mean boot1 m49 stored 0.1710000000 recomputed 0.1710000000
+[OK ] nsim boot1 m49 1000 rows
+[OK ] mean boot1 m8 stored 0.1329000000 recomputed 0.1329000000
+[OK ] nsim boot1 m8 1000 rows
+[OK ] mean boot5 m16 stored 0.1035000000 recomputed 0.1035000000
+[OK ] nsim boot5 m16 1000 rows
+[OK ] mean boot5 m2 stored 0.1029000000 recomputed 0.1029000000
+[OK ] nsim boot5 m2 1000 rows
+[OK ] mean boot5 m25 stored 0.1035000000 recomputed 0.1035000000
+[OK ] nsim boot5 m25 1000 rows
+[OK ] mean boot5 m40 stored 0.1035000000 recomputed 0.1035000000
+[OK ] nsim boot5 m40 1000 rows
+[OK ] mean boot5 m49 stored 0.1035000000 recomputed 0.1035000000
+[OK ] nsim boot5 m49 1000 rows
+[OK ] mean boot5 m8 stored 0.1035000000 recomputed 0.1035000000
+[OK ] nsim boot5 m8 1000 rows
+[OK ] mean perm m16 stored 0.3000000000 recomputed 0.3000000000
+[OK ] nsim perm m16 1000 rows
+[OK ] mean perm m2 stored 0.3000000000 recomputed 0.3000000000
+[OK ] nsim perm m2 1000 rows
+[OK ] mean perm m25 stored 0.3000000000 recomputed 0.3000000000
+[OK ] nsim perm m25 1000 rows
+[OK ] mean perm m40 stored 0.3000000000 recomputed 0.3000000000
+[OK ] nsim perm m40 1000 rows
+[OK ] mean perm m49 stored 0.3000000000 recomputed 0.3000000000
+[OK ] nsim perm m49 1000 rows
+[OK ] mean perm m8 stored 0.3000000000 recomputed 0.3000000000
+[OK ] nsim perm m8 1000 rows
+[OK ] mean pure m16 stored 0.3000000000 recomputed 0.3000000000
+[OK ] nsim pure m16 1000 rows
+[OK ] mean pure m2 stored 0.3000000000 recomputed 0.3000000000
+[OK ] nsim pure m2 1000 rows
+[OK ] mean pure m25 stored 0.3000000000 recomputed 0.3000000000
+[OK ] nsim pure m25 1000 rows
+[OK ] mean pure m40 stored 0.3000000000 recomputed 0.3000000000
+[OK ] nsim pure m40 1000 rows
+[OK ] mean pure m49 stored 0.3000000000 recomputed 0.3000000000
+[OK ] nsim pure m49 1000 rows
+[OK ] mean pure m8 stored 0.3000000000 recomputed 0.3000000000
+[OK ] nsim pure m8 1000 rows
+[OK ] mean pure_minn5 m16 stored 0.3000000000 recomputed 0.3000000000
+[OK ] nsim pure_minn5 m16 1000 rows
+[OK ] mean pure_minn5 m2 stored 0.3000000000 recomputed 0.3000000000
+[OK ] nsim pure_minn5 m2 1000 rows
+[OK ] mean pure_minn5 m25 stored 0.3000000000 recomputed 0.3000000000
+[OK ] nsim pure_minn5 m25 1000 rows
+[OK ] mean pure_minn5 m40 stored 0.3000000000 recomputed 0.3000000000
+[OK ] nsim pure_minn5 m40 1000 rows
+[OK ] mean pure_minn5 m49 stored 0.3000000000 recomputed 0.3000000000
+[OK ] nsim pure_minn5 m49 1000 rows
+[OK ] mean pure_minn5 m8 stored 0.3000000000 recomputed 0.3000000000
+[OK ] nsim pure_minn5 m8 1000 rows
+[OK ] mean sr_pub m16 stored 0.1638000000 recomputed 0.1638000000
+[OK ] nsim sr_pub m16 1000 rows
+[OK ] mean sr_pub m2 stored 0.1638000000 recomputed 0.1638000000
+[OK ] nsim sr_pub m2 1000 rows
+[OK ] mean sr_pub m25 stored 0.1638000000 recomputed 0.1638000000
+[OK ] nsim sr_pub m25 1000 rows
+[OK ] mean sr_pub m40 stored 0.1638000000 recomputed 0.1638000000
+[OK ] nsim sr_pub m40 1000 rows
+[OK ] mean sr_pub m49 stored 0.1638000000 recomputed 0.1638000000
+[OK ] nsim sr_pub m49 1000 rows
+[OK ] mean sr_pub m8 stored 0.1638000000 recomputed 0.1638000000
+[OK ] nsim sr_pub m8 1000 rows
+[OK ] mean ucb m16 stored 0.0537000000 recomputed 0.0537000000
+[OK ] nsim ucb m16 1000 rows
+[OK ] mean ucb m2 stored 0.0000000000 recomputed 0.0000000000
+[OK ] nsim ucb m2 1000 rows
+[OK ] mean ucb m25 stored 0.0936000000 recomputed 0.0936000000
+[OK ] nsim ucb m25 1000 rows
+[OK ] mean ucb m40 stored 0.1587000000 recomputed 0.1587000000
+[OK ] nsim ucb m40 1000 rows
+[OK ] mean ucb m49 stored 0.1728000000 recomputed 0.1728000000
+[OK ] nsim ucb m49 1000 rows
+[OK ] mean ucb m8 stored 0.0060000000 recomputed 0.0060000000
+[OK ] nsim ucb m8 1000 rows
+[OK ] mean ucb_pub m16 stored 0.2361000000 recomputed 0.2361000000
+[OK ] nsim ucb_pub m16 1000 rows
+[OK ] mean ucb_pub m2 stored 0.2361000000 recomputed 0.2361000000
+[OK ] nsim ucb_pub m2 1000 rows
+[OK ] mean ucb_pub m25 stored 0.2361000000 recomputed 0.2361000000
+[OK ] nsim ucb_pub m25 1000 rows
+[OK ] mean ucb_pub m40 stored 0.2361000000 recomputed 0.2361000000
+[OK ] nsim ucb_pub m40 1000 rows
+[OK ] mean ucb_pub m49 stored 0.2361000000 recomputed 0.2361000000
+[OK ] nsim ucb_pub m49 1000 rows
+[OK ] mean ucb_pub m8 stored 0.2361000000 recomputed 0.2361000000
+[OK ] nsim ucb_pub m8 1000 rows
+[OK ] mean unc m16 stored 0.0537000000 recomputed 0.0537000000
+[OK ] nsim unc m16 1000 rows
+[OK ] mean unc m2 stored 0.0000000000 recomputed 0.0000000000
+[OK ] nsim unc m2 1000 rows
+[OK ] mean unc m25 stored 0.0936000000 recomputed 0.0936000000
+[OK ] nsim unc m25 1000 rows
+[OK ] mean unc m40 stored 0.1587000000 recomputed 0.1587000000
+[OK ] nsim unc m40 1000 rows
+[OK ] mean unc m49 stored 0.1728000000 recomputed 0.1728000000
+[OK ] nsim unc m49 1000 rows
+[OK ] mean unc m8 stored 0.0066000000 recomputed 0.0066000000
+[OK ] nsim unc m8 1000 rows
+[OK ] published shape: alg1 rises with m [0.0, 0.0189, 0.1056, 0.1755, 0.2394, 0.2574]
+[OK ] published shape: SR flat in m spread 0.00e+00
+[OK ] published shape: alg1 beats SR at m=2 alg1 0.0000 < sr 0.1638
+[OK ] published shape: SR beats alg1 at m=49 sr 0.1638 < alg1 0.2574
+[OK ] pure silent m=2 empty/total = 199512/199661 = 0.9993
+[OK ] pure never probes the optimum m=2 max opt_trials 0
+[OK ] pure silent m=8 empty/total = 199512/199661 = 0.9993
+[OK ] pure never probes the optimum m=8 max opt_trials 0
+[OK ] pure silent m=16 empty/total = 199554/199700 = 0.9993
+[OK ] pure never probes the optimum m=16 max opt_trials 0
+[OK ] pure silent m=25 empty/total = 199651/199778 = 0.9994
+[OK ] pure never probes the optimum m=25 max opt_trials 0
+[OK ] pure silent m=40 empty/total = 199822/199873 = 0.9997
+[OK ] pure never probes the optimum m=40 max opt_trials 0
+[OK ] pure silent m=49 empty/total = 199942/199965 = 0.9999
+[OK ] pure never probes the optimum m=49 max opt_trials 0
+[OK ] pure regret == worst-case 0.300 at m=2 0.300000
+[OK ] pure regret == worst-case 0.300 at m=8 0.300000
+[OK ] pure regret == worst-case 0.300 at m=25 0.300000
+[OK ] pure regret == worst-case 0.300 at m=49 0.300000
+[OK ] unc (declared adaptation) beats pure at m=2 unc 0.0000 < pure 0.3000
+[OK ] unc (declared adaptation) beats pure at m=8 unc 0.0066 < pure 0.3000
+[OK ] unc (declared adaptation) beats pure at m=25 unc 0.0936 < pure 0.3000
+[OK ] unc (declared adaptation) beats pure at m=49 unc 0.1728 < pure 0.3000
+[OK ] family files present found 56
+[OK ] family: mechanism never beats plain UCB at q1=0.0 pure 0.3000 >= ucb 0.0000
+[OK ] family beta0 == pure at q1=0.0 the arbiter is inert
+[OK ] family: mechanism never beats plain UCB at q1=0.02 pure 0.0702 >= ucb 0.0000
+[OK ] family beta0 == pure at q1=0.02 the arbiter is inert
+[OK ] family: mechanism never beats plain UCB at q1=0.05 pure 0.0222 >= ucb 0.0000
+[OK ] family beta0 == pure at q1=0.05 the arbiter is inert
+[OK ] family: mechanism never beats plain UCB at q1=0.1 pure 0.0033 >= ucb 0.0000
+[OK ] family beta0 == pure at q1=0.1 the arbiter is inert
+[OK ] family: mechanism never beats plain UCB at q1=0.2 pure 0.0000 >= ucb 0.0000
+[OK ] family beta0 == pure at q1=0.2 the arbiter is inert
+[OK ] family: mechanism never beats plain UCB at q1=0.35 pure 0.0000 >= ucb 0.0000
+[OK ] family beta0 == pure at q1=0.35 the arbiter is inert
+[OK ] family: mechanism never beats plain UCB at q1=0.5 pure 0.0000 >= ucb 0.0000
+[OK ] family beta0 == pure at q1=0.5 the arbiter is inert
+[OK ] family: pure bad only where the optimum is invisible q1=0 -> 0.300, q1=0.2 -> 0.000
+[OK ] arbiter arithmetic rhs 28.0 value 100.0
+[OK ] weak cause below the bar 17.76 < 28.00 (declines)
+[OK ] NEGATIVE CONTROL fired (a wrong assertion was caught) deliberately wrong assertion reported as wrong
+[OK ] fresh-process determinism (pure m=8 seed=1) sha 64118da4a52b vs 64118da4a52b
+[OK ] fresh-process determinism (alg1_pub m=8 seed=1) sha a454f5e5fcae
+
+RESULT: ALL AGREE (negative control fired as required)

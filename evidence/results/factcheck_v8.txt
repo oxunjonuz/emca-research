@@ -1,0 +1,75 @@
+=== REPORT FACT-CHECK (RESULTS_V8.md vs the frozen matrix) ===
+
+ C1/C2/C3 paired differences, as printed in the report
+  [PASS]   gap 0.20 C1 = 7288 (measured 7288)
+  [PASS]   gap 0.20 C2 = 203350 (measured 203350)
+  [PASS]   gap 0.20 C3 = 196062 (measured 196062)
+  [PASS]   gap 0.10 C1 = 28150 (measured 28150)
+  [PASS]   gap 0.10 C2 = 86275 (measured 86275)
+  [PASS]   gap 0.10 C3 = 58125 (measured 58125)
+  [PASS]   gap 0.05 C1 = 15488 (measured 15488)
+  [PASS]   gap 0.05 C2 = 26312 (measured 26312)
+  [PASS]   gap 0.05 C3 = 10825 (measured 10825)
+  [PASS]   gap 0.03 C1 = 7550 (measured 7550)
+  [PASS]   gap 0.03 C2 = 7738 (measured 7738)
+  [PASS]   gap 0.03 C3 = 188 (measured 188)
+
+ C4 effort shares, as printed
+  [PASS]   gap 0.20 graded share 0.045 (measured 0.045)
+  [PASS]   gap 0.20 threshold share 0.083 (measured 0.083)
+  [PASS]   gap 0.10 graded share 0.104 (measured 0.104)
+  [PASS]   gap 0.10 threshold share 0.409 (measured 0.409)
+  [PASS]   gap 0.05 graded share 0.249 (measured 0.249)
+  [PASS]   gap 0.05 threshold share 0.705 (measured 0.705)
+  [PASS]   gap 0.03 graded share 0.268 (measured 0.268)
+  [PASS]   gap 0.03 threshold share 0.796 (measured 0.796)
+
+ C5 gamma ordering, as printed (means)
+  [PASS]   gap 0.20 gamma true 0.9967 (measured 0.9967)
+  [PASS]   gap 0.20 gamma false 0.0 (measured 0.0000)
+  [PASS]   gap 0.10 gamma true 0.9868 (measured 0.9868)
+  [PASS]   gap 0.10 gamma false 0.0002 (measured 0.0002)
+  [PASS]   gap 0.05 gamma true 0.8132 (measured 0.8132)
+  [PASS]   gap 0.05 gamma false 0.0383 (measured 0.0383)
+  [PASS]   gap 0.03 gamma true 0.5664 (measured 0.5664)
+  [PASS]   gap 0.03 gamma false 0.1244 (measured 0.1244)
+
+ A1 persistence contrasts, as printed
+  [PASS]   gap 0.20 graded persist=off = 0.213 (measured 0.2130)
+  [PASS]   gap 0.20 graded persist=on = 0.3273 (measured 0.3273)
+  [PASS]   gap 0.20 rot persist=on = 0.1967 (measured 0.1967)
+  [PASS]   gap 0.10 graded persist=on = 0.1868 (measured 0.1868)
+  [PASS]   gap 0.10 rot persist=on = 0.0994 (measured 0.0994)
+
+ A2 contrasts, as printed
+  [PASS]   graded(on)-graded(off) gap 0.20 = +199663 (measured +199662)
+  [PASS]   graded(on)-graded(off) gap 0.10 = +152775 (measured +152775)
+  [PASS]   identity: (graded-rot|pon) - (graded-rot|poff) == graded(pon)-graded(poff) exactly (403588 - 203925 = 199662 vs 199662)
+  [PASS]   graded(pon)-rot(pon) gap 0.20 = +403588 (measured +403588)
+  [PASS]   graded(poff)-rot(poff) gap 0.20 = +203925 (measured +203925)
+  [PASS]   graded(pon)-rot(pon) gap 0.10 = +243538 (measured +243538)
+  [PASS]   graded(poff)-rot(poff) gap 0.10 = +90762 (measured +90762)
+
+ F curve, as printed
+  [PASS]   q=0.0 carry-fresh = -48162 (measured -48162, 0/8 positive)
+  [PASS]   q=0.25 carry-fresh = -36688 (measured -36688, 0/8 positive)
+  [PASS]   q=0.5 carry-fresh = -25762 (measured -25762, 0/8 positive)
+  [PASS]   q=0.75 carry-fresh = -10125 (measured -10125, 2/8 positive)
+  [PASS]   q=1.0 carry-fresh = 11838 (measured +11838, 8/8 positive)
+
+ F2 / F3, as printed
+  [PASS]   q=1.0 carry/fresh gathering = 0.449 (measured 0.449)
+  [PASS]   q=0.75 carry/fresh gathering = 0.896 (measured 0.896)
+  [PASS]   q=0.0 carry/fresh gathering = 2.064 (measured 2.064)
+  [PASS]   q=1 carry reaches 99.2% of oracle (measured 99.2%, carry 714412, oracle 720300)
+
+ C6 tau dose, as printed
+  [PASS]   graded reward = 704275 (measured 704275)
+  [PASS]   graded_t07 reward = 677750 (measured 677750)
+  [PASS]   graded_t03 reward = 642125 (measured 642125)
+  [PASS]   rot reward = 613512 (measured 613512)
+
+ code-freeze claim: no code file is newer than any matrix file
+  [PASS]   all 404 matrix files were written after the last code edit 
+
+FACT-CHECK: ALL PASS

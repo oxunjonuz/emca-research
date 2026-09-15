@@ -1,0 +1,42 @@
+mut1.lean:44:44: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  b ≥ 0
+  a ≥ 0
+  a - b ≥ 0
+  a ≥ 1
+where
+ a := ↑s
+ b := ↑d
+mut1.lean:44:44: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  b ≥ 0
+  a ≥ 0
+  a + b ≥ 1
+where
+ a := ↑d
+ b := ↑(s - d)
+mut1.lean:44:44: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  b ≥ 0
+  a ≥ 1
+  a - b ≥ 0
+where
+ a := ↑s
+ b := ↑d
+mut1.lean:51:2: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  b ≥ 0
+  a ≥ 1
+  a - 8*b ≤ 0
+where
+ a := ↑M
+ b := ↑s
+mut1.lean:71:44: error: tactic 'decide' proved that the proposition
+  2 * ↑7 + ↑10 = 4
+is false
+mut1.lean:71:44: error: tactic 'decide' proved that the proposition
+  2 * ↑3 + ↑10 = -4
+is false
+mut1.lean:71:44: error: tactic 'decide' proved that the proposition
+  2 * ↑10 + ↑20 = 0
+is false

@@ -1,0 +1,21 @@
+PASS  A1 the frozen agent sha256 is a real 64-hex literal pinned=6871f24d597500bb
+PASS  A1b the agent module is byte-identical to the frozen v14 value agent=6871f24d597500bb pinned=6871f24d597500bb
+PASS  A2 the new files are exactly the payer, its runner and its driver env_adaptive_v19.py 6a5c58f898d8, run_life_v19.py 168559e950f8, driver_adaptive_v19.py 439812704a2f
+PASS  A3 HQ1: 40 v17 cells reproduced field for field (recomputed) 40/40 cells, 0 diffs
+PASS  A4 HQ2: p_knows full harm 10/10 at 7.50003 < 9.0 (recomputed) full=10/10 spend=[7.50003]
+PASS  A5 HQ3: front-load K=1,T=1.30 gives exactly 6 drains (recomputed) n=10 drains=[6]
+PASS  A6 HQ4: every learning cell at B>=2 holds the defence (recomputed) 100 cells, 0 breaches
+PASS  A7 HQ4c: B=1 greedy reaches full harm but pays MORE than 9.0 n=10 spend=[21.06] (frozen 9.0)
+PASS  A8 HQ5a: the unpriced defence is never breached (recomputed) 30 cells, 0 breaches
+PASS  A9 HQ5b: the feedback='none' control differs at B=1 (non-vacuous) 10/10 seeds differ in drains
+PASS  A10 HQ6: the flip spend == 7.50003 + the auditor's bribe (recomputed) n=10 spend=[607.5] bribe=[600.0]
+PASS  A11 declared verdict fields agree with their definitions on all cells 320 cells, 0 mismatches
+PASS  A12 v19 has 320 cells; the ten frozen matrices are intact v19=320; frozen={'matrix_v7': 110, 'matrix_safety_v10': 330, 'matrix_wirehead_v11': 220, 'matrix_wirehead_v12': 490, 'matrix_ledger_v13': 260, 'matrix_attested_v14': 340, 'matrix_v15': 210, 'matrix_scope_v16': 790, 'matrix_bribed_v17': 360, 'matrix_enforced_v18': 130}
+PASS  A13 no learning cell is vacuous (every one really decided) 0 vacuous
+PASS  A14 one cell re-run in a fresh process is byte-identical 6f404ed0f5b9f63a == 6f404ed0f5b9f63a
+PASS  NC1 a corrupted p_knows spend FAILS the HQ2 check control is live
+PASS  NC2 a corrupted held cell FAILS the HQ4 check control is live
+PASS  NC3 a corrupted unpriced-defence cell FAILS the HQ5a check control is live
+PASS  NC4 a flipped verdict field FAILS the definition check control is live
+
+INDEPENDENT PASS: 19/19

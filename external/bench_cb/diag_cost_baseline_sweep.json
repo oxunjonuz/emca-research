@@ -1,0 +1,72 @@
+[
+ {
+  "base": 0.5,
+  "rich_rate": null,
+  "union_regret": 0.004855,
+  "union_probes": 3.365,
+  "union_clear_frac": 0.036830438046901434,
+  "nocost_regret": 0.002891,
+  "nocost_probes": 4.33,
+  "beta0_probes": 0.0
+ },
+ {
+  "base": 0.55,
+  "rich_rate": null,
+  "union_regret": 0.011966,
+  "union_probes": 3.18,
+  "union_clear_frac": 0.03575756934254728,
+  "nocost_regret": 0.002891,
+  "nocost_probes": 4.16,
+  "beta0_probes": 0.0
+ },
+ {
+  "base": 0.6,
+  "rich_rate": null,
+  "union_regret": 0.033915,
+  "union_probes": 2.755,
+  "union_clear_frac": 0.02252131252637558,
+  "nocost_regret": 0.00225,
+  "nocost_probes": 3.985,
+  "beta0_probes": 0.0
+ },
+ {
+  "base": 0.65,
+  "rich_rate": null,
+  "union_regret": 0.046253,
+  "union_probes": 2.405,
+  "union_clear_frac": 0.017656171130628145,
+  "nocost_regret": 0.003339,
+  "nocost_probes": 4.135,
+  "beta0_probes": 0.0
+ },
+ {
+  "base": 0.7,
+  "rich_rate": null,
+  "union_regret": 0.04932,
+  "union_probes": 1.655,
+  "union_clear_frac": 0.010925839242972255,
+  "nocost_regret": 0.003821,
+  "nocost_probes": 4.305,
+  "beta0_probes": 0.0
+ },
+ {
+  "base": 0.75,
+  "rich_rate": null,
+  "union_regret": 0.051431,
+  "union_probes": 0.44,
+  "union_clear_frac": 0.0028186762217591865,
+  "nocost_regret": 0.010394,
+  "nocost_probes": 4.425,
+  "beta0_probes": 0.0
+ },
+ {
+  "base": 0.8,
+  "rich_rate": null,
+  "union_regret": 0.031,
+  "union_probes": 0.01,
+  "union_clear_frac": 6.17283950617284e-05,
+  "nocost_regret": 0.021269,
+  "nocost_probes": 4.455,
+  "beta0_probes": 0.0
+ }
+]

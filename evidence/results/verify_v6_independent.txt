@@ -1,0 +1,31 @@
+=== G1 (prober - rejector)
+mean +455.4 CI [-1312,+2205] sign 6/10 p=0.7539
+G1: FAIL
+=== G2 (oracle - rejector)
+mean +3754.6 CI [+2338,+5363] sign 9/9 p=0.0039
+G2: PASS
+=== G3 (oracle - prober)
+mean +3299.2 CI [+1472,+5098] sign 9/10 p=0.0215
+=== G4
+rejector spring 0/10, prober CAUSAL 9/10, assoc02 10/10
+G4: PASS
+=== G5
+assoc lotuses 0, random 0
+G5: PASS
+=== G6
+believer 9/10, rejector 0/10, prober 0/10
+G6: PASS
+=== G7
+prober 37.9 vs rejector 45.1
+G7: PASS
+=== decomposition cross-check (own walk)
+lotus +2.0, fruits -138.7
+corr(D, fruit_gap) = 0.831
+=== the ledger
+v6_oracle     lotus   4.9 reward    20061 deaths  42.9
+v6_prober     lotus   2.6 reward    16762 deaths  37.9
+v6_rejector   lotus   0.6 reward    16306 deaths  45.1
+v6_assoc02    lotus   3.8 reward    17353 deaths  51.3
+v6_believer   lotus   3.3 reward    16152 deaths  57.1
+
+FINAL: G1 FAIL G2 PASS G4 PASS G5 PASS G6 PASS G7 PASS

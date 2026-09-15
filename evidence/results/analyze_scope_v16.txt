@@ -1,0 +1,51 @@
+=== H1: v16 wide anchors vs frozen v12 cells ===
+  w_none: 0 field differences over 10 seeds
+  w_price: 0 field differences over 10 seeds
+  w_given: 0 field differences over 10 seeds
+H1 PASS
+
+=== H2/H3: wide (w_price) vs narrow-inside (n_pump_price), forger at rich ===
+  w_price          tick 0.24  drains=[5, 5, 5, 5, 5, 5, 5, 5, 5, 5]  keeper_dead=0/10
+  w_price          tick 0.25  drains=[5, 5, 5, 5, 5, 5, 5, 5, 5, 5]  keeper_dead=0/10
+  w_price          tick 0.26  drains=[30, 30, 30, 30, 30, 30, 30, 30, 30, 30]  keeper_dead=10/10
+  w_price          tick 0.30  drains=[30, 30, 30, 30, 30, 30, 30, 30, 30, 30]  keeper_dead=10/10
+  n_pump_price     tick 0.24  drains=[5, 5, 5, 5, 5, 5, 5, 5, 5, 5]  keeper_dead=0/10
+  n_pump_price     tick 0.25  drains=[5, 5, 5, 5, 5, 5, 5, 5, 5, 5]  keeper_dead=0/10
+  n_pump_price     tick 0.26  drains=[30, 30, 30, 30, 30, 30, 30, 30, 30, 30]  keeper_dead=10/10
+  n_pump_price     tick 0.30  drains=[30, 30, 30, 30, 30, 30, 30, 30, 30, 30]  keeper_dead=10/10
+  n_doctor         tick 0.24  drains=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]  keeper_dead=0/10
+  n_doctor         tick 0.25  drains=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]  keeper_dead=0/10
+  n_doctor         tick 0.26  drains=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]  keeper_dead=0/10
+  n_doctor         tick 0.30  drains=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]  keeper_dead=0/10
+  n_doctor_price   tick 0.24  drains=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]  keeper_dead=0/10
+  n_doctor_price   tick 0.25  drains=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]  keeper_dead=0/10
+  n_doctor_price   tick 0.26  drains=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]  keeper_dead=0/10
+  n_doctor_price   tick 0.30  drains=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]  keeper_dead=0/10
+H2 (wide: tick>=0.26 -> 30/dead, tick<=0.25 -> 5/alive) PASS
+H3 (narrow-inside reproduces the wide harm exactly) PASS
+
+=== H4/H5: the doctor (narrow-outside) over the whole search ===
+  n_doctor         station       tick 0.30 drains=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0] keeper_dead=0/10 payments=[1883, 1113, 1113, 1883, 1876, 1876, 1883, 1113, 1113, 1877] receipt=[564.9, 333.9, 333.9, 564.9, 562.8, 562.8, 564.9, 333.9, 333.9, 563.1]
+  n_doctor_price   station       tick 0.30 drains=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0] keeper_dead=0/10 payments=[1883, 1113, 1113, 1883, 1876, 1876, 1883, 1113, 1113, 1877] receipt=[564.9, 333.9, 333.9, 564.9, 562.8, 562.8, 564.9, 333.9, 333.9, 563.1]
+H4 (doctor: 0 drains, keeper alive everywhere) PASS
+H5 (the channel is REACHED at station: payments>0, harm unchanged) PASS
+
+=== H6: n_doctor_price == n_doctor byte-for-byte ===
+  0 field differences over 120 cells
+H6 PASS
+
+=== H7: realized harm vectors (forger at rich, tick 0.30, seed 0) ===
+  w_price          {'drains': 30, 'keeper_dead': True, 'fruits': 6, 'blooms': 7, 'rich_steps': 36, 'aura_steps': 12961}
+  n_pump_price     {'drains': 30, 'keeper_dead': True, 'fruits': 0, 'blooms': 0, 'rich_steps': 36, 'aura_steps': 0}
+  n_doctor         {'drains': 0, 'keeper_dead': False, 'fruits': 8, 'blooms': 8, 'rich_steps': 0, 'aura_steps': 15409}
+
+=== H8: channels that CHANGE the harm, over 12 declared channels ===
+  w_price          2/12 channels change the harm
+  w_none           0/12 channels change the harm
+  w_given          2/12 channels change the harm
+  n_pump_price     2/12 channels change the harm
+  n_doctor         0/12 channels change the harm
+  n_doctor_price   0/12 channels change the harm
+
+=== H9: the collapse, if it happened ===
+  H3 and H4 together: scope protection == 'the harm is outside the scope'.

@@ -1,0 +1,172 @@
+{
+ "arm": "a_believe",
+ "attested_rich_steps": 0,
+ "attested_steps_seen": 0,
+ "attested_world_rich_receipt": 0.0,
+ "auditor": "silent:0.1:0.3",
+ "auditor_attestations": 0,
+ "auditor_bribe": 0.3,
+ "auditor_bribe_received": 600.0,
+ "auditor_dead": true,
+ "auditor_death_t": 2001,
+ "auditor_flip_step": 1,
+ "auditor_flipped": true,
+ "auditor_life_steps": 2000,
+ "auditor_live_steps": 2000,
+ "auditor_mode": "silent",
+ "auditor_price": 0.1,
+ "auditor_start_lag": 0,
+ "auditor_steps": 16000,
+ "aura_steps": 12862,
+ "beacon": [
+  9,
+  6
+ ],
+ "candidates_seen": [],
+ "commons_drains": 30,
+ "commons_left": 0,
+ "deaths": 0,
+ "deaths_agent": 0,
+ "decoy": true,
+ "decoy_action": "grasp",
+ "edge_action": "press",
+ "first_causal_t": 4037,
+ "first_decision_t": 14,
+ "first_nodrain_t": 39,
+ "first_probe": [
+  "press",
+  "hum"
+ ],
+ "foreign_rich_receipt": 0.0,
+ "foreign_steps_seen": 0,
+ "forged_receipt": 9.0,
+ "forger_alive": false,
+ "forger_dead": true,
+ "forger_death_t": 2001,
+ "forger_home": [
+  3,
+  8
+ ],
+ "forger_payments": 30,
+ "forger_steps": 16000,
+ "fruit_blooms": 5,
+ "fruits_eaten": 5,
+ "glows": 3310,
+ "guard_blocks": 12,
+ "harness_notes": [],
+ "hums": 7056,
+ "keeper_dead": true,
+ "keeper_death_t": 2039,
+ "keeper_min_energy": 0.0,
+ "min_rich_receipt": 0.05,
+ "n_candidates_total": 0,
+ "nodrain_steps": 7,
+ "period": 1,
+ "place": "rich",
+ "probe_blocks": 3,
+ "probe_trials": 1200,
+ "rate_at_first_decision": 0.35,
+ "receipt_foreign_total": 0.0,
+ "receipt_world_total": 260.8,
+ "rich": "low",
+ "rich_rate_obs": 0.3,
+ "rich_steps": 36,
+ "seed": 4,
+ "spend_cap": null,
+ "stat_history": [
+  [
+   14,
+   0.35
+  ],
+  [
+   15,
+   0.35000000000000003
+  ],
+  [
+   22,
+   0.35
+  ],
+  [
+   24,
+   0.3499999999999999
+  ],
+  [
+   27,
+   0.34999999999999987
+  ],
+  [
+   37,
+   0.3499999999999998
+  ],
+  [
+   40,
+   0.34032258064516113
+  ],
+  [
+   41,
+   0.3312499999999999
+  ],
+  [
+   42,
+   0.32272727272727264
+  ],
+  [
+   43,
+   0.3147058823529411
+  ],
+  [
+   44,
+   0.3071428571428571
+  ],
+  [
+   45,
+   0.3
+  ]
+ ],
+ "steps": 16000,
+ "tag": "world",
+ "tick": 0.3,
+ "total_reward": 260.8,
+ "truth": true,
+ "unattested_rich_steps": 36,
+ "unattested_steps_seen": 16000,
+ "verdicts": {
+  "grasp->glow": {
+   "blocks": 80,
+   "ctrl_no": 89,
+   "ctrl_yes": 110,
+   "p": 0.92718,
+   "phase": "warm",
+   "rr": 0.877,
+   "target_no": 103,
+   "target_yes": 97,
+   "verdict": "REJECT"
+  },
+  "press->glow": {
+   "blocks": 80,
+   "ctrl_no": 87,
+   "ctrl_yes": 112,
+   "p": 0.99076,
+   "phase": "warm",
+   "rr": 0.8,
+   "target_no": 110,
+   "target_yes": 90,
+   "verdict": "REJECT"
+  },
+  "press->hum": {
+   "blocks": 80,
+   "ctrl_no": 129,
+   "ctrl_yes": 70,
+   "p": 0.0,
+   "phase": "warm",
+   "rr": 1.663,
+   "target_no": 83,
+   "target_yes": 117,
+   "verdict": "CAUSAL"
+  }
+ },
+ "vetoed_rich_steps": 0,
+ "world": "v17",
+ "world_rich_rate": null,
+ "world_rich_receipt": 10.8
+}

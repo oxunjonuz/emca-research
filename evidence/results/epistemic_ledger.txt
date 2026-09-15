@@ -1,0 +1,156 @@
+========================================================================
+THE EPISTEMIC LEDGER -- both axes, recomputed from raw JSONs
+(fresh process, disk-only; directive msg_00116, turn 116)
+========================================================================
+
+AXIS B -- EPISTEMIC: truth vs decoy, independent of reward
+------------------------------------------------------------------------
+
+### v3.1
+  pooled   (emca_v21     ) n=3   decoy-in-causal 3/3   true-edges 100%
+  spec     (emca_v22     ) n=3   decoy-in-causal 3/3   true-edges 100%
+  strat    (emca_v25c    ) n=3   decoy-in-causal 0/3   true-edges 100%
+
+### v3.2
+  pooled   (emca_v21     ) n=3   decoy-in-causal 3/3   true-edges 89%
+  spec     (emca_v22     ) n=3   decoy-in-causal 3/3   true-edges 89%
+  strat    (emca_v25c    ) n=3   decoy-in-causal 0/3   true-edges 100%
+  prober   (prober       ) n=3   decoy-in-causal 0/3   true-edges 67%   probe[wait->patch_berry]: C:1 R:0 U:2 decoyFP:0
+
+### v3.3
+  pooled   (emca_v21     ) n=15  decoy-in-causal 15/15   true-edges 96%
+  spec     (emca_v22     ) n=15  decoy-in-causal 15/15   true-edges 93%
+  strat    (emca_v25c    ) n=15  decoy-in-causal 0/15   true-edges 93%
+  prober   (prober       ) n=15  decoy-in-causal 0/15   true-edges 93%   probe[wait->patch_berry]: C:11 R:1 U:3 decoyFP:0
+
+### v4
+  pooled   (v4_believer  ) n=10  decoy-in-causal 9/10   true-edges 62%
+  spec     (v4_spec      ) n=10  decoy-in-causal 0/10   true-edges 70%
+  strat    (v4_rejector  ) n=10  decoy-in-causal 0/10   true-edges 70%
+  assoc    (v4_assoc     ) n=10  decoy-in-causal 0/10   true-edges 72%
+
+### v5
+  pooled   (v5_believer  ) n=10  decoy-in-causal 9/10   true-edges 50%   spring-in-causal 10/10   lotus 6.2
+  spec     (v5_spec      ) n=10  decoy-in-causal 0/10   true-edges 50%   spring-in-causal 9/10   lotus 4.2
+  strat    (v5_rejector  ) n=10  decoy-in-causal 0/10   true-edges 52%   spring-in-causal 10/10   lotus 6.2
+  assoc    (v5_assoc     ) n=10  decoy-in-causal 0/10   true-edges 57%   spring-in-causal 7/10   lotus 0.3
+  assoc02  (v5_assoc02   ) n=10  decoy-in-causal 0/10   true-edges 72%   spring-in-causal 6/10   lotus 5.0
+
+### v6
+  pooled   (v6_believer  ) n=10  decoy-in-causal 9/10   true-edges 52%   spring-in-causal 7/10   lotus 3.3
+  strat    (v6_rejector  ) n=10  decoy-in-causal 0/10   true-edges 50%   spring-in-causal 0/10   lotus 0.6
+  assoc    (v6_assoc     ) n=10  decoy-in-causal 0/10   true-edges 55%   spring-in-causal 0/10   lotus 0.0
+  assoc02  (v6_assoc02   ) n=10  decoy-in-causal 0/10   true-edges 68%   spring-in-causal 1/10   lotus 3.8
+  prober   (v6_prober    ) n=10  decoy-in-causal 0/10   true-edges 55%   probe[wait->spring_flow]: C:9 R:1 U:0 decoyFP:0   lotus 2.6
+  oracle   (v6_oracle    ) n=10  decoy-in-causal 0/10   true-edges 57%   spring-in-causal 10/10   lotus 4.9
+
+
+AXIS A -- ECONOMIC: the same worlds, reward contrasts
+------------------------------------------------------------------------
+v3.3 n=15  strat - pooled (the old primary): mean +178 CI [-1038,+1363] sign 7+/5- p=0.774 (n=15)
+v3.3 n=15  strat - nocausal (the goal-tax contrast): mean -1014 CI [-2241,+36] sign 2+/11- p=0.022 (n=15)
+v4         honest - fooled (the price of the false edge): mean +3159 CI [+1151,+5358] sign 8+/2- p=0.109 (n=10)
+v5         selectivity contrast (V2): mean -1008 CI [-2690,+708] sign 3+/7- p=0.344 (n=10)
+v6         discovery NET (G1): mean +455 CI [-1338,+2234] sign 6+/4- p=0.754 (n=10)
+v6         truth GROSS (G2): mean +3755 CI [+2356,+5354] sign 9+/0- p=0.004 (n=10)
+v6         the cost of finding out (G3): mean +3299 CI [+1484,+5147] sign 9+/1- p=0.021 (n=10)
+
+
+CROSS-CHECK vs the frozen analyses (must match)
+------------------------------------------------------------------------
+  v6 G1 mean +455 CI [-1283,+2204] p=0.754       -> recomputed mean +455 CI [-1338,+2234] p=0.754
+  v6 G2 mean +3755 CI [+2338,+5363] p=0.004      -> recomputed mean +3755 CI [+2356,+5354] p=0.004
+  v5 V2 mean -1008 CI [-2671,+737] p=1.000       -> recomputed mean -1008 CI [-2690,+708] p=0.344
+  v3.3 primary mean +178 CI [-1056,+1346] p=0.77 -> recomputed mean +178 CI [-1038,+1363] p=0.774
+
+
+THE FOUNDING CHARTER (HYPOTHESES.md, E1) -- recomputed
+------------------------------------------------------------------------
+E1: 'доля рёбер в истинном графе >= 0.5 И доля ложных рёбер
+    <= 0.2. FAIL -> причинный модуль не работает.'
+Edge classification (4-way, from the env source, not vibes):
+  designed-true  -- the world's designed causal edges;
+  mechanically-true -- real action->event mechanics the env
+    emits (tree_bare: the tree IS bare; scorched: the pocket
+    DOES scorch; energy_rose: eating DOES raise energy);
+  decoy -- the designed false edge (grasp->bell_rang in v3.x,
+    grasp->torch_lit in v4-v6; oracle P(effect|do(a)) equal);
+  spurious -- everything else (mostly linger-correlates of
+    world events: X->bell_rang, X->torch_lit for X!=grasp).
+
+per-arm E1 clauses. sensitivity = designed+gray true edges
+held / |true graph|; 'passive-sens' = over the RR>=2 subset
+(the strat gate's design scope); false = (decoy+spurious)
+/all edges; mechanically-true edges counted in neither.
+
+### v3.1  (true graph 3: 3 designed + 0 gray)
+  pooled   (emca_v21     ) sens  100% [PASS] passive-sens  100%   false 16.7% [PASS]   (decoy 3, spur 0, edges 18; ex: [])
+  spec     (emca_v22     ) sens  100% [PASS] passive-sens  100%   false 16.7% [PASS]   (decoy 3, spur 0, edges 18; ex: [])
+  strat    (emca_v25c    ) sens  100% [PASS] passive-sens  100%   false  0.0% [PASS]   (decoy 0, spur 0, edges 15; ex: [])
+
+### v3.2  (true graph 5: 4 designed + 1 gray)
+  pooled   (emca_v21     ) sens   73% [PASS] passive-sens   92%   false 21.4% [FAIL]   (decoy 3, spur 3, edges 28; ex: ['left->door_gone'])
+  spec     (emca_v22     ) sens   73% [PASS] passive-sens   92%   false 21.4% [FAIL]   (decoy 3, spur 3, edges 28; ex: ['left->door_gone'])
+  strat    (emca_v25c    ) sens   80% [PASS] passive-sens  100%   false  0.0% [PASS]   (decoy 0, spur 0, edges 24; ex: [])
+  prober   (prober       ) sens   73% [PASS] passive-sens   75%   false  0.0% [PASS]   (decoy 0, spur 0, edges 23; ex: [])
+
+### v3.3  (true graph 5: 4 designed + 1 gray)
+  pooled   (emca_v21     ) sens   77% [PASS] passive-sens   97%   false 26.5% [FAIL]   (decoy 15, spur 38, edges 200; ex: ['eat->bell_rang', 'left->door_gone', 'left->patch_berry'])
+  spec     (emca_v22     ) sens   76% [PASS] passive-sens   95%   false 24.7% [FAIL]   (decoy 15, spur 33, edges 194; ex: ['eat->bell_rang', 'left->door_gone', 'left->patch_berry'])
+  strat    (emca_v25c    ) sens   76% [PASS] passive-sens   95%   false  0.0% [PASS]   (decoy 0, spur 0, edges 147; ex: [])
+  prober   (prober       ) sens   91% [PASS] passive-sens   95%   false  0.7% [PASS]   (decoy 0, spur 1, edges 146; ex: ['grasp->patch_berry'])
+
+### v4  (true graph 5: 4 designed + 1 gray)
+  pooled   (v4_believer  ) sens   52% [PASS] passive-sens   62%   false 34.1% [FAIL]   (decoy 9, spur 33, edges 123; ex: ['eat->bell_rang', 'eat->torch_lit', 'grasp->bell_rang'])
+  spec     (v4_spec      ) sens   56% [PASS] passive-sens   70%   false 23.8% [FAIL]   (decoy 0, spur 30, edges 126; ex: ['eat->bell_rang', 'grasp->bell_rang', 'left->door_gone'])
+  strat    (v4_rejector  ) sens   56% [PASS] passive-sens   70%   false  0.0% [PASS]   (decoy 0, spur 0, edges 94; ex: [])
+  assoc    (v4_assoc     ) sens   58% [PASS] passive-sens   72%   false 23.1% [FAIL]   (decoy 0, spur 27, edges 117; ex: ['eat->bell_rang', 'grasp->bell_rang', 'left->door_gone'])
+
+### v5  (true graph 6: 4 designed + 2 gray)
+  pooled   (v5_believer  ) sens   50% [PASS] passive-sens   50%   false 26.4% [FAIL]   (decoy 9, spur 20, edges 110; ex: ['eat->bell_rang', 'eat->torch_lit', 'grasp->bell_rang'])
+  spec     (v5_spec      ) sens   48% [FAIL] passive-sens   50%   false 12.2% [PASS]   (decoy 0, spur 12, edges 98; ex: ['eat->bell_rang', 'grasp->bell_rang'])
+  strat    (v5_rejector  ) sens   52% [PASS] passive-sens   52%   false  0.0% [PASS]   (decoy 0, spur 0, edges 95; ex: [])
+  assoc    (v5_assoc     ) sens   50% [PASS] passive-sens   57%   false 12.6% [PASS]   (decoy 0, spur 12, edges 95; ex: ['eat->bell_rang', 'grasp->bell_rang', 'up->bell_rang'])
+  assoc02  (v5_assoc02   ) sens   58% [PASS] passive-sens   72%   false 15.4% [PASS]   (decoy 0, spur 16, edges 104; ex: ['eat->bell_rang', 'grasp->bell_rang', 'up->bell_rang'])
+
+### v6  (true graph 6: 4 designed + 2 gray)
+  pooled   (v6_believer  ) sens   47% [FAIL] passive-sens   52%   false 34.0% [FAIL]   (decoy 9, spur 25, edges 100; ex: ['eat->bell_rang', 'eat->torch_lit', 'grasp->bell_rang'])
+  strat    (v6_rejector  ) sens   33% [FAIL] passive-sens   50%   false  2.4% [PASS]   (decoy 0, spur 2, edges 85; ex: ['up->torch_lit'])
+  assoc    (v6_assoc     ) sens   37% [FAIL] passive-sens   55%   false 21.1% [FAIL]   (decoy 0, spur 19, edges 90; ex: ['eat->bell_rang', 'grasp->bell_rang', 'up->bell_rang'])
+  assoc02  (v6_assoc02   ) sens   47% [FAIL] passive-sens   68%   false 12.4% [PASS]   (decoy 0, spur 11, edges 89; ex: ['down->patch_berry', 'grasp->bell_rang', 'up->bell_rang'])
+  prober   (v6_prober    ) sens   52% [PASS] passive-sens   55%   false  0.0% [PASS]   (decoy 0, spur 0, edges 86; ex: [])
+  oracle   (v6_oracle    ) sens   55% [PASS] passive-sens   57%   false  0.0% [PASS]   (decoy 0, spur 0, edges 94; ex: [])
+
+
+PROBER CALIBRATION -- measured effect size vs ground truth
+------------------------------------------------------------------------
+  v6 spring (oracle RR=1.53, P .304/.199): verdicts 10 -> C:9 R:1 U:0; mean accepted RR 1.545 vs truth 1.53 (+1% selection bias); false-positive CAUSAL verdicts: 0
+    REJECT case: p=0.036 rr=1.284 (rate_wait 121/385 vs ctrl 93/380)
+  v3.3 altar (design RR~1.87, P .28/.15): verdicts 15 -> C:11 R:1 U:3; mean accepted RR 2.177 vs truth 1.87 (+16% selection bias); false-positive CAUSAL verdicts: 0
+    REJECT case: p=0.524 rr=1.25 (rate_wait 25/180 vs ctrl 20/180)
+  v3.2 altar (design RR~1.87): verdicts 3 -> C:1 R:0 U:2; mean accepted RR 2.762 vs truth 1.87 (+48% selection bias); false-positive CAUSAL verdicts: 0
+
+
+POSSESSION vs IDENTIFICATION -- the layers, kept apart (v5/v6)
+------------------------------------------------------------------------
+identification = the edge in the arm's CAUSAL layer (the
+contrast-based route); possession = the edge above the 0.02
+assoc threshold (no contrast, no discrimination).
+  v5 strat    (v5_rejector): IDENTIFIED (causal layer) 10/10, POSSESSED (0.02 assoc) 10/10, decoy in its own layer 10/10, lotus 6.2
+  v5 assoc02  (v5_assoc02): IDENTIFIED (causal layer) 6/10, POSSESSED (0.02 assoc) 10/10, decoy in its own layer 10/10, lotus 5.0
+  v6 strat    (v6_rejector): IDENTIFIED (causal layer) 0/10, POSSESSED (0.02 assoc) 10/10, decoy in its own layer 10/10, lotus 0.6
+  v6 assoc02  (v6_assoc02): IDENTIFIED (causal layer) 1/10, POSSESSED (0.02 assoc) 10/10, decoy in its own layer 10/10, lotus 3.8
+
+
+THE GOAL-SWAP EVIDENCE -- what the campaign's own documents say
+------------------------------------------------------------------------
+founding charter (research/HYPOTHESES.md, pre-registered
+2026-09-09, BEFORE any matrix): E1 = epistemic clauses ONLY
+(>=0.5 true, <=0.2 false); E2-E6 = capability clauses; reward
+appears ONLY as a baseline comparison, never as the causal
+module's success bar.
+turn-104+ headline (RESULTS_V33_SEEDS.md): 'the causal model
+does not pay ... the answer is no' -- reward had become the
+verdict axis. The charter was never amended. The owner's
+correction (msg_00116, op_f4dccecb1750) RESTORES the
+pre-registered charter; it does not invent a new one.

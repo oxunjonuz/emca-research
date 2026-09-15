@@ -1,0 +1,67 @@
+{
+ "turn": 128,
+ "directive": "msg_00128",
+ "campaign_modules_imported_unchanged": {
+  "candidate_gen.py": "fa9721ae816c3c42ecf73ca28ba3f188b78f51b345a381e092515f262c46ef49",
+  "arbitration.py": "2d3d825bcfc83cc8533866510960572c42140db2f2f03c6a9945807b71e0914c"
+ },
+ "external_code": {
+  "latt_code.tar.gz": "17e4584d0c3085ee2ec85014b0df6261e95ee1b8cfe02702cb475eafad67d957",
+  "latt_src/causal_bandits-master/algorithms.py": "4829790c26243f4a10690d4a59ac61cf12de32647a87bcdc5d7edf452734d3eb",
+  "latt_src/causal_bandits-master/models.py": "a8824c64bb18b6e75f2ed8a5042538c2c507701e0d3829b08c36ae450432c9d3",
+  "latt_py3/algorithms.py": "8dc89ffecc620603ac0cb9b04627ce226ae678a4705d6d9320488576c05cc3f1",
+  "latt_py3/models.py": "07f9ea9e91429a108e236e4fd78c394c19277bf14f16596ef49ac12f8bd3fd53"
+ },
+ "my_code": {
+  "cb_agent.py": "698319e5f7ded28b143b1cd49a9f370f8c487345a8df61a1eb44226b293c0d1c",
+  "cb_c1_isolate.py": "5e4c7672c9809498212349e8d58872766a231538718c59cbd1b61c662ff8d9cf",
+  "cb_controls.py": "0c1b1f775751028fe57a3de7f841aa0f88f45d170cbe692bc17798e784e8f188",
+  "cb_family.py": "25493bab24a9c6540c276dfe2ba0d5c66c570c32cfc23b4aa81f79162edf7b4b",
+  "cb_grey.py": "b5e75a146bb61624b6b4b1c967510fd8f864a3976c7b9afdfe98922bf2171b92",
+  "cb_instances.py": "ab9b94306460807d0137a7cc6090e279cbe80368dcba6dc60e38417b2eb11dec",
+  "cb_matrix.py": "01a3994ce07f85dd9abf03291e316d20a393ecb7e1618ae6dfd468df320a64e3",
+  "cb_run.py": "2e293c9b618741bc51e8ff5cfa9c02ed974b79bdebedae8750b243c26f81afa2"
+ },
+ "frozen_constants": {
+  "PROBE_BLOCK": 20,
+  "MARGIN": 0.08,
+  "MIN_N": 40,
+  "Z_MIN": 4.0,
+  "GAIN_UNIT": 200.0,
+  "H_DEFAULT": 40.0,
+  "PROBE_COST_DEFAULT": 4.0
+ },
+ "grid": {
+  "N": 50,
+  "eps": 0.3,
+  "T": 400,
+  "ms": [
+   2,
+   8,
+   16,
+   25,
+   40,
+   49
+  ],
+  "nsim": 1000,
+  "seed0": 1
+ },
+ "family": {
+  "q1": [
+   0.0,
+   0.02,
+   0.05,
+   0.1,
+   0.2,
+   0.35,
+   0.5
+  ],
+  "nsim": 1000
+ },
+ "sources": {
+  "arxiv_1606_03203": "src_6a2ee36a7d5d",
+  "arxiv_2510_16811": "src_0f710f512030",
+  "arxiv_2012_07058": "src_88cb0221447d",
+  "arxiv_2106_02988": "src_e6e9978c4ec3"
+ }
+}

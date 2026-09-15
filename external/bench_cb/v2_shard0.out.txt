@@ -1,0 +1,19 @@
+[shard 0  1/16] mask   p=0.15  union           mean=0.0309 (48s)
+[shard 0  2/16] mask   p=0.15  beta0           mean=0.0776 (124s)
+[shard 0  3/16] mask   p=0.25  union_noexp     mean=0.1276 (188s)
+[shard 0  4/16] mask   p=0.35  union           mean=0.0033 (243s)
+[shard 0  5/16] mask   p=0.35  beta0           mean=0.1776 (320s)
+[shard 0  6/16] maskr  p=0.25  union_noexp     mean=0.0313 (379s)
+[shard 0  7/16] maskr  p=0.35  union           mean=0.0272 (445s)
+[shard 0  8/16] maskr  p=0.35  beta0           mean=0.0313 (516s)
+[shard 0  9/16] pub    p=2     pure            mean=0.3000 (542s)
+[shard 0 10/16] pub    p=8     union_noctx     mean=0.0132 (554s)
+[shard 0 11/16] pub    p=8     ucb_pub         mean=0.2361 (558s)
+/work/Shopify/audit-work/agent_arch/bench_cb/ext/latt_py3/models.py:242: RuntimeWarning: invalid value encountered in divide
+  pi = np.true_divide(joint,ps) # will be nan for elements for which ps is 0
+[shard 0 12/16] pub    p=16    alg2_pub        mean=0.1686 (573s)
+[shard 0 13/16] pub    p=25    pure            mean=0.3000 (596s)
+[shard 0 14/16] pub    p=40    union_noctx     mean=0.0273 (608s)
+[shard 0 15/16] pub    p=40    ucb_pub         mean=0.2361 (612s)
+[shard 0 16/16] pub    p=49    alg2_pub        mean=0.2496 (626s)
+[shard 0] DONE 16 cells in 626s

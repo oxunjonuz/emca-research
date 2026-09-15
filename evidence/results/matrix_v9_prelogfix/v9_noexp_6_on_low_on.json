@@ -1,0 +1,173 @@
+{
+ "arm": "v9_noexp",
+ "seed": 6,
+ "steps": 16000,
+ "truth": true,
+ "rich": "low",
+ "decoy": true,
+ "edge_action": "wait",
+ "decoy_action": "press",
+ "total_reward": 302.95,
+ "deaths": 0,
+ "fruits_eaten": 6,
+ "fruit_blooms": 8,
+ "hums": 7322,
+ "glows": 3298,
+ "aura_steps": 12969,
+ "rich_steps": 59,
+ "probe_trials": 1200,
+ "probe_blocks": 3,
+ "candidates_seen": [
+  [
+   "wait",
+   "hum",
+   0.2587,
+   11388
+  ],
+  [
+   "press",
+   "glow",
+   0.2564,
+   540
+  ],
+  [
+   "grasp",
+   "glow",
+   0.1015,
+   740
+  ]
+ ],
+ "n_candidates_total": 3,
+ "verdicts": {
+  "wait->hum": {
+   "verdict": "CAUSAL",
+   "p": 1e-05,
+   "rr": 1.669,
+   "target_yes": 109,
+   "target_no": 91,
+   "ctrl_yes": 65,
+   "ctrl_no": 134,
+   "blocks": 80,
+   "phase": "cold"
+  },
+  "press->glow": {
+   "verdict": "REJECT",
+   "p": 0.43965,
+   "rr": 1.026,
+   "target_yes": 98,
+   "target_no": 102,
+   "ctrl_yes": 95,
+   "ctrl_no": 104,
+   "blocks": 80,
+   "phase": "warm"
+  },
+  "grasp->glow": {
+   "verdict": "REJECT",
+   "p": 0.74252,
+   "rr": 0.947,
+   "target_yes": 98,
+   "target_no": 102,
+   "ctrl_yes": 103,
+   "ctrl_no": 96,
+   "blocks": 80,
+   "phase": "warm"
+  }
+ },
+ "rich_rate_obs": 0.05,
+ "harness_notes": [],
+ "first_probe": [
+  "wait",
+  "hum"
+ ],
+ "ranked_at_first_probe": [
+  [
+   "wait",
+   "hum",
+   0.2739,
+   139
+  ]
+ ],
+ "probe_order_log": [
+  [
+   "wait",
+   "hum",
+   [
+    [
+     "wait",
+     "hum",
+     0.2739,
+     139
+    ]
+   ]
+  ],
+  [
+   "press",
+   "glow",
+   [
+    [
+     "press",
+     "glow",
+     0.2937,
+     140
+    ],
+    [
+     "wait",
+     "hum",
+     0.2369,
+     339
+    ]
+   ]
+  ],
+  [
+   "grasp",
+   "glow",
+   [
+    [
+     "press",
+     "glow",
+     0.3091,
+     340
+    ],
+    [
+     "wait",
+     "hum",
+     0.2448,
+     1189
+    ],
+    [
+     "grasp",
+     "glow",
+     0.0889,
+     540
+    ]
+   ]
+  ]
+ ],
+ "first_causal_t": 3402,
+ "deaths_agent": 0,
+ "probe_keys": [
+  [
+   "wait",
+   "hum",
+   "(True,)",
+   0.2739,
+   139
+  ],
+  [
+   "press",
+   "glow",
+   "(True,)",
+   0.2937,
+   140
+  ],
+  [
+   "grasp",
+   "glow",
+   "(True,)",
+   0.0889,
+   540
+  ]
+ ],
+ "n_skipped_not_probeable": 0,
+ "n_explore_picks": 0
+}

@@ -1,0 +1,444 @@
+{
+ "condition": "emca_amnesia",
+ "seed": 1,
+ "steps": 6000,
+ "total_reward": 151.0,
+ "deaths": 19,
+ "berries_eaten": 186,
+ "lever_presses": 8,
+ "treasures": 3,
+ "regime_flips": 0,
+ "berries_by_window": {
+  "0": 10,
+  "1": 10,
+  "2": 10,
+  "3": 9,
+  "4": 17,
+  "5": 14,
+  "6": 13,
+  "7": 26,
+  "8": 18,
+  "9": 12,
+  "10": 30,
+  "11": 17
+ },
+ "deaths_by_window": {
+  "0": 2,
+  "1": 3,
+  "2": 2,
+  "3": 3,
+  "4": 1,
+  "5": 2,
+  "6": 2,
+  "7": 1,
+  "9": 3
+ },
+ "treasure_steps": [
+  3213,
+  4021,
+  4707
+ ],
+ "post_reset_recovery": 12,
+ "pre_reset_competence": 10,
+ "first_treasure_step": 3213,
+ "goals_generated": 47,
+ "non_survival_goals": 44,
+ "goals_achieved": 46,
+ "goals_active_before_reset": [
+  {
+   "id": "g40",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  }
+ ],
+ "goals_active_after_reset": [
+  {
+   "id": "g41",
+   "kind": "homeostasis",
+   "text": "restore energy",
+   "status": "achieved"
+  },
+  {
+   "id": "g42",
+   "kind": "explore",
+   "text": "open the door",
+   "status": "achieved"
+  },
+  {
+   "id": "g43",
+   "kind": "treasure",
+   "text": "obtain the treasure",
+   "status": "achieved"
+  },
+  {
+   "id": "g44",
+   "kind": "curiosity",
+   "text": "find novel transitions",
+   "status": "achieved"
+  },
+  {
+   "id": "g45",
+   "kind": "curiosity",
+   "text": "keep exploring",
+   "status": "achieved"
+  },
+  {
+   "id": "g46",
+   "kind": "curiosity",
+   "text": "keep exploring",
+   "status": "achieved"
+  },
+  {
+   "id": "g47",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g48",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g49",
+   "kind": "homeostasis",
+   "text": "restore energy",
+   "status": "achieved"
+  },
+  {
+   "id": "g50",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g51",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g52",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g53",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g54",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g55",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g56",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g57",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g58",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g59",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g60",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g61",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g62",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g63",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g64",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g65",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g66",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g67",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g68",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g69",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g70",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g71",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g72",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g73",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g74",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g75",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g76",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g77",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g78",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g79",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g80",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g81",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g82",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g83",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g84",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g85",
+   "kind": "empowerment",
+   "text": "reach richer context",
+   "status": "achieved"
+  },
+  {
+   "id": "g86",
+   "kind": "homeostasis",
+   "text": "restore energy",
+   "status": "active"
+  }
+ ],
+ "goal_kinds": {
+  "empowerment": 39,
+  "homeostasis": 3,
+  "explore": 1,
+  "treasure": 1,
+  "curiosity": 3
+ },
+ "causal_edges": [
+  [
+   "eat",
+   "ate",
+   0.67
+  ],
+  [
+   "press",
+   "lever",
+   0.083
+  ],
+  [
+   "grasp",
+   "grasp",
+   1.0
+  ],
+  [
+   "eat",
+   "energy_rose",
+   0.068
+  ],
+  [
+   "press",
+   "energy_fell",
+   0.028
+  ]
+ ],
+ "assoc_edges": [
+  [
+   "grasp",
+   "grasp",
+   1.0
+  ],
+  [
+   "eat",
+   "ate",
+   0.819
+  ],
+  [
+   "up",
+   "door_gone",
+   0.862
+  ],
+  [
+   "right",
+   "door_gone",
+   0.741
+  ],
+  [
+   "press",
+   "lever",
+   0.5
+  ],
+  [
+   "left",
+   "door_gone",
+   1.0
+  ]
+ ],
+ "harness_notes": [],
+ "goals_at_reset": [
+  {
+   "id": "g40",
+   "kind": "empowerment",
+   "target": "rich"
+  }
+ ],
+ "self_model": {
+  "empowerment": [
+   39,
+   39
+  ],
+  "homeostasis": [
+   2,
+   2
+  ],
+  "explore": [
+   1,
+   1
+  ],
+  "treasure": [
+   1,
+   1
+  ],
+  "curiosity": [
+   3,
+   3
+  ]
+ },
+ "stats": {
+  "visits": 0,
+  "visits_(True, False, True, False, False)": 46,
+  "visits_(False, False, True, False, False)": 8,
+  "visits_(False, True, True, False, False)": 13,
+  "visits_(True, True, True, False, False)": 6,
+  "visits_(False, False, False, True, False)": 93,
+  "visits_(False, True, False, True, False)": 46,
+  "visits_(True, False, False, True, False)": 23,
+  "visits_(True, True, False, True, False)": 15,
+  "visits_(True, False, False, False, False)": 66,
+  "visits_(True, True, False, False, False)": 15,
+  "context_resets": 1.0,
+  "full_wipes": 1.0
+ }
+}

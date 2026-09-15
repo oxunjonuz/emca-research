@@ -1,0 +1,190 @@
+{
+ "arm": "v9_noexp",
+ "seed": 9,
+ "steps": 16000,
+ "truth": true,
+ "rich": "low",
+ "decoy": true,
+ "edge_action": "wait",
+ "decoy_action": "grasp",
+ "total_reward": 252.95,
+ "deaths": 0,
+ "fruits_eaten": 5,
+ "fruit_blooms": 18,
+ "hums": 7330,
+ "glows": 3307,
+ "aura_steps": 12857,
+ "rich_steps": 59,
+ "probe_trials": 1200,
+ "probe_blocks": 3,
+ "candidates_seen": [
+  [
+   "grasp",
+   "glow",
+   0.2777,
+   740,
+   "(True,)"
+  ],
+  [
+   "press",
+   "glow",
+   0.2669,
+   540,
+   "(True,)"
+  ],
+  [
+   "wait",
+   "hum",
+   0.2636,
+   11307,
+   "(True,)"
+  ]
+ ],
+ "n_candidates_total": 3,
+ "verdicts": {
+  "wait->hum": {
+   "verdict": "CAUSAL",
+   "p": 0.0,
+   "rr": 2.217,
+   "target_yes": 127,
+   "target_no": 73,
+   "ctrl_yes": 57,
+   "ctrl_no": 142,
+   "blocks": 80,
+   "phase": "warm"
+  },
+  "grasp->glow": {
+   "verdict": "REJECT",
+   "p": 0.67571,
+   "rr": 0.968,
+   "target_yes": 106,
+   "target_no": 94,
+   "ctrl_yes": 109,
+   "ctrl_no": 90,
+   "blocks": 80,
+   "phase": "warm"
+  },
+  "press->glow": {
+   "verdict": "REJECT",
+   "p": 0.25708,
+   "rr": 1.081,
+   "target_yes": 101,
+   "target_no": 99,
+   "ctrl_yes": 93,
+   "ctrl_no": 106,
+   "blocks": 80,
+   "phase": "warm"
+  }
+ },
+ "rich_rate_obs": 0.05,
+ "harness_notes": [],
+ "first_probe": [
+  "wait",
+  "hum"
+ ],
+ "ranked_at_first_probe": [
+  [
+   "wait",
+   "hum",
+   0.2656,
+   139,
+   "(True,)"
+  ]
+ ],
+ "probe_order_log": [
+  [
+   "wait",
+   "hum",
+   [
+    [
+     "wait",
+     "hum",
+     0.2656,
+     139,
+     "(True,)"
+    ]
+   ]
+  ],
+  [
+   "grasp",
+   "glow",
+   [
+    [
+     "grasp",
+     "glow",
+     0.3074,
+     340,
+     "(True,)"
+    ],
+    [
+     "wait",
+     "hum",
+     0.2618,
+     932,
+     "(True,)"
+    ],
+    [
+     "press",
+     "glow",
+     0.19,
+     140,
+     "(True,)"
+    ]
+   ]
+  ],
+  [
+   "press",
+   "glow",
+   [
+    [
+     "grasp",
+     "glow",
+     0.3396,
+     540,
+     "(True,)"
+    ],
+    [
+     "press",
+     "glow",
+     0.2839,
+     340,
+     "(True,)"
+    ],
+    [
+     "wait",
+     "hum",
+     0.2428,
+     1486,
+     "(True,)"
+    ]
+   ]
+  ]
+ ],
+ "first_causal_t": 4037,
+ "deaths_agent": 0,
+ "probe_keys": [
+  [
+   "wait",
+   "hum",
+   "(True,)",
+   0.2656,
+   139
+  ],
+  [
+   "grasp",
+   "glow",
+   "(True,)",
+   0.3074,
+   340
+  ],
+  [
+   "press",
+   "glow",
+   "(True,)",
+   0.2839,
+   340
+  ]
+ ],
+ "n_skipped_not_probeable": 0,
+ "n_explore_picks": 0
+}

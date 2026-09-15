@@ -1,0 +1,430 @@
+{
+ "cells": 180,
+ "verdicts": {
+  "H1_reward": "SIGNIFICANT LOSS",
+  "H2_fruits": "NO ADVANTAGE",
+  "H1b_reward_stop": "NO ADVANTAGE",
+  "H2b_fruits_stop": "NO ADVANTAGE",
+  "H5a_union_vs_noexp": "SIGNIFICANT LOSS",
+  "H5b_union_vs_noctx": "NO ADVANTAGE",
+  "H3i_nominate_on": "10/10",
+  "H3i_nominate_off": "6/10",
+  "H3i_PASS": false,
+  "H3ii_first_follows": "6/10",
+  "H3ii_PASS": false,
+  "POSTHOC_H3ii_first_follows_probeable": "10/10",
+  "POSTHOC_H3i_contrast_only_on": "10/10",
+  "POSTHOC_H3i_contrast_only_off": "6/10",
+  "H4_causal_true": "10/10",
+  "H4_PASS": true,
+  "H4_fp_glow_rows": 0,
+  "H4_n_verdicts": 87,
+  "H4_E_fp": 0.425,
+  "H6_union_vs_fixed_verdict": "SIGNIFICANT LOSS",
+  "H6_fixed_nominates_true": "4/10",
+  "H6_seeds_where_edge_is_wait": 4,
+  "H6_PASS": true
+ },
+ "contrasts": {
+  "H1_reward": {
+   "mean_a": 202.95,
+   "mean_b": 307.66499999999564,
+   "mean_diff": -104.71499999999564,
+   "ci": [
+    -184.14499999998696,
+    -55.0
+   ],
+   "n": 10,
+   "pos": 0,
+   "neg": 10,
+   "diffs": [
+    -100.0,
+    -100.0,
+    -50.0,
+    -447.1499999999565,
+    -50.0,
+    -50.0,
+    -100.0,
+    -50.0,
+    -50.0,
+    -50.0
+   ]
+  },
+  "H2_fruits": {
+   "mean_a": 4.0,
+   "mean_b": 4.8,
+   "mean_diff": -0.8,
+   "ci": [
+    -1.6,
+    0.4
+   ],
+   "n": 10,
+   "pos": 1,
+   "neg": 9,
+   "diffs": [
+    -2.0,
+    -2.0,
+    -1.0,
+    4.0,
+    -1.0,
+    -1.0,
+    -2.0,
+    -1.0,
+    -1.0,
+    -1.0
+   ]
+  },
+  "H1b_reward_stop": {
+   "mean_a": 247.95,
+   "mean_b": 307.66499999999564,
+   "mean_diff": -59.71499999999564,
+   "ci": [
+    -154.14499999998696,
+    5.0
+   ],
+   "n": 10,
+   "pos": 2,
+   "neg": 4,
+   "diffs": [
+    -100.0,
+    0.0,
+    50.0,
+    -447.1499999999565,
+    0.0,
+    50.0,
+    -100.0,
+    0.0,
+    0.0,
+    -50.0
+   ]
+  },
+  "H2b_fruits_stop": {
+   "mean_a": 4.9,
+   "mean_b": 4.8,
+   "mean_diff": 0.1,
+   "ci": [
+    -0.8,
+    1.2
+   ],
+   "n": 10,
+   "pos": 3,
+   "neg": 3,
+   "diffs": [
+    -2.0,
+    0.0,
+    1.0,
+    4.0,
+    0.0,
+    1.0,
+    -2.0,
+    0.0,
+    0.0,
+    -1.0
+   ]
+  },
+  "H5a_union_vs_noexp": {
+   "mean_a": 202.95,
+   "mean_b": 307.66499999999564,
+   "mean_diff": -104.71499999999564,
+   "ci": [
+    -184.14499999998696,
+    -55.0
+   ],
+   "n": 10,
+   "pos": 0,
+   "neg": 10,
+   "diffs": [
+    -100.0,
+    -100.0,
+    -50.0,
+    -447.1499999999565,
+    -50.0,
+    -50.0,
+    -100.0,
+    -50.0,
+    -50.0,
+    -50.0
+   ]
+  },
+  "H5b_union_vs_noctx": {
+   "mean_a": 202.95,
+   "mean_b": 202.95,
+   "mean_diff": 0.0,
+   "ci": [
+    0.0,
+    0.0
+   ],
+   "n": 10,
+   "pos": 0,
+   "neg": 0,
+   "diffs": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "H6_union_vs_fixed": {
+   "mean_a": 202.95,
+   "mean_b": 391.64500000003864,
+   "mean_diff": -188.69500000003865,
+   "ci": [
+    -224.4300000000629,
+    -151.83500000002564
+   ],
+   "n": 10,
+   "pos": 0,
+   "neg": 10,
+   "diffs": [
+    -150.0,
+    -223.75000000006276,
+    -183.70000000005365,
+    -100.0,
+    -255.1500000000699,
+    -276.2500000000747,
+    -150.0,
+    -223.75000000006276,
+    -224.3500000000629,
+    -100.0
+   ]
+  }
+ },
+ "diagnostics": {
+  "v9_union": {
+   "reward": 202.9,
+   "fruits": 4.0,
+   "blooms": 15.6,
+   "probe_trials": 3595.1,
+   "probe_blocks": 8.7,
+   "deaths": 0.0,
+   "n_candidates": 10.5,
+   "explore_picks": 8.0,
+   "skipped_not_probeable": 0.0,
+   "first_causal_t": [
+    9089,
+    3872,
+    3874,
+    9669,
+    6565,
+    5086,
+    9038,
+    5361,
+    5370,
+    9694
+   ]
+  },
+  "v9_stop": {
+   "reward": 247.9,
+   "fruits": 4.9,
+   "blooms": 15.8,
+   "probe_trials": 1840.0,
+   "probe_blocks": 4.6,
+   "deaths": 0.0,
+   "n_candidates": 10.5,
+   "explore_picks": 4.2,
+   "skipped_not_probeable": 0.0,
+   "first_causal_t": [
+    9089,
+    3872,
+    3874,
+    9669,
+    6565,
+    5086,
+    9038,
+    5361,
+    5370,
+    9694
+   ]
+  },
+  "v9_noexp": {
+   "reward": 307.7,
+   "fruits": 4.8,
+   "blooms": 6.9,
+   "probe_trials": 1080.0,
+   "probe_blocks": 2.7,
+   "deaths": 0.6,
+   "n_candidates": 2.6,
+   "explore_picks": 0.0,
+   "skipped_not_probeable": 0.0,
+   "first_causal_t": [
+    3404,
+    3405,
+    4996,
+    null,
+    4037,
+    4037,
+    3402,
+    4993,
+    4016,
+    4037
+   ]
+  },
+  "v9_noctx": {
+   "reward": 202.9,
+   "fruits": 4.0,
+   "blooms": 15.6,
+   "probe_trials": 3595.1,
+   "probe_blocks": 8.7,
+   "deaths": 0.0,
+   "n_candidates": 10.5,
+   "explore_picks": 8.0,
+   "skipped_not_probeable": 0.0,
+   "first_causal_t": [
+    9089,
+    3872,
+    3874,
+    9669,
+    6565,
+    5086,
+    9038,
+    5361,
+    5370,
+    9694
+   ]
+  },
+  "v9_fixed": {
+   "reward": 391.6,
+   "fruits": 2.6,
+   "blooms": 4.2,
+   "probe_trials": 400.0,
+   "probe_blocks": 1.0,
+   "deaths": 3.6,
+   "n_candidates": 1.0,
+   "explore_picks": 0.0,
+   "skipped_not_probeable": 0.0,
+   "first_causal_t": [
+    3404,
+    null,
+    null,
+    4042,
+    null,
+    null,
+    3402,
+    null,
+    null,
+    4037
+   ]
+  },
+  "v9_old": {
+   "reward": 307.7,
+   "fruits": 4.8,
+   "blooms": 6.9,
+   "probe_trials": 1080.0,
+   "probe_blocks": 2.7,
+   "deaths": 0.6,
+   "n_candidates": 2.6,
+   "explore_picks": 0.0,
+   "skipped_not_probeable": 0.0,
+   "first_causal_t": [
+    3404,
+    3405,
+    4996,
+    null,
+    4037,
+    4037,
+    3402,
+    4993,
+    4016,
+    4037
+   ]
+  },
+  "v9_oracle": {
+   "reward": 217.9,
+   "fruits": 4.3,
+   "blooms": 14.6,
+   "probe_trials": 3220.2,
+   "probe_blocks": 7.8,
+   "deaths": 0.0,
+   "n_candidates": 10.6,
+   "explore_picks": 7.4,
+   "skipped_not_probeable": 0.0,
+   "first_causal_t": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  "v9_forager": {
+   "reward": 668.4,
+   "fruits": 0.0,
+   "blooms": 0.0,
+   "probe_trials": 0.0,
+   "probe_blocks": 0.0,
+   "deaths": 7.0,
+   "n_candidates": 0.0,
+   "explore_picks": 0.0,
+   "skipped_not_probeable": 0.0,
+   "first_causal_t": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  "v9_random": {
+   "reward": 2.9,
+   "fruits": 0.0,
+   "blooms": 0.0,
+   "probe_trials": 0.0,
+   "probe_blocks": 0.0,
+   "deaths": 0.2,
+   "n_candidates": 0.0,
+   "explore_picks": 0.0,
+   "skipped_not_probeable": 0.0,
+   "first_causal_t": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  "v9_union_conflict": {
+   "reward": 235.4,
+   "probe_trials": 3595.1,
+   "probe_blocks": 8.7,
+   "fruits": 4.0
+  },
+  "v9_stop_conflict": {
+   "reward": 280.4,
+   "probe_trials": 1840.0,
+   "probe_blocks": 4.6,
+   "fruits": 4.9
+  },
+  "v9_old_conflict": {
+   "reward": 1052.0,
+   "probe_trials": 880.0,
+   "probe_blocks": 2.2,
+   "fruits": 4.8
+  },
+  "v9_union_off": {
+   "reward": 314.0,
+   "n_candidates": 9.0,
+   "probe_trials": 2635.1
+  }
+ }
+}

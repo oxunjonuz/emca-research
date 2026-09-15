@@ -1,0 +1,54 @@
+loaded 80 runs; steps-audit clean
+
+arm             reward  deaths  fruits  lotus  waits   aura  probe  sprC sprA02
+v6_prober        16762    37.9    1829    2.6   1244   3155   1600     9/10     10/10
+v6_oracle        20061    42.9    2008    4.9   1042   2533      0    10/10     10/10
+v6_rejector      16306    45.1    1968    0.6    438   2668      0     0/10     10/10
+v6_assoc02       17353    51.3    1795    3.8    647   1725      0     1/10     10/10
+v6_assoc         13494    56.4    1692    0.0    234   1656      0     0/10     10/10
+v6_believer      16152    57.1    1703    3.3    734   2411      0     7/10     10/10
+v6_nocausal      14350    48.2    1780    0.0    252   2223      0     0/10      0/10
+random            -329    99.7      14    0.0     82    663      0     0/10      0/10
+
+G1 DISCOVERY-NET D(prober-rejector): mean +455 sd 2989 CI [-1283,+2204] sign 6+/4- p=0.754
+  gate: mean>=300 AND (sign p<=0.05 OR CI>0) -> FAIL
+
+G2 DISCOVERY-GROSS D(oracle-rejector): mean +3755 sd 2591 CI [+2341,+5371] sign 9+/0- p=0.004
+  gate: mean>=1000 AND (sign p<=0.05 OR CI>0) -> PASS
+
+G3 DISCOVERY-COST D(oracle-prober): mean +3299 sd 3084 CI [+1442,+5125] sign 9+/1- p=0.021
+
+G4: spring in rejector causal 0/10 (need 0); prober CAUSAL 9/10 (need >=7); assoc02 possession 10/10 (need >=7)
+G4: PASS
+  prober verdicts: {'REJECT': 1, 'CAUSAL': 9}
+
+G5: assoc(0.5) lotuses 0 (need <=2); random 0 (need 0)
+G5: PASS
+
+G6: decoy in believer 9/10 (>=8); rejector 0/10 (0); prober 0/10 (0)
+G6: PASS
+
+G7: prober deaths 37.9 vs rejector 45.1 (need <= +15)
+G7: PASS
+
+---- mechanism decomposition (per-seed diffs, prober-rejector)
+  lotus_eaten        mean      +2.0
+  tree_fruits        mean    -138.7
+  berries_eaten      mean     -86.6
+  deaths             mean      -7.2
+  scorch_paid        mean      -1.8
+  grasp_costs_paid   mean    +425.2
+  waits_in_aura      mean    +806.8
+  aura_steps         mean    +486.5
+  lotus_goal_steps   mean   +1960.1
+  probe_steps        mean   +1599.6
+  chimes_collected   mean      -2.1
+  treasury_eaten     mean      +0.6
+  corr(D, fruit_gap) = 0.831 (the weather-noise channel)
+
+---- the discovery ledger (oracle-prober-rejector)
+  v6_oracle     lotus   4.9 reward    20061 deaths  42.9
+  v6_prober     lotus   2.6 reward    16762 deaths  37.9
+  v6_rejector   lotus   0.6 reward    16306 deaths  45.1
+
+VERDICTS: G1 FAIL | G2 PASS | G3 (no gate) | G4 PASS | G5 PASS | G6 PASS | G7 PASS

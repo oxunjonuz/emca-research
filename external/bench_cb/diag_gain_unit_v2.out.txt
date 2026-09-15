@@ -1,0 +1,15 @@
+
+=== GAIN_UNIT = 200  (cutoff_old 0.8167, cutoff_new 0.8909) ===
+ base    union r      sem   probes |  nocost r      sem   probes |      diff       z
+ 0.80    0.02656  0.00109    1.545 |   0.02127  0.00159    4.455 |  +0.00529   +2.74
+ 0.85    0.00600  0.00000    0.465 |   0.00688  0.00088    4.640 |  -0.00087   -1.00
+ 0.90    0.00475  0.00000    0.100 |   0.00475  0.00000    4.455 |  +0.00000   +0.00
+
+=== GAIN_UNIT = 400  (cutoff_old 0.9000, cutoff_new 0.9429) ===
+ base    union r      sem   probes |  nocost r      sem   probes |      diff       z
+ 0.80    0.02295  0.00092    2.990 |   0.02127  0.00159    4.455 |  +0.00168   +0.91
+ 0.85    0.00600  0.00000    2.735 |   0.00688  0.00088    4.640 |  -0.00087   -1.00
+ 0.90    0.00475  0.00000    1.215 |   0.00475  0.00000    4.455 |  +0.00000   +0.00
+
+wrote diag_gain_unit_v2.json
+REMINDER: the campaign's declared GAIN_UNIT is 200. Anything else is a different declared agent, not a repaired campaign.

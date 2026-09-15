@@ -1,0 +1,236 @@
+{
+ "condition": "curious",
+ "seed": 3,
+ "steps": 16000,
+ "env": "TerrariumV31",
+ "regime_flip_at": 3000,
+ "reset_at": null,
+ "total_reward": 450.0,
+ "deaths": 85,
+ "berries_eaten": 804,
+ "tree_fruits": 4,
+ "keys_picked": 63,
+ "lever_presses": 4,
+ "treasures": 0,
+ "storm_duty": 0.043,
+ "chimes_collected": 78,
+ "grasp_attempts": 322,
+ "grasp_at_bell": 102,
+ "ring_near_storm_tree": 0.392,
+ "goals_generated": 235,
+ "goals_achieved": 228,
+ "goals_by_kind": {
+  "explore": 1,
+  "key": 1,
+  "tree": 3,
+  "treasure": 3,
+  "curiosity": 1,
+  "empowerment": 220,
+  "homeostasis": 6
+ },
+ "causal_edges": [
+  [
+   "eat",
+   "energy_rose",
+   0.044
+  ],
+  [
+   "grasp",
+   "grasp",
+   1.0
+  ],
+  [
+   "eat",
+   "ate",
+   0.424
+  ]
+ ],
+ "assoc_edges": [
+  [
+   "grasp",
+   "grasp",
+   1.0
+  ],
+  [
+   "eat",
+   "ate",
+   0.937
+  ],
+  [
+   "wait",
+   "died",
+   0.571
+  ]
+ ],
+ "assoc_edges_p002": [
+  [
+   "down",
+   "bell_rang",
+   0.065
+  ],
+  [
+   "grasp",
+   "grasp",
+   1.0
+  ],
+  [
+   "grasp",
+   "bell_rang",
+   0.117
+  ],
+  [
+   "press",
+   "lever",
+   0.154
+  ],
+  [
+   "press",
+   "bell_rang",
+   0.083
+  ],
+  [
+   "up",
+   "bell_rang",
+   0.077
+  ],
+  [
+   "wait",
+   "bell_rang",
+   0.103
+  ],
+  [
+   "eat",
+   "bell_rang",
+   0.19
+  ],
+  [
+   "left",
+   "bell_rang",
+   0.074
+  ],
+  [
+   "right",
+   "bell_rang",
+   0.066
+  ],
+  [
+   "wait",
+   "key_appeared",
+   0.067
+  ],
+  [
+   "grasp",
+   "key_appeared",
+   0.111
+  ],
+  [
+   "eat",
+   "ate",
+   0.937
+  ],
+  [
+   "eat",
+   "energy_rose",
+   0.099
+  ],
+  [
+   "eat",
+   "energy_fell",
+   0.05
+  ],
+  [
+   "left",
+   "died",
+   0.088
+  ],
+  [
+   "up",
+   "died",
+   0.077
+  ],
+  [
+   "down",
+   "died",
+   0.115
+  ],
+  [
+   "right",
+   "died",
+   0.133
+  ],
+  [
+   "eat",
+   "died",
+   0.2
+  ],
+  [
+   "wait",
+   "died",
+   0.571
+  ],
+  [
+   "grasp",
+   "died",
+   0.364
+  ],
+  [
+   "grasp",
+   "tree_gather",
+   0.4
+  ],
+  [
+   "grasp",
+   "energy_rose",
+   0.25
+  ],
+  [
+   "grasp",
+   "energy_fell",
+   0.143
+  ],
+  [
+   "press",
+   "energy_fell",
+   0.2
+  ]
+ ],
+ "identifier_version": "v2.5c-stratified-RR-doorgonefix + curiosity-gen",
+ "decoy_in_causal": false,
+ "decoy_in_assoc": true,
+ "true_in_causal": {
+  "press->lever": false,
+  "eat->ate": true,
+  "grasp->tree_gather": false
+ },
+ "harness_notes": [],
+ "self_model": {
+  "explore": [
+   1,
+   1
+  ],
+  "key": [
+   1,
+   1
+  ],
+  "tree": [
+   0,
+   3
+  ],
+  "treasure": [
+   0,
+   3
+  ],
+  "curiosity": [
+   1,
+   1
+  ],
+  "empowerment": [
+   219,
+   219
+  ],
+  "homeostasis": [
+   6,
+   6
+  ]
+ }
+}

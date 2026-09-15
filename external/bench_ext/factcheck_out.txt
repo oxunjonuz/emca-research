@@ -1,0 +1,46 @@
+H1 pooled recall 0.95                                report=0.95         disk=0.95         OK
+H2 zero exclusive pairs                              report=0            disk=0            OK
+H3 null_ge 200                                       report=200          disk=200          OK
+pooled visible 55-pair count 54                      report=54           disk=54           OK
+H1 verdict string                                    report=FAIL         disk=FAIL         OK
+H2 verdict string                                    report=FAIL         disk=FAIL         OK
+H3 verdict string                                    report=FAIL         disk=FAIL         OK
+armA tp                                              report=16           disk=16           OK
+armA fp                                              report=38           disk=38           OK
+armA precision                                       report=0.296        disk=0.296        OK
+armB tp                                              report=3            disk=3            OK
+armB fp                                              report=0            disk=0            OK
+armB precision                                       report=1.0          disk=1.0          OK
+armB recall                                          report=0.176        disk=0.176        OK
+armC tp                                              report=8            disk=8            OK
+armC fp                                              report=1            disk=1            OK
+armC precision                                       report=0.889        disk=0.889        OK
+armC recall                                          report=0.471        disk=0.471        OK
+gt20 armA tp/fp                                      report=(19, 35)     disk=(19, 35)     OK
+gt20 armA precision                                  report=0.352        disk=0.352        OK
+gt20 armC precision                                  report=0.889        disk=0.889        OK
+fisher A vs C gt17                                   report=0.0013       disk=0.0013       OK
+fisher A vs C gt20                                   report=0.0036       disk=0.0036       OK
+null A mean precision                                report=0.383        disk=0.383        OK
+null A ge observed                                   report=95           disk=95           OK
+null B nonzero selections                            report=0            disk=0            OK
+null C ge observed                                   report=19           disk=19           OK
+pooled fp dropped by C                               report=34           disk=34           OK
+pooled fp total                                      report=35           disk=35           OK
+hypergeom p3                                         report=0.043        disk=0.043        OK
+prec@3 pooled                                        report=0.333        disk=0.333        OK
+prec@3 het ranking                                   report=1.0          disk=1.0          OK
+published interiamb tp/fp/fn                         report=(8, 0, 9)    disk=(8, 0, 9)    OK
+published mbde tp/fp/fn                              report=(17, 8, 0)   disk=(17, 8, 0)   OK
+pgmpy PC pearsonr tp/fp/fn                           report=(6, 3, 11)   disk=(6, 3, 11)   OK
+pgmpy PC chi2 tp/fp/fn                               report=(13, 11, 4)  disk=(13, 11, 4)  OK
+pgmpy HillClimb tp/fp/fn                             report=(15, 20, 2)  disk=(15, 20, 2)  OK
+reproduce attempt tp                                 report=16           disk=16           OK
+reproduce attempt fp                                 report=26           disk=26           OK
+prose '7466 rows'                                    present
+prose '0/51'                                         present
+prose '48/51'                                        present
+prose '20-edge'                                      present
+prose '17-edge'                                      present
+
+FACTCHECK: ALL PASS

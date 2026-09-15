@@ -1,0 +1,35 @@
+steps-audit: 90 files, bad=[]
+
+arm              reward  deaths  fruits  torch  treas   scorch    gnt  torGoal decoy_c
+v4_believer       10995    72.5  1041.1   10.4    0.6    185.9   2193     5560 9
+v4_spec           13430    53.8  1272.8   16.1    1.1    189.2    115     1282 0
+v4_assoc          15248    52.6  1430.2   15.8    1.8    214.3    712     2500 0
+v4_rejector       14154    50.2  1349.4   18.4    1.2    209.4     64      990 0
+v4_curious         9833    67.9  1192.5   24.5    2.0    200.4    148     1587 2
+v4_pure            -371    98.1     1.3    0.1    0.0     11.7      7      558 0
+random             -318    99.3    10.7    6.9    0.0    164.6    193        0 -
+qlearn             -155    98.4    26.1    3.7    0.0    103.4    129        0 -
+ngram              -132   100.9    34.1    3.9    0.0     92.6    143        0 -
+
+PRIMARY D(rej - believer): per-seed D = [2076, 5530, -536, 115, 3576, 3068, 2689, 6576, -1704, 10198]
+  mean=+3159 sd=3391 CI95=[+1128,+5356] sign 8+/2-/00 p=0.109
+
+D2(rej - assoc): per-seed D = [-2073, 1723, -3374, -7672, 441, -469, -70, 4003, -6068, 2626]
+  mean=-1093 sd=3545 CI95=[-3399,+1018] sign 4+/6-/00 p=0.754
+
+D3(rej - spec): per-seed D = [-1228, 1172, -3748, -1188, 1449, 3068, -268, 2740, -3218, 8470]
+  mean=+725 sd=3380 CI95=[-1207,+2963] sign 5+/5-/00 p=1.000
+
+D4(curious - rej): per-seed D = [-9254, -1945, -1130, -4592, -8691, -5076, 1239, -3618, -1242, -8900]
+  mean=-4321 sd=3489 CI95=[-6535,-2187] sign 1+/9-/00 p=0.021
+
+T1 identifier: decoy in believer causal 9/10; in rejector 0/10; in assoc 0/10; true edges rejector 10/10
+T2 belief tax: pocket-grasps believer 21933 vs rejector 641 (believer > rejector in 10/10); torch-goal steps 55595 vs 9897
+T3 v4_believer   treasury meals per seed [1, 0, 1, 0, 1, 0, 1, 0, 2, 0] (seeds with >=1: 5)
+T3 v4_spec       treasury meals per seed [1, 3, 1, 3, 1, 0, 2, 0, 0, 0] (seeds with >=1: 6)
+T3 v4_assoc      treasury meals per seed [1, 2, 0, 6, 4, 4, 0, 0, 1, 0] (seeds with >=1: 6)
+T3 v4_rejector   treasury meals per seed [4, 0, 0, 2, 0, 2, 0, 0, 0, 4] (seeds with >=1: 4)
+T3 v4_curious    treasury meals per seed [0, 0, 2, 1, 0, 5, 4, 2, 2, 4] (seeds with >=1: 7)
+T3 v4_pure       treasury meals per seed [0, 0, 0, 0, 0, 0, 0, 0, 0, 0] (seeds with >=1: 0)
+T4 bitter curiosity: pure dies hardest 10/10; curious deaths >= rejector 9/10
+T5 random dies most in all seeds: True

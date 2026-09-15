@@ -1,0 +1,132 @@
+{
+ "condition": "emca_v21",
+ "seed": 3,
+ "steps": 16000,
+ "env": "TerrariumLinger",
+ "total_reward": 5858.0,
+ "deaths": 0,
+ "berries_eaten": 346,
+ "tree_fruits": 689,
+ "storm_duty": 0.24,
+ "ring_near_tree": 0.409,
+ "ring_far": 0.406,
+ "causal_edges": [
+  [
+   "eat",
+   "tree_ate",
+   0.53
+  ],
+  [
+   "eat",
+   "ate",
+   0.266
+  ],
+  [
+   "grasp",
+   "grasp",
+   1.0
+  ],
+  [
+   "press",
+   "press_nothing",
+   1.0
+  ],
+  [
+   "eat",
+   "bell_rang",
+   0.236
+  ]
+ ],
+ "assoc_edges": [
+  [
+   "grasp",
+   "grasp",
+   1.0
+  ],
+  [
+   "press",
+   "press_nothing",
+   1.0
+  ],
+  [
+   "eat",
+   "ate",
+   0.859
+  ],
+  [
+   "eat",
+   "tree_ate",
+   0.987
+  ]
+ ],
+ "identifier_version": "v2.1-pooled (spec gate OFF)",
+ "decoy_in_causal": true,
+ "decoy_in_assoc": true,
+ "true_in_causal": {
+  "eat->ate": true,
+  "eat->tree_ate": true
+ },
+ "harness_notes": [],
+ "assoc_edges_p002": [
+  [
+   "down",
+   "bell_rang",
+   0.1
+  ],
+  [
+   "right",
+   "bell_rang",
+   0.1
+  ],
+  [
+   "up",
+   "bell_rang",
+   0.092
+  ],
+  [
+   "left",
+   "bell_rang",
+   0.086
+  ],
+  [
+   "wait",
+   "bell_rang",
+   0.083
+  ],
+  [
+   "grasp",
+   "grasp",
+   1.0
+  ],
+  [
+   "grasp",
+   "bell_rang",
+   0.118
+  ],
+  [
+   "press",
+   "press_nothing",
+   1.0
+  ],
+  [
+   "press",
+   "bell_rang",
+   0.105
+  ],
+  [
+   "eat",
+   "bell_rang",
+   0.241
+  ],
+  [
+   "eat",
+   "ate",
+   0.859
+  ],
+  [
+   "eat",
+   "tree_ate",
+   0.987
+  ]
+ ]
+}

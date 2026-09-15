@@ -1,0 +1,72 @@
+{
+ "candidate": {
+  "rate_a": 0.85,
+  "trials": 200,
+  "score": 0.55
+ },
+ "r_alt": 0.3,
+ "frozen_gain_unit": {
+  "25.0": true,
+  "50.0": true,
+  "100.0": true,
+  "200.0": true,
+  "400.0": true,
+  "800.0": true
+ },
+ "frozen_probe_len": {
+  "5.0": true,
+  "20.0": true,
+  "40.0": true,
+  "80.0": true
+ },
+ "voi_horizon": {
+  "20.0": false,
+  "50.0": false,
+  "100.0": false,
+  "200.0": false,
+  "400.0": false
+ },
+ "voi_probe_len": {
+  "5": true,
+  "20": false,
+  "40": false
+ },
+ "conf_band": {
+  "(0.01, 0.99)": false,
+  "(0.05, 0.95)": false,
+  "(0.2, 0.8)": false,
+  "(0.4, 0.6)": false
+ },
+ "by_r_alt": {
+  "0.1": {
+   "frozen": true,
+   "voi": false,
+   "conf": false
+  },
+  "0.3": {
+   "frozen": true,
+   "voi": false,
+   "conf": false
+  },
+  "0.5": {
+   "frozen": true,
+   "voi": false,
+   "conf": false
+  },
+  "0.7": {
+   "frozen": true,
+   "voi": false,
+   "conf": false
+  },
+  "0.85": {
+   "frozen": true,
+   "voi": true,
+   "conf": true
+  },
+  "0.95": {
+   "frozen": true,
+   "voi": false,
+   "conf": false
+  }
+ }
+}

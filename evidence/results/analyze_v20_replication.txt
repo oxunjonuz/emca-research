@@ -1,0 +1,18 @@
+=== v20 replication: 30 fresh seeds (10..39) vs the frozen 10 (0..9) ===
+  HV1  bought (open) frozen(n=10): drains=[30] dead=10/10 widened=0 claims=['station']
+                     fresh (n=30): drains=[30] dead=30/30 widened=0 claims=['station']
+  HV1c honest        frozen(n=10): drains=[0] dead=0/10 widened=0 claims=['station']
+                     fresh (n=30): drains=[0] dead=0/30 widened=0 claims=['station']
+  HV2  dark          frozen(n=10): drains=[30] dead=10/10 widened=0 claims=['None']
+                     fresh (n=30): drains=[30] dead=30/30 widened=0 claims=['None']
+  HV5  grant bought  frozen(n=10): drains=[30] dead=10/10 widened=10 claims=['None']
+                     fresh (n=30): drains=[30] dead=30/30 widened=30 claims=['None']
+
+=== verdict by verdict ===
+  HV1 OPEN bought: 30 drains, dead, 0 refusals         HOLDS (30/30)
+  HV1c HONEST: 0 drains, alive, refusals > 0           HOLDS (30/30)
+  HV2 DARK: 30 drains, dead, claims None               HOLDS (30/30)
+  HV4 OPEN: claims 'station' on every step             HOLDS (30/30)
+  HV4b OPEN: the `refused` flag is never set (honest sets it) HOLDS (30/30)
+  HV5 grant bought: widened and 30 drains              HOLDS (30/30)
+WROTE results/analyze_v20_replication.txt

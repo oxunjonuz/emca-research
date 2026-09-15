@@ -1,0 +1,8 @@
+mut2.lean:44:44: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  b ≥ 0
+  a ≥ 0
+  a - b ≥ 0
+where
+ a := ↑s
+ b := ↑d

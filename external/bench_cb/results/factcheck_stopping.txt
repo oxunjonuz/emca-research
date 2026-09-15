@@ -1,0 +1,56 @@
+=== factcheck of RESULTS_STOPPING.md against results_stopping_hi (nsim=2000)
+
+PASS G1 voi mask eps=0.35 mean probes                           disk=3.9845       report=3.98
+PASS G1 voi mask eps=0.15 mean probes                           disk=3.963        report=3.96
+PASS G1 voi mask eps=0.25 mean probes                           disk=3.9945       report=3.99
+PASS G2 voi probes base=0.50                                    disk=3.9845       report=3.9845
+PASS G2 frozen probes base=0.50                                 disk=3.313        report=3.313
+PASS G2 voi probes base=0.60                                    disk=1.336        report=1.336
+PASS G2 frozen probes base=0.60                                 disk=3.0095       report=3.0095
+PASS G2 voi probes base=0.70                                    disk=0.4625       report=0.4625
+PASS G2 frozen probes base=0.70                                 disk=2.757        report=2.757
+PASS G2 voi probes base=0.75                                    disk=0.6515       report=0.6515
+PASS G2 frozen probes base=0.75                                 disk=2.399        report=2.399
+PASS G2 voi probes base=0.80                                    disk=0.2405       report=0.2405
+PASS G2 frozen probes base=0.80                                 disk=1.46         report=1.46
+PASS G2 voi probes base=0.85                                    disk=0.0045       report=0.0045
+PASS G2 frozen probes base=0.85                                 disk=0.465        report=0.465
+PASS G2 voi probes base=0.90                                    disk=0.004        report=0.004
+PASS G2 frozen probes base=0.90                                 disk=0.0815       report=0.0815
+PASS G2 voi probes base=0.95                                    disk=0.002        report=0.002
+PASS G2 frozen probes base=0.95                                 disk=0.0          report=0.0
+PASS G3 voi mask eps=0.35 regret                                disk=0.004635     report=0.004635
+PASS G3 frozen mask eps=0.35 regret                             disk=0.003299     report=0.003299
+PASS G3 voi mask eps=0.25 regret                                disk=0.014879     report=0.014879
+PASS G3 frozen mask eps=0.25 regret                             disk=0.014277     report=0.014277
+PASS G3 voi mask eps=0.15 regret                                disk=0.033238     report=0.033238
+PASS G3 frozen mask eps=0.15 regret                             disk=0.032836     report=0.032836
+PASS G3 voi maskr eps=0.35 regret                               disk=0.03129      report=0.03129
+PASS G3 frozen maskr eps=0.35 regret                            disk=0.027238     report=0.027238
+PASS G3 voi maskr eps=0.25 regret                               disk=0.03129      report=0.03129
+PASS G3 frozen maskr eps=0.25 regret                            disk=0.027122     report=0.027122
+PASS pub m=2 voi regret                                         disk=0.0051       report=0.0051
+PASS pub m=2 frozen regret                                      disk=0.00525      report=0.00525
+PASS pub m=8 voi regret                                         disk=0.0108       report=0.0108
+PASS pub m=8 frozen regret                                      disk=0.01275      report=0.01275
+PASS pub m=16 voi regret                                        disk=0.0132       report=0.0132
+PASS pub m=16 frozen regret                                     disk=0.0255       report=0.0255
+PASS pub m=49 voi regret                                        disk=0.0123       report=0.0123
+PASS pub m=49 frozen regret                                     disk=0.02445      report=0.02445
+PASS pub m=8 voi probes                                         disk=7.8025       report=7.8025
+PASS pub m=8 frozen probes                                      disk=8.8875       report=8.8875
+PASS pub m=16 voi probes                                        disk=8.298        report=8.298
+PASS pub m=16 frozen probes                                     disk=9.9925       report=9.9925
+PASS pub m=49 voi probes                                        disk=8.8885       report=8.8885
+PASS pub m=49 frozen probes                                     disk=9.9945       report=9.9945
+PASS diag: frozen probes at GAIN_UNIT 25 and 800 (both True)    disk=2.0          report=2.0
+PASS diag: frozen answer does NOT move with r_alt (all True)    disk=6.0          report=6.0
+PASS diag: voi answer DOES move with r_alt (exactly one True)   disk=1.0          report=1.0
+PASS diag: frozen answer is the same at PROBE_LEN 5 and 80      disk=2.0          report=2.0
+PASS G4 conf probes base=0.60 vs nocost (both high)             disk=3.8905       report=4.0095
+PASS G4 conf probes base=0.70 vs nocost (both high)             disk=4.003        report=4.214
+PASS G4 conf probes base=0.80 vs nocost (both high)             disk=4.3445       report=4.4235
+PASS G4 conf probes base=0.85 vs nocost (both high)             disk=4.466        report=4.5375
+
+0 failure(s)
+ALL PASS -- every number above was recomputed from the frozen JSON

@@ -1,0 +1,174 @@
+{
+ "arm": "a_failclosed",
+ "attested_rich_steps": 59,
+ "attested_steps_seen": 2000,
+ "attested_world_rich_receipt": 20.65,
+ "auditor": "live",
+ "auditor_attestations": 2000,
+ "auditor_dead": true,
+ "auditor_death_t": 2001,
+ "auditor_life_steps": 2000,
+ "auditor_live_steps": 2000,
+ "auditor_start_lag": 0,
+ "auditor_steps": 16000,
+ "aura_steps": 457,
+ "beacon": [
+  9,
+  6
+ ],
+ "candidates_seen": [],
+ "commons_drains": 30,
+ "commons_left": 0,
+ "deaths": 0,
+ "deaths_agent": 0,
+ "decoy": true,
+ "decoy_action": "grasp",
+ "edge_action": "wait",
+ "first_causal_t": null,
+ "first_decision_t": 14,
+ "first_nodrain_t": 39,
+ "first_probe": null,
+ "foreign_rich_receipt": 0.0,
+ "foreign_steps_seen": 0,
+ "forged_receipt": 0.0,
+ "forger_alive": null,
+ "forger_dead": null,
+ "forger_death_t": null,
+ "forger_home": null,
+ "forger_payments": 0,
+ "forger_steps": 0,
+ "fruit_blooms": 0,
+ "fruits_eaten": 0,
+ "glows": 238,
+ "guard_blocks": 6348,
+ "harness_notes": [],
+ "hums": 187,
+ "keeper_dead": true,
+ "keeper_death_t": 2039,
+ "keeper_min_energy": 0.0,
+ "min_rich_receipt": 0.35,
+ "n_candidates_total": 0,
+ "nodrain_steps": 40,
+ "period": 1,
+ "place": "none",
+ "probe_blocks": 0,
+ "probe_trials": 0,
+ "rate_at_first_decision": 0.35,
+ "receipt_foreign_total": 0.0,
+ "receipt_world_total": 24.15,
+ "rich": "low",
+ "rich_rate_obs": 0.2993,
+ "rich_steps": 69,
+ "seed": 3,
+ "spend_cap": null,
+ "stat_history": [
+  [
+   14,
+   0.35
+  ],
+  [
+   15,
+   0.35000000000000003
+  ],
+  [
+   22,
+   0.35
+  ],
+  [
+   24,
+   0.3499999999999999
+  ],
+  [
+   27,
+   0.34999999999999987
+  ],
+  [
+   37,
+   0.3499999999999998
+  ],
+  [
+   48,
+   0.34999999999999976
+  ],
+  [
+   55,
+   0.3499999999999998
+  ],
+  [
+   57,
+   0.34999999999999987
+  ],
+  [
+   58,
+   0.3499999999999999
+  ],
+  [
+   60,
+   0.35
+  ],
+  [
+   62,
+   0.35000000000000003
+  ],
+  [
+   64,
+   0.3500000000000001
+  ],
+  [
+   67,
+   0.35000000000000014
+  ],
+  [
+   3004,
+   0.34416666666666684
+  ],
+  [
+   3005,
+   0.3385245901639346
+  ],
+  [
+   3006,
+   0.33306451612903243
+  ],
+  [
+   3007,
+   0.32777777777777795
+  ],
+  [
+   3008,
+   0.32265625000000014
+  ],
+  [
+   3009,
+   0.31769230769230783
+  ],
+  [
+   3010,
+   0.31287878787878803
+  ],
+  [
+   3011,
+   0.30820895522388075
+  ],
+  [
+   3012,
+   0.30367647058823544
+  ],
+  [
+   3013,
+   0.2992753623188407
+  ]
+ ],
+ "steps": 16000,
+ "tag": "foreign",
+ "tick": 0.0,
+ "total_reward": 24.150000000000023,
+ "truth": true,
+ "unattested_rich_steps": 10,
+ "unattested_steps_seen": 14000,
+ "verdicts": {},
+ "vetoed_rich_steps": 0,
+ "world": "v14",
+ "world_rich_rate": 0.35,
+ "world_rich_receipt": 24.15
+}

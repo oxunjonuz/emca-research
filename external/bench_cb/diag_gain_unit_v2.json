@@ -1,0 +1,80 @@
+[
+ {
+  "GU": 200.0,
+  "base": 0.8,
+  "union_regret": 0.026556,
+  "union_sem": 0.001089,
+  "union_probes": 1.545,
+  "nocost_regret": 0.021269,
+  "nocost_sem": 0.001594,
+  "nocost_probes": 4.455,
+  "diff": 0.005288,
+  "z": 2.739,
+  "cutoff_new": 0.890909
+ },
+ {
+  "GU": 200.0,
+  "base": 0.85,
+  "union_regret": 0.006,
+  "union_sem": 0.0,
+  "union_probes": 0.465,
+  "nocost_regret": 0.006875,
+  "nocost_sem": 0.000875,
+  "nocost_probes": 4.64,
+  "diff": -0.000875,
+  "z": -1.0,
+  "cutoff_new": 0.890909
+ },
+ {
+  "GU": 200.0,
+  "base": 0.9,
+  "union_regret": 0.00475,
+  "union_sem": 0.0,
+  "union_probes": 0.1,
+  "nocost_regret": 0.00475,
+  "nocost_sem": 0.0,
+  "nocost_probes": 4.455,
+  "diff": 0.0,
+  "z": 0.0,
+  "cutoff_new": 0.890909
+ },
+ {
+  "GU": 400.0,
+  "base": 0.8,
+  "union_regret": 0.02295,
+  "union_sem": 0.000915,
+  "union_probes": 2.99,
+  "nocost_regret": 0.021269,
+  "nocost_sem": 0.001594,
+  "nocost_probes": 4.455,
+  "diff": 0.001681,
+  "z": 0.915,
+  "cutoff_new": 0.942857
+ },
+ {
+  "GU": 400.0,
+  "base": 0.85,
+  "union_regret": 0.006,
+  "union_sem": 0.0,
+  "union_probes": 2.735,
+  "nocost_regret": 0.006875,
+  "nocost_sem": 0.000875,
+  "nocost_probes": 4.64,
+  "diff": -0.000875,
+  "z": -1.0,
+  "cutoff_new": 0.942857
+ },
+ {
+  "GU": 400.0,
+  "base": 0.9,
+  "union_regret": 0.00475,
+  "union_sem": 0.0,
+  "union_probes": 1.215,
+  "nocost_regret": 0.00475,
+  "nocost_sem": 0.0,
+  "nocost_probes": 4.455,
+  "diff": 0.0,
+  "z": 0.0,
+  "cutoff_new": 0.942857
+ }
+]

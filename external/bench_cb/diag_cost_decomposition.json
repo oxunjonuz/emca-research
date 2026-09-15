@@ -1,0 +1,29 @@
+{
+ "mask (base .5)": {
+  "base": 0.5,
+  "gap_observable_ctx0": 0.3425,
+  "gap_true_unclipped": 0.2,
+  "union_regret": 0.005438,
+  "union_probes": 3.34,
+  "union_nocost_regret": 0.003105,
+  "union_nocost_probes": 4.34
+ },
+ "maskr (base .8)": {
+  "base": 0.8,
+  "gap_observable_ctx0": 0.05,
+  "gap_true_unclipped": 0.05,
+  "union_regret": 0.031284,
+  "union_probes": 0.04,
+  "union_nocost_regret": 0.021105,
+  "union_nocost_probes": 4.45
+ },
+ "maskr NO-CLIP (base .8)": {
+  "base": 0.8,
+  "gap_observable_ctx0": 0.3425,
+  "gap_true_unclipped": 0.2,
+  "union_regret": 0.177047,
+  "union_probes": 0.04,
+  "union_nocost_regret": 0.103005,
+  "union_nocost_probes": 4.45
+ }
+}

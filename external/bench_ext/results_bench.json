@@ -1,0 +1,479 @@
+{
+ "E1": {
+  "base_rate": 0.36363636363636365,
+  "enrichment": 0.0,
+  "exclusive_true": 0,
+  "n_exclusive": 0,
+  "p_true_given_exclusive": 0.0
+ },
+ "H1_pooled_sees_minority": "FAIL",
+ "H2_masking_exists": "FAIL",
+ "H3_transfer": "FAIL",
+ "gt_sha256": "2406ec0f9cd34bcbcd33fb74282386232330a630dba68c0f2d01a0d985a652b9",
+ "n_proteins": 11,
+ "n_rows": 7466,
+ "n_true_pairs": 20,
+ "null_ge_observed": 200,
+ "null_max_enrichment": 2.75,
+ "null_mean_enrichment": 0.7778025793650793,
+ "null_mean_exclusive": 2.14,
+ "null_n_exclusive_zero": 23,
+ "null_sd_enrichment": 0.9306452326724219,
+ "obs_sha256": "c1c4b12bdbb2c5411f7410fa65792a3191500e4b5276df2f7d1bf35a41a42c71",
+ "pairs": {
+  "akt|jnk": {
+   "K": 9,
+   "best_stratum_p": 0.16527996763715525,
+   "is_true": false,
+   "p_pooled": 0.0,
+   "pooled": true,
+   "stratum": false
+  },
+  "akt|p38": {
+   "K": 9,
+   "best_stratum_p": 0.0842663084822095,
+   "is_true": false,
+   "p_pooled": 0.0,
+   "pooled": true,
+   "stratum": false
+  },
+  "akt|pka": {
+   "K": 9,
+   "best_stratum_p": 0.0,
+   "is_true": true,
+   "p_pooled": 0.0001461871875187981,
+   "pooled": true,
+   "stratum": true
+  },
+  "akt|pkc": {
+   "K": 9,
+   "best_stratum_p": 0.06415995133670349,
+   "is_true": false,
+   "p_pooled": 0.0,
+   "pooled": true,
+   "stratum": false
+  },
+  "erk|akt": {
+   "K": 9,
+   "best_stratum_p": 0.0,
+   "is_true": true,
+   "p_pooled": 0.0,
+   "pooled": true,
+   "stratum": true
+  },
+  "erk|jnk": {
+   "K": 9,
+   "best_stratum_p": 0.22306821067577665,
+   "is_true": false,
+   "p_pooled": 0.0,
+   "pooled": true,
+   "stratum": false
+  },
+  "erk|p38": {
+   "K": 9,
+   "best_stratum_p": 0.05849602523663311,
+   "is_true": false,
+   "p_pooled": 0.0,
+   "pooled": true,
+   "stratum": false
+  },
+  "erk|pka": {
+   "K": 9,
+   "best_stratum_p": 0.0,
+   "is_true": true,
+   "p_pooled": 0.0,
+   "pooled": true,
+   "stratum": true
+  },
+  "erk|pkc": {
+   "K": 9,
+   "best_stratum_p": 0.06649330671209008,
+   "is_true": false,
+   "p_pooled": 0.0,
+   "pooled": true,
+   "stratum": false
+  },
+  "mek|akt": {
+   "K": 9,
+   "best_stratum_p": 0.3025378401373593,
+   "is_true": false,
+   "p_pooled": 0.0,
+   "pooled": true,
+   "stratum": false
+  },
+  "mek|erk": {
+   "K": 9,
+   "best_stratum_p": 0.3140851051103959,
+   "is_true": true,
+   "p_pooled": 0.08504260574950306,
+   "pooled": false,
+   "stratum": false
+  },
+  "mek|jnk": {
+   "K": 9,
+   "best_stratum_p": 0.04171874173256196,
+   "is_true": false,
+   "p_pooled": 0.0,
+   "pooled": true,
+   "stratum": false
+  },
+  "mek|p38": {
+   "K": 9,
+   "best_stratum_p": 0.10366118384537693,
+   "is_true": false,
+   "p_pooled": 0.0,
+   "pooled": true,
+   "stratum": false
+  },
+  "mek|pip2": {
+   "K": 9,
+   "best_stratum_p": 0.15340398377970121,
+   "is_true": false,
+   "p_pooled": 0.0,
+   "pooled": true,
+   "stratum": false
+  },
+  "mek|pip3": {
+   "K": 9,
+   "best_stratum_p": 0.042519601167388954,
+   "is_true": false,
+   "p_pooled": 1.7763568394002505e-15,
+   "pooled": true,
+   "stratum": false
+  },
+  "mek|pka": {
+   "K": 9,
+   "best_stratum_p": 0.2725721577509419,
+   "is_true": true,
+   "p_pooled": 0.0,
+   "pooled": true,
+   "stratum": false
+  },
+  "mek|pkc": {
+   "K": 9,
+   "best_stratum_p": 0.03165815182143206,
+   "is_true": true,
+   "p_pooled": 0.0,
+   "pooled": true,
+   "stratum": false
+  },
+  "mek|plc": {
+   "K": 9,
+   "best_stratum_p": 0.03263038993853673,
+   "is_true": false,
+   "p_pooled": 0.0,
+   "pooled": true,
+   "stratum": false
+  },
+  "p38|jnk": {
+   "K": 9,
+   "best_stratum_p": 0.0,
+   "is_true": false,
+   "p_pooled": 0.0,
+   "pooled": true,
+   "stratum": true
+  },
+  "pip2|akt": {
+   "K": 9,
+   "best_stratum_p": 0.025953707680131277,
+   "is_true": false,
+   "p_pooled": 0.0,
+   "pooled": true,
+   "stratum": false
+  },
+  "pip2|erk": {
+   "K": 9,
+   "best_stratum_p": 0.08629183802131424,
+   "is_true": false,
+   "p_pooled": 0.0,
+   "pooled": true,
+   "stratum": false
+  },
+  "pip2|jnk": {
+   "K": 9,
+   "best_stratum_p": 0.21809642521895922,
+   "is_true": false,
+   "p_pooled": 0.0,
+   "pooled": true,
+   "stratum": false
+  },
+  "pip2|p38": {
+   "K": 9,
+   "best_stratum_p": 0.08230514192306737,
+   "is_true": false,
+   "p_pooled": 0.0,
+   "pooled": true,
+   "stratum": false
+  },
+  "pip2|pip3": {
+   "K": 9,
+   "best_stratum_p": 0.0,
+   "is_true": true,
+   "p_pooled": 0.0,
+   "pooled": true,
+   "stratum": true
+  },
+  "pip2|pka": {
+   "K": 9,
+   "best_stratum_p": 0.038415920911019086,
+   "is_true": false,
+   "p_pooled": 0.0,
+   "pooled": true,
+   "stratum": false
+  },
+  "pip2|pkc": {
+   "K": 9,
+   "best_stratum_p": 0.02089048816836403,
+   "is_true": true,
+   "p_pooled": 0.0,
+   "pooled": true,
+   "stratum": false
+  },
+  "pip3|akt": {
+   "K": 9,
+   "best_stratum_p": 0.04334224507551343,
+   "is_true": true,
+   "p_pooled": 0.0,
+   "pooled": true,
+   "stratum": false
+  },
+  "pip3|erk": {
+   "K": 9,
+   "best_stratum_p": 0.26120843563134644,
+   "is_true": false,
+   "p_pooled": 0.0,
+   "pooled": true,
+   "stratum": false
+  },
+  "pip3|jnk": {
+   "K": 9,
+   "best_stratum_p": 0.3878182492277884,
+   "is_true": false,
+   "p_pooled": 0.0,
+   "pooled": true,
+   "stratum": false
+  },
+  "pip3|p38": {
+   "K": 9,
+   "best_stratum_p": 0.08556980567012218,
+   "is_true": false,
+   "p_pooled": 0.0,
+   "pooled": true,
+   "stratum": false
+  },
+  "pip3|pka": {
+   "K": 9,
+   "best_stratum_p": 0.0628232363828336,
+   "is_true": false,
+   "p_pooled": 1.154916848866705e-05,
+   "pooled": true,
+   "stratum": false
+  },
+  "pip3|pkc": {
+   "K": 9,
+   "best_stratum_p": 0.030330638250726683,
+   "is_true": false,
+   "p_pooled": 0.0,
+   "pooled": true,
+   "stratum": false
+  },
+  "pka|jnk": {
+   "K": 9,
+   "best_stratum_p": 0.21526456067192568,
+   "is_true": true,
+   "p_pooled": 0.0,
+   "pooled": true,
+   "stratum": false
+  },
+  "pka|p38": {
+   "K": 9,
+   "best_stratum_p": 0.07008421102362061,
+   "is_true": true,
+   "p_pooled": 0.0,
+   "pooled": true,
+   "stratum": false
+  },
+  "pka|pkc": {
+   "K": 9,
+   "best_stratum_p": 0.06998360482771315,
+   "is_true": true,
+   "p_pooled": 0.0,
+   "pooled": true,
+   "stratum": false
+  },
+  "pkc|jnk": {
+   "K": 9,
+   "best_stratum_p": 0.0,
+   "is_true": true,
+   "p_pooled": 0.0,
+   "pooled": true,
+   "stratum": true
+  },
+  "pkc|p38": {
+   "K": 9,
+   "best_stratum_p": 0.0,
+   "is_true": true,
+   "p_pooled": 0.0,
+   "pooled": true,
+   "stratum": true
+  },
+  "plc|akt": {
+   "K": 9,
+   "best_stratum_p": 0.04373151982976253,
+   "is_true": false,
+   "p_pooled": 0.0,
+   "pooled": true,
+   "stratum": false
+  },
+  "plc|erk": {
+   "K": 9,
+   "best_stratum_p": 0.07284685458718876,
+   "is_true": false,
+   "p_pooled": 0.0,
+   "pooled": true,
+   "stratum": false
+  },
+  "plc|jnk": {
+   "K": 9,
+   "best_stratum_p": 0.29292610969382293,
+   "is_true": false,
+   "p_pooled": 0.0,
+   "pooled": true,
+   "stratum": false
+  },
+  "plc|p38": {
+   "K": 9,
+   "best_stratum_p": 0.026085633118530183,
+   "is_true": false,
+   "p_pooled": 0.0,
+   "pooled": true,
+   "stratum": false
+  },
+  "plc|pip2": {
+   "K": 9,
+   "best_stratum_p": 0.0,
+   "is_true": true,
+   "p_pooled": 0.0,
+   "pooled": true,
+   "stratum": true
+  },
+  "plc|pip3": {
+   "K": 9,
+   "best_stratum_p": 0.0,
+   "is_true": true,
+   "p_pooled": 0.018482039410929074,
+   "pooled": true,
+   "stratum": true
+  },
+  "plc|pka": {
+   "K": 9,
+   "best_stratum_p": 0.08488681976576906,
+   "is_true": false,
+   "p_pooled": 0.0,
+   "pooled": true,
+   "stratum": false
+  },
+  "plc|pkc": {
+   "K": 9,
+   "best_stratum_p": 0.009806441821906597,
+   "is_true": true,
+   "p_pooled": 0.0,
+   "pooled": true,
+   "stratum": false
+  },
+  "raf|akt": {
+   "K": 9,
+   "best_stratum_p": 0.03537891835800444,
+   "is_true": false,
+   "p_pooled": 0.0,
+   "pooled": true,
+   "stratum": false
+  },
+  "raf|erk": {
+   "K": 9,
+   "best_stratum_p": 0.12941405984599497,
+   "is_true": false,
+   "p_pooled": 0.002045436229441755,
+   "pooled": true,
+   "stratum": false
+  },
+  "raf|jnk": {
+   "K": 9,
+   "best_stratum_p": 0.044025169350128124,
+   "is_true": false,
+   "p_pooled": 0.0,
+   "pooled": true,
+   "stratum": false
+  },
+  "raf|mek": {
+   "K": 9,
+   "best_stratum_p": 0.0,
+   "is_true": true,
+   "p_pooled": 0.0,
+   "pooled": true,
+   "stratum": true
+  },
+  "raf|p38": {
+   "K": 9,
+   "best_stratum_p": 0.08783264777056754,
+   "is_true": false,
+   "p_pooled": 0.0,
+   "pooled": true,
+   "stratum": false
+  },
+  "raf|pip2": {
+   "K": 9,
+   "best_stratum_p": 0.02641369039787045,
+   "is_true": false,
+   "p_pooled": 0.0,
+   "pooled": true,
+   "stratum": false
+  },
+  "raf|pip3": {
+   "K": 9,
+   "best_stratum_p": 0.04618811321830618,
+   "is_true": false,
+   "p_pooled": 0.000952736074498084,
+   "pooled": true,
+   "stratum": false
+  },
+  "raf|pka": {
+   "K": 9,
+   "best_stratum_p": 0.02064045790871627,
+   "is_true": true,
+   "p_pooled": 0.0,
+   "pooled": true,
+   "stratum": false
+  },
+  "raf|pkc": {
+   "K": 9,
+   "best_stratum_p": 0.1313236752578204,
+   "is_true": true,
+   "p_pooled": 0.0,
+   "pooled": true,
+   "stratum": false
+  },
+  "raf|plc": {
+   "K": 9,
+   "best_stratum_p": 0.08123098582251354,
+   "is_true": false,
+   "p_pooled": 0.0,
+   "pooled": true,
+   "stratum": false
+  }
+ },
+ "pooled_precision": 0.35185185185185186,
+ "pooled_recall": 0.95,
+ "pooled_visible": 54,
+ "strata": {
+  "__general__": 853,
+  "aktinhib": 911,
+  "b2camp": 707,
+  "g0076": 723,
+  "icam2": 902,
+  "ly": 848,
+  "pma": 913,
+  "psitect": 810,
+  "u0126": 799
+ }
+}

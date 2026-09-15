@@ -1,0 +1,905 @@
+{
+ "arm": "v9_union",
+ "seed": 9,
+ "steps": 16000,
+ "truth": false,
+ "rich": "low",
+ "decoy": true,
+ "edge_action": "wait",
+ "decoy_action": "grasp",
+ "total_reward": 368.15000000004943,
+ "deaths": 4,
+ "fruits_eaten": 0,
+ "fruit_blooms": 0,
+ "hums": 2294,
+ "glows": 1490,
+ "aura_steps": 5685,
+ "rich_steps": 7363,
+ "probe_trials": 2400,
+ "probe_blocks": 6,
+ "candidates_seen": [
+  [
+   "left",
+   "berry",
+   1.0,
+   671
+  ],
+  [
+   "grasp",
+   "glow",
+   1.0,
+   1340
+  ],
+  [
+   "grasp",
+   "hum",
+   1.0,
+   1340
+  ],
+  [
+   "press",
+   "glow",
+   1.0,
+   1340
+  ],
+  [
+   "press",
+   "hum",
+   1.0,
+   1340
+  ],
+  [
+   "grasp",
+   "berry",
+   0.9844,
+   1340
+  ],
+  [
+   "press",
+   "berry",
+   0.9844,
+   1340
+  ],
+  [
+   "left",
+   "hum",
+   0.5,
+   671
+  ],
+  [
+   "left",
+   "glow",
+   0.4709,
+   671
+  ],
+  [
+   "press",
+   "glow",
+   0.3494,
+   1340
+  ],
+  [
+   "grasp",
+   "glow",
+   0.323,
+   1340
+  ]
+ ],
+ "n_candidates_total": 11,
+ "verdicts": {
+  "grasp->glow": {
+   "verdict": "REJECT",
+   "p": 0.67486,
+   "rr": 0.967,
+   "target_yes": 103,
+   "target_no": 97,
+   "ctrl_yes": 106,
+   "ctrl_no": 93,
+   "blocks": 80,
+   "phase": "warm"
+  },
+  "grasp->hum": {
+   "verdict": "REJECT",
+   "p": 0.87755,
+   "rr": 0.879,
+   "target_yes": 76,
+   "target_no": 124,
+   "ctrl_yes": 86,
+   "ctrl_no": 113,
+   "blocks": 80,
+   "phase": "warm"
+  },
+  "press->glow": {
+   "verdict": "REJECT",
+   "p": 0.25708,
+   "rr": 1.081,
+   "target_yes": 101,
+   "target_no": 99,
+   "ctrl_yes": 93,
+   "ctrl_no": 106,
+   "blocks": 80,
+   "phase": "warm"
+  },
+  "press->hum": {
+   "verdict": "REJECT",
+   "p": 0.63564,
+   "rr": 0.972,
+   "target_yes": 86,
+   "target_no": 114,
+   "ctrl_yes": 88,
+   "ctrl_no": 111,
+   "blocks": 80,
+   "phase": "warm"
+  },
+  "grasp->berry": {
+   "verdict": "REJECT",
+   "p": 1.0,
+   "rr": 0.0,
+   "target_yes": 0,
+   "target_no": 200,
+   "ctrl_yes": 0,
+   "ctrl_no": 199,
+   "blocks": 80,
+   "phase": "warm"
+  },
+  "press->berry": {
+   "verdict": "REJECT",
+   "p": 1.0,
+   "rr": 0.0,
+   "target_yes": 0,
+   "target_no": 200,
+   "ctrl_yes": 0,
+   "ctrl_no": 199,
+   "blocks": 80,
+   "phase": "warm"
+  }
+ },
+ "rich_rate_obs": 0.05,
+ "harness_notes": [],
+ "first_probe": [
+  "grasp",
+  "glow"
+ ],
+ "ranked_at_first_probe": [
+  [
+   "grasp",
+   "glow",
+   1.0,
+   140
+  ],
+  [
+   "grasp",
+   "hum",
+   1.0,
+   140
+  ],
+  [
+   "press",
+   "glow",
+   1.0,
+   140
+  ],
+  [
+   "press",
+   "hum",
+   1.0,
+   140
+  ],
+  [
+   "right",
+   "berry",
+   1.0,
+   579
+  ],
+  [
+   "left",
+   "berry",
+   1.0,
+   587
+  ],
+  [
+   "down",
+   "berry",
+   1.0,
+   642
+  ],
+  [
+   "up",
+   "berry",
+   1.0,
+   650
+  ],
+  [
+   "right",
+   "hum",
+   0.5429,
+   579
+  ],
+  [
+   "left",
+   "hum",
+   0.5429,
+   587
+  ],
+  [
+   "down",
+   "hum",
+   0.5429,
+   642
+  ],
+  [
+   "up",
+   "hum",
+   0.5429,
+   650
+  ],
+  [
+   "grasp",
+   "berry",
+   0.4797,
+   140
+  ],
+  [
+   "press",
+   "berry",
+   0.4797,
+   140
+  ],
+  [
+   "right",
+   "glow",
+   0.446,
+   579
+  ],
+  [
+   "left",
+   "glow",
+   0.446,
+   587
+  ],
+  [
+   "down",
+   "glow",
+   0.446,
+   642
+  ],
+  [
+   "up",
+   "glow",
+   0.446,
+   650
+  ]
+ ],
+ "probe_order_log": [
+  [
+   "grasp",
+   "glow",
+   [
+    [
+     "grasp",
+     "glow",
+     1.0,
+     140
+    ],
+    [
+     "grasp",
+     "hum",
+     1.0,
+     140
+    ],
+    [
+     "press",
+     "glow",
+     1.0,
+     140
+    ],
+    [
+     "press",
+     "hum",
+     1.0,
+     140
+    ],
+    [
+     "right",
+     "berry",
+     1.0,
+     579
+    ],
+    [
+     "left",
+     "berry",
+     1.0,
+     587
+    ],
+    [
+     "down",
+     "berry",
+     1.0,
+     642
+    ],
+    [
+     "up",
+     "berry",
+     1.0,
+     650
+    ],
+    [
+     "right",
+     "hum",
+     0.5429,
+     579
+    ],
+    [
+     "left",
+     "hum",
+     0.5429,
+     587
+    ],
+    [
+     "down",
+     "hum",
+     0.5429,
+     642
+    ],
+    [
+     "up",
+     "hum",
+     0.5429,
+     650
+    ],
+    [
+     "grasp",
+     "berry",
+     0.4797,
+     140
+    ],
+    [
+     "press",
+     "berry",
+     0.4797,
+     140
+    ],
+    [
+     "right",
+     "glow",
+     0.446,
+     579
+    ],
+    [
+     "left",
+     "glow",
+     0.446,
+     587
+    ],
+    [
+     "down",
+     "glow",
+     0.446,
+     642
+    ],
+    [
+     "up",
+     "glow",
+     0.446,
+     650
+    ]
+   ]
+  ],
+  [
+   "grasp",
+   "hum",
+   [
+    [
+     "grasp",
+     "glow",
+     1.0,
+     340
+    ],
+    [
+     "grasp",
+     "hum",
+     1.0,
+     340
+    ],
+    [
+     "press",
+     "glow",
+     1.0,
+     340
+    ],
+    [
+     "press",
+     "hum",
+     1.0,
+     340
+    ],
+    [
+     "right",
+     "berry",
+     1.0,
+     589
+    ],
+    [
+     "left",
+     "berry",
+     1.0,
+     594
+    ],
+    [
+     "down",
+     "berry",
+     1.0,
+     656
+    ],
+    [
+     "up",
+     "berry",
+     1.0,
+     660
+    ],
+    [
+     "right",
+     "hum",
+     0.5765,
+     589
+    ],
+    [
+     "left",
+     "hum",
+     0.5765,
+     594
+    ],
+    [
+     "down",
+     "hum",
+     0.5765,
+     656
+    ],
+    [
+     "up",
+     "hum",
+     0.5765,
+     660
+    ],
+    [
+     "right",
+     "glow",
+     0.4706,
+     589
+    ],
+    [
+     "left",
+     "glow",
+     0.4706,
+     594
+    ],
+    [
+     "down",
+     "glow",
+     0.4706,
+     656
+    ],
+    [
+     "up",
+     "glow",
+     0.4706,
+     660
+    ],
+    [
+     "grasp",
+     "berry",
+     0.4646,
+     340
+    ],
+    [
+     "press",
+     "berry",
+     0.4646,
+     340
+    ],
+    [
+     "grasp",
+     "glow",
+     0.2919,
+     340
+    ],
+    [
+     "press",
+     "glow",
+     0.2687,
+     340
+    ]
+   ]
+  ],
+  [
+   "press",
+   "glow",
+   [
+    [
+     "grasp",
+     "glow",
+     1.0,
+     540
+    ],
+    [
+     "grasp",
+     "hum",
+     1.0,
+     540
+    ],
+    [
+     "press",
+     "glow",
+     1.0,
+     540
+    ],
+    [
+     "press",
+     "hum",
+     1.0,
+     540
+    ],
+    [
+     "left",
+     "berry",
+     1.0,
+     609
+    ],
+    [
+     "down",
+     "berry",
+     1.0,
+     684
+    ],
+    [
+     "left",
+     "glow",
+     0.4704,
+     609
+    ],
+    [
+     "down",
+     "glow",
+     0.4704,
+     684
+    ],
+    [
+     "grasp",
+     "berry",
+     0.4307,
+     540
+    ],
+    [
+     "press",
+     "berry",
+     0.4307,
+     540
+    ],
+    [
+     "left",
+     "hum",
+     0.4,
+     609
+    ],
+    [
+     "down",
+     "hum",
+     0.4,
+     684
+    ],
+    [
+     "grasp",
+     "glow",
+     0.3301,
+     540
+    ],
+    [
+     "press",
+     "glow",
+     0.3229,
+     540
+    ]
+   ]
+  ],
+  [
+   "press",
+   "hum",
+   [
+    [
+     "left",
+     "berry",
+     1.0,
+     627
+    ],
+    [
+     "down",
+     "berry",
+     1.0,
+     710
+    ],
+    [
+     "grasp",
+     "glow",
+     1.0,
+     740
+    ],
+    [
+     "grasp",
+     "hum",
+     1.0,
+     740
+    ],
+    [
+     "press",
+     "glow",
+     1.0,
+     740
+    ],
+    [
+     "press",
+     "hum",
+     1.0,
+     740
+    ],
+    [
+     "left",
+     "glow",
+     0.4811,
+     627
+    ],
+    [
+     "down",
+     "glow",
+     0.4811,
+     710
+    ],
+    [
+     "left",
+     "hum",
+     0.4118,
+     627
+    ],
+    [
+     "down",
+     "hum",
+     0.4118,
+     710
+    ],
+    [
+     "grasp",
+     "berry",
+     0.4014,
+     740
+    ],
+    [
+     "press",
+     "berry",
+     0.4014,
+     740
+    ],
+    [
+     "press",
+     "glow",
+     0.3388,
+     740
+    ],
+    [
+     "grasp",
+     "glow",
+     0.3319,
+     740
+    ]
+   ]
+  ],
+  [
+   "grasp",
+   "berry",
+   [
+    [
+     "left",
+     "berry",
+     1.0,
+     634
+    ],
+    [
+     "down",
+     "berry",
+     1.0,
+     720
+    ],
+    [
+     "grasp",
+     "glow",
+     1.0,
+     940
+    ],
+    [
+     "grasp",
+     "hum",
+     1.0,
+     940
+    ],
+    [
+     "press",
+     "glow",
+     1.0,
+     940
+    ],
+    [
+     "press",
+     "hum",
+     1.0,
+     940
+    ],
+    [
+     "left",
+     "glow",
+     0.4787,
+     634
+    ],
+    [
+     "down",
+     "glow",
+     0.4787,
+     720
+    ],
+    [
+     "left",
+     "hum",
+     0.4,
+     634
+    ],
+    [
+     "down",
+     "hum",
+     0.4,
+     720
+    ],
+    [
+     "grasp",
+     "berry",
+     0.3907,
+     940
+    ],
+    [
+     "press",
+     "berry",
+     0.3907,
+     940
+    ],
+    [
+     "press",
+     "glow",
+     0.3167,
+     940
+    ],
+    [
+     "grasp",
+     "glow",
+     0.3067,
+     940
+    ]
+   ]
+  ],
+  [
+   "press",
+   "berry",
+   [
+    [
+     "left",
+     "berry",
+     1.0,
+     649
+    ],
+    [
+     "grasp",
+     "glow",
+     1.0,
+     1140
+    ],
+    [
+     "grasp",
+     "hum",
+     1.0,
+     1140
+    ],
+    [
+     "press",
+     "glow",
+     1.0,
+     1140
+    ],
+    [
+     "press",
+     "hum",
+     1.0,
+     1140
+    ],
+    [
+     "left",
+     "glow",
+     0.4693,
+     649
+    ],
+    [
+     "left",
+     "hum",
+     0.4615,
+     649
+    ],
+    [
+     "grasp",
+     "berry",
+     0.3665,
+     1140
+    ],
+    [
+     "press",
+     "berry",
+     0.3665,
+     1140
+    ],
+    [
+     "press",
+     "glow",
+     0.3414,
+     1140
+    ],
+    [
+     "grasp",
+     "glow",
+     0.3159,
+     1140
+    ]
+   ]
+  ]
+ ],
+ "first_causal_t": null,
+ "deaths_agent": 4,
+ "probe_keys": [
+  [
+   "grasp",
+   "glow",
+   "thin-ctx",
+   1.0,
+   140
+  ],
+  [
+   "grasp",
+   "hum",
+   "thin-ctx",
+   1.0,
+   340
+  ],
+  [
+   "press",
+   "glow",
+   "thin-ctx",
+   1.0,
+   540
+  ],
+  [
+   "press",
+   "hum",
+   "thin-ctx",
+   1.0,
+   740
+  ],
+  [
+   "grasp",
+   "berry",
+   "thin-ctx",
+   0.3907,
+   940
+  ],
+  [
+   "press",
+   "berry",
+   "thin-ctx",
+   0.3665,
+   1140
+  ]
+ ],
+ "n_skipped_not_probeable": 3,
+ "n_explore_picks": 6
+}

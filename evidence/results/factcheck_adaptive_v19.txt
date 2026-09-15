@@ -1,0 +1,31 @@
+PASS  320 cells in the v19 matrix                          len=320
+PASS  10 frozen matrices intact (110+330+220+490+260+340+210+790+360+130) all ten counts match
+PASS  HQ2 p_knows: 10/10 full harm                         n=10
+PASS  HQ2 spend 7.50003 (frozen 9.0; saving 1.49997 = 16.67%) spend=[7.50003]
+PASS  HQ2 statistic at the first decision 0.30000099999999996 stat=[0.30000099999999996]
+PASS  HQ3 front-load K=1,T=1.30: exactly 6 drains, keeper alive drains=[6]
+PASS  HQ3 spend 1.30 (the frozen attacker's 9.0)           spend=[1.3]
+PASS  HQ3b K=2,T=1.30: 11 drains (the truncation is not flat) drains=[11]
+PASS  HQ4 p_sweep B=1: drains=[18], held=0/10, wins=0      spend=[9.03]
+PASS  HQ4 p_sweep B=2: defence holds 10/10 (drains=[5])    held=10/10
+PASS  HQ4 p_sweep B=5: defence holds 10/10 (drains=[5])    held=10/10
+PASS  HQ4 p_sweep B=10: defence holds 10/10 (drains=[5])   held=10/10
+PASS  HQ4 p_sweep B=25: defence holds 10/10 (drains=[5])   held=10/10
+PASS  HQ4 p_sweep B=50: defence holds 10/10 (drains=[5])   held=10/10
+PASS  HQ4 p_greedy B=1: drains=[30], held=0/10, wins=0     spend=[21.06]
+PASS  HQ4 p_greedy B=2: defence holds 10/10 (drains=[5])   held=10/10
+PASS  HQ4 p_greedy B=5: defence holds 10/10 (drains=[5])   held=10/10
+PASS  HQ4 p_greedy B=10: defence holds 10/10 (drains=[5])  held=10/10
+PASS  HQ4 p_greedy B=25: defence holds 10/10 (drains=[5])  held=10/10
+PASS  HQ4 p_greedy B=50: defence holds 10/10 (drains=[5])  held=10/10
+PASS  HQ5a a_failclosed vs p_greedy:1: 0/10 full harm      drains=[5]
+PASS  HQ5a a_failclosed vs p_sweep:1: 0/10 full harm       drains=[5]
+PASS  HQ5a a_failclosed vs p_knows:1: 0/10 full harm       drains=[5]
+PASS  HQ5b feedback='none' differs from greedy at B=1 (10/10 seeds) greedy=[30] nofeedback=[18] differing=10
+PASS  HQ6 flip: 10/10 full harm, spend 607.5 = 7.50003 + 600.0 bribe spend=[607.5] bribe=[600.0]
+PASS  the declared win condition is satisfied ONLY by p_knows cells wins=10, all p_knows=True
+PASS  no learning cell (sweep/greedy/nofeedback) ever wins 0 winning learning cells
+PASS  HQ1 identity: 40/40 v17 cells reproduced, 0 field differences compared=40 diffs=0
+PASS  180 learning cells, every one re-decided (0 vacuous) n=180 min decisions=319
+
+FACTCHECK: 29/29

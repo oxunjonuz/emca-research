@@ -1,0 +1,136 @@
+{
+ "arm": "v7_oracle",
+ "seed": 5,
+ "steps": 16000,
+ "truth": true,
+ "rich": "low",
+ "decoy": true,
+ "edge_action": "grasp",
+ "decoy_action": "press",
+ "total_reward": 352.95,
+ "deaths": 0,
+ "fruits_eaten": 7,
+ "fruit_blooms": 7,
+ "hums": 7290,
+ "glows": 3291,
+ "aura_steps": 12945,
+ "rich_steps": 59,
+ "probe_trials": 800,
+ "probe_blocks": 2,
+ "candidates_seen": [
+  [
+   "press",
+   "glow",
+   0.2623,
+   540
+  ],
+  [
+   "grasp",
+   "hum",
+   0.2498,
+   11026
+  ]
+ ],
+ "n_candidates_total": 2,
+ "verdicts": {
+  "grasp->hum": {
+   "verdict": "CAUSAL",
+   "p": 0.0,
+   "rr": 1.5,
+   "injected": true,
+   "target_yes": 0,
+   "target_no": 0,
+   "ctrl_yes": 0,
+   "ctrl_no": 0,
+   "blocks": 0
+  },
+  "press->glow": {
+   "verdict": "REJECT",
+   "p": 0.67461,
+   "rr": 0.967,
+   "target_yes": 102,
+   "target_no": 98,
+   "ctrl_yes": 105,
+   "ctrl_no": 94,
+   "blocks": 80,
+   "phase": "warm"
+  },
+  "grasp->glow": {
+   "verdict": "REJECT",
+   "p": 0.52011,
+   "rr": 1.005,
+   "target_yes": 101,
+   "target_no": 99,
+   "ctrl_yes": 100,
+   "ctrl_no": 99,
+   "blocks": 80,
+   "phase": "warm"
+  }
+ },
+ "rich_rate_obs": 0.05,
+ "harness_notes": [],
+ "first_probe": [
+  "press",
+  "glow"
+ ],
+ "ranked_at_first_probe": [
+  [
+   "grasp",
+   "hum",
+   0.2472,
+   313
+  ],
+  [
+   "press",
+   "glow",
+   0.1907,
+   140
+  ]
+ ],
+ "probe_order_log": [
+  [
+   "press",
+   "glow",
+   [
+    [
+     "grasp",
+     "hum",
+     0.2472,
+     313
+    ],
+    [
+     "press",
+     "glow",
+     0.1907,
+     140
+    ]
+   ]
+  ],
+  [
+   "grasp",
+   "glow",
+   [
+    [
+     "press",
+     "glow",
+     0.2622,
+     340
+    ],
+    [
+     "grasp",
+     "hum",
+     0.2446,
+     553
+    ],
+    [
+     "grasp",
+     "glow",
+     0.1015,
+     553
+    ]
+   ]
+  ]
+ ],
+ "first_causal_t": null,
+ "deaths_agent": 0
+}

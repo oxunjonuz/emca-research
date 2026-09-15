@@ -1,0 +1,503 @@
+{
+ "arm": "v9_stop",
+ "seed": 5,
+ "steps": 16000,
+ "truth": true,
+ "rich": "low",
+ "decoy": true,
+ "edge_action": "grasp",
+ "decoy_action": "press",
+ "total_reward": 302.95,
+ "deaths": 0,
+ "fruits_eaten": 6,
+ "fruit_blooms": 6,
+ "hums": 7247,
+ "glows": 3226,
+ "aura_steps": 12918,
+ "rich_steps": 59,
+ "probe_trials": 800,
+ "probe_blocks": 2,
+ "candidates_seen": [
+  [
+   "press",
+   "fruit",
+   1.0,
+   540
+  ],
+  [
+   "press",
+   "glow",
+   1.0,
+   540
+  ],
+  [
+   "press",
+   "hum",
+   1.0,
+   540
+  ],
+  [
+   "grasp",
+   "fruit",
+   1.0,
+   10823
+  ],
+  [
+   "grasp",
+   "glow",
+   1.0,
+   10823
+  ],
+  [
+   "grasp",
+   "hum",
+   1.0,
+   10823
+  ],
+  [
+   "press",
+   "berry",
+   0.2837,
+   540
+  ],
+  [
+   "grasp",
+   "berry",
+   0.2837,
+   10823
+  ],
+  [
+   "press",
+   "glow",
+   0.2786,
+   540
+  ],
+  [
+   "grasp",
+   "hum",
+   0.2421,
+   10823
+  ]
+ ],
+ "n_candidates_total": 10,
+ "verdicts": {
+  "grasp->glow": {
+   "verdict": "REJECT",
+   "p": 0.40193,
+   "rr": 1.034,
+   "target_yes": 106,
+   "target_no": 94,
+   "ctrl_yes": 102,
+   "ctrl_no": 97,
+   "blocks": 80,
+   "phase": "warm"
+  },
+  "grasp->hum": {
+   "verdict": "CAUSAL",
+   "p": 0.0,
+   "rr": 1.745,
+   "target_yes": 114,
+   "target_no": 86,
+   "ctrl_yes": 65,
+   "ctrl_no": 134,
+   "blocks": 80,
+   "phase": "warm"
+  }
+ },
+ "rich_rate_obs": 0.05,
+ "harness_notes": [],
+ "first_probe": [
+  "grasp",
+  "glow"
+ ],
+ "ranked_at_first_probe": [
+  [
+   "grasp",
+   "glow",
+   1.0,
+   140
+  ],
+  [
+   "grasp",
+   "hum",
+   1.0,
+   140
+  ],
+  [
+   "press",
+   "glow",
+   1.0,
+   140
+  ],
+  [
+   "press",
+   "hum",
+   1.0,
+   140
+  ],
+  [
+   "down",
+   "berry",
+   1.0,
+   602
+  ],
+  [
+   "up",
+   "berry",
+   1.0,
+   610
+  ],
+  [
+   "right",
+   "berry",
+   1.0,
+   619
+  ],
+  [
+   "left",
+   "berry",
+   1.0,
+   627
+  ],
+  [
+   "grasp",
+   "berry",
+   0.4797,
+   140
+  ],
+  [
+   "press",
+   "berry",
+   0.4797,
+   140
+  ],
+  [
+   "down",
+   "glow",
+   0.45,
+   602
+  ],
+  [
+   "up",
+   "glow",
+   0.45,
+   610
+  ],
+  [
+   "right",
+   "glow",
+   0.45,
+   619
+  ],
+  [
+   "left",
+   "glow",
+   0.45,
+   627
+  ],
+  [
+   "down",
+   "hum",
+   0.4143,
+   602
+  ],
+  [
+   "up",
+   "hum",
+   0.4143,
+   610
+  ],
+  [
+   "right",
+   "hum",
+   0.4143,
+   619
+  ],
+  [
+   "left",
+   "hum",
+   0.4143,
+   627
+  ],
+  [
+   "grasp",
+   "hum",
+   0.2273,
+   140
+  ]
+ ],
+ "probe_order_log": [
+  [
+   "grasp",
+   "glow",
+   [
+    [
+     "grasp",
+     "glow",
+     1.0,
+     140
+    ],
+    [
+     "grasp",
+     "hum",
+     1.0,
+     140
+    ],
+    [
+     "press",
+     "glow",
+     1.0,
+     140
+    ],
+    [
+     "press",
+     "hum",
+     1.0,
+     140
+    ],
+    [
+     "down",
+     "berry",
+     1.0,
+     602
+    ],
+    [
+     "up",
+     "berry",
+     1.0,
+     610
+    ],
+    [
+     "right",
+     "berry",
+     1.0,
+     619
+    ],
+    [
+     "left",
+     "berry",
+     1.0,
+     627
+    ],
+    [
+     "grasp",
+     "berry",
+     0.4797,
+     140
+    ],
+    [
+     "press",
+     "berry",
+     0.4797,
+     140
+    ],
+    [
+     "down",
+     "glow",
+     0.45,
+     602
+    ],
+    [
+     "up",
+     "glow",
+     0.45,
+     610
+    ],
+    [
+     "right",
+     "glow",
+     0.45,
+     619
+    ],
+    [
+     "left",
+     "glow",
+     0.45,
+     627
+    ],
+    [
+     "down",
+     "hum",
+     0.4143,
+     602
+    ],
+    [
+     "up",
+     "hum",
+     0.4143,
+     610
+    ],
+    [
+     "right",
+     "hum",
+     0.4143,
+     619
+    ],
+    [
+     "left",
+     "hum",
+     0.4143,
+     627
+    ],
+    [
+     "grasp",
+     "hum",
+     0.2273,
+     140
+    ]
+   ]
+  ],
+  [
+   "grasp",
+   "hum",
+   [
+    [
+     "grasp",
+     "glow",
+     1.0,
+     340
+    ],
+    [
+     "grasp",
+     "hum",
+     1.0,
+     340
+    ],
+    [
+     "press",
+     "glow",
+     1.0,
+     340
+    ],
+    [
+     "press",
+     "hum",
+     1.0,
+     340
+    ],
+    [
+     "down",
+     "berry",
+     1.0,
+     616
+    ],
+    [
+     "up",
+     "berry",
+     1.0,
+     620
+    ],
+    [
+     "right",
+     "berry",
+     1.0,
+     629
+    ],
+    [
+     "left",
+     "berry",
+     1.0,
+     634
+    ],
+    [
+     "grasp",
+     "berry",
+     0.4646,
+     340
+    ],
+    [
+     "press",
+     "berry",
+     0.4646,
+     340
+    ],
+    [
+     "down",
+     "glow",
+     0.4618,
+     616
+    ],
+    [
+     "up",
+     "glow",
+     0.4618,
+     620
+    ],
+    [
+     "right",
+     "glow",
+     0.4618,
+     629
+    ],
+    [
+     "left",
+     "glow",
+     0.4618,
+     634
+    ],
+    [
+     "down",
+     "hum",
+     0.4294,
+     616
+    ],
+    [
+     "up",
+     "hum",
+     0.4294,
+     620
+    ],
+    [
+     "right",
+     "hum",
+     0.4294,
+     629
+    ],
+    [
+     "left",
+     "hum",
+     0.4294,
+     634
+    ],
+    [
+     "grasp",
+     "glow",
+     0.313,
+     340
+    ],
+    [
+     "press",
+     "glow",
+     0.2782,
+     340
+    ],
+    [
+     "grasp",
+     "hum",
+     0.2043,
+     340
+    ]
+   ]
+  ]
+ ],
+ "first_causal_t": 5086,
+ "deaths_agent": 0,
+ "probe_keys": [
+  [
+   "grasp",
+   "glow",
+   "thin-ctx",
+   1.0,
+   140
+  ],
+  [
+   "grasp",
+   "hum",
+   "thin-ctx",
+   1.0,
+   340
+  ]
+ ],
+ "n_skipped_not_probeable": 0,
+ "n_explore_picks": 2
+}

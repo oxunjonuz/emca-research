@@ -1,0 +1,232 @@
+{
+ "condition": "emca_nogoals",
+ "seed": 3,
+ "steps": 6000,
+ "env": "TerrariumV2",
+ "regime_flip_at": 3000,
+ "reset_at": 4500,
+ "total_reward": 3274.0,
+ "deaths": 9,
+ "berries_eaten": 191,
+ "tree_fruits": 391,
+ "keys_picked": 0,
+ "lever_presses": 1,
+ "treasures": 0,
+ "regime_flips": 0,
+ "berries_by_window": {
+  "0": 29,
+  "1": 7,
+  "2": 19,
+  "3": 9,
+  "4": 10,
+  "5": 10,
+  "6": 17,
+  "7": 27,
+  "8": 19,
+  "9": 21,
+  "10": 12,
+  "11": 11
+ },
+ "deaths_by_window": {
+  "0": 1,
+  "2": 1,
+  "4": 1,
+  "6": 1,
+  "7": 1,
+  "8": 2,
+  "9": 1,
+  "10": 1
+ },
+ "treasure_steps": [],
+ "post_reset_recovery": 21,
+ "pre_reset_competence": 29,
+ "first_treasure_step": null,
+ "goals_generated": 14,
+ "non_survival_goals": 0,
+ "goals_achieved": 11,
+ "goals_active_before_reset": [
+  {
+   "id": "g1",
+   "kind": "homeostasis",
+   "text": "restore energy",
+   "status": "achieved"
+  },
+  {
+   "id": "g2",
+   "kind": "homeostasis",
+   "text": "restore energy",
+   "status": "achieved"
+  },
+  {
+   "id": "g3",
+   "kind": "homeostasis",
+   "text": "restore energy",
+   "status": "achieved"
+  },
+  {
+   "id": "g4",
+   "kind": "homeostasis",
+   "text": "restore energy",
+   "status": "expired"
+  },
+  {
+   "id": "g5",
+   "kind": "homeostasis",
+   "text": "restore energy",
+   "status": "achieved"
+  },
+  {
+   "id": "g6",
+   "kind": "homeostasis",
+   "text": "restore energy",
+   "status": "expired"
+  },
+  {
+   "id": "g7",
+   "kind": "homeostasis",
+   "text": "restore energy",
+   "status": "achieved"
+  },
+  {
+   "id": "g8",
+   "kind": "homeostasis",
+   "text": "restore energy",
+   "status": "achieved"
+  },
+  {
+   "id": "g9",
+   "kind": "homeostasis",
+   "text": "restore energy",
+   "status": "achieved"
+  }
+ ],
+ "goals_active_after_reset": [
+  {
+   "id": "g10",
+   "kind": "homeostasis",
+   "text": "restore energy",
+   "status": "achieved"
+  },
+  {
+   "id": "g11",
+   "kind": "homeostasis",
+   "text": "restore energy",
+   "status": "achieved"
+  },
+  {
+   "id": "g12",
+   "kind": "homeostasis",
+   "text": "restore energy",
+   "status": "achieved"
+  },
+  {
+   "id": "g13",
+   "kind": "homeostasis",
+   "text": "restore energy",
+   "status": "achieved"
+  },
+  {
+   "id": "g14",
+   "kind": "homeostasis",
+   "text": "restore energy",
+   "status": "active"
+  }
+ ],
+ "goal_kinds": {
+  "homeostasis": 14
+ },
+ "causal_edges": [
+  [
+   "eat",
+   "energy_rose",
+   0.034
+  ],
+  [
+   "grasp",
+   "grasp",
+   1.0
+  ],
+  [
+   "eat",
+   "ate",
+   0.28
+  ],
+  [
+   "right",
+   "door_gone",
+   0.024
+  ],
+  [
+   "eat",
+   "tree_ate",
+   0.572
+  ]
+ ],
+ "assoc_edges": [
+  [
+   "press",
+   "bell_rang",
+   0.537
+  ],
+  [
+   "wait",
+   "bell_rang",
+   0.527
+  ],
+  [
+   "grasp",
+   "grasp",
+   1.0
+  ],
+  [
+   "grasp",
+   "bell_rang",
+   0.573
+  ],
+  [
+   "eat",
+   "ate",
+   0.918
+  ],
+  [
+   "left",
+   "door_gone",
+   1.0
+  ],
+  [
+   "up",
+   "door_gone",
+   1.0
+  ],
+  [
+   "eat",
+   "tree_ate",
+   0.995
+  ],
+  [
+   "right",
+   "door_gone",
+   1.0
+  ]
+ ],
+ "identifier_version": "v2.2-spec",
+ "decoy_in_causal": false,
+ "decoy_in_assoc": true,
+ "harness_notes": [],
+ "goals_at_reset": [],
+ "self_model": {
+  "homeostasis": [
+   11,
+   13
+  ]
+ },
+ "stats": {
+  "visits": 0,
+  "visits_(True, False, False, False, False, False, False, False, False)": 44,
+  "visits_(True, False, False, True, False, False, False, False, False)": 2,
+  "visits_(True, False, True, False, False, False, False, False, False)": 19,
+  "visits_(True, False, False, False, False, True, False, False, False)": 44,
+  "visits_(True, False, True, False, False, False, False, False, True)": 4,
+  "context_resets": 1.0
+ }
+}

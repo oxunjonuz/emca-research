@@ -1,0 +1,19 @@
+[shard 2  1/16] mask   p=0.15  union_noctx     mean=0.0798 (28s)
+[shard 2  2/16] mask   p=0.15  uniform_policy  mean=0.0890 (34s)
+[shard 2  3/16] mask   p=0.25  pure            mean=0.1304 (62s)
+[shard 2  4/16] mask   p=0.35  union_noctx     mean=0.1794 (92s)
+[shard 2  5/16] mask   p=0.35  uniform_policy  mean=0.1890 (97s)
+[shard 2  6/16] maskr  p=0.25  pure            mean=0.0347 (125s)
+[shard 2  7/16] maskr  p=0.35  union_noctx     mean=0.0360 (162s)
+[shard 2  8/16] maskr  p=0.35  uniform_policy  mean=0.0564 (168s)
+/work/Shopify/audit-work/agent_arch/bench_cb/ext/latt_py3/models.py:242: RuntimeWarning: invalid value encountered in divide
+  pi = np.true_divide(joint,ps) # will be nan for elements for which ps is 0
+[shard 2  9/16] pub    p=2     alg2_pub        mean=0.0162 (185s)
+[shard 2 10/16] pub    p=8     pure            mean=0.3000 (212s)
+[shard 2 11/16] pub    p=16    union_noctx     mean=0.0276 (224s)
+[shard 2 12/16] pub    p=16    ucb_pub         mean=0.2361 (229s)
+[shard 2 13/16] pub    p=25    alg2_pub        mean=0.2106 (245s)
+[shard 2 14/16] pub    p=40    pure            mean=0.3000 (268s)
+[shard 2 15/16] pub    p=49    union_noctx     mean=0.0264 (283s)
+[shard 2 16/16] pub    p=49    ucb_pub         mean=0.2361 (287s)
+[shard 2] DONE 16 cells in 287s

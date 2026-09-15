@@ -1,0 +1,44 @@
+--- union_agent_v3.py
++++ union_agent_v4.py
+@@ -12,5 +12,7 @@
+ #   union_agent_v2.py        76bfe972bde4963cb7bc47bce3b0bbb11f712117b2c232f7c655f515eb43b8ec
+ #   union_instance.py        09a0e27e292bfbd60cc4e8ddef7da7ef029c2f0ca91cd8232b90319a5d22c0ff
+-"""union_agent.py -- turn 129. The UNION mechanism.
++"""union_agent_v4.py -- turn 135. union_agent_v3 (turn 134) with the T4
++lookahead stopping rule added as a dispatch branch. Generated, do not edit.
++union_agent.py -- turn 129. The UNION mechanism.
+ 
+ Owner's instruction (msg_00129): take the published exploration term and the
+@@ -67,4 +69,5 @@
+ import arbitration_scaled as AR
+ import stopping_rules as SR      # turn 134: the new stopping rules
++import bayes_stopping as BS      # turn 135: the T4 lookahead rule
+ 
+ PROBE_BLOCK = 20        # the campaign's own declared constant (turn-128 A3)
+@@ -299,7 +302,15 @@
+                 # priced in the same reward units as every other term. No GAIN_UNIT
+                 # and no price constant appear in any rule this dispatches to.
+-                accepted = SR.plan(cands, rich, rule=self.rule_name,
+-                                   horizon_left=T - t, probe_len=PROBE_BLOCK,
+-                                   beta=self.beta)
++                if self.rule_name == "bayes":
++                    # turn 135 -- THE ONLY FUNCTIONAL CHANGE. The lookahead rule
++                    # takes the same arguments; it reads no declared price and
++                    # no beta, so it is passed none.
++                    accepted = BS.plan(cands, rich, horizon_left=T - t,
++                                       probe_len=PROBE_BLOCK)
++                else:
++                    accepted = SR.plan(cands, rich, rule=self.rule_name,
++                                       horizon_left=T - t,
++                                       probe_len=PROBE_BLOCK,
++                                       beta=self.beta)
+             else:
+                 accepted = cands          # no price: take the top candidate
+@@ -368,4 +379,7 @@
+     "conf":          dict(use_ctx=True,  use_exp=True,  use_cost=True,  exp_mode="ctx", rule_name="conf"),
+     "conf_noexp":    dict(use_ctx=True,  use_exp=False, use_cost=True,  exp_mode="ctx", rule_name="conf"),
++    "bayes":         dict(use_ctx=True,  use_exp=True,  use_cost=True,  exp_mode="ctx", rule_name="bayes"),
++    "bayes_noexp":   dict(use_ctx=True,  use_exp=False, use_cost=True,  exp_mode="ctx", rule_name="bayes"),
++    "bayes_noctx":   dict(use_ctx=False, use_exp=True,  use_cost=True,  exp_mode="ctx", rule_name="bayes"),
+     "frozen_rule":   dict(use_ctx=True,  use_exp=True,  use_cost=True,  exp_mode="ctx", rule_name="frozen"),
+     "union":         dict(use_ctx=True,  use_exp=True,  use_cost=True,  exp_mode="ctx"),

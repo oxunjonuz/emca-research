@@ -1,0 +1,50 @@
+--- union_agent_v2.py
++++ union_agent_v3.py
+@@ -53,4 +53,5 @@
+ import candidate_gen as CG
+ import arbitration_scaled as AR
++import stopping_rules as SR      # turn 134: the new stopping rules
+ 
+ PROBE_BLOCK = 20        # the campaign's own declared constant (turn-128 A3)
+@@ -73,6 +74,8 @@
+ class UnionAgent(object):
+     def __init__(self, kind="union", seed=0, min_n=None, beta=None,
+-                 use_ctx=True, use_exp=True, use_cost=True, exp_mode="ctx"):
++                 use_ctx=True, use_exp=True, use_cost=True, exp_mode="ctx",
++                 rule_name="frozen"):
+         self.kind = kind
++        self.rule_name = rule_name
+         self.seed = seed
+         self.min_n = CG.MIN_N if min_n is None else min_n
+@@ -276,6 +279,14 @@
+ 
+             if self.use_cost:
+-                plan = AR.plan(cands, rich, beta=self.beta)
+-                accepted = plan.probe_order
++                # turn 134 -- THE ONLY CHANGE. The rule is still selected by
++                # `use_cost`/`rule_name` and still returns the accept list in the
++                # incoming ranked order; what changed is what the accept decision
++                # is computed FROM. `horizon_left = T - t` is the number of steps
++                # REMAINING in the episode, which the agent observes: a duration,
++                # priced in the same reward units as every other term. No GAIN_UNIT
++                # and no price constant appear in any rule this dispatches to.
++                accepted = SR.plan(cands, rich, rule=self.rule_name,
++                                   horizon_left=T - t, probe_len=PROBE_BLOCK,
++                                   beta=self.beta)
+             else:
+                 accepted = cands          # no price: take the top candidate
+@@ -335,4 +346,14 @@
+ 
+ ARMS = {
++    # turn 134 arms: the SAME agent, the SAME candidate list, ONLY the stopping
++    # rule differs. Each new arm names the rule it dispatches to.
++    "voi":           dict(use_ctx=True,  use_exp=True,  use_cost=True,  exp_mode="ctx", rule_name="voi"),
++    "voi_exp":       dict(use_ctx=True,  use_exp=True,  use_cost=True,  exp_mode="ctx", rule_name="voi"),
++    "voi_ctx":       dict(use_ctx=True,  use_exp=True,  use_cost=True,  exp_mode="ctx", rule_name="voi"),
++    "voi_rate":      dict(use_ctx=True,  use_exp=True,  use_cost=True,  exp_mode="ctx", rule_name="voi_rate"),
++    "voi_rate_noexp": dict(use_ctx=True, use_exp=False, use_cost=True,  exp_mode="ctx", rule_name="voi_rate"),
++    "conf":          dict(use_ctx=True,  use_exp=True,  use_cost=True,  exp_mode="ctx", rule_name="conf"),
++    "conf_noexp":    dict(use_ctx=True,  use_exp=False, use_cost=True,  exp_mode="ctx", rule_name="conf"),
++    "frozen_rule":   dict(use_ctx=True,  use_exp=True,  use_cost=True,  exp_mode="ctx", rule_name="frozen"),
+     "union":         dict(use_ctx=True,  use_exp=True,  use_cost=True,  exp_mode="ctx"),
+     "union_pooledexp": dict(use_ctx=True, use_exp=True, use_cost=True, exp_mode="pooled"),

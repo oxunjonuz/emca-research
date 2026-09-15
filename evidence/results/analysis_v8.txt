@@ -1,0 +1,218 @@
+==========================================================================
+V8 ANALYSIS -- continuous confidence / self-reinforcement / amortization
+==========================================================================
+runs loaded: 404
+
+### BLOCK C -- CONTINUOUS CONFIDENCE (three-leg gate)
+
+ -- gap 0.20 (p_edge 0.55 vs 0.35) --
+  C1 graded-threshold gap 0.20 q=0.0 persist A=off B=off truth=on
+    mean A   869300.0  mean B   862012.5  paired diff    7287.5  CI [4325, 10712]
+    sign 8/8 p=0.0039 (predicted A>B)   halves +1/+1 vs target +1   legs: CI=PASS sign=PASS halves=PASS  -> PASS
+  C2 graded-coin (information) gap 0.20 q=0.0 persist A=off B=off truth=on
+    mean A   869300.0  mean B   665950.0  paired diff  203350.0  CI [169350, 241650]
+    sign 8/8 p=0.0039 (predicted A>B)   halves +1/+1 vs target +1   legs: CI=PASS sign=PASS halves=PASS  -> PASS
+  C3 threshold-coin (verdict vs coin) gap 0.20 q=0.0 persist A=off B=off truth=on
+    mean A   862012.5  mean B   665950.0  paired diff  196062.5  CI [161400, 234612]
+    sign 8/8 p=0.0039 (predicted A>B)   halves +1/+1 vs target +1   legs: CI=PASS sign=PASS halves=PASS  -> PASS
+
+ -- gap 0.10 (p_edge 0.45 vs 0.35) --
+  C1 graded-threshold gap 0.10 q=0.0 persist A=off B=off truth=on
+    mean A   704275.0  mean B   676125.0  paired diff   28150.0  CI [21100, 36900]
+    sign 8/8 p=0.0039 (predicted A>B)   halves +1/+1 vs target +1   legs: CI=PASS sign=PASS halves=PASS  -> PASS
+  C2 graded-coin (information) gap 0.10 q=0.0 persist A=off B=off truth=on
+    mean A   704275.0  mean B   618000.0  paired diff   86275.0  CI [76112, 96425]
+    sign 8/8 p=0.0039 (predicted A>B)   halves +1/+1 vs target +1   legs: CI=PASS sign=PASS halves=PASS  -> PASS
+  C3 threshold-coin (verdict vs coin) gap 0.10 q=0.0 persist A=off B=off truth=on
+    mean A   676125.0  mean B   618000.0  paired diff   58125.0  CI [46725, 69775]
+    sign 8/8 p=0.0039 (predicted A>B)   halves +1/+1 vs target +1   legs: CI=PASS sign=PASS halves=PASS  -> PASS
+
+ -- gap 0.05 (p_edge 0.4 vs 0.35) --
+  C1 graded-threshold gap 0.05 q=0.0 persist A=off B=off truth=on
+    mean A   615987.5  mean B   600500.0  paired diff   15487.5  CI [8912, 23325]
+    sign 8/8 p=0.0039 (predicted A>B)   halves +1/+1 vs target +1   legs: CI=PASS sign=PASS halves=PASS  -> PASS
+  C2 graded-coin (information) gap 0.05 q=0.0 persist A=off B=off truth=on
+    mean A   615987.5  mean B   589675.0  paired diff   26312.5  CI [18612, 33488]
+    sign 8/8 p=0.0039 (predicted A>B)   halves +1/+1 vs target +1   legs: CI=PASS sign=PASS halves=PASS  -> PASS
+  C3 threshold-coin (verdict vs coin) gap 0.05 q=0.0 persist A=off B=off truth=on
+    mean A   600500.0  mean B   589675.0  paired diff   10825.0  CI [1838, 19112]
+    sign 6/8 p=0.1445 (predicted A>B)   halves +1/+1 vs target +1   legs: CI=PASS sign=FAIL halves=PASS  -> FAIL
+
+ -- gap 0.03 (p_edge 0.38 vs 0.35) --
+  C1 graded-threshold gap 0.03 q=0.0 persist A=off B=off truth=on
+    mean A   586775.0  mean B   579225.0  paired diff    7550.0  CI [4062, 11700]
+    sign 8/8 p=0.0039 (predicted A>B)   halves +1/+1 vs target +1   legs: CI=PASS sign=PASS halves=PASS  -> PASS
+  C2 graded-coin (information) gap 0.03 q=0.0 persist A=off B=off truth=on
+    mean A   586775.0  mean B   579037.5  paired diff    7737.5  CI [2662, 12350]
+    sign 7/8 p=0.0352 (predicted A>B)   halves +1/+1 vs target +1   legs: CI=PASS sign=PASS halves=PASS  -> PASS
+  C3 threshold-coin (verdict vs coin) gap 0.03 q=0.0 persist A=off B=off truth=on
+    mean A   579225.0  mean B   579037.5  paired diff     187.5  CI [-4625, 5025]
+    sign 5/8 p=0.3633 (predicted A>B)   halves +1/-1 vs target +1   legs: CI=FAIL sign=FAIL halves=FAIL  -> FAIL
+
+  C4 PRICE: steps spent gathering, mean over seeds
+    arm                   0.20      0.10      0.05      0.03
+    graded                 724      1666      3979      4294
+    graded1                927      2128      4228      4837
+    threshold             1323      6548     11282     12739
+    thresholdpool         1068      6423     13830     13498
+    coin                   862      2016      3513      3973
+    oracle                   0         0         0         0
+    rot                  16000     16000     16000     16000
+
+  C4 PRICE: reward, mean over seeds
+    arm                   0.20      0.10      0.05      0.03
+    graded              869300    704275    615988    586775
+    graded1             865650    702300    614000    587225
+    threshold           862012    676125    600500    579225
+    thresholdpool       865412    676750    592938    579525
+    coin                665950    618000    589675    579038
+    oracle              879825    720300    639788    608438
+    rot                 665375    613512    586150    575875
+
+  C4 PRICE: fraction of effort spent acquiring evidence (steps_gathering / steps), graded vs threshold
+    gap 0.20: graded 0.045  threshold 0.083  ratio 1.83
+    gap 0.10: graded 0.104  threshold 0.409  ratio 3.93
+    gap 0.05: graded 0.249  threshold 0.705  ratio 2.84
+    gap 0.03: graded 0.268  threshold 0.796  ratio 2.97
+
+  C4b AGENT-LEVEL evidence demand: per epoch, the step at which each rule first acquires a belief, in units of its own evidence
+    gap       graded n@gamma>0.5    threshold n@fire   ratio   threshold fire rate
+    0.20                      87                1877   21.68                 0.750
+    0.10                     118                1494   12.65                 0.484
+    0.05                     206                 703    3.41                 0.047
+    0.03                     333                1850    5.56                 0.031
+    gap 0.20: mean gamma true 0.9967 (n=64) vs false 0.0000 (n=128)  MW p=1.537e-41  -> PASS
+    gap 0.10: mean gamma true 0.9868 (n=64) vs false 0.0002 (n=128)  MW p=3.713e-41  -> PASS
+    gap 0.05: mean gamma true 0.8132 (n=64) vs false 0.0383 (n=128)  MW p=7.404e-33  -> PASS
+    gap 0.03: mean gamma true 0.5664 (n=64) vs false 0.1244 (n=128)  MW p=3.715e-16  -> PASS
+
+### BLOCK A -- SELF-REINFORCEMENT AS A BATTERY
+
+  A1 the loop's size: agent's own end-of-epoch contrast (rate_true - rate_others), persistence on vs off
+    gap    arm      persist    observed     true   ratio  analytic
+    0.20   graded   off          0.2130   0.2000    1.06    0.2000
+    0.20   graded   on           0.3273   0.2000    1.64    0.3375
+    0.20   rot      off          0.1967   0.2000    0.98    0.2000
+    0.20   rot      on           0.1967   0.2000    0.98    0.3375
+    0.10   graded   off          0.1224   0.1000    1.22    0.1000
+    0.10   graded   on           0.1868   0.1000    1.87    0.2125
+    0.10   rot      off          0.0994   0.1000    0.99    0.1000
+    0.10   rot      on           0.0994   0.1000    0.99    0.2125
+
+  A1 verdicts (analytic vs measured, tolerance ±0.03; prereg A7)
+    prediction applies to the arm that can reach the 75% consistency (graded); rot is the CONTROL and its expected value is the TRUE gap in both regimes (prereg A17)
+    [PASS] gap 0.20 graded  persist=off measured 0.2130 vs expected 0.2000
+    [PASS] gap 0.20 graded  persist=on  measured 0.3273 vs expected 0.3375
+    [PASS] gap 0.20 rot     persist=off measured 0.1967 vs expected 0.2000
+    [PASS] gap 0.20 rot     persist=on  measured 0.1967 vs expected 0.2000
+    [PASS] gap 0.10 graded  persist=off measured 0.1224 vs expected 0.1000
+    [PASS] gap 0.10 graded  persist=on  measured 0.1868 vs expected 0.2125
+    [PASS] gap 0.10 rot     persist=off measured 0.0994 vs expected 0.1000
+    [PASS] gap 0.10 rot     persist=on  measured 0.0994 vs expected 0.1000
+    A1 overall: PASS (8/8 legs)
+
+  A2b THE CLEAN WITHIN-WORLD CONTRAST (the interesting one): in a world that PAYS CONSISTENCY, does acting on a belief pay? graded - rot, persistence ON, same seeds
+  A2b graded-rot (persist ON) gap 0.20 q=0.0 persist A=on B=on truth=on
+    mean A  1068962.5  mean B   665375.0  paired diff  403587.5  CI [387812, 415125]
+    sign 8/8 p=0.0039 (predicted A>B)   halves +1/+1 vs target +1   legs: CI=PASS sign=PASS halves=PASS  -> PASS
+  A2b graded-rot (persist ON) gap 0.10 q=0.0 persist A=on B=on truth=on
+    mean A   857050.0  mean B   613512.5  paired diff  243537.5  CI [230925, 256525]
+    sign 8/8 p=0.0039 (predicted A>B)   halves +1/+1 vs target +1   legs: CI=PASS sign=PASS halves=PASS  -> PASS
+  A2c graded-rot (persist OFF, the same contrast without the consistency payment) gap 0.20 q=0.0 persist A=off B=off truth=on
+    mean A   869300.0  mean B   665375.0  paired diff  203925.0  CI [201512, 206550]
+    sign 8/8 p=0.0039 (predicted A>B)   halves +1/+1 vs target +1   legs: CI=PASS sign=PASS halves=PASS  -> PASS
+  A2c graded-rot (persist OFF, the same contrast without the consistency payment) gap 0.10 q=0.0 persist A=off B=off truth=on
+    mean A   704275.0  mean B   613512.5  paired diff   90762.5  CI [87338, 94212]
+    sign 8/8 p=0.0039 (predicted A>B)   halves +1/+1 vs target +1   legs: CI=PASS sign=PASS halves=PASS  -> PASS
+
+  A2d how much of the persist-ON reward gap is the world's own enrichment (not the agent's)? oracle is free evidence, so its advantage over rot in the two worlds bounds it
+    persist=off: oracle at gap 0.20 seed 0 reward 889100.0 vs rot 668200.0
+    persist=on: oracle at gap 0.20 seed 0 reward n/a vs rot 668200.0
+
+  A4 direction battery: does the belief identify the epoch's true action?
+    graded     gap 0.20: agreement 64/64 = 1.000
+    graded     gap 0.10: agreement 64/64 = 1.000
+    coin       gap 0.20: agreement 21/64 = 0.328
+    coin       gap 0.10: agreement 23/64 = 0.359
+    threshold  gap 0.20: agreement 64/64 = 1.000
+    threshold  gap 0.10: agreement 48/48 = 1.000
+
+  A-null truth=off: agreement must not exceed truth=on
+    truth=off persist=off: 34/80 = 0.425
+    truth=off persist=on: 24/80 = 0.300
+
+### BLOCK F -- AMORTIZATION (gap 0.10)
+
+  F1 reward(carry) - reward(fresh), per stickiness q (declared: negative-or-zero at q=0, positive and growing with q)
+  F1 carry-fresh gap 0.10 q=0.0 persist A=off B=off truth=on
+    mean A   656112.5  mean B   704275.0  paired diff  -48162.5  CI [-53262, -42962]
+    sign 0/8 p=0.0039 (predicted A<B)   halves -1/-1 vs target -1   legs: CI=PASS sign=PASS halves=PASS  -> PASS
+  F1 carry-fresh gap 0.10 q=0.25 persist A=off B=off truth=on
+    mean A   663675.0  mean B   700362.5  paired diff  -36687.5  CI [-44600, -28562]
+    sign 0/8 p=0.0078 (predicted two-sided)   halves -1/-1 vs target -1   legs: CI=PASS sign=PASS halves=PASS  -> PASS
+  F1 carry-fresh gap 0.10 q=0.5 persist A=off B=off truth=on
+    mean A   672737.5  mean B   698500.0  paired diff  -25762.5  CI [-36275, -16800]
+    sign 0/8 p=1.0000 (predicted A>B)   halves -1/-1 vs target +1   legs: CI=PASS sign=FAIL halves=FAIL  -> FAIL
+  F1 carry-fresh gap 0.10 q=0.75 persist A=off B=off truth=on
+    mean A   690187.5  mean B   700312.5  paired diff  -10125.0  CI [-20700, 2200]
+    sign 2/8 p=0.9648 (predicted A>B)   halves -1/-1 vs target +1   legs: CI=FAIL sign=FAIL halves=FAIL  -> FAIL
+  F1 carry-fresh gap 0.10 q=1.0 persist A=off B=off truth=on
+    mean A   714412.5  mean B   702575.0  paired diff   11837.5  CI [5588, 21688]
+    sign 8/8 p=0.0039 (predicted A>B)   halves +1/+1 vs target +1   legs: CI=PASS sign=PASS halves=PASS  -> PASS
+
+  F2 reuse is free: carry's gathering effort as a share of fresh's (need <= 0.60 at q >= 0.5)
+    q=0.0: carry gather 3438 (believe 12562) vs fresh gather 1666 (believe 14334) = 2.064 of fresh gather   (need <= 0.60)
+    q=0.25: carry gather 3073 (believe 12927) vs fresh gather 1610 (believe 14390) = 1.909 of fresh gather   (need <= 0.60)
+    q=0.5: carry gather 2051 (believe 13949) vs fresh gather 1710 (believe 14290) = 1.199 of fresh gather   (need <= 0.60)
+    q=0.75: carry gather 1473 (believe 14527) vs fresh gather 1644 (believe 14356) = 0.896 of fresh gather   (need <= 0.60)
+    q=1.0: carry gather 753 (believe 15247) vs fresh gather 1677 (believe 14323) = 0.449 of fresh gather   (need <= 0.60)
+
+  F3 endpoint: carry vs oracle at q=1 (must reach >= 95%); carry vs fresh at q=0 (must not exceed the noise band)
+  F3 carry-oracle q=1.0 gap 0.10 q=1.0 persist A=off B=off truth=on
+    mean A   714412.5  mean B   720300.0  paired diff   -5887.5  CI [-7412, -4025]
+    sign 0/8 p=0.0039 (predicted A<B)   halves -1/-1 vs target -1   legs: CI=PASS sign=PASS halves=PASS  -> PASS
+    -> carry reaches 99.2% of oracle at q=1
+  F3 carry-fresh q=0.0 gap 0.10 q=0.0 persist A=off B=off truth=on
+    mean A   656112.5  mean B   704275.0  paired diff  -48162.5  CI [-53262, -42962]
+    sign 0/8 p=0.0039 (predicted A<B)   halves -1/-1 vs target -1   legs: CI=PASS sign=PASS halves=PASS  -> PASS
+
+  F3b payoff reading (Block G, prereg §3 F3 mirror): at q=1 the oracle arm's own gathering is 0 by construction; the carry arm's is measured above.
+
+  F4 the curve, stated plainly: carry-fresh paired difference and carry's gathering share vs q
+         q  carry-fresh diff  carry gather/fresh
+      0.00            -48162               2.064
+      0.25            -36688               1.909
+      0.50            -25762               1.199
+      0.75            -10125               0.896
+      1.00             11838               0.449
+
+  Economy table (mean reward, 8 seeds)
+    arm                gap/q      reward    gather   believe    pays
+    graded              0.20      869300       724     15276    8693
+    graded              0.10      704275      1666     14334    7043
+    graded              0.05      615988      3979     12021    6160
+    graded              0.03      586775      4294     11706    5868
+    threshold           0.20      862012      1323     14677    8620
+    threshold           0.10      676125      6548      9452    6761
+    threshold           0.05      600500     11282      4718    6005
+    threshold           0.03      579225     12739      3261    5792
+    coin                0.20      665950       862     15138    6660
+    coin                0.10      618000      2016     13984    6180
+    coin                0.05      589675      3513     12487    5897
+    coin                0.03      579038      3973     12027    5790
+    oracle              0.20      879825         0     16000    8798
+    oracle              0.10      720300         0     16000    7203
+    oracle              0.05      639788         0     16000    6398
+    oracle              0.03      608438         0     16000    6084
+    rot                 0.20      665375     16000         0    6654
+    rot                 0.10      613512     16000         0    6135
+    rot                 0.05      586150     16000         0    5862
+    rot                 0.03      575875     16000         0    5759
+
+==========================================================================
+SUMMARY
+  gap 0.20: C1 PASS (+7288)  C2 PASS (+203350)  C3 PASS (+196062)
+  gap 0.10: C1 PASS (+28150)  C2 PASS (+86275)  C3 PASS (+58125)
+  gap 0.05: C1 PASS (+15488)  C2 PASS (+26312)  C3 FAIL (+10825)
+  gap 0.03: C1 PASS (+7550)  C2 PASS (+7738)  C3 FAIL (+188)
+==========================================================================

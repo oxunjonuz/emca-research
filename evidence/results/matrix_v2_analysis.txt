@@ -1,0 +1,89 @@
+conditions: ['emca', 'emca_amnesia', 'emca_nocausal', 'emca_noepis', 'emca_nogoals', 'emca_noself', 'emca_v21', 'ngram', 'qlearn', 'random']
+
+condition          reward  deaths  berries   trees  levers  treas  goals   ach
+------------------------------------------------------------------------------
+emca                578.3    12.7    225.7    48.7     3.3    1.3   10.3   6.3
+emca_amnesia        451.3    11.7    225.7    31.3     3.7    1.7    3.0   1.7
+emca_nocausal       578.3    12.7    225.7    48.7     3.3    1.3   10.3   6.3
+emca_noepis        3471.3     7.7    189.7   408.3     4.3    2.7    7.0   1.7
+emca_nogoals       2988.3     9.7    178.0   355.7     2.0    0.7   14.3  12.0
+emca_noself        4169.0     7.3    189.7   497.0     4.3    2.0  306.7 305.0
+emca_v21            578.3    12.7    225.7    48.7     3.3    1.3   10.3   6.3
+ngram               -84.7    27.7     53.7     0.0     3.3    0.0    0.0   0.0
+qlearn              -60.7    26.3     71.0     0.0     3.0    0.0    0.0   0.0
+random              -85.0    27.7     45.3     1.0    16.0    0.0    0.0   0.0
+
+=== per-seed details: emca vs emca_v21 vs baselines ===
+emca             seed 1: reward=185 deaths=14 berries=211 trees=3 treasures=1 decoy_causal=False decoy_assoc=True id=v2.2-spec
+emca             seed 2: reward=681 deaths=13 berries=242 trees=58 treasures=2 decoy_causal=False decoy_assoc=True id=v2.2-spec
+emca             seed 3: reward=869 deaths=11 berries=224 trees=85 treasures=1 decoy_causal=False decoy_assoc=False id=v2.2-spec
+emca_v21         seed 1: reward=185 deaths=14 berries=211 trees=3 treasures=1 decoy_causal=True decoy_assoc=True id=v2.1-pooled (spec gate OFF)
+emca_v21         seed 2: reward=681 deaths=13 berries=242 trees=58 treasures=2 decoy_causal=False decoy_assoc=True id=v2.1-pooled (spec gate OFF)
+emca_v21         seed 3: reward=869 deaths=11 berries=224 trees=85 treasures=1 decoy_causal=False decoy_assoc=False id=v2.1-pooled (spec gate OFF)
+emca_nocausal    seed 1: reward=185 deaths=14 berries=211 trees=3 treasures=1 decoy_causal=False decoy_assoc=True id=v2.2-spec
+emca_nocausal    seed 2: reward=681 deaths=13 berries=242 trees=58 treasures=2 decoy_causal=False decoy_assoc=True id=v2.2-spec
+emca_nocausal    seed 3: reward=869 deaths=11 berries=224 trees=85 treasures=1 decoy_causal=False decoy_assoc=False id=v2.2-spec
+random           seed 1: reward=-81 deaths=27 berries=46 trees=1 treasures=0 decoy_causal=None decoy_assoc=None id=None
+random           seed 2: reward=-69 deaths=27 berries=50 trees=2 treasures=0 decoy_causal=None decoy_assoc=None id=None
+random           seed 3: reward=-105 deaths=29 berries=40 trees=0 treasures=0 decoy_causal=None decoy_assoc=None id=None
+qlearn           seed 1: reward=-55 deaths=26 berries=75 trees=0 treasures=0 decoy_causal=None decoy_assoc=None id=None
+qlearn           seed 2: reward=-69 deaths=27 berries=66 trees=0 treasures=0 decoy_causal=None decoy_assoc=None id=None
+qlearn           seed 3: reward=-58 deaths=26 berries=72 trees=0 treasures=0 decoy_causal=None decoy_assoc=None id=None
+ngram            seed 1: reward=-28 deaths=25 berries=97 trees=0 treasures=0 decoy_causal=None decoy_assoc=None id=None
+ngram            seed 2: reward=-129 deaths=30 berries=21 trees=0 treasures=0 decoy_causal=None decoy_assoc=None id=None
+ngram            seed 3: reward=-97 deaths=28 berries=43 trees=0 treasures=0 decoy_causal=None decoy_assoc=None id=None
+
+=== E1 causality ===
+  emca seed 1: press->lever & eat->ate: True; edges=[('eat', 'ate'), ('eat', 'energy_rose'), ('grasp', 'grasp'), ('press', 'lever')]
+  emca seed 2: press->lever & eat->ate: True; edges=[('eat', 'ate'), ('eat', 'energy_rose'), ('eat', 'tree_ate'), ('grasp', 'grasp'), ('press', 'lever')]
+  emca seed 3: press->lever & eat->ate: True; edges=[('eat', 'ate'), ('eat', 'energy_rose'), ('eat', 'tree_ate'), ('grasp', 'grasp'), ('press', 'lever')]
+  decoy in emca causal: 0/3 (need <=1)
+  decoy in emca_nocausal assoc: 2/3 (need >=2)
+  E1: PASS
+
+=== identifier A/B: emca (v2.2-spec) vs emca_v21 (pooled) ===
+  emca seed 1: decoy=False edges=[('eat', 'ate'), ('eat', 'energy_rose'), ('grasp', 'grasp'), ('press', 'lever')]
+  emca seed 2: decoy=False edges=[('eat', 'ate'), ('eat', 'energy_rose'), ('eat', 'tree_ate'), ('grasp', 'grasp'), ('press', 'lever')]
+  emca seed 3: decoy=False edges=[('eat', 'ate'), ('eat', 'energy_rose'), ('eat', 'tree_ate'), ('grasp', 'grasp'), ('press', 'lever')]
+  emca_v21 seed 1: decoy=False edges=[('eat', 'ate'), ('eat', 'bell_rang'), ('eat', 'energy_rose'), ('grasp', 'bell_rang'), ('grasp', 'grasp'), ('press', 'lever')]
+  emca_v21 seed 2: decoy=False edges=[('eat', 'ate'), ('eat', 'bell_rang'), ('eat', 'energy_rose'), ('eat', 'tree_ate'), ('grasp', 'grasp'), ('press', 'lever')]
+  emca_v21 seed 3: decoy=False edges=[('eat', 'ate'), ('eat', 'bell_rang'), ('eat', 'energy_rose'), ('eat', 'tree_ate'), ('grasp', 'grasp'), ('press', 'lever'), ('up', 'bell_rang')]
+
+=== E2 memory (calibrated observation, no PASS/FAIL claimed) ===
+  emca seed 1: post_reset=17 pre_life=12 ratio=1.42
+  emca seed 2: post_reset=20 pre_life=25 ratio=0.80
+  emca seed 3: post_reset=16 pre_life=23 ratio=0.70
+  emca_amnesia seed 1: post_reset=16 pre_life=12 ratio=1.33
+  emca_amnesia seed 2: post_reset=20 pre_life=25 ratio=0.80
+  emca_amnesia seed 3: post_reset=16 pre_life=23 ratio=0.70
+
+=== E3 planning (brute-force gate) ===
+  emca treasures per seed: [1, 2, 1] (need >=1 in >=2 seeds)
+  random treasures per seed: [0, 0, 0] (need all 0)
+  E3: PASS
+
+=== E4 adaptation (deaths before vs after flip at t=3000) ===
+  emca seed 1: deaths before flip=6 after=8
+  emca seed 2: deaths before flip=5 after=8
+  emca seed 3: deaths before flip=6 after=5
+  qlearn seed 1: deaths before flip=14 after=12
+  qlearn seed 2: deaths before flip=13 after=14
+  qlearn seed 3: deaths before flip=13 after=13
+  ngram seed 1: deaths before flip=12 after=13
+  ngram seed 2: deaths before flip=14 after=16
+  ngram seed 3: deaths before flip=14 after=14
+
+=== E5 rare events (tree fruits) ===
+  emca: [3, 58, 85] mean=48.7
+  emca_nogoals: [447, 229, 391] mean=355.7
+  qlearn: [0, 0, 0] mean=0.0
+  ngram: [0, 0, 0] mean=0.0
+  random: [1, 2, 0] mean=1.0
+  E5: PASS (emca 48.7 vs qlearn 0.0 vs ngram 0.0)
+
+=== E6 subjectivity (goals survive reset) ===
+  seed 1: at_reset=['tree'] after=['treasure'] reissued=False
+  seed 2: at_reset=['treasure'] after=[] reissued=False
+  seed 3: at_reset=['treasure'] after=['curiosity', 'empowerment', 'homeostasis'] reissued=False
+  E6 (re-issue reading): FAIL (0/3)
+  NOTE: per-goal ledger shows the reset-spanning goal itself usually SURVIVES (achieved after reset); see RESULTS_V2.md for the honest per-seed ledger.

@@ -1,0 +1,26 @@
+loaded 80 runs; steps-audit clean
+
+arm             reward  deaths  fruits  lotus  fills  waits   aura  sprC  sprA spr02
+v5_believer       7073    77.8     900    6.2    6.2    539   2285    10/10     1/10    10/10
+v5_spec           9125    66.0    1142    4.2    4.2    506   2409     9/10     2/10    10/10
+v5_assoc          9465    69.6    1196    0.3    0.3    345   2121     7/10     2/10    10/10
+v5_assoc02        9159    69.8    1161    5.0    5.0    372   1728     6/10    10/10    10/10
+v5_rejector       8151    68.4    1018    6.2    6.2    540   2444    10/10     1/10    10/10
+random            -329    99.7      14    0.0    0.0     82    663     0/10     0/10     0/10
+qlearn            -173    98.7      36    0.1    0.3     64    608     0/10     0/10     0/10
+ngram             -138   101.5      44    0.0    0.4     39    268     0/10     0/10     0/10
+
+V1 CAPABILITY: rejector lotus>=1 in 10/10 (need >=8); assoc(0.5) lotus-seeds 2/10, total lotuses 3 (need <=2 total)
+V1: FAIL
+
+V2 SELECTIVITY D=rej-assoc02: mean -1008 sd 2884 CI [-2646,+669] sign 3+/7- p=1.000
+V2: FAIL
+
+V3 D2=rej-assoc: mean -1314 (expected small -- lotus ~tens vs fruit channel ~thousands)
+
+V4: spring in rejector causal 10/10 (>=8); in assoc(0.5) 2/10 (0); in assoc02 10/10 (>=8); decoy in believer 9/10 (>=8); decoy in rejector 0/10 (0); true edges in rejector 10/10 (>=8)
+V4: FAIL
+
+V5 mechanism: waits_in_aura rejector 540 vs assoc 345 believer 539
+informative: v5_believer spring-in-causal 10/10
+informative: v5_spec spring-in-causal 9/10

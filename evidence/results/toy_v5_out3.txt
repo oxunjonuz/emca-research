@@ -1,0 +1,32 @@
+toy_v5_check.py -- real agents on TerrariumV5, 8000 steps, 3 seeds
+========================================================================
+seed 1 v5_believer  reward=    4056 deaths= 34 fruits= 513 lotus=  3 fills=  3 waits= 417 aura= 1463 lotusGoal= 2109 springC=True springA=True springA02=True
+seed 1 v5_spec      reward=    6526 deaths= 30 fruits= 824 lotus=  0 fills=  0 waits= 204 aura= 1241 lotusGoal= 3603 springC=False springA=True springA02=True
+seed 1 v5_assoc     reward=    5477 deaths= 32 fruits= 689 lotus=  1 fills=  1 waits= 276 aura=  885 lotusGoal= 2694 springC=False springA=True springA02=True
+seed 1 v5_assoc02   reward=    3591 deaths= 36 fruits= 458 lotus=  2 fills=  2 waits= 313 aura= 1085 lotusGoal= 3077 springC=False springA=True springA02=True
+seed 1 v5_rejector  reward=    5741 deaths= 30 fruits= 721 lotus=  2 fills=  2 waits= 256 aura= 1062 lotusGoal= 1832 springC=True springA=True springA02=True
+seed 1 random       reward=     -90 deaths= 48 fruits=  15 lotus=  0 fills=  0 waits=  39 aura=  232 lotusGoal=    0 springC=None springA=None springA02=None
+seed 2 v5_believer  reward=    2958 deaths= 40 fruits= 389 lotus=  1 fills=  1 waits= 544 aura= 1724 lotusGoal= 4759 springC=True springA=True springA02=True
+seed 2 v5_spec      reward=    2560 deaths= 39 fruits= 329 lotus=  0 fills=  0 waits= 272 aura= 1429 lotusGoal= 3603 springC=False springA=True springA02=True
+seed 2 v5_assoc     reward=    1592 deaths= 46 fruits= 221 lotus=  1 fills=  1 waits= 478 aura= 1493 lotusGoal= 4489 springC=False springA=True springA02=True
+seed 2 v5_assoc02   reward=    1964 deaths= 43 fruits= 263 lotus=  2 fills=  2 waits= 336 aura= 1212 lotusGoal= 2942 springC=False springA=True springA02=True
+seed 2 v5_rejector  reward=    4178 deaths= 37 fruits= 537 lotus=  1 fills=  1 waits= 688 aura= 2349 lotusGoal= 5053 springC=True springA=True springA02=True
+seed 2 random       reward=    -200 deaths= 50 fruits=   2 lotus=  0 fills=  0 waits=  63 aura=  380 lotusGoal=    0 springC=None springA=None springA02=None
+seed 3 v5_believer  reward=    4026 deaths= 37 fruits= 522 lotus=  1 fills=  1 waits= 724 aura= 1981 lotusGoal= 5152 springC=True springA=True springA02=True
+seed 3 v5_spec      reward=    4250 deaths= 34 fruits= 539 lotus=  0 fills=  0 waits= 262 aura= 1590 lotusGoal= 3603 springC=False springA=True springA02=True
+seed 3 v5_assoc     reward=    4100 deaths= 34 fruits= 523 lotus=  3 fills=  3 waits= 427 aura= 1504 lotusGoal= 2767 springC=False springA=True springA02=True
+seed 3 v5_assoc02   reward=    2178 deaths= 41 fruits= 280 lotus=  3 fills=  3 waits= 249 aura=  897 lotusGoal= 2328 springC=False springA=True springA02=True
+seed 3 v5_rejector  reward=    4081 deaths= 34 fruits= 520 lotus=  2 fills=  2 waits= 733 aura= 1921 lotusGoal= 3708 springC=True springA=True springA02=True
+seed 3 random       reward=    -207 deaths= 51 fruits=   3 lotus=  0 fills=  0 waits=  53 aura=  461 lotusGoal=    0 springC=None springA=None springA02=None
+========================================================================
+W1 spring edge in rejector causal: 3/3 PASS
+W2 assoc(0.5) blind 0/3, assoc02 possesses 3/3 FAIL
+W3 rejector lotus 3/3, assoc(0.5) lotus 3/3 FAIL
+W4 assoc02 lotus 3/3 PASS
+W5 decoy believer 3/3, rejector clean 3/3, true edges 3/3 PASS
+W6 rejector waits_in_aura highest 2/3 PASS
+W7 determinism re-run: PASS
+W8 no None actions: PASS
+W9 survival: rejector deaths [30, 37, 34] (blind max 46) PASS
+informative: v5_believer spring-in-causal per seed: [True, True, True]
+informative: v5_spec spring-in-causal per seed: [False, False, False]

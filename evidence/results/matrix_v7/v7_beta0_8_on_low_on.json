@@ -1,0 +1,43 @@
+{
+ "arm": "v7_beta0",
+ "seed": 8,
+ "steps": 16000,
+ "truth": true,
+ "rich": "low",
+ "decoy": true,
+ "edge_action": "grasp",
+ "decoy_action": "wait",
+ "total_reward": 440.5000000000659,
+ "deaths": 6,
+ "fruits_eaten": 0,
+ "fruit_blooms": 2,
+ "hums": 586,
+ "glows": 288,
+ "aura_steps": 1269,
+ "rich_steps": 8810,
+ "probe_trials": 0,
+ "probe_blocks": 0,
+ "candidates_seen": [
+  [
+   "wait",
+   "glow",
+   0.3311,
+   195
+  ],
+  [
+   "grasp",
+   "hum",
+   0.278,
+   532
+  ]
+ ],
+ "n_candidates_total": 2,
+ "verdicts": {},
+ "rich_rate_obs": 0.05,
+ "harness_notes": [],
+ "first_probe": null,
+ "ranked_at_first_probe": null,
+ "probe_order_log": [],
+ "first_causal_t": null,
+ "deaths_agent": 6
+}

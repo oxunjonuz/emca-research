@@ -1,0 +1,21 @@
+toy_v6_check.py -- real agents on TerrariumV6, 8000 steps, 3 seeds
+============================================================================
+seed 1 v6_prober     reward=    7820 deaths= 23 fruits= 879 lotus=  1 waits=  424 aura= 1798 lotusGoal= 3603 probe= 1524 verdict=REJECT     springC=False
+seed 1 v6_oracle     reward=   11721 deaths= 11 fruits=1358 lotus=  1 waits=  258 aura=  732 lotusGoal= 3428 probe=    0 verdict=-          springC=True
+seed 1 v6_rejector   reward=    7771 deaths= 22 fruits= 972 lotus=  0 waits=  246 aura= 1392 lotusGoal= 3603 probe=    0 verdict=-          springC=False
+Traceback (most recent call last):
+  File "/work/Shopify/audit-work/agent_arch/toy_v6_check.py", line 107, in <module>
+    main()
+  File "/work/Shopify/audit-work/agent_arch/toy_v6_check.py", line 38, in main
+    log = run(arm, seed, 8000)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/work/Shopify/audit-work/agent_arch/run_life_v6.py", line 160, in run
+    causal = agent.causal_edges()
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/work/Shopify/audit-work/agent_arch/agent_emca_v6.py", line 102, in causal_edges
+    return super().causal_edges(min_n=min_n, min_p=min_p,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/Shopify/audit-work/agent_arch/agent_emca_v2.py", line 487, in causal_edges
+    if rate_a - pooled >= margin:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '>=' not supported between instances of 'float' and 'NoneType'

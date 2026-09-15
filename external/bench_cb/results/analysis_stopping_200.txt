@@ -1,0 +1,58 @@
+cells loaded: 170 (nsim=200)
+
+=== G0 transplant control: frozen_rule vs union (must be identical)
+  G0 PASS = True
+
+=== G1 the new rule must act (voi probes on >=80%% of mask cells)
+  mask eps=0.15  probes>0 on 99.0% of seeds, mean probes 3.99
+  mask eps=0.25  probes>0 on 99.0% of seeds, mean probes 3.98
+  mask eps=0.35  probes>0 on 99.0% of seeds, mean probes 4.04
+  G1 PASS = True
+
+=== G2 the stopping point must be DERIVED: probes vs world richness
+  base   voi_probes  frozen_probes  conf_probes  nocost_probes
+  0.50         4.04           3.43         3.92           4.33
+  0.60         1.39           2.99         3.90           3.98
+  0.70         0.43           2.79         4.07           4.30
+  0.75         0.66           2.44         4.15           4.42
+  0.80         0.19           1.54         4.39           4.46
+  0.85         0.00           0.47         4.61           4.64
+  0.90         0.00           0.10         4.33           4.46
+  0.95         0.00           0.00         4.06           4.09
+  Spearman rho(voi probes, richness) = -0.881  (G2 wants <= 0)
+  G2 PASS = True
+
+=== G3 regret: voi vs frozen_rule (bootstrap 95%% CI, sign test)
+  mask   eps=0.15  diff=+0.00075 CI=[-0.00080,+0.00246] sign 4+/2-  NO DIFFERENCE
+  mask   eps=0.25  diff=+0.00020 CI=[-0.00191,+0.00229] sign 2+/3-  NO DIFFERENCE
+  mask   eps=0.35  diff=+0.00154 CI=[-0.00043,+0.00437] sign 2+/1-  NO DIFFERENCE
+  maskr  eps=0.25  diff=+0.00532 CI=[+0.00388,+0.00690] sign 37+/0-  voi WORSE
+  maskr  eps=0.35  diff=+0.00444 CI=[+0.00225,+0.00633] sign 36+/1-  voi WORSE
+
+=== G4 conf (probability only) vs nocost (no price at all)
+  base   conf_probes  nocost_probes   conf_regret  nocost_regret
+  0.50          3.92           4.33      0.00268        0.00289
+  0.60          3.90           3.98      0.00225        0.00225
+  0.70          4.07           4.30      0.00361        0.00382
+  0.75          4.15           4.42      0.00977        0.01039
+  0.80          4.39           4.46      0.02127        0.02127
+  0.85          4.61           4.64      0.00621        0.00688
+  0.90          4.33           4.46      0.00475        0.00475
+  0.95          4.06           4.09      0.00350        0.00350
+  P1 (preregistered): conf tracks nocost, not a stopping rule
+
+=== G5 controls
+  beta0        mean probes 0.00  regret 0.17810
+  pure         mean probes 0.07  regret 0.18037
+  union_noexp  mean probes 0.08  regret 0.17810
+
+=== HEADLINE (nsim=200): mean regret / mean probes / frac optimal
+  arm            | mask eps=0.35          | maskr eps=0.35        
+  frozen_rule    | 0.00311 /  3.43 / 0.00 | 0.02656 /  1.54 / 0.00
+  voi            | 0.00464 /  4.04 / 0.00 | 0.03100 /  0.19 / 0.00
+  voi_rate       | 0.16389 /  0.39 / 0.00 | 0.03100 /  0.12 / 0.00
+  conf           | 0.00268 /  3.92 / 0.00 | 0.02127 /  4.39 / 0.00
+  union_nocost   | 0.00289 /  4.33 / 0.00 | 0.02127 /  4.46 / 0.00
+  union_noexp    | 0.17810 /  0.08 / 0.00 | 0.03100 /  0.24 / 0.00
+  pure           | 0.18037 /  0.07 / 0.00 | 0.03490 /  0.10 / 0.00
+  beta0          | 0.17810 /  0.00 / 0.00 | 0.03100 /  0.00 / 0.00

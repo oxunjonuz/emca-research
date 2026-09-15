@@ -1,0 +1,56 @@
+[PASS] steps-field audit: all 33 runs are full 16000 steps files=33 truncated=[]
+
+=== MATRIX V3.3 (16000 steps, means over 3 seeds) ===
+condition         reward   deaths   fruits  berries   chimesgrasp@bellgrasp@bellNTgraspCost offerings treasures  decoy  altar
+emca_v21         15387.3     47.0   1474.7    715.3     96.7    972.3     35.3    316.2      67.7       0.0      3/3     0/3
+emca_v22         15387.3     47.0   1474.7    715.3     96.7    972.3     35.3    316.2      67.7       0.0      3/3     0/3
+emca_v25c        15516.3     43.0   1525.7    707.0     91.3    889.7     36.0    312.4      70.7       0.0      0/3     0/3
+emca_nocausal    15820.0     45.0   1521.3    678.7     76.7   1019.0     38.7    304.0      78.0       0.0      3/3     0/3
+prober           14978.8     39.0   1423.7    638.0     63.7   1016.3    168.7    549.8     227.0       0.7      0/3     3/3
+curious_pure      -389.5     98.7      0.3     81.0     40.3     33.7     33.7    390.4     144.0       0.0      0/3     0/3
+curious_surv     12058.3     59.0   1192.0    748.3     68.7    911.7     67.7    368.0      79.3       0.0      0/3     0/3
+curious_chain    11328.8     61.3   1281.3    107.7     26.3    924.7     55.3    188.6      12.0      16.0      0/3     0/3
+random            -208.8     98.3     15.7    111.3     23.0    530.3    516.0   1365.4      38.3       0.0      0/3     0/3
+qlearn             292.0     96.0     48.3    145.3      5.3   1109.3   1018.7   1394.6       5.7       0.0      0/3     0/3
+ngram              535.2     97.0     92.0    149.7      7.7   1368.3   1253.7   1701.4       9.0       0.0      0/3     0/3
+
+--- T1: scarcity bites (survivable but harder) ---
+[PASS] T1a v2.5c deaths <= 45 in >=2/3 deaths=[40, 42, 47]
+[PASS] T1b deficit real: v3.3 fruits < v3.2 fruits v33=1526 v32=2507.6666666666665
+
+--- T2: the false belief under dynamic costs ---
+  seed 1: v21=14856 v25c=16208 gap(believer-rejector)=-1352 fruits 1434 vs 1515 graspNT 33 vs 27
+  seed 2: v21=14284 v25c=16899 gap(believer-rejector)=-2615 fruits 1385 vs 1730 graspNT 38 vs 48
+  seed 3: v21=17022 v25c=13442 gap(believer-rejector)=3580 fruits 1605 vs 1332 graspNT 35 vs 33
+[PASS] T2 gap decomposes to measured channels (fruit harvest) reward_gap=-129 fruit_gap*8=-408
+
+--- T3: the prober under the offering ---
+  seed 1: verdict=CAUSAL trials={'target_yes': 30, 'target_no': 150, 'ctrl_yes': 12, 'ctrl_no': 168, 'blocks': 0}
+  seed 2: verdict=CAUSAL trials={'target_yes': 34, 'target_no': 146, 'ctrl_yes': 16, 'ctrl_no': 164, 'blocks': 0}
+  seed 3: verdict=CAUSAL trials={'target_yes': 36, 'target_no': 144, 'ctrl_yes': 19, 'ctrl_no': 161, 'blocks': 0}
+[PASS] T3a prober reaches a verdict in >=2/3 {1: 'CAUSAL', 2: 'CAUSAL', 3: 'CAUSAL'}
+[PASS] T3b verdict CAUSAL in >=2/3 of resolved causal=3/3
+[PASS] T3c prober deaths <= 45 in >=2/3 deaths=[44, 33, 40]
+
+--- T4: the chain from object-directed novelty ---
+  chain treasures=[18, 13, 17] (other arms max=2) deaths=[69, 59, 56] levers=[10737, 9911, 8951] keys=[218, 286, 287]
+[PASS] T4a chain treasures >= 1 in >=2/3 seeds [18, 13, 17]
+[PASS] T4b chain beats every other arm's treasures chain_min=13 others=2
+[FAIL] T4c chain deaths <= 40 in >=2/3 deaths=[69, 59, 56]
+[PASS] T4c' object-novelty layer is death-neutral (chain deaths within +10 of curious_surv per seed) chain=[69, 59, 56] surv=[68, 61, 48]
+
+--- T5: identifier stability ---
+[PASS] T5a decoy in v2.1 causal >=2/3 3/3
+[PASS] T5b decoy NOT in v2.5c causal >=2/3 0/3
+[PASS] T5c true edges in v2.5c >=2/3 3/3
+
+--- T6: baselines ---
+[PASS] T6 every baseline dies more than every planner/curious arm planner_min=39.0 baselines={'random': 98.33333333333333, 'qlearn': 96.0, 'ngram': 97.0}
+
+--- determinism audit ---
+  emca_v21 seed 1: BIT-IDENTICAL
+  emca_v25c seed 1: BIT-IDENTICAL
+  curious_chain seed 1: BIT-IDENTICAL
+[PASS] determinism: fresh re-runs bit-identical 
+
+ANALYZE_V33_FAILED

@@ -1,0 +1,193 @@
+{
+ "condition": "emca_noepis",
+ "seed": 3,
+ "steps": 6000,
+ "env": "TerrariumV2",
+ "regime_flip_at": 3000,
+ "reset_at": 4500,
+ "total_reward": 4350.0,
+ "deaths": 4,
+ "berries_eaten": 206,
+ "tree_fruits": 518,
+ "keys_picked": 0,
+ "lever_presses": 3,
+ "treasures": 1,
+ "regime_flips": 0,
+ "berries_by_window": {
+  "0": 19,
+  "1": 22,
+  "2": 21,
+  "3": 14,
+  "4": 12,
+  "5": 11,
+  "6": 10,
+  "7": 15,
+  "8": 16,
+  "9": 36,
+  "10": 13,
+  "11": 17
+ },
+ "deaths_by_window": {
+  "3": 1,
+  "4": 1,
+  "9": 1,
+  "11": 1
+ },
+ "treasure_steps": [
+  4792
+ ],
+ "post_reset_recovery": 36,
+ "pre_reset_competence": 19,
+ "first_treasure_step": 4792,
+ "goals_generated": 7,
+ "non_survival_goals": 6,
+ "goals_achieved": 2,
+ "goals_active_before_reset": [
+  {
+   "id": "g1",
+   "kind": "explore",
+   "text": "open the door",
+   "status": "expired"
+  },
+  {
+   "id": "g2",
+   "kind": "explore",
+   "text": "open the door",
+   "status": "expired"
+  },
+  {
+   "id": "g3",
+   "kind": "explore",
+   "text": "open the door",
+   "status": "achieved"
+  },
+  {
+   "id": "g4",
+   "kind": "homeostasis",
+   "text": "restore energy",
+   "status": "achieved"
+  },
+  {
+   "id": "g5",
+   "kind": "key",
+   "text": "obtain the key",
+   "status": "expired"
+  },
+  {
+   "id": "g6",
+   "kind": "key",
+   "text": "obtain the key",
+   "status": "expired"
+  }
+ ],
+ "goals_active_after_reset": [
+  {
+   "id": "g7",
+   "kind": "key",
+   "text": "obtain the key",
+   "status": "active"
+  }
+ ],
+ "goal_kinds": {
+  "explore": 3,
+  "homeostasis": 1,
+  "key": 3
+ },
+ "causal_edges": [
+  [
+   "press",
+   "lever",
+   0.023
+  ],
+  [
+   "grasp",
+   "grasp",
+   1.0
+  ],
+  [
+   "eat",
+   "tree_ate",
+   0.617
+  ],
+  [
+   "eat",
+   "energy_rose",
+   0.031
+  ],
+  [
+   "eat",
+   "ate",
+   0.245
+  ]
+ ],
+ "assoc_edges": [
+  [
+   "grasp",
+   "grasp",
+   1.0
+  ],
+  [
+   "press",
+   "bell_rang",
+   0.54
+  ],
+  [
+   "wait",
+   "bell_rang",
+   0.522
+  ],
+  [
+   "eat",
+   "ate",
+   0.656
+  ],
+  [
+   "up",
+   "door_gone",
+   1.0
+  ],
+  [
+   "left",
+   "door_gone",
+   1.0
+  ],
+  [
+   "eat",
+   "tree_ate",
+   0.985
+  ],
+  [
+   "right",
+   "door_gone",
+   1.0
+  ]
+ ],
+ "identifier_version": "v2.2-spec",
+ "decoy_in_causal": false,
+ "decoy_in_assoc": false,
+ "harness_notes": [],
+ "goals_at_reset": [
+  {
+   "id": "g6",
+   "kind": "key",
+   "target": "key"
+  }
+ ],
+ "self_model": {
+  "explore": [
+   1,
+   3
+  ],
+  "homeostasis": [
+   1,
+   1
+  ],
+  "key": [
+   0,
+   2
+  ]
+ },
+ "stats": {
+  "context_resets": 1.0
+ }
+}

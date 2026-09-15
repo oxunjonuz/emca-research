@@ -1,0 +1,109 @@
+{
+ "arm": "v7_full",
+ "seed": 258,
+ "steps": 16000,
+ "truth": true,
+ "rich": "low",
+ "decoy": true,
+ "edge_action": "wait",
+ "decoy_action": "press",
+ "total_reward": 598.5000000000034,
+ "deaths": 6,
+ "fruits_eaten": 0,
+ "fruit_blooms": 2,
+ "hums": 646,
+ "glows": 422,
+ "aura_steps": 1475,
+ "rich_steps": 11970,
+ "probe_trials": 800,
+ "probe_blocks": 2,
+ "candidates_seen": [
+  [
+   "press",
+   "glow",
+   0.2359,
+   340
+  ],
+  [
+   "wait",
+   "hum",
+   0.1927,
+   537
+  ]
+ ],
+ "n_candidates_total": 2,
+ "verdicts": {
+  "wait->hum": {
+   "verdict": "REJECT",
+   "p": 0.02002,
+   "rr": 1.233,
+   "target_yes": 114,
+   "target_no": 86,
+   "ctrl_yes": 92,
+   "ctrl_no": 107,
+   "blocks": 80,
+   "phase": "cold"
+  },
+  "press->glow": {
+   "verdict": "REJECT",
+   "p": 0.636,
+   "rr": 0.974,
+   "target_yes": 92,
+   "target_no": 108,
+   "ctrl_yes": 94,
+   "ctrl_no": 105,
+   "blocks": 80,
+   "phase": "warm"
+  }
+ },
+ "rich_rate_obs": 0.05,
+ "harness_notes": [],
+ "first_probe": [
+  "wait",
+  "hum"
+ ],
+ "ranked_at_first_probe": [
+  [
+   "wait",
+   "hum",
+   0.2136,
+   139
+  ]
+ ],
+ "probe_order_log": [
+  [
+   "wait",
+   "hum",
+   [
+    [
+     "wait",
+     "hum",
+     0.2136,
+     139
+    ]
+   ]
+  ],
+  [
+   "press",
+   "glow",
+   [
+    [
+     "press",
+     "glow",
+     0.2492,
+     140
+    ],
+    [
+     "wait",
+     "hum",
+     0.1743,
+     339
+    ]
+   ]
+  ]
+ ],
+ "first_causal_t": null,
+ "deaths_agent": 6,
+ "battery": "BA",
+ "held_out": true
+}

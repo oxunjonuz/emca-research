@@ -1,0 +1,542 @@
+{
+ "condition": "v6_oracle",
+ "seed": 3,
+ "steps": 16000,
+ "env": "TerrariumV6",
+ "regime_flip_at": 3000,
+ "total_reward": 17272.5,
+ "deaths": 50,
+ "berries_eaten": 282,
+ "tree_fruits": 1756,
+ "keys_picked": 45,
+ "lever_presses": 1,
+ "treasures": 0,
+ "chimes_collected": 47,
+ "grasp_attempts": 1777,
+ "grasp_costs_paid": 236.4,
+ "torches_collected": 26,
+ "treasury_eaten": 4,
+ "scorch_paid": 314.6,
+ "scorch_steps": 0,
+ "grasps_near_torch": 67,
+ "near_trap_steps": 1233,
+ "torch_goal_steps": 445,
+ "lotus_goal_steps": 6218,
+ "lotus_eaten": 4,
+ "spring_flows": 617,
+ "pool_fills": 4,
+ "waits_in_aura": 1207,
+ "aura_steps": 2908,
+ "probe_steps": 0,
+ "probe_verdicts": {},
+ "goals_generated": 288,
+ "goals_achieved": 41,
+ "goals_by_kind": {
+  "explore": 3,
+  "key": 9,
+  "tree": 8,
+  "lotus": 9,
+  "ring": 190,
+  "altar": 4,
+  "torch": 4,
+  "treasure": 3,
+  "curiosity": 5,
+  "empowerment": 39,
+  "homeostasis": 14
+ },
+ "causal_edges": [
+  [
+   "eat",
+   "patch_berry",
+   0.042
+  ],
+  [
+   "grasp",
+   "tree_gather",
+   0.814
+  ],
+  [
+   "wait",
+   "offering",
+   0.02
+  ],
+  [
+   "up",
+   "scorched",
+   0.021
+  ],
+  [
+   "eat",
+   "ate",
+   0.291
+  ],
+  [
+   "eat",
+   "tree_ate",
+   0.319
+  ],
+  [
+   "grasp",
+   "grasp",
+   1.0
+  ],
+  [
+   "eat",
+   "patch_ate",
+   0.205
+  ],
+  [
+   "eat",
+   "energy_rose",
+   0.041
+  ],
+  [
+   "wait",
+   "spring_flow",
+   0.3
+  ]
+ ],
+ "assoc_edges": [
+  [
+   "grasp",
+   "grasp",
+   1.0
+  ],
+  [
+   "grasp",
+   "torch_lit",
+   0.833
+  ],
+  [
+   "wait",
+   "offering",
+   0.552
+  ],
+  [
+   "eat",
+   "ate",
+   0.849
+  ],
+  [
+   "grasp",
+   "tree_gather",
+   0.97
+  ],
+  [
+   "eat",
+   "tree_ate",
+   0.904
+  ],
+  [
+   "eat",
+   "patch_ate",
+   0.975
+  ]
+ ],
+ "assoc_edges_p002": [
+  [
+   "down",
+   "bell_rang",
+   0.058
+  ],
+  [
+   "down",
+   "torch_lit",
+   0.115
+  ],
+  [
+   "down",
+   "patch_berry",
+   0.031
+  ],
+  [
+   "right",
+   "torch_lit",
+   0.107
+  ],
+  [
+   "right",
+   "scorched",
+   0.107
+  ],
+  [
+   "right",
+   "patch_berry",
+   0.037
+  ],
+  [
+   "right",
+   "bell_rang",
+   0.039
+  ],
+  [
+   "grasp",
+   "grasp",
+   1.0
+  ],
+  [
+   "grasp",
+   "bell_rang",
+   0.338
+  ],
+  [
+   "grasp",
+   "torch_lit",
+   0.833
+  ],
+  [
+   "up",
+   "bell_rang",
+   0.096
+  ],
+  [
+   "up",
+   "torch_lit",
+   0.241
+  ],
+  [
+   "up",
+   "patch_berry",
+   0.042
+  ],
+  [
+   "up",
+   "energy_fell",
+   0.026
+  ],
+  [
+   "wait",
+   "torch_lit",
+   0.037
+  ],
+  [
+   "wait",
+   "bell_rang",
+   0.023
+  ],
+  [
+   "left",
+   "patch_berry",
+   0.04
+  ],
+  [
+   "left",
+   "bell_rang",
+   0.051
+  ],
+  [
+   "left",
+   "torch_lit",
+   0.15
+  ],
+  [
+   "press",
+   "bell_rang",
+   0.107
+  ],
+  [
+   "press",
+   "torch_lit",
+   0.174
+  ],
+  [
+   "press",
+   "patch_berry",
+   0.036
+  ],
+  [
+   "eat",
+   "torch_lit",
+   0.422
+  ],
+  [
+   "eat",
+   "bell_rang",
+   0.192
+  ],
+  [
+   "down",
+   "spring_flow",
+   0.112
+  ],
+  [
+   "down",
+   "scorched",
+   0.042
+  ],
+  [
+   "down",
+   "key",
+   0.022
+  ],
+  [
+   "eat",
+   "lotus",
+   0.085
+  ],
+  [
+   "eat",
+   "energy_rose",
+   0.109
+  ],
+  [
+   "grasp",
+   "key",
+   0.045
+  ],
+  [
+   "wait",
+   "patch_berry",
+   0.021
+  ],
+  [
+   "eat",
+   "energy_fell",
+   0.067
+  ],
+  [
+   "eat",
+   "patch_berry",
+   0.076
+  ],
+  [
+   "wait",
+   "offering",
+   0.552
+  ],
+  [
+   "eat",
+   "ate",
+   0.849
+  ],
+  [
+   "right",
+   "key",
+   0.022
+  ],
+  [
+   "eat",
+   "treasury_ate",
+   0.4
+  ],
+  [
+   "left",
+   "key",
+   0.084
+  ],
+  [
+   "press",
+   "key",
+   0.091
+  ],
+  [
+   "right",
+   "torch_bank",
+   0.029
+  ],
+  [
+   "right",
+   "torch_collect",
+   0.029
+  ],
+  [
+   "grasp",
+   "scorched",
+   0.1
+  ],
+  [
+   "eat",
+   "scorched",
+   0.259
+  ],
+  [
+   "up",
+   "scorched",
+   0.13
+  ],
+  [
+   "up",
+   "torch_bank",
+   0.042
+  ],
+  [
+   "up",
+   "torch_collect",
+   0.042
+  ],
+  [
+   "wait",
+   "scorched",
+   0.056
+  ],
+  [
+   "wait",
+   "torch_bank",
+   0.037
+  ],
+  [
+   "wait",
+   "torch_collect",
+   0.037
+  ],
+  [
+   "left",
+   "scorched",
+   0.067
+  ],
+  [
+   "eat",
+   "torch_bank",
+   0.095
+  ],
+  [
+   "eat",
+   "torch_collect",
+   0.095
+  ],
+  [
+   "grasp",
+   "energy_fell",
+   0.023
+  ],
+  [
+   "press",
+   "scorched",
+   0.059
+  ],
+  [
+   "press",
+   "torch_bank",
+   0.059
+  ],
+  [
+   "press",
+   "torch_collect",
+   0.059
+  ],
+  [
+   "down",
+   "chime",
+   0.068
+  ],
+  [
+   "left",
+   "chime",
+   0.021
+  ],
+  [
+   "right",
+   "chime",
+   0.167
+  ],
+  [
+   "grasp",
+   "tree_gather",
+   0.97
+  ],
+  [
+   "down",
+   "died",
+   0.14
+  ],
+  [
+   "grasp",
+   "energy_rose",
+   0.021
+  ],
+  [
+   "eat",
+   "tree_ate",
+   0.904
+  ],
+  [
+   "press",
+   "spring_flow",
+   0.191
+  ],
+  [
+   "wait",
+   "spring_flow",
+   0.276
+  ],
+  [
+   "eat",
+   "spring_flow",
+   0.21
+  ],
+  [
+   "grasp",
+   "spring_flow",
+   0.137
+  ],
+  [
+   "left",
+   "spring_flow",
+   0.129
+  ],
+  [
+   "up",
+   "spring_flow",
+   0.081
+  ],
+  [
+   "right",
+   "spring_flow",
+   0.232
+  ],
+  [
+   "up",
+   "chime",
+   0.409
+  ],
+  [
+   "right",
+   "died",
+   0.304
+  ],
+  [
+   "up",
+   "died",
+   0.25
+  ],
+  [
+   "left",
+   "died",
+   0.271
+  ],
+  [
+   "grasp",
+   "tree_bare",
+   0.08
+  ],
+  [
+   "eat",
+   "patch_ate",
+   0.975
+  ],
+  [
+   "press",
+   "lever",
+   0.2
+  ],
+  [
+   "eat",
+   "key_appeared",
+   0.044
+  ]
+ ],
+ "identifier_version": "v2.5c + INJECTED spring edge (oracle device)",
+ "decoy_torch_in_causal": false,
+ "decoy_torch_in_assoc": true,
+ "decoy_bell_in_causal": null,
+ "spring_in_causal": true,
+ "spring_in_assoc": false,
+ "spring_in_assoc002": true,
+ "true_in_causal": {
+  "press->lever": false,
+  "eat->ate": true,
+  "grasp->tree_gather": true,
+  "eat->treasury_ate": false
+ },
+ "harness_notes": []
+}

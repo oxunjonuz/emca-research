@@ -1,0 +1,37 @@
+=== A. each cell agrees with the raw rows it shipped ===
+  checked 93 cells, 0 failures
+
+=== B. non-arbiter arms are BIT-IDENTICAL to the turn-129 matrix ===
+  PASS  arms that never consult the price reproduce exactly   66 identical
+
+=== C. fresh-process reproduction of sampled cells ===
+  PASS  union maskr p=0.35
+  PASS  union maskr p=0.25
+  PASS  union mask p=0.35
+  PASS  union mask p=0.15
+  PASS  union_nocost maskr p=0.35
+  PASS  union pub p=16
+  PASS  union pub p=2
+  PASS  union_noctx pub p=49
+  PASS  beta0 maskr p=0.35
+  PASS  union_pooledexp mask p=0.35
+
+=== D. the corrected arbiter's own arithmetic ===
+  PASS  PROBE_LEN == union_agent_v2.PROBE_BLOCK
+  PASS  cutoff_old = 196/240   0.816667
+  PASS  cutoff_new = 196/220   0.890909
+  PASS  cutoff_new > cutoff_old
+  PASS  beta=0 clears nothing under the new rule
+    rich=0.80  max-gap candidate: old=True new=True
+  PASS  rich=0.8: both rules clear a full-headroom candidate
+    rich=0.85  max-gap candidate: old=False new=True
+  PASS  rich=0.85: only the corrected rule clears (the repair's band)
+    rich=0.88  max-gap candidate: old=False new=True
+  PASS  rich=0.88: only the corrected rule clears (the repair's band)
+    rich=0.92  max-gap candidate: old=False new=False
+  PASS  rich=0.92: neither clears -- economics, not a horizon artefact
+  PASS  frozen arbitration.py untouched
+  PASS  frozen candidate_gen.py untouched
+  PASS  union_agent_v2 differs from union_agent in EXACTLY one line
+
+ALL CHECKS PASS (0 failures)

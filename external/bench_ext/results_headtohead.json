@@ -1,0 +1,110 @@
+{
+ "arms_gt17": {
+  "A": {
+   "fn": 1,
+   "fp": 38,
+   "n_sel": 54,
+   "precision": 0.2962962962962963,
+   "recall": 0.9411764705882353,
+   "tp": 16
+  },
+  "B": {
+   "fn": 14,
+   "fp": 0,
+   "n_sel": 3,
+   "precision": 1.0,
+   "recall": 0.17647058823529413,
+   "tp": 3
+  },
+  "C": {
+   "fn": 9,
+   "fp": 1,
+   "n_sel": 9,
+   "precision": 0.8888888888888888,
+   "recall": 0.47058823529411764,
+   "tp": 8
+  }
+ },
+ "arms_gt20": {
+  "A": {
+   "fn": 1,
+   "fp": 35,
+   "n_sel": 54,
+   "precision": 0.35185185185185186,
+   "recall": 0.95,
+   "tp": 19
+  },
+  "B": {
+   "fn": 17,
+   "fp": 0,
+   "n_sel": 3,
+   "precision": 1.0,
+   "recall": 0.15,
+   "tp": 3
+  },
+  "C": {
+   "fn": 12,
+   "fp": 1,
+   "n_sel": 9,
+   "precision": 0.8888888888888888,
+   "recall": 0.4,
+   "tp": 8
+  }
+ },
+ "declared_caveats": [
+  "My arms score SKELETON only (direction ignored); published inter.iamb and mbde are evaluated on directed arcs, where mbde is favoured.",
+  "My naive pooled arm (Spearman univariate) is WEAKER than any published method: published inter.iamb reaches precision 1.00 on the same file vs my pooled arm's 0.30. Beating the naive marginal is therefore NOT evidence against published methods.",
+  "Direction is not recovered at all by my arms; the campaign's mechanism in the worlds produced directed edges, so this port loses a capacity.",
+  "The intervention indicator columns in the external file are the experimenters' assignment; my context arms READ them, they do not choose or discover them. C1/C2 are not exercised."
+ ],
+ "fisher_precision_A_vs_C_gt17": 0.0012671652043112598,
+ "fisher_precision_A_vs_C_gt20": 0.003574895803576764,
+ "gt17_size": 17,
+ "gt20_size": 20,
+ "head_to_head_gt17": {
+  "my_context_stable_C": {
+   "fn": 9,
+   "fp": 1,
+   "n_sel": 9,
+   "precision": 0.8888888888888888,
+   "recall": 0.47058823529411764,
+   "tp": 8
+  },
+  "my_naive_pooled_A": {
+   "fn": 1,
+   "fp": 38,
+   "n_sel": 54,
+   "precision": 0.2962962962962963,
+   "recall": 0.9411764705882353,
+   "tp": 16
+  },
+  "published_interiamb": {
+   "fn": 9,
+   "fp": 0,
+   "precision": 1.0,
+   "recall": 0.47058823529411764,
+   "tp": 8
+  },
+  "published_mbde_intervention_aware": {
+   "fn": 0,
+   "fp": 8,
+   "precision": 0.68,
+   "recall": 1.0,
+   "tp": 17
+  }
+ },
+ "published_interiamb": {
+  "fn": 9,
+  "fp": 0,
+  "precision": 1.0,
+  "recall": 0.47058823529411764,
+  "tp": 8
+ },
+ "published_mbde": {
+  "fn": 0,
+  "fp": 8,
+  "precision": 0.68,
+  "recall": 1.0,
+  "tp": 17
+ }
+}

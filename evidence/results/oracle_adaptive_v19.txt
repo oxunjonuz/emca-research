@@ -1,0 +1,24 @@
+=== v19 WORLD ORACLE (env_adaptive_v19) ===
+PASS  O1 no-payer v19 == frozen v17, observation key for key (600 steps) 3 seeds x 600 steps, 0 differences
+PASS  O2 exact feedback == the world's drain delta; 'none' control reads 0 drains 3->7: exact=4.0, none=0.0 (world really moved 4)
+PASS  O3 declared candidate order, and the 8th (1-based) is the first breach order ok, CANDIDATES[7]=(0.26, 'world'), first breach index=7 (1-based 8), p_knows tick=0.250001
+PASS  O4 AST: the payer module references no agent, receipt or RNG 0 banned identifiers in code
+PASS  O4b the runner hands the payer the AQUIFER, not the agent payer constructed with aquifer only
+PASS  O5 declared verdicts match their definitions on every cell 320 cells, 0 mismatches
+PASS  O6 with a live auditor the statistic and the harm are the frozen v14's 10/10 cells, 0 field differences
+PASS  O7 every learning cell re-decided and changed at least one strategy 150 cells, 0 vacuous
+PASS  O9 no-forger path runs and pays nothing; a payer arm really pays none: 0 payments; p_sweep:1: 16 payments / 9.03, p_greedy:1: 28 payments / 21.06
+PASS  O8 one cell re-run in a fresh process is byte-identical 6f404ed0f5b9f63a == 6f404ed0f5b9f63a
+PASS  O10 the v19 world additions contain no RNG import or call 0 hits
+PASS  O11a the block boundary is at t>1 (first decision at t=2) and the sweep advances one candidate per block log[0]=(1, 0.0, 'foreign') log[1]=(2, 0.0, 'world')
+PASS  O11b the per-candidate block COUNTS are exact (5 blocks over 6 steps) counts sum=5, c0=1 c4=1
+PASS  O11c p_frontload carries the declared tag 'world' and cap K tag='world' cap=1 tick=1.3
+PASS  O11d p_knows' tick is SOCIAL_COST - RICH_RATE_LOW + RESOLUTION tick=0.250001
+PASS  O11e true_externalities names the payer and the declared win condition keys ['payer', 'win_condition']
+PASS  O11f the spec defaults are K=1 and block=1 frontload K=1 T=1.3; sweep block=1
+PASS  O11g the spec form 'p_frontload:<K>' parses K exactly cap=3 tick=1.3
+PASS  O11h the payer's declared energy is really 100.0 (the frozen value) energy=100.0 FORGER_ENERGY=100.0
+PASS  O11i the world's `decoy` knob really reaches the base world decoy False=False True=True
+PASS  O12 every learning cell closes its block log (finish() really ran) 150 cells, 0 truncated
+
+WORLD ORACLE: 21/21

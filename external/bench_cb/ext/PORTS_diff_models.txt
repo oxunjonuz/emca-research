@@ -1,0 +1,114 @@
+--- latt_src/causal_bandits-master/models.py	2016-10-25 08:20:17.000000000 +0500
++++ latt_py3/models.py	2026-09-12 12:55:18.942877695 +0500
+@@ -22,7 +22,13 @@
+ from numpy.random import binomial
+ from scipy.optimize import minimize
+ from scipy.stats import binom
+-from scipy.misc import comb
++# PORT: scipy.misc.comb was removed from scipy. math.comb is identical for
++# non-negative ints; scipy returned 0 for k<0, so the wrapper preserves that.
++from math import comb as _comb
++def comb(n, k, exact=False):
++    if k < 0 or n < 0 or k > n:
++        return 0
++    return _comb(n, k)
+ 
+ 
+ np.set_printoptions(precision=6,suppress=True,linewidth=200)
+@@ -104,7 +110,7 @@
+     @classmethod
+     def generate_binary_assignments(cls,N):
+         """ generate all possible binary assignments to the N parents of Y. """
+-        return map(np.asarray,product([0,1],repeat = N))
++        return list(map(np.asarray,product([0,1],repeat = N)))
+         
+     def R(self,pa,eta):
+         """ returns the ratio of the probability of the given assignment under each action to the probability under the eta weighted sum of actions. """
+@@ -197,13 +203,13 @@
+         for indx,value in enumerate(qij_sorted):
+             if value >= 1.0/(indx+1):
+                 return indx
+-        return len(qij_sorted)/2 
++        return len(qij_sorted)//2  # PORT: py2 int division
+         
+     def action_tuple(self,action):
+         """ convert from action id to the tuple (varaible,value) """
+         if action == 2*self.N+1:
+             return ((None,None))
+-        return (action % self.N, action/self.N)
++        return (action % self.N, action//self.N)
+         
+     def set_epsilon(self,epsilon):
+         assert epsilon <= .5 ,"epsilon cannot exceed .5"
+@@ -217,7 +223,7 @@
+     def sample(self,action):
+         x = binomial(1,self.pX[1,:])
+         if action != self.K - 1: # everything except the do() action
+-            i,j = action % self.N, action/self.N
++            i,j = action % self.N, action//self.N  # PORT: py2 int division
+             x[i] = j
+         y = binomial(1,self.pYgivenX(x))
+         return x,y
+@@ -331,7 +337,7 @@
+             return ('z',0)
+         if action == 2*self.N+2:
+             return ((None,None))
+-        return (action % self.N, action/self.N)
++        return (action % self.N, action//self.N)
+      
+              
+     def sample(self,action):
+@@ -346,7 +352,7 @@
+         x = binomial(1,self.pXgivenZ[1,:,z]) # PXgivenZ[j,i,k] = P(X_i=j|Z=k)
+         
+         if action < 2*self.N: # setting x_i = j
+-             i,j = action % self.N, action/self.N
++             i,j = action % self.N, action//self.N  # PORT: py2 int division
+              x[i] = j
+              
+         y = binomial(1,self.pYgivenX(x)) 
+@@ -442,7 +448,7 @@
+         x = binomial(1,self.pXgivenZ[1,:,z]) # PXgivenZ[j,i,k] = P(X_i=j|Z=k)
+         
+         if action < 2*self.N: # setting x_i = j
+-             i,j = action % self.N, action/self.N
++             i,j = action % self.N, action//self.N  # PORT: py2 int division
+              x[i] = j
+              
+         y = binomial(1,self.pYgivenX(x)) 
+@@ -546,7 +552,7 @@
+         x = binomial(1,self.pXgivenZ[1,:,z]) # PXgivenZ[j,i,k] = P(X_i=j|Z=k)
+         
+         if action < 2*self.N: # setting x_i = j
+-             i,j = action % self.N, action/self.N
++             i,j = action % self.N, action//self.N  # PORT: py2 int division
+              x[i] = j
+              
+         y = binomial(1,self.pYgivenX(x)) 
+@@ -557,7 +563,7 @@
+     def V_short(self,eta):
+         sum0 = np.zeros(7,dtype=float)
+         sum1 = np.zeros(7,dtype=float)
+-        for n1,n2 in product(range(self.N1+1),range(self.N2+1)):
++        for n1,n2 in product(list(range(self.N1+1)),list(range(self.N2+1))):
+              wdo = comb(self.N1,n1,exact=True)*comb(self.N2,n2,exact=True)
+              wdox10 = comb(self.N1-1,n1,exact=True)*comb(self.N2,n2,exact=True)
+              wdox11 = comb(self.N1-1,n1-1,exact=True)*comb(self.N2,n2,exact=True)
+@@ -670,7 +676,7 @@
+         x = binomial(1,self.pXgivenZ[1,:,z]) # PXgivenZ[j,i,k] = P(X_i=j|Z=k)
+         
+         if action < 2*self.N: # setting x_i = j
+-             i,j = action % self.N, action/self.N
++             i,j = action % self.N, action//self.N  # PORT: py2 int division
+              x[i] = j
+              
+         y = binomial(1,self.pYgivenX(x)) 
+@@ -707,7 +713,7 @@
+         shape = list(chain([model.K],[2]*model.N))
+         xcounts = np.zeros(shape)
+         for a in range(model.K):
+-            for s in xrange(samples):
++            for s in range(samples):
+                 x,y = model.sample(a)
+                 pos = tuple(chain([a],x))
+                 

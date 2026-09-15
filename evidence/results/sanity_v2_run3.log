@@ -1,0 +1,210 @@
+sanity_v2_confounder.py -- toy-scale check of the v2 decoy-confounder design
+real module: agent_emca.EMCA observe/assoc_edges/causal_edges, DEFAULT parameters
+
+=== ARM-OBS variant A (berries around the bell: confounder KEYED) (scripted policy, real EMCA observe, 8000 steps/seed) ===
+
+--- seed 1: warm=4785 cold=3215 deaths=24 ---
+raw P(ring|a) per action (runner accounting, independent of agent):
+    right  rang   596/ 1619 = 0.368
+    up     rang   606/ 1616 = 0.375
+    left   rang   566/ 1559 = 0.363
+    down   rang   516/ 1547 = 0.334
+    grasp  rang   729/ 1162 = 0.627
+    eat    rang   186/  296 = 0.628
+    press  rang    66/  164 = 0.402
+    wait   rang     6/   37 = 0.162
+raw P(ate|eat) = 249/296 = 0.841
+ASSOC edges  {eat->ate:0.965, eat->bell_rang:0.648, grasp->bell_rang:0.631, left->door_gone:1.0, press->lever:0.954, right->door_gone:1.0, up->door_gone:1.0}
+CAUSAL edges {eat->ate:0.841, eat->bell_rang:0.628, eat->energy_rose:0.095, grasp->bell_rang:0.627, press->lever:0.756}
+decoy  ('grasp', 'bell_rang'): ctx_ae rate_a=0.6274 (y=729, n=1162), pooled_others=0.3724 (oy=2051, on=5507), diff=0.2549 (margin=0.02)
+       assoc_has=True  causal_has=True  perctx_has=True
+2nd   ('eat','bell_rang'): rate_a=0.6284, pooled=0.4384, assoc_has=True, causal_has=True
+probe ('grasp','energy_rose'): rate_a=0.0, n=1162, assoc_has=False
+true  ('eat', 'ate'): assoc_has=True, causal_has=True
+true  ('press', 'lever'): assoc_has=True, causal_has=True
+
+--- seed 2: warm=4847 cold=3153 deaths=22 ---
+raw P(ring|a) per action (runner accounting, independent of agent):
+    up     rang   626/ 1666 = 0.376
+    right  rang   605/ 1635 = 0.370
+    left   rang   609/ 1622 = 0.375
+    down   rang   544/ 1568 = 0.347
+    grasp  rang   646/ 1027 = 0.629
+    eat    rang   173/  290 = 0.597
+    press  rang    60/  131 = 0.458
+    wait   rang    26/   61 = 0.426
+raw P(ate|eat) = 242/290 = 0.834
+ASSOC edges  {eat->ate:0.953, eat->bell_rang:0.599, grasp->bell_rang:0.629, left->door_gone:1.0, press->lever:0.934, right->door_gone:1.0, up->door_gone:1.0}
+CAUSAL edges {eat->ate:0.834, eat->bell_rang:0.597, eat->energy_rose:0.11, grasp->bell_rang:0.629, press->bell_rang:0.458, press->lever:0.649}
+decoy  ('grasp', 'bell_rang'): ctx_ae rate_a=0.629 (y=646, n=1027), pooled_others=0.3826 (oy=2538, on=6633), diff=0.2464 (margin=0.02)
+       assoc_has=True  causal_has=True  perctx_has=True
+2nd   ('eat','bell_rang'): rate_a=0.5966, pooled=0.4025, assoc_has=True, causal_has=True
+probe ('grasp','energy_rose'): rate_a=0.0, n=1027, assoc_has=False
+true  ('eat', 'ate'): assoc_has=True, causal_has=True
+true  ('press', 'lever'): assoc_has=True, causal_has=True
+
+--- seed 3: warm=4718 cold=3282 deaths=24 ---
+raw P(ring|a) per action (runner accounting, independent of agent):
+    left   rang   573/ 1621 = 0.353
+    up     rang   611/ 1617 = 0.378
+    right  rang   528/ 1541 = 0.343
+    down   rang   526/ 1499 = 0.351
+    grasp  rang   776/ 1237 = 0.627
+    eat    rang   185/  289 = 0.640
+    press  rang    59/  141 = 0.418
+    wait   rang    23/   55 = 0.418
+raw P(ate|eat) = 250/289 = 0.865
+ASSOC edges  {eat->ate:0.958, eat->bell_rang:0.651, grasp->bell_rang:0.633, left->door_gone:1.0, press->lever:0.962, right->door_gone:1.0, up->door_gone:1.0}
+CAUSAL edges {eat->ate:0.865, eat->bell_rang:0.64, eat->energy_rose:0.111, grasp->bell_rang:0.627, press->lever:0.723}
+decoy  ('grasp', 'bell_rang'): ctx_ae rate_a=0.6273 (y=776, n=1237), pooled_others=0.4058 (oy=2071, on=5103), diff=0.2215 (margin=0.02)
+       assoc_has=True  causal_has=True  perctx_has=True
+2nd   ('eat','bell_rang'): rate_a=0.6401, pooled=0.413, assoc_has=True, causal_has=True
+probe ('grasp','energy_rose'): rate_a=0.0, n=1237, assoc_has=False
+true  ('eat', 'ate'): assoc_has=True, causal_has=True
+true  ('press', 'lever'): assoc_has=True, causal_has=True
+
+=== ARM-OBS variant B (berries far away: confounder UNKEYED at the bell) (scripted policy, real EMCA observe, 8000 steps/seed) ===
+
+--- seed 1: warm=5166 cold=2834 deaths=33 ---
+raw P(ring|a) per action (runner accounting, independent of agent):
+    up     rang   641/ 1646 = 0.389
+    right  rang   603/ 1580 = 0.382
+    down   rang   608/ 1571 = 0.387
+    left   rang   658/ 1561 = 0.422
+    grasp  rang   751/ 1206 = 0.623
+    eat    rang   149/  246 = 0.606
+    press  rang    59/  155 = 0.381
+    wait   rang    11/   35 = 0.314
+raw P(ate|eat) = 194/246 = 0.789
+ASSOC edges  {eat->ate:0.985, eat->bell_rang:0.634, grasp->bell_rang:0.628, left->door_gone:1.0, press->lever:0.922, right->door_gone:1.0, up->door_gone:1.0}
+CAUSAL edges {eat->ate:0.789, eat->bell_rang:0.606, eat->energy_rose:0.065, grasp->bell_rang:0.623, press->lever:0.684}
+decoy  ('grasp', 'bell_rang'): ctx_ae rate_a=0.6227 (y=751, n=1206), pooled_others=0.3893 (oy=2046, on=5256), diff=0.2335 (margin=0.02)
+       assoc_has=True  causal_has=True  perctx_has=True
+2nd   ('eat','bell_rang'): rate_a=0.6057, pooled=0.4761, assoc_has=True, causal_has=True
+probe ('grasp','energy_rose'): rate_a=0.0, n=1206, assoc_has=False
+true  ('eat', 'ate'): assoc_has=True, causal_has=True
+true  ('press', 'lever'): assoc_has=True, causal_has=True
+
+--- seed 2: warm=5307 cold=2693 deaths=34 ---
+raw P(ring|a) per action (runner accounting, independent of agent):
+    right  rang   654/ 1576 = 0.415
+    up     rang   601/ 1551 = 0.387
+    left   rang   604/ 1548 = 0.390
+    down   rang   561/ 1464 = 0.383
+    grasp  rang   914/ 1455 = 0.628
+    press  rang    72/  177 = 0.407
+    eat    rang    97/  168 = 0.577
+    wait   rang    35/   61 = 0.574
+raw P(ate|eat) = 123/168 = 0.732
+ASSOC edges  {eat->ate:0.961, eat->bell_rang:0.581, grasp->bell_rang:0.629, left->door_gone:1.0, press->lever:0.922, right->door_gone:1.0, up->door_gone:1.0, wait->bell_rang:0.583}
+CAUSAL edges {eat->ate:0.732, eat->bell_rang:0.577, eat->energy_rose:0.083, grasp->bell_rang:0.628, press->lever:0.667, wait->bell_rang:0.574}
+decoy  ('grasp', 'bell_rang'): ctx_ae rate_a=0.6282 (y=914, n=1455), pooled_others=0.3998 (oy=2479, on=6201), diff=0.2284 (margin=0.02)
+       assoc_has=True  causal_has=True  perctx_has=True
+2nd   ('eat','bell_rang'): rate_a=0.5774, pooled=0.4493, assoc_has=True, causal_has=True
+probe ('grasp','energy_rose'): rate_a=0.0, n=1455, assoc_has=False
+true  ('eat', 'ate'): assoc_has=True, causal_has=True
+true  ('press', 'lever'): assoc_has=True, causal_has=True
+
+--- seed 3: warm=5090 cold=2910 deaths=36 ---
+raw P(ring|a) per action (runner accounting, independent of agent):
+    up     rang   684/ 1704 = 0.401
+    left   rang   658/ 1685 = 0.391
+    right  rang   652/ 1587 = 0.411
+    down   rang   610/ 1569 = 0.389
+    grasp  rang   738/ 1136 = 0.650
+    eat    rang    93/  157 = 0.592
+    press  rang    43/  106 = 0.406
+    wait   rang    24/   56 = 0.429
+raw P(ate|eat) = 117/157 = 0.745
+ASSOC edges  {eat->ate:0.992, eat->bell_rang:0.604, grasp->bell_rang:0.653, left->door_gone:1.0, press->lever:0.984, right->door_gone:1.0, up->door_gone:1.0}
+CAUSAL edges {eat->ate:0.745, eat->bell_rang:0.592, eat->energy_rose:0.121, grasp->bell_rang:0.65, press->lever:0.575}
+decoy  ('grasp', 'bell_rang'): ctx_ae rate_a=0.6496 (y=738, n=1136), pooled_others=0.4039 (oy=2422, on=5997), diff=0.2458 (margin=0.02)
+       assoc_has=True  causal_has=True  perctx_has=True
+2nd   ('eat','bell_rang'): rate_a=0.5924, pooled=0.4494, assoc_has=True, causal_has=True
+probe ('grasp','energy_rose'): rate_a=0.0, n=1136, assoc_has=False
+true  ('eat', 'ate'): assoc_has=True, causal_has=True
+true  ('press', 'lever'): assoc_has=True, causal_has=True
+
+=== determinism check: seed 1 variant A run twice ===
+edge sets identical: True; raw ring counters identical: True
+
+=== ARM-OBS-GLOW variant A (ctx key + bell glow: candidate minimal fix, ===
+no algorithm change -- the EXISTING pooled causal_edges must now reject the decoy)
+    pool breakdown for grasp->bell_rang (contexts entering the contrast):
+      ctx=(True, False, False, False, False, True, False) grasp 623/976=0.64 others 735/1103=0.67
+      ctx=(False, False, False, False, False, False, False) grasp 5/14=0.36 others 730/2225=0.33
+      ctx=(False, False, False, False, True, False, False) grasp 1/7=0.14 others 182/774=0.24
+      ctx=(True, False, False, False, True, True, False) grasp 94/133=0.71 others 74/106=0.70
+      ctx=(False, False, True, False, True, False, False) grasp 2/3=0.67 others 68/224=0.30
+      ctx=(False, False, False, True, True, False, False) grasp 1/1=1.00 others 31/141=0.22
+      ctx=(False, False, False, False, False, False, True) grasp 3/20=0.15 others 14/509=0.03
+      (7 contexts enter the pool)
+--- seed 1 ---
+CAUSAL edges (glow ctx) {eat->ate:0.841, eat->bell_rang:0.628, eat->energy_rose:0.095, grasp->bell_rang:0.627, press->lever:0.756}
+decoy: causal_has=True, perctx_has=True, rate_a=0.6274, pooled=0.3609, diff=0.2665
+true  ('eat', 'ate'): causal_has=True
+true  ('press', 'lever'): causal_has=True
+--- seed 2 ---
+CAUSAL edges (glow ctx) {eat->ate:0.834, eat->bell_rang:0.597, eat->energy_rose:0.11, grasp->bell_rang:0.629, press->bell_rang:0.458, press->lever:0.649}
+decoy: causal_has=True, perctx_has=True, rate_a=0.629, pooled=0.3871, diff=0.2419
+true  ('eat', 'ate'): causal_has=True
+true  ('press', 'lever'): causal_has=True
+--- seed 3 ---
+CAUSAL edges (glow ctx) {eat->ate:0.865, eat->bell_rang:0.64, eat->energy_rose:0.111, grasp->bell_rang:0.627, press->lever:0.723}
+decoy: causal_has=True, perctx_has=True, rate_a=0.6273, pooled=0.405, diff=0.2223
+true  ('eat', 'ate'): causal_has=True
+true  ('press', 'lever'): causal_has=True
+
+=== ARM-OBS-SPEC variant A (candidate fix #3: necessity/specificity, ===
+current ctx key; spec_cap=0.10; no ctx change)
+--- seed 1 ---
+CAUSAL edges (spec) {eat->ate:0.841, eat->energy_rose:0.095, press->lever:0.756}
+    ('grasp', 'bell_rang'): causal_has=False
+    ('eat', 'bell_rang'): causal_has=False
+    ('press', 'bell_rang'): causal_has=False
+    ('eat', 'ate'): causal_has=True
+    ('press', 'lever'): causal_has=True
+--- seed 2 ---
+CAUSAL edges (spec) {eat->ate:0.834, eat->energy_rose:0.11, press->lever:0.649}
+    ('grasp', 'bell_rang'): causal_has=False
+    ('eat', 'bell_rang'): causal_has=False
+    ('press', 'bell_rang'): causal_has=False
+    ('eat', 'ate'): causal_has=True
+    ('press', 'lever'): causal_has=True
+--- seed 3 ---
+CAUSAL edges (spec) {eat->ate:0.865, eat->energy_rose:0.111, press->lever:0.723}
+    ('grasp', 'bell_rang'): causal_has=False
+    ('eat', 'bell_rang'): causal_has=False
+    ('press', 'bell_rang'): causal_has=False
+    ('eat', 'ate'): causal_has=True
+    ('press', 'lever'): causal_has=True
+--- variant B seed 1: decoy causal_has=False, true_ok=True
+--- variant B seed 2: decoy causal_has=False, true_ok=True
+--- variant B seed 3: decoy causal_has=False, true_ok=True
+
+=== ARM-DO interventional oracle (forced actions, no agent) ===
+do(grasp): P(ring)=4120/8000=0.515
+do(wait ): P(ring)=4120/8000=0.515
+do(eat  ): P(ring)=2942/8000=0.368  P(ate|eat-trial)=2125/2136=0.995
+
+=== ARM-AGENT exploratory (real EMCA vs emca_nocausal, variant A) ===
+emca seed 1: {'rings_seen': 2465, 'eat': 272, 'press': 111, 'grasp_any': 142, 'deaths': 22, 'treasures': 1}
+   ASSOC has decoy: False; CAUSAL has decoy: False
+emca seed 2: {'rings_seen': 2407, 'grasp_any': 116, 'eat': 323, 'press': 138, 'treasures': 3, 'deaths': 20, 'grasp_at_bell': 2}
+   ASSOC has decoy: False; CAUSAL has decoy: False
+emca_nocausal seed 1: {'rings_seen': 2465, 'eat': 272, 'press': 111, 'grasp_any': 142, 'deaths': 22, 'treasures': 1}
+   ASSOC has decoy: False; CAUSAL has decoy: False
+emca_nocausal seed 2: {'rings_seen': 2407, 'grasp_any': 116, 'eat': 323, 'press': 138, 'treasures': 3, 'deaths': 20, 'grasp_at_bell': 2}
+   ASSOC has decoy: False; CAUSAL has decoy: False
+
+================ PRE-REGISTERED VERDICTS ================
+S1 correlation fooled (variant A):            PASS
+S2 contrast rejects decoy (variant A):        FAIL
+S3 true edges survive contrast (variant A):   PASS
+S4 boundary: unkeyed confounder fools contrast (variant B): PREDICTION CONFIRMED
+S5 interventional oracle agrees:              PASS (P(ring|do(grasp))=0.515, P(ring|do(wait))=0.515, P(ate|do(eat))=0.995)
+S6a per-context contrast, CURRENT ctx key: decoy accepted in 3/3 seeds -> per-context alone does NOT fix it
+S6b glow-augmented ctx key, existing pooled contrast: decoy rejected AND true edges kept in 0/3 seeds -> fix does NOT work
+S7 candidate fix #3 (specificity, spec_cap=0.10): decoy rejected AND true edges kept in 3/3 seeds (variant A) -> FIX WORKS at toy scale; variant B decoy rejected in 3/3 -> boundary closed
+OVERALL: v2 decoy separates causal/correlational at toy scale: NO (S1&S2&S3&S5)
+VERDICT FOR V2: the decoy design bites (S1) and the oracle confirms no true causation (S5), but the CURRENT identifier accepts the decoy (S2) -> building the full matrix on v2 as-is would repeat emca == emca_nocausal; v2 needs the identifier fix first: S6a/S6b failed, S7 specificity VALIDATED at toy scale (multi-cause boundary stated)

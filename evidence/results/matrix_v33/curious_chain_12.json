@@ -1,0 +1,460 @@
+{
+ "condition": "curious_chain",
+ "seed": 12,
+ "steps": 16000,
+ "env": "TerrariumV33",
+ "regime_flip_at": 3000,
+ "reset_at": null,
+ "total_reward": 4680.0,
+ "deaths": 84,
+ "berries_eaten": 42,
+ "tree_fruits": 534,
+ "keys_picked": 151,
+ "lever_presses": 12535,
+ "treasures": 11,
+ "storm_duty": 0.0,
+ "chimes_collected": 12,
+ "grasp_attempts": 701,
+ "grasp_at_bell": 406,
+ "grasp_costs_paid": 161.4,
+ "grasp_at_bell_no_tree": 37,
+ "patch_sprouts_seen": 296,
+ "patch_ate": 16,
+ "altar_visits": 0,
+ "waits_at_altar": 5,
+ "offerings_paid": 5,
+ "far_zone_steps": 809,
+ "tree_bare_events": 6,
+ "novelty_transitions": 16000,
+ "goals_generated": 57,
+ "goals_achieved": 23,
+ "goals_by_kind": {
+  "explore": 1,
+  "key": 1,
+  "tree": 1,
+  "treasure": 1,
+  "curiosity": 1,
+  "homeostasis": 22,
+  "empowerment": 30
+ },
+ "causal_edges": [
+  [
+   "grasp",
+   "tree_gather",
+   0.762
+  ],
+  [
+   "right",
+   "treasure",
+   0.021
+  ],
+  [
+   "press",
+   "lever",
+   0.986
+  ],
+  [
+   "eat",
+   "tree_ate",
+   0.335
+  ],
+  [
+   "wait",
+   "offering",
+   0.029
+  ],
+  [
+   "grasp",
+   "grasp",
+   1.0
+  ],
+  [
+   "eat",
+   "patch_ate",
+   0.077
+  ],
+  [
+   "down",
+   "key",
+   0.15
+  ],
+  [
+   "eat",
+   "ate",
+   0.201
+  ],
+  [
+   "down",
+   "energy_fell",
+   0.027
+  ],
+  [
+   "right",
+   "energy_fell",
+   0.036
+  ],
+  [
+   "up",
+   "energy_fell",
+   0.062
+  ]
+ ],
+ "assoc_edges": [
+  [
+   "press",
+   "lever",
+   1.0
+  ],
+  [
+   "grasp",
+   "grasp",
+   1.0
+  ],
+  [
+   "grasp",
+   "tree_gather",
+   0.927
+  ],
+  [
+   "eat",
+   "tree_ate",
+   0.986
+  ],
+  [
+   "eat",
+   "ate",
+   0.636
+  ],
+  [
+   "eat",
+   "patch_ate",
+   0.533
+  ]
+ ],
+ "assoc_edges_p002": [
+  [
+   "down",
+   "patch_berry",
+   0.05
+  ],
+  [
+   "down",
+   "key",
+   0.177
+  ],
+  [
+   "down",
+   "bell_rang",
+   0.201
+  ],
+  [
+   "left",
+   "patch_berry",
+   0.045
+  ],
+  [
+   "right",
+   "patch_berry",
+   0.056
+  ],
+  [
+   "right",
+   "bell_rang",
+   0.169
+  ],
+  [
+   "press",
+   "lever",
+   1.0
+  ],
+  [
+   "up",
+   "bell_rang",
+   0.292
+  ],
+  [
+   "up",
+   "energy_fell",
+   0.112
+  ],
+  [
+   "up",
+   "patch_berry",
+   0.048
+  ],
+  [
+   "down",
+   "energy_fell",
+   0.062
+  ],
+  [
+   "left",
+   "bell_rang",
+   0.215
+  ],
+  [
+   "left",
+   "energy_fell",
+   0.138
+  ],
+  [
+   "grasp",
+   "grasp",
+   1.0
+  ],
+  [
+   "grasp",
+   "tree_gather",
+   0.927
+  ],
+  [
+   "grasp",
+   "bell_rang",
+   0.332
+  ],
+  [
+   "grasp",
+   "died",
+   0.083
+  ],
+  [
+   "down",
+   "died",
+   0.165
+  ],
+  [
+   "up",
+   "died",
+   0.13
+  ],
+  [
+   "wait",
+   "bell_rang",
+   0.215
+  ],
+  [
+   "wait",
+   "died",
+   0.114
+  ],
+  [
+   "press",
+   "died",
+   0.048
+  ],
+  [
+   "eat",
+   "tree_ate",
+   0.986
+  ],
+  [
+   "eat",
+   "bell_rang",
+   0.328
+  ],
+  [
+   "right",
+   "died",
+   0.103
+  ],
+  [
+   "left",
+   "key_appeared",
+   0.042
+  ],
+  [
+   "left",
+   "died",
+   0.133
+  ],
+  [
+   "grasp",
+   "energy_rose",
+   0.021
+  ],
+  [
+   "wait",
+   "energy_fell",
+   0.118
+  ],
+  [
+   "right",
+   "energy_fell",
+   0.097
+  ],
+  [
+   "up",
+   "tree_appeared",
+   0.059
+  ],
+  [
+   "right",
+   "tree_appeared",
+   0.059
+  ],
+  [
+   "left",
+   "chime",
+   0.048
+  ],
+  [
+   "right",
+   "chime",
+   0.045
+  ],
+  [
+   "right",
+   "key_appeared",
+   0.033
+  ],
+  [
+   "right",
+   "key",
+   0.2
+  ],
+  [
+   "eat",
+   "patch_berry",
+   0.086
+  ],
+  [
+   "down",
+   "chime",
+   0.024
+  ],
+  [
+   "up",
+   "key",
+   0.462
+  ],
+  [
+   "left",
+   "key",
+   0.167
+  ],
+  [
+   "eat",
+   "ate",
+   0.636
+  ],
+  [
+   "up",
+   "chime",
+   0.029
+  ],
+  [
+   "eat",
+   "patch_ate",
+   0.533
+  ],
+  [
+   "eat",
+   "energy_rose",
+   0.1
+  ],
+  [
+   "wait",
+   "patch_berry",
+   0.105
+  ],
+  [
+   "wait",
+   "offering",
+   0.312
+  ],
+  [
+   "right",
+   "treasure",
+   0.45
+  ],
+  [
+   "grasp",
+   "key",
+   0.125
+  ],
+  [
+   "press",
+   "key",
+   0.083
+  ],
+  [
+   "eat",
+   "key_appeared",
+   0.136
+  ],
+  [
+   "eat",
+   "key",
+   0.12
+  ],
+  [
+   "left",
+   "treasure",
+   0.029
+  ],
+  [
+   "wait",
+   "key",
+   0.333
+  ],
+  [
+   "wait",
+   "key_appeared",
+   0.067
+  ]
+ ],
+ "identifier_version": "v2.5c + object-directed novelty (chain, v3.3)",
+ "decoy_in_causal": false,
+ "decoy_in_assoc": true,
+ "altar_edge_in_causal": false,
+ "true_in_causal": {
+  "press->lever": true,
+  "eat->ate": true,
+  "grasp->tree_gather": true
+ },
+ "probe_verdicts": null,
+ "probe_trials": null,
+ "harness_notes": [],
+ "self_model": {
+  "explore": [
+   1,
+   1
+  ],
+  "key": [
+   1,
+   1
+  ],
+  "tree": [
+   1,
+   1
+  ],
+  "treasure": [
+   1,
+   1
+  ],
+  "curiosity": [
+   1,
+   1
+  ],
+  "homeostasis": [
+   1,
+   22
+  ],
+  "empowerment": [
+   17,
+   30
+  ]
+ },
+ "interaction_counts": {
+  "lever_press": 12535,
+  "key_pickup": 151,
+  "chime_pickup": 12,
+  "treasure_visit": 11
+ },
+ "chain_events": {
+  "lever_press": 12535,
+  "key_pickup": 151,
+  "dash_steps": 150,
+  "treasure": 11
+ }
+}

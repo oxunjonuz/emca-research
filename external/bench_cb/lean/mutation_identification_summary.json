@@ -1,0 +1,65 @@
+{
+ "baseline_rc": 0,
+ "mutants": 9,
+ "killed": 7,
+ "survivors": [
+  "M1_identification_to_empty",
+  "M5_vacuity_threshold"
+ ],
+ "results": [
+  {
+   "mutant": "M1_identification_to_empty",
+   "status": "SURVIVOR",
+   "rc": 0,
+   "first_error": ""
+  },
+  {
+   "mutant": "M2_hgood_negation_dropped",
+   "status": "KILLED",
+   "rc": 1,
+   "first_error": "/work/Shopify/audit-work/agent_arch/bench_cb/lean/_mut_ident.lean:73:49: error: unsolved goals"
+  },
+  {
+   "mutant": "M3_bound_constant",
+   "status": "KILLED",
+   "rc": 1,
+   "first_error": "/work/Shopify/audit-work/agent_arch/bench_cb/lean/_mut_ident.lean:82:47: error: unsolved goals"
+  },
+  {
+   "mutant": "M4_pulls_constant",
+   "status": "KILLED",
+   "rc": 1,
+   "first_error": "/work/Shopify/audit-work/agent_arch/bench_cb/lean/_mut_ident.lean:98:30: error: linarith failed to find a contradiction"
+  },
+  {
+   "mutant": "M5_vacuity_threshold",
+   "status": "SURVIVOR",
+   "rc": 0,
+   "first_error": ""
+  },
+  {
+   "mutant": "M6_concentration_false",
+   "status": "KILLED",
+   "rc": 1,
+   "first_error": "/work/Shopify/audit-work/agent_arch/bench_cb/lean/_mut_ident.lean:66:2: error: not a positivity goal"
+  },
+  {
+   "mutant": "M7_identification_conclusion_false",
+   "status": "KILLED",
+   "rc": 1,
+   "first_error": "/work/Shopify/audit-work/agent_arch/bench_cb/lean/_mut_ident.lean:60:2: error: tactic 'rfl' failed, the left-hand side"
+  },
+  {
+   "mutant": "M8_eighty_pulls_false",
+   "status": "KILLED",
+   "rc": 1,
+   "first_error": "/work/Shopify/audit-work/agent_arch/bench_cb/lean/_mut_ident.lean:102:49: error: unsolved goals"
+  },
+  {
+   "mutant": "M9_vacuity_false",
+   "status": "KILLED",
+   "rc": 1,
+   "first_error": "/work/Shopify/audit-work/agent_arch/bench_cb/lean/_mut_ident.lean:86:53: error: unsolved goals"
+  }
+ ]
+}

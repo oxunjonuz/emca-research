@@ -1,0 +1,131 @@
+{
+ "baseline": {
+  "exit": 1,
+  "seconds": 13.4
+ },
+ "target": "Union.union_regret_bound",
+ "rows": [
+  {
+   "id": "M1_t6_conclusion_tightened",
+   "mutation": "T6 conclusion 1/(4 n \u03b5\u00b2) -> 1/(2 n \u03b5\u00b2)",
+   "why": "the Chebyshev+Popoviciu constant in T6 is tight for the proof",
+   "applied": true,
+   "exit": 1,
+   "errors": 2,
+   "seconds": 7.3,
+   "verdict": "semantic_conclusion",
+   "first_error": "/work/Shopify/audit-work/agent_arch/PUBLICATION_V1_V16/external/bench_cb/lean/m_M1_t6_conclusion_tightened.lean:279:15: error: unsolved goals"
+  },
+  {
+   "id": "M2_t6_no_square",
+   "mutation": "T6 conclusion 1/(4 n \u03b5\u00b2) -> 1/(4 n \u03b5)",
+   "why": "the \u03b5\u00b2 (Chebyshev's quadratic penalty) is load-bearing",
+   "applied": true,
+   "exit": 1,
+   "errors": 2,
+   "seconds": 7.7,
+   "verdict": "semantic_conclusion",
+   "first_error": "/work/Shopify/audit-work/agent_arch/PUBLICATION_V1_V16/external/bench_cb/lean/m_M2_t6_no_square.lean:279:15: error: unsolved goals"
+  },
+  {
+   "id": "M3_t9_conclusion_tightened",
+   "mutation": "T9 conclusion k/(4 r \u03b5\u00b2) -> k/(2 r \u03b5\u00b2)",
+   "why": "T9's constant is not slack: the proof cannot be squeezed",
+   "applied": true,
+   "exit": 1,
+   "errors": 1,
+   "seconds": 9.3,
+   "verdict": "semantic_conclusion",
+   "first_error": "/work/Shopify/audit-work/agent_arch/PUBLICATION_V1_V16/external/bench_cb/lean/m_M3_t9_conclusion_tightened.lean:313:64: error: unsolved goals"
+  },
+  {
+   "id": "M4_t7_pooled_nonzero",
+   "mutation": "T7 pooled gap = 0 -> = 1",
+   "why": "the annihilation claim is a real equation, not a degeneracy",
+   "applied": true,
+   "exit": 1,
+   "errors": 1,
+   "seconds": 9.2,
+   "verdict": "semantic_conclusion",
+   "first_error": "/work/Shopify/audit-work/agent_arch/PUBLICATION_V1_V16/external/bench_cb/lean/m_M4_t7_pooled_nonzero.lean:72:44: error: omega could not prove the goal:"
+  },
+  {
+   "id": "M5_t7_drop_hds",
+   "mutation": "T7 drops the hypothesis d <= s",
+   "why": "the truncation hypothesis is needed (s - d is \u2115-subtraction)",
+   "applied": true,
+   "exit": 1,
+   "errors": 1,
+   "seconds": 10.6,
+   "verdict": "semantic_conclusion",
+   "first_error": "/work/Shopify/audit-work/agent_arch/PUBLICATION_V1_V16/external/bench_cb/lean/m_M5_t7_drop_hds.lean:72:44: error: omega could not prove the goal:"
+  },
+  {
+   "id": "M6_t4_exponent_halved",
+   "mutation": "T4 Hoeffding exponent /2 -> /4",
+   "why": "the sub-Gaussian exponent constant is load-bearing",
+   "applied": true,
+   "exit": 1,
+   "errors": 1,
+   "seconds": 8.7,
+   "verdict": "semantic_conclusion",
+   "first_error": "/work/Shopify/audit-work/agent_arch/PUBLICATION_V1_V16/external/bench_cb/lean/m_M6_t4_exponent_halved.lean:177:57: error: unsolved goals"
+  },
+  {
+   "id": "M7_t6_signature_no_indep",
+   "mutation": "T6 drops (h_indep : iIndepFun X \u03bc) from the SIGNATURE",
+   "why": "independence is used by the proof, not merely named",
+   "applied": true,
+   "exit": 1,
+   "errors": 3,
+   "seconds": 9.3,
+   "verdict": "syntactic_reference",
+   "first_error": "/work/Shopify/audit-work/agent_arch/PUBLICATION_V1_V16/external/bench_cb/lean/m_M7_t6_signature_no_indep.lean:277:41: error: unknown identifier 'h_indep'"
+  },
+  {
+   "id": "M8_t6_signature_no_bounded",
+   "mutation": "T6 drops (h01 : \u2200 i, \u2200\u1d50 \u03c9, X i \u03c9 \u2208 Icc 0 1) from the SIGNATURE",
+   "why": "the [0,1] bound is used by the proof, not merely named",
+   "applied": true,
+   "exit": 1,
+   "errors": 3,
+   "seconds": 7.8,
+   "verdict": "syntactic_reference",
+   "first_error": "/work/Shopify/audit-work/agent_arch/PUBLICATION_V1_V16/external/bench_cb/lean/m_M8_t6_signature_no_bounded.lean:274:59: error: unknown identifier 'h01'"
+  },
+  {
+   "id": "M9_t9_hp_strictly_smaller",
+   "mutation": "T9's internal hp bound 1/(4 r \u03b5\u00b2) -> 1/(8 r \u03b5\u00b2)",
+   "why": "T9 consumes T6 at exactly the constant T6 supplies",
+   "applied": true,
+   "exit": 1,
+   "errors": 1,
+   "seconds": 8.9,
+   "verdict": "other",
+   "first_error": "/work/Shopify/audit-work/agent_arch/PUBLICATION_V1_V16/external/bench_cb/lean/m_M9_t9_hp_strictly_smaller.lean:320:73: error: type mismatch"
+  },
+  {
+   "id": "M10_t5b_constant_loosened",
+   "mutation": "T5b variance bound n/4 -> n/2 (LOOSER)",
+   "why": "control: a weaker bound should still be provable, so this mutant SHOULD SURVIVE.  A survivor here is the honest finding that the suite does not pin the tight constant.",
+   "applied": true,
+   "exit": 1,
+   "errors": 2,
+   "seconds": 13.4,
+   "verdict": "semantic_conclusion",
+   "first_error": "/work/Shopify/audit-work/agent_arch/PUBLICATION_V1_V16/external/bench_cb/lean/m_M10_t5b_constant_loosened.lean:199:55: error: unsolved goals"
+  }
+ ],
+ "applied": 10,
+ "killed": 10,
+ "survived": 0,
+ "semantic_kills": [
+  "M1_t6_conclusion_tightened",
+  "M2_t6_no_square",
+  "M3_t9_conclusion_tightened",
+  "M4_t7_pooled_nonzero",
+  "M5_t7_drop_hds",
+  "M6_t4_exponent_halved",
+  "M10_t5b_constant_loosened"
+ ]
+}

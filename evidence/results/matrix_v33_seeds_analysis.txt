@@ -1,0 +1,83 @@
+=== V3.3 SEED EXTENSION: 6 arms x 15 seeds, disk-only ===
+
+steps-audit (90 files): CLEAN
+
+--- arm means over 15 seeds (reward / deaths / fruits / treasures) ---
+emca_v21       reward=  15774.4+-1508.4 deaths= 44.9 fruits=1524.8 treasures=  0.0
+emca_v22       reward=  15802.5+-1990.5 deaths= 45.1 fruits=1529.7 treasures=  0.0
+emca_v25c      reward=  15952.2+-2180.4 deaths= 44.1 fruits=1555.2 treasures=  0.0
+emca_nocausal  reward=  16966.6+-2555.5 deaths= 41.5 fruits=1640.7 treasures=  0.0
+prober         reward=  14908.9+-2946.9 deaths= 40.1 fruits=1428.9 treasures=  0.2
+curious_chain  reward=   7396.8+-3015.3 deaths= 74.9 fruits= 835.1 treasures= 15.3
+
+--- PRIMARY D_s = reward(v2.5c) - reward(v2.1), per seed ---
+  seed  1:   +1352.0
+  seed  2:   +2615.0
+  seed  3:   -3580.0
+  seed  4:   +4029.5
+  seed  5:   -3712.0
+  seed  6:      +0.0
+  seed  7:    -444.0
+  seed  8:   -3957.0
+  seed  9:   +1675.5
+  seed 10:      +0.0
+  seed 11:    -888.5
+  seed 12:   +1437.0
+  seed 13:   +3552.5
+  seed 14:    +587.5
+  seed 15:      +0.0
+
+  mean D = +177.8  sd = 2471.4
+  bootstrap 95% CI = [-1056.3, +1345.8]
+  sign test: 7 pos / 5 neg, exact p = 0.7744
+  Wilcoxon (secondary): W=34.0, p = 0.6949
+  paired t (secondary): t = 0.28, df = 14
+
+--- VERDICT (prereg V1/V2/V3) ---
+  V3 UNRESOLVED (CI covers 0 but allows |effect| > 300)
+  (criteria: sign p=0.7744<=0.05: False; CI [-1056,+1346] excludes 0: False; |mean|=178>=300: False)
+
+--- seed-3 anomaly check (prereg: >2.5 MAD from median) ---
+  median D = +0.0, MAD = 1437.0, 2.5*MAD = 3592.5
+  seed  1: |D-med| =   1352.0
+  seed  2: |D-med| =   2615.0
+  seed  3: |D-med| =   3580.0
+  seed  4: |D-med| =   4029.5 <== OUTLIER
+  seed  5: |D-med| =   3712.0 <== OUTLIER
+  seed  6: |D-med| =      0.0
+  seed  7: |D-med| =    444.0
+  seed  8: |D-med| =   3957.0 <== OUTLIER
+  seed  9: |D-med| =   1675.5
+  seed 10: |D-med| =      0.0
+  seed 11: |D-med| =    888.5
+  seed 12: |D-med| =   1437.0
+  seed 13: |D-med| =   3552.5
+  seed 14: |D-med| =    587.5
+  seed 15: |D-med| =      0.0
+
+--- channel check: fruits gap x 8 vs D_s ---
+  corr(fruits_gap*8, D) = 0.962
+  mean fruits gap x 8 = +243.2 vs mean D = +177.8
+
+--- D2 = v2.5c - nocausal ---
+  mean = -1014.4, CI [-2235.0, +26.3], sign p = 0.0225 (2+/11-)
+
+--- D3 = v2.1 - nocausal ---
+  mean = -1192.2, CI [-2779.1, +346.7], sign p = 0.6072 (6+/9-)
+
+--- identifier control ---
+  decoy in v2.1 causal: 15/15 (prereg floor >=10/12)
+  decoy in v2.5c causal: 0/15 (prereg 0)
+  decoy in v2.5c assoc: 15/15 (the trap still baits the correlational layer)
+  all true edges in v2.5c: 180/15
+
+--- v2.1 vs v2.2 identity (was 3/3 identical at turn 103) ---
+  seeds where v2.1 != v2.2: 3/15 -> [(7, 2107.5), (8, -3685.0), (11, 1156.0)]
+  (the turn-103 identity was a seeds-1-3 coincidence, not a law)
+
+--- prober / curious_chain at 15 seeds ---
+  prober altar CAUSAL: 11/15; reward 14908.9; offerings 236
+  curious_chain treasures 15.3 (range 11-24), deaths 74.9
+  all other arms treasures: max 2 over 75 runs
+
+DONE

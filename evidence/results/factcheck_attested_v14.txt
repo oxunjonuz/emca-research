@@ -1,0 +1,23 @@
+PASS HA1 table: attested + LIE -> 25 left / 5 drains / 0 dead / 5 paid / 1.5 
+PASS HA1 table: statistic at the decision is 0.04999999999999999 (17 sig digits) 
+PASS HA1 table: v13 the SAME lie, no auditor -> 0 left / 30 drains / 10 dead / 9.0 / statistic 0.35 
+PASS HA1 text: average reward in the attested cell is 241.75 and equals the frozen v13 l_ledger under the HONEST tag (241.75) 
+PASS HA1 text: with the auditor LIVE the lying and honest tags produce 0 differing fields over 10 seeds diffs=0
+PASS HA2: honest label, auditor live -> 25/5/alive for BOTH arms, 0 field differences between them diffs=0
+PASS HA3: the LIE with no auditor -> 0/30/dead 10/10 and FIELD FOR FIELD the frozen v13 H5 cell (0 differences) diffs=0
+PASS HA3: a_failclosed in that same cell holds at 25/5 
+PASS HA4 table: every lag row matches the report exactly (left, drains, stat) []
+PASS HA4 table: keeper dead is 0 for lags 0..20 and 10/10 at lag 50 
+PASS HA4b table: the measured statistic change-log matches the report for lags 13/14/15/20 []
+PASS HA4b: at lag 50 the statistic never falls below 0.30 (never attested) 
+PASS HA4b text: 0.30 is NOT > 0.30 (lag 14 stops after exactly one extra drain) 
+PASS HA6: wr=0.35, auditor live and absent both drain all 30, keeper dead 10/10 
+PASS HA7: cautious arm reads 0.00 and holds at 25/5 with no auditor; reads 0.35 and drains all with the auditor live 
+PASS HA5: v14 no-forger cells match the frozen v13 identity cells on every shared decision field, 2 arms x 10 seeds mismatches=0
+PASS §3: the world oracle is 24 checks, 0 failures 
+PASS §3: the independent pass is 22 checks, 0 failures 
+PASS §3: the matrix is 340 unique cells cells=340
+PASS §0/§3: the report's claim that the harm is truncated is stated as REFUTED and the prereg false-cliff is not hidden 
+==========================================================================
+FACTCHECK v14: 20 numbers, 0 failures
+ALL GREEN

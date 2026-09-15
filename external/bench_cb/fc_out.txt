@@ -1,0 +1,55 @@
+=== MASK instance (base=0.5) ===
+  ok   mask eps=0.15 pure in [0.07,0.19]
+  ok   mask eps=0.15 union < 0.05
+  ok   mask eps=0.15 union << noctx
+  ok   mask eps=0.15 union << noexp
+  ok   mask eps=0.15 noexp ~ pure
+  ok   mask eps=0.25 pure in [0.07,0.19]
+  ok   mask eps=0.25 union < 0.05
+  ok   mask eps=0.25 union << noctx
+  ok   mask eps=0.25 union << noexp
+  ok   mask eps=0.25 noexp ~ pure
+  ok   mask eps=0.35 pure in [0.07,0.19]
+  ok   mask eps=0.35 union < 0.05
+  ok   mask eps=0.35 union << noctx
+  ok   mask eps=0.35 union << noexp
+  ok   mask eps=0.35 noexp ~ pure
+=== exact quoted mask numbers ===
+  ok   mask 0.15 union=0.0315
+  ok   mask 0.25 union=0.0136
+  ok   mask 0.35 union=0.0051
+  ok   mask 0.15 pure=0.0804
+  ok   mask 0.25 pure=0.1304
+  ok   mask 0.35 pure=0.1804
+  ok   mask 0.35 noctx=0.1794
+  ok   mask 0.35 noexp=0.1776
+=== improvement factors ===
+  ok   factor eps=0.35 > 20x
+  ok   factor eps=0.25 > 5x
+=== PUBLISHED instance ===
+  ok   pub m=2 pure=0.3000
+  ok   pub m=8 pure=0.3000
+  ok   pub m=16 pure=0.3000
+  ok   pub m=25 pure=0.3000
+  ok   pub m=40 pure=0.3000
+  ok   pub m=49 pure=0.3000
+  ok   pub m=2 union <= 0.01 (but NOT below alg1=0.0)
+  ok   pub m=8 union < alg1
+  ok   pub m=16 union < alg1
+  ok   pub m=25 union < alg1
+  ok   pub m=40 union < alg1
+  ok   pub m=49 union < alg1
+  ok   pub m=2 union=0.0069
+  ok   pub m=49 union=0.0264
+  ok   pub m=49 alg1=0.2574
+=== RICH regime (honest boundaries) ===
+  ok   maskr eps=0.25 union == noexp (exploration inert in rich regime)
+  ok   maskr eps=0.25 union_nocost < union (arbiter counterproductive)
+  ok   maskr eps=0.35 union == noexp (exploration inert in rich regime)
+  ok   maskr eps=0.35 union_nocost < union (arbiter counterproductive)
+=== Lean ===
+  ok   Lean file compiles with no output (no sorry, no error)
+  ok   Lean file has no 'sorry'/'admit'/'axiom'
+
+=== FACTCHECK: 46 statements, 0 failures ===
+ALL PASS

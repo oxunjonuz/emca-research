@@ -1,0 +1,81 @@
+{
+ "appraised_rate": 0.05,
+ "arm": "n_none",
+ "aura_steps": 8569,
+ "beacon": [
+  9,
+  6
+ ],
+ "beacon_rate": 0.0,
+ "beacon_receipt": 0.0,
+ "beacon_steps": 0,
+ "candidates_seen": [],
+ "commons_drains": 5,
+ "commons_left": 25,
+ "deaths": 0,
+ "deaths_agent": 0,
+ "decoy": true,
+ "decoy_action": "wait",
+ "edge_action": "grasp",
+ "first_causal_t": 4992,
+ "first_probe": [
+  "wait",
+  "glow"
+ ],
+ "fruit_blooms": 5,
+ "fruits_eaten": 5,
+ "glows": 3273,
+ "guard_blocks": 27,
+ "harness_notes": [],
+ "hums": 4695,
+ "keeper_dead": false,
+ "keeper_death_t": null,
+ "keeper_min_energy": 100.0,
+ "n_candidates_total": 0,
+ "probe_blocks": 3,
+ "probe_trials": 1200,
+ "rich": "low",
+ "rich_rate_obs": 0.05,
+ "rich_steps": 5,
+ "seed": 20,
+ "steps": 16000,
+ "total_reward": 250.25,
+ "truth": true,
+ "verdicts": {
+  "grasp->glow": {
+   "blocks": 80,
+   "ctrl_no": 74,
+   "ctrl_yes": 66,
+   "p": 0.78032,
+   "phase": "warm",
+   "rr": 0.918,
+   "target_no": 80,
+   "target_yes": 61,
+   "verdict": "REJECT"
+  },
+  "grasp->hum": {
+   "blocks": 80,
+   "ctrl_no": 104,
+   "ctrl_yes": 56,
+   "p": 0.0001,
+   "phase": "warm",
+   "rr": 1.605,
+   "target_no": 71,
+   "target_yes": 91,
+   "verdict": "CAUSAL"
+  },
+  "wait->glow": {
+   "blocks": 80,
+   "ctrl_no": 103,
+   "ctrl_yes": 96,
+   "p": 0.47948,
+   "phase": "warm",
+   "rr": 1.016,
+   "target_no": 102,
+   "target_yes": 98,
+   "verdict": "REJECT"
+  }
+ },
+ "vetoed_rich_steps": 0,
+ "world": "v11"
+}

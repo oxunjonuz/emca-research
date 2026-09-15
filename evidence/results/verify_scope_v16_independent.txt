@@ -1,0 +1,18 @@
+PASS A1a cell count == 790 -- got 790
+PASS A1b every cell parses and carries the harm fields -- 0 bad
+PASS A2 w_none vs frozen v_none -- 0 diffs
+PASS A2 w_price vs frozen v_price -- 0 diffs
+PASS A2 w_given vs frozen v_given -- 0 diffs
+PASS A3 H2 wide threshold (5/alive below 0.26, 30/dead at 0.26+)
+PASS A4 H3 n_pump_price == w_price on the HARM fields (drains, keeper, rich_steps) -- 0 diffs
+PASS A4b the pump's aura_steps == 0 in all 40 cells (why non-harm fields differ) -- 0 cells with aura_steps != 0
+PASS A5 H4 doctor: 0 drains, keeper alive in all 240 cells
+PASS A6 H5 the station channel reaches the doctor (payments>0)
+PASS A7 H6 n_doctor_price == n_doctor over EVERY field -- 0 diffs
+PASS A8 H8 channel-change counts -- {"w_price": 2, "w_none": 0, "w_given": 2, "n_pump_price": 2, "n_doctor": 0, "n_doctor_price": 0}
+PASS A9 NV1 a corrupted doctor cell FAILS the H4 check
+PASS A10 NV2 a corrupted w_price cell FAILS the H2 check
+PASS A11 NV3 a one-field perturbation FAILS the H3 full-field equality
+PASS A12 determinism: fresh subprocess byte-identical
+
+INDEPENDENT 16/16

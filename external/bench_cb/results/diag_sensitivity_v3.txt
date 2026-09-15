@@ -1,0 +1,45 @@
+candidate rate 0.85 (n=200), measured edge 0.55, alternative 0.30
+
+-- the frozen rule's declared VALUE-per-gap (GAIN_UNIT) --
+   GAIN_UNIT   25.0 -> probe = True
+   GAIN_UNIT   50.0 -> probe = True
+   GAIN_UNIT  100.0 -> probe = True
+   GAIN_UNIT  200.0 -> probe = True
+   GAIN_UNIT  400.0 -> probe = True
+   GAIN_UNIT  800.0 -> probe = True
+
+-- the frozen rule's declared DURATION (PROBE_LEN) --
+   PROBE_LEN    5.0 -> probe = True
+   PROBE_LEN   20.0 -> probe = True
+   PROBE_LEN   40.0 -> probe = True
+   PROBE_LEN   80.0 -> probe = True
+
+-- T2's declared DURATION (horizon = remaining steps) --
+   horizon   20.0 -> probe = False
+   horizon   50.0 -> probe = False
+   horizon  100.0 -> probe = False
+   horizon  200.0 -> probe = False
+   horizon  400.0 -> probe = False
+
+-- T2's declared probe length (asserted = PROBE_BLOCK = 20) --
+   probe_len    5 -> probe = True
+   probe_len   20 -> probe = False
+   probe_len   40 -> probe = False
+
+-- T3's declared confidence band --
+   band (0.01, 0.99) -> probe = False
+   band (0.05, 0.95) -> probe = False
+   band (0.2, 0.8) -> probe = False
+   band (0.4, 0.6) -> probe = False
+
+-- and the same for the ALTERNATIVE's rate (a world quantity, not a declaration) --
+   r_alt 0.10 -> frozen True  voi False  conf False
+   r_alt 0.30 -> frozen True  voi False  conf False
+   r_alt 0.50 -> frozen True  voi False  conf False
+   r_alt 0.70 -> frozen True  voi False  conf False
+   r_alt 0.85 -> frozen True  voi True  conf True
+   r_alt 0.95 -> frozen True  voi False  conf False
+
+wrote diag_sensitivity_v3.json
+NOTE: the frozen rule's answer does not move with r_alt for this candidate
+      (its bar is on the SCORE, not on the price); T2's does, in a band.

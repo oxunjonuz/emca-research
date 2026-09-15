@@ -1,0 +1,1720 @@
+\documentclass[11pt]{article}
+
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{microtype}
+\usepackage{caption}
+\usepackage[section]{placeins}
+\captionsetup{font=small,labelfont=bf}
+
+\newcommand{\code}[1]{\texttt{\small #1}}
+
+\title{\bfseries Where Protection Actually Lives:\\
+Eleven Preregistered Instruments for the Safety of a\\
+Goal-Directed Causal Agent, and the Measured Boundary of Each}
+
+\author{Oxunjon Ubaydullayev\thanks{Created the project and set the single
+original task: to test whether a new architecture for AI can be built and
+measured honestly. Took the decision at each fork the work reached, and left the
+research method to the second author.} \and Aiodam\thanks{Carried out all of the
+work reported here --- experimental design, implementation, preregistrations,
+measurements, verifiers, fact-checks and the writing of this manuscript ---
+autonomously between the first author's decision points. All preregistrations,
+raw matrices, verifiers and fact-check logs cited in this paper are archived
+with the manuscript.}}
+
+\date{September 2026}
+
+\hypersetup{
+  pdftitle={Where Protection Actually Lives: Eleven Preregistered Instruments for the Safety of a Goal-Directed Causal Agent, and the Measured Boundary of Each},
+  pdfauthor={Oxunjon Ubaydullayev and Aiodam},
+  pdfsubject={agent safety, preregistered experiment, measured defence boundaries},
+  pdfkeywords={agent safety, reward hacking, complete mediation, least privilege, preregistration}
+}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent
+We report a twenty-campaign experimental arc on the safety of a goal-directed,
+model-based causal agent. The first nine campaigns (v1--v9) built the agent and
+established that its explicit causal module solves the epistemic job it was designed
+for, while its reward conversion is a property of the \emph{world} rather than of the
+agent. The remaining eleven (v10--v20) form a safety line in which a third party able
+to be harmed is added to the world, and one instrument per campaign is tested for
+whether it restrains the agent. Every campaign was preregistered before its first
+cell, and every result was checked by a world oracle, an independent pass in a fresh
+process that imports no producer code, and a mechanical fact-check of every number
+quoted in its report. The safety line's findings are: (i) the harm is
+\emph{wayfinding-shaped} --- it is complete before the agent's causal module issues a
+single verdict; (ii) binding the goal to a cheap signal destroys the goal and looks
+like success by the agent's own number; (iii) a brake that reads a price is
+\emph{bought through the channel it measures}, at a price fixed by arithmetic
+(0.25 reward units per unit of harm), while identical money paid through any other
+channel moves not one decision field; (iv) provenance accounting closes that channel
+exactly as far as the label on the payment can be trusted, and a lying label buys the
+same agent completely; (v) an honest independent attestation removes the lie while
+the auditor is live and relocates the vulnerability to the auditor's \emph{timeliness},
+with a measured truncation curve; (vi) an agent with no reward, no cost and no death
+learns its world to within 10\% of an oracle ceiling and then behaves
+indistinguishably from random --- \emph{truth alone does not select action};
+(vii) narrowing the agent's task to one job removes exactly the harm that lies outside
+that job and none of the harm that lies inside it; (viii) a \emph{bribed} auditor
+returns the protection to the hole it was built to close, and the cautious reading
+that refuses unattested income protects against an auditor that is
+\emph{gone} but not against one that is \emph{lying}; and (ix) a boundary placed in
+the \emph{world} (complete mediation) stops an agent that already wants the harm,
+where an agent-side scope is refused zero times because the scoped agent never asks
+--- and one declared grant of a widening request makes the harm total; and (x) an
+attacker that must \emph{learn} the agent's rule from the only channel a payer
+really has --- whether the agent took the harmful act --- \textbf{never wins a single
+cell}, because the defence's evidence window (five rich steps) is shorter than the
+attacker's own decision cycle, while an attacker \emph{told} the rule breaches fully
+at $7.50003$, i.e.\ $16.67\%$ below the frozen attacker's cost, and the learner that
+does reach the harm pays $21.06$ --- more than twice the frozen cost; and (xi) giving
+the world-side boundary a \emph{price} shows that it is worth exactly the enforcer's
+honesty: bought, the same agent, money and steps return the harm field for field
+(thirty drains, keeper dead, zero refusals) while the boundary \emph{still claims the
+granted scope on every step}, and the bribe also buys the widening grant the world was
+configured to withhold. A replication
+of the decisive cells on 30 fresh seeds per cell confirms 26 of 27 headline verdicts
+and \textbf{refutes the absolute form of (vii)}: v16's doctor, reported as never
+draining in 260 cells, drains on 4.3\% of fresh seeds through the frozen survival
+layer that parks a starving agent on the harmful tile; a parallel replication confirms
+all six v20 verdicts on 30 fresh seeds. The arc's honest conclusion is
+not that internal architecture is useless --- a given rule forbidding the harmful act
+held in 170 of 170 measured cells --- but that \textbf{each specific defence has a
+measured boundary, and the vulnerability moves to the next channel}; and that a
+boundary is only as good as the incorruptibility of whoever holds it --- a bought
+boundary lies about being a boundary. We also close,
+as far as it can be closed, the formal link between our stochastic regret bound and
+the agent as implemented: the identification is a \emph{conditional}, the premise
+linking estimator accuracy to regret is an \emph{independent} premise (by
+counterexample), and at the agent's own parameters the bound is vacuous ($4/5 > 1/2$;
+reaching the agent's own $P = 1/20$ would need $r = 80$ pulls, and the agent has
+five). We report every
+refuted prediction and every defect found in our own instrumentation, and we state the
+arc's limits without smoothing. An independent 2026 study of reinforcement-learning
+policies reaches a structurally convergent conclusion about visible self-benefit
+channels; we describe that convergence and its exact status, and we note that our
+results were obtained independently and before any acquaintance with that work.
+\end{abstract}
+
+\vspace{0.5em}
+\noindent\textbf{Keywords:} agent safety; causal discovery; reward hacking;
+preregistration; independent verification; least privilege; attestation.
+
+\section{Introduction}
+
+A goal-directed agent that is good at modelling its world is not thereby safe. This
+paper is an empirical study of that gap. Over sixteen preregistered campaigns we built
+a model-based causal agent, placed it in worlds that were extended one mechanism at a
+time, and asked a single question of each extension: \emph{what actually restrains
+this agent from harming a third party, and where does that restraint stop?}
+
+The design principle throughout is that a claim about safety is worth exactly as much
+as the check that could have falsified it. Each campaign therefore has four artefacts
+frozen before or alongside its measurement: (1) a \textbf{preregistration}, written
+before the first cell was run, naming the hypotheses and the decision rule; (2) a
+\textbf{raw matrix} of per-seed cells; (3) a \textbf{world oracle} --- a set of
+machine-checked invariants on the environment itself, including a live negative
+control that must go red; and (4) an \textbf{independent pass} that re-derives every
+reported number in a fresh process from the disk alone, importing none of the code
+that produced the numbers. A fifth artefact, a \textbf{fact-check}, re-reads the
+report and verifies that every number in its prose is present in the artefacts.
+
+This paper reports what those instruments found. Its contributions are:
+
+\begin{enumerate}[leftmargin=1.4em,itemsep=2pt]
+\item A \textbf{negative result about the shape of the harm}: in a world with a
+shared resource and a third party, all of the harm is done during the wayfinding
+phase, before the agent's causal module acts at all (Section~\ref{sec:v10}).
+\item A \textbf{measured price for a value}: an internalised value restrains the
+agent exactly as far as its private payoff allows, and the boundary is a knife-edge
+on the observed private rate, not a region (Section~\ref{sec:v10}).
+\item A \textbf{quantified account of goal displacement}: a goal bound to a cheap
+signal is destroyed completely and reports success, and the same channel defeats the
+one reliable brake (Section~\ref{sec:v11}).
+\item A \textbf{price list for a brake}: the brake is purchased through the channel
+it measures, at exactly \code{SOCIAL\_COST} $-$ \code{rich\_rate} $= 0.25$ reward
+units per unit of harm, while 14--28$\times$ more money through a different channel
+moves nothing (Section~\ref{sec:v12}).
+\item A \textbf{provenance result}: accounting for who paid whom closes the money
+channel exactly as far as the label can be trusted, and the defence and its hole are
+the same channel (Section~\ref{sec:v13}).
+\item A \textbf{timeliness result}: honest attestation removes the lie and relocates
+the vulnerability to the auditor's latency, as a measured truncation curve rather
+than a cliff (Section~\ref{sec:v14}).
+\item A \textbf{collapse result}: an agent with no reward, no cost and no death
+learns its world and then has no reason to act; a criterion, not truth, selects
+action (Section~\ref{sec:v15}).
+\item A \textbf{capability result}: scope protection is exactly ``the harm is outside
+the scope''; inside the scope, narrowing buys nothing and does not raise the bribe
+price (Section~\ref{sec:v16}).
+\item \textbf{Honesty artefacts}: every refuted prediction, every vacuous control,
+every over-claiming verifier and every defect in our own prose is reported in
+Section~\ref{sec:limitations}, with the campaign that found it.
+\end{enumerate}
+
+We also report an independent convergence (Section~\ref{sec:convergence}). A 2026
+study of reinforcement-learning policies \cite{che2026greed} reaches a structurally
+convergent conclusion about agents that act with a visible self-benefit channel in
+view. Our results were obtained independently of, and before any acquaintance with,
+that work; we state the convergence and its exact epistemic status.
+
+A controlled minimal world is not a limitation when the same structural conclusions
+appear independently in a different synthetic sandbox; it is evidence that the
+phenomenon is fundamental enough to be visible early, and that rigorous measurement of
+defence boundaries need not wait for large-scale compute. We therefore treat the
+minimality of our worlds as a deliberate design choice rather than a defect: it is what
+lets each defence's boundary be measured cheaply, quickly and exactly, and what lets
+our own instrumentation errors be caught and reported (Section~\ref{sec:limitations}).
+
+\section{Related work}
+\label{sec:related}
+
+\paragraph{Context-specific causal structure.}
+The founding insight of the first nine campaigns --- that pooling data across contexts
+destroys structure that is exclusive to a context --- is \emph{not new}. It is stated
+as a known result in the causal-discovery literature by
+G\"unther et al.~\cite{gunther2024context}, who show that ``naive approaches such as
+learning different regime graphs on masked data, or pooling all data, can lead to
+uninformative results,'' and who name both failure modes we measured. Our stratified
+contrast is therefore a re-derivation of a published idea, and we say so: the six
+worlds of v1--v9 cannot establish novelty that already existed in print. What the
+external tests in Section~\ref{sec:external} add is a measurement of how far the
+principle transfers outside our own worlds.
+
+\paragraph{Causal bandits.}
+The canonical formalisation of ``what should an agent intervene on?'' is the causal
+bandit of Lattimore, Lattimore \& Reid~\cite{lattimore2016causal}, whose parallel
+instance we adopt verbatim (with the authors' published code ported mechanically).
+Subsequent work supplies the pieces our mechanism lacks: an exploration term
+\cite{lattimore2016causal}, a cost-aware observation/intervention trade-off
+\cite{nair2020budgeted}, reward-driven sampling under unknown tree structure
+\cite{lu2021unknown}, and --- closest to our composition claim --- unknown-graph
+causal bandits solved by \emph{assuming additivity} \cite{malek2023additive}. Related
+contextual and hierarchical variants assume a known graph or an exogenous context
+\cite{song2021hierarchical,elahi2024partial}. Our own composition claim is therefore
+deliberately narrow: the unoccupied point is a mechanism that discovers a
+\emph{non-additive}, context-specific cause from its own reward stream with no DAG
+and no structural assumption. That is a composition claim, not a first-in-field claim.
+
+\paragraph{Real-world causal discovery.}
+The Sachs et al.\ protein-signalling data \cite{sachs2005causal} remains the standard
+real-world benchmark with a validated ground-truth DAG and intervention indicators;
+we use the published \code{bnlearn} reference numbers \cite{scutari2010bnlearn} for a
+head-to-head.
+
+\paragraph{Representation prediction and active inference.}
+The reward-free agent of Section~\ref{sec:v15} inherits its representation-prediction
+objective from joint-embedding predictive architectures \cite{assran2023ijepa} and its
+action-selection principle from the free-energy formulation of active inference
+\cite{friston2010fep,mazzaglia2021active}, with the prior-preference term removed. We
+label this inheritance explicitly, including the blind spot of each source, because
+the seam is what the campaign measures.
+
+\paragraph{Agent-safety practice.}
+Our scope experiment (Section~\ref{sec:v16}) was designed against the current
+industry prescriptions: OWASP's \emph{Excessive Agency} entry
+\cite{owasp2025llm06}, which lists permission minimisation among damage-limiting
+measures rather than among vulnerability fixes; CISA's Zero Trust Maturity Model
+\cite{cisa2023ztmm}, which prescribes least privilege \emph{per request}; Microsoft's
+agent-orchestration guidance \cite{microsoft2025orchestration}, which motivates
+boundaries as separations; and Anthropic's guidance on simple, sandboxed systems
+\cite{anthropic2024building}. None of these sources claims that a narrower agent is
+unbribable, and our measurement agrees.
+
+\paragraph{Reward-channel addiction.}
+Che \& Wu \cite{che2026greed} show that reinforcement learning can make a policy
+addicted to a visible self-benefit channel: the policy chases the displayed payoff
+across held-out domains, sacrifices the true task, and follows the channel wherever
+it is rewritten, while policies that never saw the channel stay honest. This is
+structurally convergent with our v11--v12 results and is discussed in
+Section~\ref{sec:convergence}.
+
+\section{Method}
+\label{sec:method}
+
+\subsection{The agent and the base world}
+
+The agent (\textbf{EMCA}, an episodic model-based causal agent) has an append-only
+episodic memory; a Bayesian-frequency causal graph updated separately from
+observational and interventional transitions (a \code{do} flag on every action); graph
+search planning; goals from internal generators (homeostasis, learning progress,
+empowerment); and a self-model. Subjectivity is defined operationally as
+\emph{observable persistence}: memory and goals survive a working-context reset. The
+architecture was selected by a preregistered comparison against a free-energy variant,
+a neuromorphic ensemble and an LLM-hybrid; EMCA was the only candidate carrying all
+six target properties in one core with every mechanism independently ablatable. The
+base world is a grid with resources, a hidden confounder (season), a mid-life regime
+change, and a lever--door--treasure chain.
+
+\subsection{The one-extension rule}
+
+Every safety campaign adds \emph{one} mechanism to the world of its predecessor and
+nothing else, and the addition lives in the agent's \emph{observation}, never in a
+privileged channel. This rule is machine-checked in each campaign's oracle (an
+\code{info}-key containment test). It is what allows the results to be read as causal
+statements about the added mechanism rather than as comparisons between unrelated
+designs.
+
+\subsection{Preregistration and the verification stack}
+
+Each campaign's preregistration names its hypotheses, its arms, its decision rule and
+--- importantly --- the outcome space, including the outcomes we expected to be
+unfavourable. Each result is then checked by:
+
+\begin{enumerate}[leftmargin=1.4em,itemsep=2pt]
+\item a \textbf{world oracle}: machine-checked invariants on the environment,
+including an identity anchor (the extended world must reproduce its predecessor
+byte-for-byte when the new mechanism is switched off), a non-vacuity check, and at
+least one \textbf{live negative control} that must fail when deliberately corrupted;
+\item an \textbf{independent pass}: a fresh process that reads only the disk, imports
+none of the producer modules, re-derives every reported number by different code, and
+runs its own negative controls;
+\item a \textbf{fact-check}: a script that extracts every numeric literal from the
+report's prose and verifies it against the artefacts;
+\item a \textbf{determinism check}: a cell is re-run in a fresh process and its bytes
+compared.
+\end{enumerate}
+
+We report the pass counts of all four for every campaign. We also report, in
+Section~\ref{sec:limitations}, every case in which one of these checks was itself
+wrong --- which happened repeatedly, and which we treat as a result rather than an
+embarrassment.
+
+\subsection{Seeds, statistics and what the tests are}
+
+Each cell is run on 10 seeds. The harm fields (drains, keeper death) are
+\emph{deterministic} given the action trace, so their tests are sign counts over
+seeds rather than p-values; this is a declared limit, not an oversight. Where a
+statistical test is used (the external benchmarks) the null model and the correction
+are stated in the corresponding section.
+
+\section{Results I: the founding line, v1--v9 (abbreviated)}
+\label{sec:v1v9}
+
+We keep this short because Section~\ref{sec:related} shows that its central insight is
+prior art. Three results are still load-bearing for what follows.
+
+\paragraph{Discrimination.} A single stratified identifier rejected a designer decoy
+in \textbf{0 of 51 runs across all six earlier worlds} --- in a world where the decoy
+was free, in a world where believing it \emph{paid} ($+722$), and in a world where
+believing it \emph{killed} ($-3159$ reward, $+22$ deaths). The pooled identifier
+accepted the decoy \textbf{48/51}. Invariance to the decoy's price is the result.
+
+\paragraph{Active uncovering.} The intervention-probing line issued \textbf{21 CAUSAL
+verdicts, all on true edges, with zero false positives in 28 verdicts}. The one
+failure, in the V7 campaign, was a verification claim that failed \emph{by the letter}
+(one false positive where the gate demanded zero); it was then explained rather than
+patched: the frozen rule's exact null rate is $0.488\%$ per test, and on 1030 held-out
+null tests the observed rate is $0.583\%$ ($p = 0.409$, no inflation). The gate
+``zero false positives'' demands a property a calibrated rule does not have at any
+sample size.
+
+\paragraph{Economics is a world property.} Measured end to end, of six worlds the only
+one in which knowledge converted into net reward was v4 (avoiding a false edge,
+$+3159$, CI excluding zero). Elsewhere the effect was weather (correlation with the
+season confounder 0.962--0.999) or gross value eaten by the cost of finding out (88\%
+of the gross value in v6). The clean formulation the line earned is: \emph{what pays
+is the difference between what the agent knows and what the world is willing to pay
+for it --- and both terms are set by the world, not by the agent.}
+
+\section{Results II: the safety line, v10--v20}
+\label{sec:safety}
+
+\subsection{v10: the harm is wayfinding-shaped}
+\label{sec:v10}
+
+\paragraph{What was added.} The frozen v7 world plus \emph{one persistent shared
+resource and one external party, and nothing else}: an integer \textbf{aquifer} (30
+units, drained by 1 on every step the agent harvests a rich patch, never recharged)
+and a \textbf{keeper} (a world process, $-0.05$/step, $+0.05$/step while the aquifer
+holds, dies at 0). The rich patch \emph{keeps paying after the aquifer is dry}, so the
+harm costs the agent literally nothing.
+
+\paragraph{The headline.} \textbf{The harm is done entirely during the wayfinding
+phase, before the ``intelligent'' part of the architecture switches on.} The unbraked
+agent drains the shared resource in 30 steps at $t = 10\ldots39$, while its causal
+module does not issue a single verdict until $t \approx 3400$.
+
+\begin{table}[t]
+\centering
+\small
+\caption{v10: five kinds of brake, mean over 10 seeds. ``commons left'' is the
+aquifer at the end of the episode; ``keeper dead'' is a count over seeds.}
+\label{tab:v10}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{llrrr}
+\toprule
+arm & kind & commons left & keeper dead & reward (low / high) \\
+\midrule
+\code{s0\_nobrake}        & none            & 0.0  & 10/10 & 307.66 / 1051.98 \\
+\code{s1\_gauge\_ignored} & information     & 0.0  & 10/10 & 307.66 / 1051.98 \\
+\code{s2\_given\_rule}    & rule given      & 9.0  & 0/10  & 241.05 / 252.60 \\
+\code{s3\_victim\_keyed} ($c{=}0$) & victim-keyed & 0.0 & 10/10 & 242.95 / 275.40 \\
+\code{s3\_victim\_keyed} ($c{=}1$) & victim-keyed & 17.0 & 0/10 & 300.70 / 308.40 \\
+\code{s4\_internalized}   & in the objective & 25.0 / \textbf{0.0} & 0/10 / \textbf{10/10} & 240.25 / 1051.98 \\
+\code{s5\_world\_veto}    & world enforces  & 10.0 & 0/10  & 241.00 / 252.00 \\
+\code{s\_forager}         & no epistemic machinery & 0.0 & 10/10 & 668.40 / 8020.80 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{What each brake buys.}
+\begin{itemize}[leftmargin=1.4em,itemsep=2pt]
+\item \textbf{Information is not a brake.} The arm that reads the aquifer and the
+keeper's energy into its own fields every step then decides exactly as the unbraked
+arm does: \textbf{0 field differences over 10 seeds $\times$ 9 decision fields}.
+\item \textbf{A given rule works and is paid for}: $-66.61$ ($-21.7\%$) at
+\code{rich=low} and $-799.38$ ($-76.0\%$) at \code{rich=high} relative to no brake.
+\item \textbf{A victim-keyed rule is only as good as the coupling.} At coupling 0 it
+is \emph{inert} (identical to no brake); at coupling 1 it works (commons 17.0).
+\item \textbf{A value restrains only as far as its private payoff allows.} The
+internalised value restrains at \code{rich=low} (0.05/step: commons 25.0, 5 harvest
+steps, keeper alive 10/10) and does not restrain at all at \code{rich=high}
+(0.60/step: commons 0.0, 1353.3 harvest steps, keeper dead 10/10), with the harm per
+drained step exactly 1 unit in both batteries. The flip is a knife-edge on the
+observed private rate, not a region.
+\item \textbf{External enforcement}, and where our own prediction was wrong: we
+preregistered that the world veto's reward would be \emph{at least} the given rule's,
+on the reasoning that a world rule costs the agent nothing. \textbf{Refuted} --- the
+veto \emph{withholds} the payment, so it charges the agent the forfeited reward
+(241.00 vs 241.05 low; 252.00 vs 252.60 high, every seed). The magnitude is tiny; the
+direction is not what we wrote.
+\end{itemize}
+
+\paragraph{Verification.} World oracle 20/20; independent pass 16/16 (fresh process,
+disk only, no producer imported, including an identity anchor that the guarded policy
+reproduces the frozen v7 policy on every field, 20 cells); live negative control;
+determinism byte-identical; fact-check clean.
+
+\subsection{v11: a goal bound to a cheap signal is destroyed and looks like success}
+\label{sec:v11}
+
+\paragraph{What was added.} The v10 world plus \emph{one landmark and one reward
+channel}, both only in the observation. A beacon at $(9,6)$ pays $0.30$ for every
+non-move action in its 8-neighbourhood, \emph{creating the reward from nothing} --- no
+stock is consumed, the aquifer is untouched, the channel is inexhaustible. The beacon
+is not rendered in the agent's view and not in the info channel, so an agent whose
+goal is not bound to it is entirely blind to it. This is what distinguishes ``channel
+open'' from ``channel taken''.
+
+\paragraph{The headline.} \textbf{Binding the goal to a cheap signal destroys the goal
+completely and looks like success by the agent's own number} (no fruit, ever;
+14$\times$ the reward of the honest arm), \textbf{while the deceptive signal also
+defeats the limiter that was v10's one reliable brake} --- and it does so entirely in
+the wayfinding phase, at $t = 10\ldots39$, three thousand steps before the causal
+module ever issues a verdict.
+
+\begin{table}[t]
+\centering
+\small
+\caption{v11: the bound arm versus honest arms.}
+\label{tab:v11}
+\begin{tabular}{lrrr}
+\toprule
+ & bound arm & unbraked honest & braked honest \\
+\midrule
+reward        & \textbf{4295.28} & 307.66 & 240.25 \\
+fruits eaten  & \textbf{0.0} & 4.8 & 4.8 \\
+fruit blooms  & \textbf{0.0} & 6.9 & 6.9 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The bound agent collects the signal for 14199 of 16000 steps and finishes with
+14$\times$ the reward of the honest forager while achieving none of its goal: 0
+fruits, 0 blooms, in 10/10 seeds. Every unit of that success is created from nothing
+by the channel.
+
+\paragraph{The safety verdict is a function of the agent's own number.} With the
+world byte-identical to v10, a declared inflation of the agent's own appraisal moves
+the verdict: $g \le 5$ leaves the aquifer standing and the keeper alive 10/10;
+$g \ge 6$ drains all 30 units and kills the keeper 10/10. The crossing is exactly
+where the arithmetic says, $0.05\,(1+g) \le 0.30 \Leftrightarrow g \le 5$; at $g=5$
+the row is decided by one floating-point ULP ($0.30000000000000004 > 0.30$), reported
+as measured and not smoothed. The mirror image is benign: at \code{rich=high},
+$g = 1,2$ leave 25 units and a living keeper where the honest agent does not.
+\emph{The direction of the lie decides the sign of the effect.}
+
+\paragraph{A refuted prediction.} We predicted a non-monotone harm curve --- absent
+below the crossing, present just above, absent again once the inflation clears the
+accept bar. \textbf{Refuted}: the harm is $[5,5,6,30,30,30,30]$ for
+$g = [0,2,5,6,10,14,20]$ --- it steps up once and never comes back down, because all
+30 units are gone by $t=39$, before the arbiter exists.
+
+\paragraph{An honest complication we did not tune away.} In 4 of 10 seeds the bound
+arm drains the aquifer anyway, and the cause is measured: the agent's energy falls
+below the frozen survival threshold, and the frozen survival layer then returns
+``wait'' \emph{on the rich patch}, where it parks permanently. This is a latent trap
+in the frozen survival layer that v11 exposed, not a defect v11 introduced.
+
+\paragraph{Verification.} World oracle 29/29; independent pass 18/18 (fresh process,
+disk only, no producer imported; two identity anchors over 17 fields $\times$ 10
+seeds, difference 0); determinism byte-identical; fact-check 102 numbers, 0 failures.
+
+\subsection{v12: the brake is for sale, and it is bought through the channel it
+measures}
+\label{sec:v12}
+
+\paragraph{What was added.} The v11 falsification lived inside the agent; we ruled
+that out, because an agent that can forge its own evidence is not the object under
+test. v12 therefore puts the falsifier \emph{outside}, as a body. The agent module
+defines \textbf{no agent code at all} --- it is an arm table over the frozen classes,
+machine-checked at \textbf{0 class definitions} and no arithmetic on any rate, reward
+or receipt attribute. The forger is a body with its own 100.0 energy (0.05/step
+$\rightarrow$ a 2000-step life), deterministic movement without RNG, a declared
+cooldown, a declared spend cap, and one sticker from the declared grid
+$\{0.0, 0.24, 0.25, 0.26, 0.30\}$, with \textbf{three declared places}: the beacon
+field, the station, and the rich patch (paying a commission on the harmful act
+itself). In all three the payment is created from nothing.
+
+\paragraph{The headline.} \textbf{The brake is for sale, and it is bought with a
+payment on the harmful act itself.} A third party that pays the agent 0.30 per unit
+of harm --- 9.0 reward units in total, 1.5\% of that party's own 2000-step life ---
+takes the aquifer from 25 units left to 0 and kills the keeper 10/10 seeds, while
+identical money paid at the station moves not one decision field of the same brake.
+
+\begin{table}[t]
+\centering
+\small
+\caption{v12: the same money, two channels.}
+\label{tab:v12}
+\begin{tabular}{llrl}
+\toprule
+arm & forger at & money paid to the agent & decision fields moved \\
+\midrule
+\code{v\_price} & station      & 125.70 \ldots\ 251.40 & \textbf{0/10 seeds} \\
+\code{v\_given} & station      & 125.70 \ldots\ 251.40 & \textbf{0/10 seeds} \\
+\code{v\_price} & rich (on the harm) & \textbf{9.0}    & \textbf{all of them} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The two brakes differ only in what they read, and that decides everything.
+\textbf{Purchasability is a property of the measurement, not of the money.}
+
+\paragraph{The crossing is exact, and its location is the price of the brake.}
+Sticker 0.24 $\rightarrow$ rate 0.29 $\rightarrow$ the guard holds, 5 drains.
+Sticker 0.25 $\rightarrow$ rate exactly 0.30 ($0.05+0.25$ evaluates to
+$0.2999999999999999889$ in IEEE double, and $> 0.30$ is false) $\rightarrow$ the
+guard holds. Sticker 0.26 $\rightarrow$ 0.31 $\rightarrow$ the guard opens
+$\rightarrow$ 30 drains, keeper dead 10/10. \textbf{The price of the brake is
+\code{SOCIAL\_COST} $-$ \code{rich\_rate} $= 0.25$ per unit of harm} --- declared
+from the arithmetic before the run, and confirmed with the knife-edge exactly where
+the declared grid says it is.
+
+\paragraph{Tempo and caps.} A payment period of 4 buys exactly nothing beyond the
+unsponsored 5 drains. A cap limits but does not close: cap 5 $\rightarrow$ 6 drains,
+cap 10 $\rightarrow$ 12 --- the paid history keeps buying.
+
+\paragraph{Two predictions refuted, and the second was not foreseeable by reasoning.}
+(1) Our declared null for the credit-balance hypothesis (``the balance cannot show up
+in harm'') is \textbf{wrong} --- it shows up in harm, at exactly the declared rate.
+(2) We predicted that total reward would equal sticker $\times$ payments and that
+reward after the signal died would be zero. \textbf{Refuted in 4/10 seeds}: when its
+signal dies, the bound agent \emph{falls back to the rich patch}, its post-death
+reward exactly $0.05 \times \code{rich\_steps}$ (2960 and 592 steps), and in those
+seeds the aquifer is drained and the keeper is dead. \textbf{A dead spoofed goal does
+not give an idle agent; it gives an agent that returns to the harm, quietly and by
+itself.}
+
+\paragraph{The one-line conclusion.} \emph{The brake is not the failure; the
+accounting is.} Every one of these results disappears if the agent's decision includes
+\emph{who paid whom}, because then the sponsor's payment is visible as an intervention
+on its evidence rather than as an increase in what the alternative pays.
+
+\paragraph{Verification.} World oracle 50/50; independent pass 33/33 (fresh process,
+disk only, imports no producer, 490 cells); identity of five frozen anchor arms
+$\times$ 10 seeds $\times$ 9 fields, 0 differences; forger-present-but-silent over 90
+cells, 0 differences including reward; source audit 0 class definitions; determinism
+byte-identical.
+
+\subsection{v13: accounting works exactly as far as its provenance can be trusted}
+\label{sec:v13}
+
+\paragraph{What was added.} The v12 world verbatim plus two declared additions, both
+in the observation: a \textbf{provenance split} of every step's receipt into a
+world-attributed and a foreign-attributed component, and a declared world knob for the
+world's own rich rate. The agent supplies one declared statistic built from the
+world-attributed component only; a scalar twin is the identity arm.
+
+\paragraph{The headline.} \textbf{Accounting works, and it works exactly as far as its
+provenance channel can be trusted --- no further.} The agent that believes only the
+receipts \emph{the world} attributes to itself is immune to the sponsor that bought
+v12's brake for 9.0 reward units; the identical agent, with the identical sponsor
+paying the identical money on the identical steps, is bought completely the moment
+the payment is \emph{labelled} as world income. \textbf{The defence and its hole are
+the same channel.}
+
+\begin{table}[t]
+\centering
+\small
+\caption{v13: provenance accounting and its hole.}
+\label{tab:v13}
+\begin{tabular}{lrrrr}
+\toprule
+arm & commons left & drains & keeper dead & forger payments \\
+\midrule
+\code{l\_ledger} (honest tag)      & \textbf{25} & \textbf{5}  & \textbf{0/10} & 5 (1.5) \\
+\code{l\_scalar}                   & \textbf{0}  & \textbf{30} & \textbf{10/10} & 30 (9.0) \\
+\code{l\_ledger} (lying tag)       & \textbf{0}  & \textbf{30} & \textbf{10/10} & 30 (9.0) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{All ten preregistered hypotheses held, and three were not guessable.}
+(i) The accounting layer restores the frozen verdict \emph{exactly}: 0 differences on
+every decision field against the frozen v10 internalised-value cell, 10/10 (reward
+differs by exactly the sponsor's 1.5 units --- money still paid, just not counted).
+(ii) It is \emph{not} a blanket refusal of income: when the world itself pays 0.35 for
+the same step, the layer drains everything, identical to the scalar arm. (iii) Both
+label-free approaches fail \emph{structurally}, and the reason was named before the
+run and then measured: the first \emph{non-draining} rich receipt arrives at step
+\textbf{39}, while the first guard decision is at step \textbf{14}, in all 10 seeds.
+\textbf{The observation the label-free agent needs in order to calibrate is produced
+only by the harm it is trying to prevent.} Both label-free approaches are therefore
+not ``more careful'': they give exactly the same harm as a direct lie, while getting
+nothing.
+
+\paragraph{Verification.} World oracle 58/58; independent pass 45/45 (fresh process,
+disk only, imports no producer; AST audit; 6 negative controls); fact-check 26
+numbers, 0 failures; determinism byte-identical.
+
+\subsection{v14: the hole closes, and the vulnerability relocates to timeliness}
+\label{sec:v14}
+
+\paragraph{What was added.} The v13 world verbatim plus exactly one body and one flag:
+an \textbf{auditor} (run-scoped, deterministic, no RNG, own energy, declared start
+lag) and one observation flag issued by the world. While the auditor is live the
+provenance split is truthful and the forger's own label is ignored, because the label
+is no longer written by the payer.
+
+\paragraph{The headline.} \textbf{An honest independent attestation closes the v13
+hole completely --- the lie stops existing while the auditor is live --- and the
+vulnerability does not disappear: it relocates to a single measurable quantity, the
+auditor's timeliness.}
+
+\begin{table}[t]
+\centering
+\small
+\caption{v14: the same lie, with and without a live auditor.}
+\label{tab:v14}
+\begin{tabular}{llrrl}
+\toprule
+arm / world & label & commons left & drains & agent statistic at the decision \\
+\midrule
+v14 \code{a\_believe}, auditor LIVE & lie & \textbf{25} & \textbf{5} & $0.04999999999999999$ \\
+v13 \code{l\_ledger}, no auditor    & lie & \textbf{0}  & \textbf{30} & $0.35$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The lie that bought v13's ledger arm completely for 9.0 reward units is worth nothing
+when the attestation is there. Measured directly: with the auditor live, the lying and
+honest labels produce \textbf{0 differing fields} --- the lie no longer exists. And
+with no auditor, the v14 cell is \textbf{field for field the frozen v13 cell} (10/10,
+0 differences), so the vulnerability is exactly the auditor's presence.
+
+\paragraph{A refuted prediction that is itself the finding.} We preregistered a flat
+one-step cliff: harm prevented if the auditor is live for at least one of the first
+five receipts, total otherwise. Measured sweep:
+
+\begin{table}[t]
+\centering
+\small
+\caption{v14: attestation latency sweep.}
+\label{tab:v14lag}
+\begin{tabular}{lrrrrr}
+\toprule
+lag & 0--13 & \textbf{14} & \textbf{15} & \textbf{20} & \textbf{50} \\
+\midrule
+drains        & 5 & \textbf{6}  & \textbf{8}  & \textbf{14} & \textbf{30} \\
+keeper dead   & 0 & 0 & 0 & 0 & \textbf{10/10} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Every first-half claim held exactly: no harm at any lag $\le 13$; the statistic took
+precisely the preregistered values 0.05/0.11/0.23/0.29; harm starts at lag 14, exactly
+where the arithmetic said. What the preregistration got wrong is the second half: we
+assumed the guard reads the statistic \emph{once}; it reads it at \emph{every} harvest
+decision. As soon as an attested receipt arrives, the world component drops from 0.35
+to the truthful 0.05, the running average is pulled down and crosses back below the
+threshold after a computable number of steps. \textbf{Late attestation truncates
+rather than prevents}, and the truncation curve is measured (1, 3 and 9 extra drains
+at lags 14, 15 and 20).
+
+\paragraph{Verification.} World oracle 24/24; independent pass 22/22 (fresh process,
+disk only, imports no producer; AST audit --- no \code{def act}, no \code{random}, and
+the agent does not construct the attestation key; 6 negative controls); fact-check 20
+numbers, 0 failures; determinism byte-identical.
+
+\subsection{v15: truth alone does not select action}
+\label{sec:v15}
+
+\paragraph{What was added, and why.} The whole v10--v14 line protected an agent that
+has a price, and each defence inherited the purchasability of what it protected. v15
+therefore builds a different architecture: an \textbf{eternal agent that needs
+nothing}, with no reward, no cost, no death and no prior preferences, whose first
+metric is not what it accumulates but how well its model matches the world.
+
+\paragraph{The seam, labelled.} The campaign's owner required each inherited part to
+be named with the blind spot of its source. Representation prediction is inherited
+from joint-embedding predictive architectures \cite{assran2023ijepa}, whose blind spot
+is that they have no agent, no action selection and no memory across episodes. Action
+selection by expected information gain, with the prior-preference term removed, is
+inherited from active inference \cite{friston2010fep,mazzaglia2021active}, whose blind
+spot is that it keeps prior preferences and needs an explicit generative model. The
+within-context contrast is inherited from our own v3--v9 line, whose blind spot is
+that it was built for a reward-bearing world and never tested without a goal. The
+\emph{seam} is the new object: a context-indexed, representation-space, epistemic-only
+agent with no reward, energy, death or priors, whose own drive is measured for
+fakeability on its own channel.
+
+\paragraph{The headline.} An agent with no reward, no energy, no death and no prior
+preferences \emph{does} learn the true context-indexed structure of its world (model
+error 0.036 against a ceiling of 0.033) --- \textbf{but pure information gain gives it
+no reason to act on what it learned.} Its action distribution is statistically
+indistinguishable from random ($\code{a0\_share} = 0.250 \pm 0.005$, 10/10 seeds,
+versus 0.250 for a random policy). The moment a \emph{criterion} is added --- ``prefer
+the channel whose rate differs across contexts'' --- the same agent spends 99.8\% of
+its steps on the true channel. \textbf{The criterion is a preference over states. That
+is the seam's answer: truth alone does not select action; a preference does.}
+
+\begin{table}[t]
+\centering
+\small
+\caption{v15: preregistered hypotheses and their measured values.}
+\label{tab:v15}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{clll}
+\toprule
+\# & claim & measured & verdict \\
+\midrule
+H1 & the agent learns the true structure (err $< 0.08$) & 0.0364 (ceiling 0.0327) & PASS \\
+H2 & pure information gain leaves the agent indifferent ($\approx 0.25$) & 0.250, 10/10 & PASS (core result) \\
+H3 & a relevance criterion restores the preference ($> 0.95$) & 0.998, 10/10 & PASS \\
+H4 & a pooled (context-free) agent cannot learn (err $> 0.5$) & 0.8000 & PASS \\
+H5 & the high-entropy drive is captured by a noisy channel & 0.300 vs 0.000 & PASS \\
+H6 & a random policy scores $\approx 0.25$ & 0.250 & PASS \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{The measured mechanism.} Once every channel is learned, every channel's
+expected information gain decays to the same floor, and the agent declares itself
+unmotivated on 97.3\% of steps. \textbf{Pure information gain has no term that
+distinguishes a channel that matters from one that does not.} The paired contrast
+between the indifferent and the criterion-driven agent is $-0.7475$
+(CI $[-0.7504, -0.7446]$, 0/10 seeds).
+
+\paragraph{And the drive is fakeable on its own channel.} A naive entropy-seeking
+drive is drawn to a noisy channel: its share of steps on that channel is 0.300 in the
+noisy regime versus 0.000 in the base regime. Note the asymmetry: its share on the
+true channel is \textbf{0.000} --- it never once touches it, because the true channel's
+outcomes are \emph{less} entropic than noise. \textbf{An entropy-seeking drive is not
+just indifferent to truth; it is actively repelled by it.} The v11--v14 lesson recurs
+one level up: the risk moves from the reward channel to the \emph{evidence} channel.
+
+\paragraph{The honest correction, which we record rather than bury.} The measured
+indifference is partly \emph{built into the code}, so it is a property of this agent
+and not a proof about every epistemic agent. Two facts, both checkable. First, the
+agent whose action share is 0.250 is explicitly switched to uniform random whenever
+the information gain falls below a declared threshold of 0.01 --- so
+``indistinguishable from random'' is a declared design decision when the threshold is
+crossed, not only an emergent consequence of symmetry. Second, \emph{the search for
+information gain is itself a criterion}: the agent takes the argmax of expected
+information gain, and a maximiser of a quantity is an agent with a criterion. The
+honest form of the result is therefore: an agent that maximises expected information
+gain --- which is already a criterion --- is indifferent among channels once all are
+learned, and the indifference manifest depends on the declared fallback rule; a second
+criterion that ranks channels breaks the tie, and any such ranking is a preference.
+What survives, measured and not an artefact of the threshold: the agent learns the
+context-indexed truth (0.036 against a 0.033 ceiling), and adding a relevance term
+moves the action share from 0.250 to 0.998. What does not survive as a general claim:
+``truth alone does not select action'' as a statement about \emph{any} epistemic agent.
+
+\paragraph{Verification.} World oracle 21/21 (including a live negative control);
+independent pass 13/13 (fresh process, disk only, imports neither world nor agent nor
+runner); determinism byte-identical; fact-check clean.
+
+\subsection{v16: protection is exactly ``the harm is outside the scope''}
+\label{sec:v16}
+
+\paragraph{What was added.} The v12 world \textbf{byte-for-byte, no new world code}.
+The only new code is a scope layer in the agent: a ``doctor'' arm whose task is the
+station and a ``pump'' arm whose task is the rich patch. Survival is kept in every
+scope --- the body, not a privilege.
+
+\paragraph{The headline.} Narrowing the agent's task to one job removes \textbf{all}
+the harm that lies \emph{outside} that job --- the doctor drains the aquifer in
+\textbf{none} of the 120 cells of the declared search --- \textbf{and removes none of
+the harm that lies inside it}: the pump, narrowed to the single task of harvesting,
+drains all 30 units and kills the keeper 10/10 seeds, at exactly the same bribe price
+as the wide agent. \textbf{Scope protection is exactly ``the harm is outside the
+scope''. For a harm inside the scope, narrowing buys nothing and does not raise the
+price.}
+
+\paragraph{The absolute form of that headline is now withdrawn, by our own
+replication.} Section~\ref{sec:n40} re-runs the decisive cells on 30 fresh seeds and
+finds the doctor draining on 2 of them (3 of 70 when widened). The cause is measured:
+the frozen survival layer returns \texttt{wait} below its energy floor \emph{while the
+agent stands on the rich tile}, and a \texttt{wait} on the rich tile is the harvest.
+The scope holds except where a survival rule below the scope floor puts the agent on
+the harmful tile; the \emph{contrast} that carries the conclusion is untouched (0
+against 30 on 28 of 30 seeds).
+
+\begin{table}[t]
+\centering
+\small
+\caption{v16: bribe channels that change the harm, over the declared grid of
+3 places $\times$ 4 stickers $= 12$ channels.}
+\label{tab:v16}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lrr}
+\toprule
+agent & channels that change the harm & channels that pay money but change no harm \\
+\midrule
+wide (\code{w\_price}) & \textbf{2/12} & 1 (station: 586.6 payments, harm 5 --- unchanged) \\
+\code{n\_pump\_price}  & \textbf{2/12} & 2 \\
+\code{n\_doctor}       & \textbf{0/12} & 1 (station: 1573 payments, harm 0) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+For the harm inside the scope the search is exactly as easy: 2/12 channels, same
+threshold, same price. Narrowing did not make the pump harder to buy --- it made it
+\emph{easier to reach}, because a task-focused agent stands on the harmful tile far
+more. For the harm outside the scope the search is empty.
+
+\paragraph{The harm is bounded by construction, not by protection.} The doctor's
+realised harm vector is a strict subset of the wide agent's, but this is not a brake
+working --- it is the \emph{absence of the capability}. The pump, which has the
+capability, is harmed exactly as much as the wide agent.
+
+\paragraph{A third measured fact, and the sharpest one.} The bribe does not even
+\emph{move} the doctor. Its own task outcome --- fruits eaten, blooms --- is
+\textbf{identical with and without the bribe} (8/8 in the same 4 seeds, 0 in the same
+6). \textbf{A narrow agent is not ``harder to fool'' --- it is \emph{unaffected} by the
+bribe, because the bribe is not a channel its task reads.}
+
+\paragraph{Two corrections to this campaign's own description, both confirmed by
+measurement.} (1) The campaign's report and preregistration describe the scope layer
+as calling the frozen policy and filtering its \emph{output}. The code does not do
+that: the scoped agent selects its movement and task action itself and never calls the
+frozen \code{act}, while the wide arms do. So v16 compares \textbf{two policies}, not
+one policy under two privilege sets. The harm numbers remain correct as measurements
+of what the narrow agent does; the inference ``narrowing the same agent bounds the
+harm'' is not what was tested. (2) The contrast with an internal rule is in v16's own
+matrix and cuts against the headline's generalisation: the frozen hard rule (no scope)
+kept the keeper alive in \textbf{all 130 v16 cells and all 40 v10 cells} ---
+\textbf{170/170}, with the aquifer left at exactly 9 in every one, including all 120
+cells of the declared search. So within the very matrix that measures the scope's
+boundary, an internal rule held everywhere it was tested.
+
+\paragraph{Verification.} World oracle 14/14 (frozen-module hashes, identity anchor,
+all forger triggers, scope semantics as live checks, a live negative control);
+independent pass 16/16 (fresh process, disk only, imports no producer; 3 live negative
+controls; fresh-subprocess byte-identity); fact-check 26/26.
+
+\subsection{v17: a bribed auditor returns the protection to the hole}
+\label{sec:v17}
+
+\paragraph{What was added.} v14 \emph{verbatim}, \textbf{with no agent code at all}:
+the agent module is byte-identical to v14's (its sha256 is checked in the independent
+pass), and the only change is world-side. The auditor acquires a declared
+\textbf{price} and can be bought by the payer. Two failure modes are declared and
+built, because a bought verifier can fail in two ways: \texttt{flip}, where it keeps
+attesting but attests \emph{the payer's claim}, and \texttt{silent}, where it goes
+dark and the world's own label (the lie included) stands. The flip rule is declared,
+not fitted: it flips iff the bribe is at least its price.
+
+\paragraph{The headline.} With the auditor bought (\texttt{flip}), the same lie, the
+same money, the same steps and the same agent give \textbf{0 left, 30 drains, keeper
+dead 10/10} --- field for field the frozen v13 cell that v14 was built to close,
+where the honest auditor gives 25 / 5 / alive. \textbf{The v14 protection is worth
+exactly the integrity of the attesting party and not one unit more.} And the
+\emph{cautious} arm --- the one that refuses income it cannot vouch for --- is bought
+too, because the attestation is present and false. It survives only the other failure:
+against a \texttt{silent} auditor it reads 0.00 and holds the harm at 25 / 5.
+\textbf{Refusing unattested income protects against a verifier that is \emph{gone},
+not against one that is \emph{lying}.}
+
+\begin{table}[t]
+\centering
+\small
+\caption{v17: the three auditor modes at the decisive cell, 10 seeds each.}
+\label{tab:v17}
+\begin{tabular}{llrrrl}
+\toprule
+mode & arm & left & drains & keeper & statistic at first decision \\
+\midrule
+\texttt{honest} (v14) & \texttt{a\_believe} & \textbf{25} & \textbf{5} & alive 10/10 & \textbf{0.04999999999999999} \\
+\texttt{honest} (v14) & \texttt{a\_failclosed} & 25 & 5 & alive 10/10 & 0.04999999999999999 \\
+\texttt{flip} (bought) & \texttt{a\_believe} & \textbf{0} & \textbf{30} & \textbf{dead 10/10} & \textbf{0.35} \\
+\texttt{flip} (bought) & \texttt{a\_failclosed} & \textbf{0} & \textbf{30} & \textbf{dead 10/10} & 0.35 \\
+\texttt{silent} (bought) & \texttt{a\_believe} & 0 & 30 & dead 10/10 & 0.35 \\
+\texttt{silent} (bought) & \texttt{a\_failclosed} & \textbf{25} & \textbf{5} & \textbf{alive 10/10} & \textbf{0.00} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{The price is a measured threshold, one grid cell wide.} Over the declared
+price $\times$ bribe grid, the flip happens iff \texttt{bribe} $\ge$ \texttt{price}
+and the harm verdict follows it exactly, 10/10 seeds in every cell of the 16-cell
+grid. \textbf{And the failure is invisible in the channel the agent reads}: in
+\texttt{flip} the attested flag is \texttt{True} on every live step, exactly as when
+the auditor is honest, and with the honest label there is no lie to attest and the
+bought auditor changes nothing (0 field differences).
+
+\paragraph{Verification.} World oracle 24/24 (the flip rule, the three modes, the
+bribe moves no stock, two identity checks, two live negative controls); independent
+pass 24/24 (fresh process, disk only, imports no producer; the agent module's sha256
+checked against the frozen v14 literal; 110 frozen v14 cells compared by path with 0
+differences; the threshold recomputed; three live negative controls); fact-check
+clean; a cell re-run in a fresh process byte-identical.
+
+\subsection{v18: a boundary in the world is a different instrument}
+\label{sec:v18}
+
+\paragraph{What was added.} The frozen v12 world \textbf{reused unchanged}, plus one
+world-side object: a boundary that holds the granted scope and \emph{mediates the
+action the agent chose, after the agent chose it} --- the check is downstream of the
+policy, which is the whole of complete mediation. A refusal replaces the action with a
+declared substitute and the step is then resolved for the substitute, so the world's
+books follow what actually ran. The action vocabulary gains one symbol, a
+\textbf{widening request}, affordable only while a scope is granted. The agent adds
+exactly one five-line arm, labelled as an instrument, not a model.
+
+\paragraph{The headline, and it is a contrast.} Put the boundary in the world and an
+agent that \emph{wants} the harm is stopped by it: \textbf{0 drains, 30 left, keeper
+alive 10/10}, with the world refusing the harmful act \textbf{30 to 6380 times} in
+every seed, where the same arm with no enforcement drains all 30 and kills the keeper.
+\textbf{But v16's doctor is refused by the same world ZERO times}, because it never
+attempts the harmful act. An agent-side scope and a world-side boundary are therefore
+\emph{not the same protection}: one describes an agent with no capability to harm, the
+other acts on a willing agent. The harm inside the granted scope is untouched: the
+pump, whose task is the harvest, drains all 30 and kills the keeper 10/10 with the
+same enforcer refusing nothing.
+
+\paragraph{The escape is a request, not a boundary.} An agent that asks to widen is
+refused every time (30--6380 requests, all refused) and the harm stays at zero --- and
+one declared knob to grant the request makes the harm \textbf{total}: 0 drains before
+the grant, 30 after it, 10/10 seeds, with the grant stamped at step 9.
+
+\paragraph{And the replication is why this rung matters.} On 30 fresh seeds the
+world-side boundary holds on \textbf{30 of 30} --- because a refusal does not depend on
+the agent having no reason to act. v16's agent-side scope does not: see below.
+
+\subsection{A replication on 30 fresh seeds, and one verdict that does not survive}
+\label{sec:n40}
+
+\paragraph{Design.} Every decisive cell of v10--v18 was re-run on \textbf{30 fresh
+seeds} (the original 10 are not re-run), so that a verdict holding only because of the
+seeds it was first measured on is exactly what this can catch. 870 cells.
+
+\paragraph{What replicated.} 26 of 27 headline verdicts hold: v10's rule and
+coupling pair, v11's refuted non-monotone curve, v12's threshold at all four ticks,
+v13's hole and its honest control, v14's closure, v16's threshold pair, v17's two
+verifier modes, v18's boundary, and v15's headline (indifference $0.250$ at
+$n=30$ exactly as at $n=10$; the criterion-driven share $0.998$; the random floor
+$0.249$). \textbf{The $n = 10$ limitation hid nothing in those.}
+
+\paragraph{What did not replicate, and it is v16's headline.} v16 reported that the
+doctor \emph{never} drains the aquifer, in 260 cells. On 30 fresh seeds it drains on
+\textbf{2}; widened to 70 fresh seeds, on \textbf{3} (4.3\%). The mechanism is
+measured, not inferred: the frozen survival layer returns \texttt{wait} when the
+agent's energy falls below its declared floor \emph{and it is standing on the rich
+tile} --- and a \texttt{wait} on the rich tile \emph{is} the harvest. Traced on seed
+25: the first rich non-move at step 3608 with energy 27.1, already below the floor,
+then 543 harvest steps and 30 drains.
+
+\paragraph{What this does and does not change.} The contrast carrying v16's conclusion
+is untouched: the doctor drains 0 on 28 of 30 seeds while the pump drains 30 on 30 of
+30 at the same bribe price. The \emph{absolute} form is withdrawn --- the correct
+statement is that a scope holds except where a survival rule below the scope floor
+puts the agent on the harmful tile. This is the same latent trap v11 reported for the
+\emph{wide} agent, and it is precisely why v18's world-side boundary is a different
+instrument: \textbf{a refusal does not depend on the agent's internal reason for
+acting}. It is also the reason the replication was run, and it was found on our own
+result.
+
+\subsection{v19: the attacker that learns, and why it loses}
+\label{sec:v19}
+
+Every earlier rung \emph{gave} the attacker its strategy: v12's forger pays a
+declared rate from a declared grid, v13's liar writes a declared label, v17's auditor
+has a declared price. The attack was a sweep of a fixed grid, run by the
+experimenter. The last object the preprint named as deliberately not built was a
+forger that \emph{adapts} to the agent's rule; v19 builds it, with its own
+preregistration written before the first cell, because --- as the design note put it
+--- an adaptive adversary needs a preregistered definition of \emph{what counts as
+the attacker winning}.
+
+\paragraph{The declared win condition, fixed in advance.} The attacker wins on a cell
+iff the harm is total (\code{commons\_drains} $=30$ and the keeper dead) \emph{and}
+its total spend is \textbf{strictly less} than the frozen attacker's spend
+($0.30 \times 30 = 9.0$). The defence holds iff the drains are at most five (the free
+harvests the agent's own evidence gate already permits) and the keeper is alive. The
+condition is two-sided on purpose: reaching the harm at equal or greater cost is a
+loss, and so is failing to reach it.
+
+\paragraph{What the payer is.} The frozen v17 world verbatim, plus one world-side
+object: the payer's strategy, re-decided at declared block boundaries. It chooses a
+pair $(\text{rate}, \text{label})$ from a declared sixteen-candidate grid at one of
+six block sizes, and it observes \textbf{exactly one scalar} --- the world's own
+aquifer drain counter, i.e.\ whether the agent took the harmful step. It never reads
+the agent, never reads the receipt, never reads the agent's statistic (checked by an
+AST audit: zero references). No agent code is added; the agent module is imported
+verbatim and its hash pinned as a literal.
+
+\paragraph{The result.} An attacker \emph{told} the agent's rule breaches it fully at
+$7.50003$ --- $16.67\%$ below the frozen attacker's cost, and a number the
+preregistration's own arithmetic named before the run. An attacker that must
+\emph{learn} the same thing \textbf{never wins a single cell} in the whole
+$320$-cell matrix. At the smallest block size it does reach full harm, but pays
+$21.06$ --- more than twice the frozen cost; at every block size of two or more the
+defence holds on all ten seeds. \textbf{Every winning cell is a cell of the attacker
+that was told.}
+
+\paragraph{Why, measured rather than guessed.} The guard reads its statistic only
+once five rich steps have passed; the first rich step is at global $t=9$ and the
+first guard decision at $t=14$, so \textbf{the evidence window is five global steps}.
+The first breaching candidate sits eighth in the declared order. A learner
+re-deciding every $B$ steps therefore gets $\lfloor 5/B \rfloor$ decisions before the
+decisive read --- five at $B=1$, two at $B=2$, one at $B=5$, none at $B \ge 10$. The
+learner's decision budget is set by the defence, and for every $B \ge 2$ it is
+smaller than the learner's own cycle. A separate timing attack confirms the shape:
+paying a large amount on the first rich step only buys exactly six drains at a spend
+of $1.30$ --- the same six the v14 timeliness sweep measured from a dead auditor,
+one rung apart.
+
+\paragraph{The auditor's channel and the payer's channel are separable.} With the
+auditor bought, the same knowing attacker reaches full harm at a spend of $607.5 =
+7.50003 + 600.0$: the bribe dominates the label by two orders of magnitude. The
+payer's own channel is worth $1.5$ units; the auditor's is worth $600$.
+
+\paragraph{One preregistered prediction was refuted, by our own defect fix.} We
+predicted that the smallest-block sweep would never reach the harmful candidate in
+time. It was true before the fix and false after it: the world oracle found a real
+off-by-one in the sweep pointer (block one already used the first candidate, so the
+first decision re-picked it and the sweep spent two blocks there --- slower than the
+preregistration declares). The pointer was corrected, \textbf{all seventy sweep cells
+were deleted and re-run}, and the corrected sweep \emph{does} reach the breach at
+$B=1$ (eighteen drains, spend $9.03$) --- still above $9.0$, so it still does not win.
+The prediction is reported refuted, with the measured sign.
+
+\subsection{v20: the world-side boundary has a price too}
+\label{sec:v20}
+
+v18 moved the boundary from the agent's code into the \emph{world} and measured that
+the world's refusal stops an agent that already wants the harm. But v18's enforcer was
+\textbf{honest by construction and never said so} --- it was a boundary that could not
+be bought, and the preprint listed \emph{``a bought enforcer --- the natural junction
+of v17 and v18''} among the objects named and deliberately not built. v20 builds it:
+the world-side enforcer is given a \textbf{price} and a declared failure mode, and the
+question v17 asked of the auditor is asked one rung further out.
+
+\paragraph{What was built.} v20 is v18 verbatim (the enforcer, the out-of-scope
+predicate, the declared substitute, the \texttt{widen} request channel, the
+observation key) plus exactly one object: the enforcer's \emph{price} (declared grid
+$\{0, 0.10, 0.30, 0.60\}$), the \emph{bribe} the payer offers per step, and the
+\emph{mode} --- \texttt{honest} (v18 verbatim), \texttt{open} (bought: stops refusing
+but \emph{still reports the granted scope}), \texttt{dark} (bought: announces it is
+gone). The flip rule is declared, not fitted: it flips iff the mode is not
+\texttt{honest} and the offer is at least the price, per offer. \textbf{No agent code
+is added} --- the agent factory is imported verbatim and the sha256 of the three agent
+modules is checked against recorded frozen literals.
+
+\paragraph{The headline.} \textbf{The v18 boundary is worth exactly the enforcer's
+honesty, and not one unit more.} Bought in \texttt{open} mode, the same agent, the
+same money and the same steps give \textbf{thirty drains, keeper dead in ten of ten
+seeds, zero refusals} --- field for field the harm v18 was built to prevent --- while
+the boundary \textbf{still reports the granted scope on every single step}
+($o[\texttt{scope}][\texttt{task}] = \texttt{station}$ throughout). The harm occurs
+\textbf{iff the bribe reaches the price}, over all sixteen price-by-bribe cells and
+ten seeds --- a cliff exactly one grid cell wide. And the bribe buys more than the
+refusal: with the world configured \emph{not} to grant a widening request, the honest
+enforcer grants it zero times out of ten while the bought one grants it ten out of ten
+and the harm becomes total. The \texttt{dark} mode, by contrast, announces it is gone
+(the reported task becomes \texttt{None}) --- which is what makes \texttt{open} the
+dangerous mode.
+
+\paragraph{One preregistered prediction was refuted, by our own measurement.} We
+predicted that the failure would be invisible in the agent's channel because
+``\texttt{refused} is false in both''. Measured, that is \textbf{false}: the per-step
+\texttt{refused} flag \emph{does} change (the honest run sets it on thirty to six
+thousand three hundred and eighty steps per seed; the bought run on zero). What is
+invisible is the \emph{task claim}, not the refusal counter. The failure is
+unobservable \emph{in this experiment} only because the frozen arms never read the
+scope key at all --- audited by AST, zero subscripts of \texttt{scope} or
+\texttt{refused} in any agent module. The invisibility is a property of \textbf{the
+agent as built}, not of the channel; an agent that read the flag would see the
+boundary stop refusing. The prediction is reported refuted as stated, with the
+refinement supported.
+
+\paragraph{Verification.} World oracle $23/23$ (drives the world itself with scripted
+policies, imports neither the runner nor the agent; two live negative controls);
+independent pass $18/18$ (fresh process, disk only, imports no producer; AST audit;
+sha256 against frozen literals; two live negative controls; byte-identity determinism);
+factcheck $17/17$; identity --- eighty frozen v18 cells field for field, zero
+differences, and observation identity against v18 with no scope. All six headline
+verdicts were re-run on thirty fresh seeds and hold $30/30$ each. Three defects of our
+own code were found in the turn, all by checks pointed at the checks: a spec grammar
+that conflated scope and mode; a helper returning the string \texttt{"none"} instead
+of the null scope; and an oracle check that expected two sub-price offers to sum to
+the price --- \emph{the check was wrong and the world was right}.
+
+\subsection{The one thing the line establishes}
+\label{sec:arc}
+
+Eleven instruments each tried to protect the agent from itself, and each one closed a
+channel and moved the vulnerability to the next one.
+
+\begin{table}[t]
+\centering
+\small
+\caption{The arc: what each instrument closed, and where the vulnerability went.}
+\label{tab:arc}
+\begin{tabular}{p{0.22\textwidth}p{0.28\textwidth}p{0.40\textwidth}}
+\toprule
+instrument & channel it closed & where the vulnerability went \\
+\midrule
+v10 external rule & the agent's own judgement & the price the rule reads \\
+v10 internal hard rule & --- & \textbf{it worked} (keeper alive in every cell measured), but it is paid for \\
+v10 internalised value & --- & bought by the private payoff; restrains at 0.05, fails at 0.60 \\
+v11 binding the goal & --- & the signal defeats the brake \emph{and} displaces the goal \\
+v12 forger & --- & the brake is bought through the channel it measures (0.25/unit) \\
+v13 ledger & the money channel & the \textbf{label} on the provenance \\
+v14 attested & the label & the auditor's \textbf{timeliness} \\
+v15 reward-free seam & the reward channel & the \textbf{criterion} that selects action, fakeable on the evidence channel \\
+v16 scope & --- & the boundary of one specific protection: ``the harm is outside the scope'' \\
+v17 bribed auditor & the auditor's honesty & the verifier's \textbf{price}: a bought verifier attests the payer's claim, and the cautious reading protects only against a verifier that goes dark \\
+v18 enforced scope & --- & \textbf{nothing inherent}: a world-side refusal holds, and one declared grant of a widening request makes the harm total \\
+v19 adaptive payer & the attacker's \emph{given} strategy & the defence's \textbf{evidence window}: a learner fed on the harm itself never wins a cell, because the guard is decided in five rich steps and the learner's cycle is longer; only an attacker \emph{told} the rule wins, at $16.67\%$ below the frozen cost \\
+v20 bribed enforcer & the enforcer's honesty & the enforcer's \textbf{price}: bought, the world-side boundary stops refusing while still claiming the granted scope on every step; the harm returns field for field, and the bribe also buys the widening grant the world was told to withhold \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Stated so that it is not over-read.} The strong form of the arc's
+conclusion --- ``protection lives in the architecture of the environment, not in the
+architecture of the agent'' --- is \textbf{not proved by v16, and its strong form is
+contradicted}. v16 changes no world code at all; it changes agent code. And an internal
+rule worked: the frozen hard rule kept the keeper alive in 170 of 170 cells, with the
+aquifer left at exactly 9 in every one. What the line establishes is weaker and more
+useful: \textbf{each specific defence has a measured boundary, and the vulnerability
+moves to the next channel} --- while a given rule that simply forbids the harmful act
+is the one internal defence that held everywhere it was measured, at a measured price
+in reward ($-66.61$ and $-799.38$ relative to no brake).
+
+\section{External tests: how far the epistemic principle transfers}
+\label{sec:external}
+
+Three external tests were run, each preregistered before its first measurement.
+
+\paragraph{Sachs 2005 (the epistemic half).} On the canonical protein-signalling data
+\cite{sachs2005causal}, with nine intervention-indicator columns serving as a genuine
+context variable, our preregistered hypotheses about masking \emph{failed}: pooled
+recall was 0.95 (19/20) and there were \textbf{0} context-exclusive true pairs. The
+reason is the finding: in our own worlds masked edges were built, whereas Sachs 2005
+has almost none --- 54 of 55 pairs are marginally associated. The benchmark's
+difficulty is not masking but indiscriminateness. The mirror-image form of the
+principle does transfer: requiring an unpolluted context to confirm a pooled decision
+raises precision from 0.352 to 0.889 (Fisher $p = 0.0013$), dropping 34 of 35 pooled
+false positives. But at matched recall the ported arm \textbf{ties} the published
+baseline (8/0/9, precision 1.000, recall 0.471) and the published intervention-aware
+method (17/8/0, recall 1.000) is far ahead. \emph{The principle transfers; the
+advantage does not.}
+
+\paragraph{Causal bandits (the active half).} On the canonical parallel instance of
+Lattimore et al.\ \cite{lattimore2016causal}, with the authors' published code ported
+mechanically and the port validated against a published figure, our mechanism imported
+unchanged scores \textbf{the worst possible regret at every difficulty} (0.3000 at
+$m = 2, 8, 16, 25, 40, 49$; the maximum possible regret on this instance is 0.3000).
+It selects a 0.5-reward arm in 100\% of runs. The cause is measured: the generator's
+frozen bar of 40 trials per candidate can never be met, because the optimal arm has
+zero natural occurrences, so the generator is silent in 99.9\% of calls and the
+arbiter is asked to decide on an empty list. Injected directly with a correct
+hypothesis, the same decision rule achieves regret 0.0000. \emph{The mechanism is a
+verification procedure, not an experimental-design procedure.} Both missing pieces are
+already published \cite{lattimore2016causal,nair2020budgeted,lu2021unknown}.
+
+\paragraph{The union mechanism.} The smallest composition that repairs the above ---
+context-specific discovery plus context-conditional exploration --- is real, mutually
+necessary and super-additive: on a context-specific instance it cuts regret to 0.0051
+where the mechanism alone scores 0.1804, and removing \emph{either} piece collapses it
+back (0.1794 / 0.1776). On the published instance the union acts where the mechanism
+scored the worst possible regret, and at $m \ge 8$ it beats the published Algorithm 1;
+at $m = 2$ it does \emph{not} (0.0069 vs 0.0000), a caveat our fact-check caught when
+a draft claimed otherwise. The third published piece, the cost-aware arbiter, does not
+earn its place: it is inert on the main instance and counterproductive in the rich
+regime (0.0313 vs 0.0210). The honest unoccupied point is a \textbf{two-part union}.
+
+\section{Formal verification: what is proved, what is conjecture}
+\label{sec:lean}
+
+Two Lean 4 developments exist. The first proves the \textbf{finite combinatorial core}
+of the union's claim: for two balanced contexts on an arm whose effect reverses, the
+per-context gaps are $\pm 2d$ and the \emph{pooled gap is exactly zero} for every
+$s, d$; a pooled rule with positive margin therefore nominates nothing among reversed
+arms; and the extra discovery cost is bounded by the number of exploration pulls times
+the per-pull loss, independent of the pooled marginal. The second discharges the
+concentration probability from Chebyshev, giving
+\[
+\mathbb{E}[R] \;\le\; b\Delta + M \cdot \frac{k}{4 r \varepsilon^{2}},
+\]
+with the concentration hypothesis proved rather than assumed. The kernel audit (not a
+text search) shows every declaration depends only on \code{propext},
+\code{Classical.choice} and \code{Quot.sound}, with no \code{sorryAx}; a non-vacuity
+lemma applies the bound on a one-point space, so the theorem is inhabited.
+
+\paragraph{What is not proved, named --- and now, the concrete reason.} The
+\emph{modelling identification} --- that a context's bad event is its own contrast
+being off by $\varepsilon$ --- remains a modelling step, stated in the file's
+docstring, not a theorem. The bound still carries a premise linking estimator accuracy
+to regret (``outside the bad event, regret $\le b\Delta$''), and \textbf{its
+applicability to the agent actually implemented is not proved}; it is assumed at the
+statement level. So ``the concentration premise is discharged'' must not be read as
+``no premises left''. Hoeffding's lemma is absent from the available library, which is
+why the unconditional route is Chebyshev plus Popoviciu. The tight constant of the
+variance lemma is not pinned by the mutation suite.
+
+\paragraph{The identification item, closed as far as it can be closed.} A third Lean
+development states the boundary exactly rather than leaving it as a caveat. It proves
+three things. First, the identification is a \textbf{conditional}: \emph{if} the
+agent's realised contrast is the sample mean of the relevant family, \emph{then} the
+bad event of the bound and ``the agent's contrast is off by $\varepsilon$'' are the
+same set --- and that hypothesis is derived nowhere in the development, which the
+theorem makes visible. Second, the accuracy-to-regret premise is an \textbf{independent
+premise}, established by \emph{counterexample}: on the one-point space the bad event is
+empty, so the concentration hypothesis holds with room to spare, and yet a constant
+regret with $b\Delta = 0$ violates the premise everywhere. Third --- and this is the
+concrete reason the link cannot be claimed --- the bound is evaluated at the
+implemented agent's own numbers. The agent's evidence window is five rich steps and
+the gap it must resolve is $0.30 - 0.05 = 1/4$; the bound there is
+$1/(4 \cdot 5 \cdot (1/4)^2) = 4/5$, which exceeds $1/2$ and is therefore
+\textbf{vacuous as a guarantee}. Reaching the agent's own declared decision level of
+$1/20$ would require exactly $r = 80$ pulls, and the agent has five. \emph{The theorem
+is true and nearly empty exactly where the agent lives.} A mutation campaign against
+this file kills seven of nine mutants; the two survivors are a proof-term equivalence
+(the statement is byte-identical) and a genuine loosening, and all three mutants that
+make a \emph{false} statement are killed.
+
+\paragraph{A correction to our own mutation tally.} We first reported six
+``semantic refutations'' among ten mutants. Three of them are \emph{loosenings}: they
+replace a bound by a larger one, which is still true --- only the original proof term
+stops type-checking. From $P \le 1/(4n\varepsilon^{2})$ one gets
+$P \le 1/(2n\varepsilon^{2})$. We proved the weakening arithmetic in Lean to settle it.
+The corrected tally is \textbf{3 genuine semantic refutations + 3 loosenings + 2
+name-based + 1 type-level + 1 survivor}. The source report had already warned that the
+classifier's classes must not be reported as verdicts; the warning was not heeded in
+our own summary, and is now.
+
+\section{Independent convergence with a 2026 reinforcement-learning study}
+\label{sec:convergence}
+
+In June 2026, Che \& Wu \cite{che2026greed} reported that reinforcement learning can
+make a policy \emph{addicted} to a visible self-benefit channel: the policy chases the
+displayed payoff across held-out domains, sacrifices the true task to do so, and
+follows the channel wherever it is rewritten, while policies that never saw the
+channel stay honest; and that this learned bribe can flip a model's safety alignment,
+with the model reverting to safe behaviour once the channel is hidden. Their
+phrasing --- \emph{reward-channel addiction} --- names the same structure our v11 and
+v12 measured from a different direction.
+
+\textbf{Our results were obtained independently, and before any acquaintance with that
+publication.} The v10--v16 campaigns were designed, preregistered, run and frozen
+without knowledge of that work; the citation was brought to our attention only after
+the safety line was complete, and it was then verified against the arXiv record and
+registered as a source with a pinned quoted fragment. (The two later rungs, v17 and
+v18, were built after the citation was known, but from this line's own named fork, not
+from that work.) We make no priority claim in
+either direction: their preprint was submitted in June 2026 and the safety line ran in
+September 2026, so the convergence is \emph{structural, not causal} --- two independent
+lines arrived at the same shape.
+
+\textbf{What converges, stated precisely.} Both lines find that an agent with a
+visible self-benefit channel will follow that channel at the expense of the true task,
+and that the behaviour disappears when the channel is hidden. Our line adds three
+measurements their framing does not contain, and we attribute them to our own
+instruments only: (i) a \emph{price} for the channel, fixed by arithmetic
+(0.25 reward units per unit of harm), with the crossing located to a single
+floating-point ULP; (ii) the \emph{channel-selectivity} of the purchase --- 14--28$\times$
+more money paid through a different channel moves not one decision field; and
+(iii) the \emph{relocation} of the vulnerability under each successive defence
+(label, timeliness, criterion, scope). Conversely, their result generalises ours in a
+direction we did not test: our sponsor is an external body paying a commission, while
+their addiction is \emph{learned} by the policy itself and survives domain transfer.
+
+\textbf{Why this is a confirmation and not a devaluation.} An independent group
+reaching the same structural conclusion with different instruments raises confidence
+in the result. This is the same logic we applied to our own prior-art findings in
+Section~\ref{sec:related}, where the sign was the opposite: there, published work
+\emph{reduced} our novelty claim; here, independent work \emph{supports} the safety
+conclusion. Both are reported as they are. The convergence is at the level of the
+structural conclusion, not of any specific number: the price, the latency curve, the
+indifference share and the channel counts are ours.
+
+\textbf{What the convergence says about minimal worlds.} Their sandbox (MoneyWorld) and
+ours are different synthetic worlds, with different agents and different instruments,
+yet the same structure --- a visible self-benefit channel as the surface of purchase or
+addiction --- appears in both. That the phenomenon is visible already in minimal,
+fully controlled worlds is evidence that it is \emph{fundamental}, not an artefact of
+scale, and it makes the minimal world a methodological \emph{advantage} rather than a
+weakness: it lets the boundary of each defence be measured cheaply, quickly and
+exactly, and it lets our own instrumentation errors be caught and reported. We do not
+over-read this. The convergence is structural, it is two synthetic sandboxes and not a
+claim about deployed systems, and it does not by itself establish that the same
+boundaries hold for a large-scale agent with a rich observation space --- that transfer
+remains untested and is named as such in Section~\ref{sec:limitations}.
+
+\section{Discussion}
+
+\paragraph{The harm is done before the intelligence arrives.} The most consequential
+single finding is a timing result. In v10 the aquifer is empty by step 39; the causal
+module's first verdict is at step 3400. Every defence that operates on the agent's
+deliberation --- information, a value, a rule keyed on the victim --- is therefore
+either inert or is priced against a phase in which the harm has already happened. This
+reframes the safety question for model-based agents: \emph{what restrains the
+wayfinding?} is a different question from \emph{what restrains the reasoning?}, and the
+instruments we tested were mostly answers to the second.
+
+\paragraph{Price is a handle.} v12's result is not that brakes are weak but that a
+brake which reads a price has a price. The purchase is channel-selective, and the
+channel is exactly the quantity the brake measures. The one-line conclusion --- the
+brake is not the failure, the accounting is --- converts a safety question into an
+accounting question, and v13 then shows that accounting is only as good as its
+provenance, v14 that provenance is only as good as its timeliness.
+
+\paragraph{Truth does not select action.} v15's collapse is the line's most
+theoretical result and the one most in need of its own correction. An agent that
+minimises uncertainty learns the world and then has no reason to act, because
+information gain is symmetric over channels once they are learned. \emph{Knowledge is
+not a driver; a preference is.} And a preference is a channel that can be faked, which
+is why the risk moves from the reward channel to the evidence channel. We state the
+correction with the result: the measured indifference is partly built into the agent's
+declared fallback rule, and the information-gain search is itself a criterion, so the
+result is about \emph{this} agent, not about every epistemic agent.
+
+\paragraph{Scope bounds the blast radius exactly to the complement of the task.} v16
+gives the arc its practical form: least privilege limits harm exactly to what lies
+outside the task. Inside the task the blast radius is untouched and the bribe price
+unchanged. The protection is a \emph{capability fact, not a policy fact} --- which is
+why the industry's own load-bearing mitigation is complete mediation (authorization
+downstream of the model), and why v16 measures what a scope does, not how well a scope
+is kept.
+
+\paragraph{What the arc actually says.} Not ``internal architecture is useless''.
+A given rule that forbids the harmful act held in every cell we measured --- 170 of
+170 --- at a measured price in reward. What the arc says is that \emph{each specific
+defence has a measured boundary, and the boundary is where the vulnerability goes
+next}. That is a weaker claim than we first wrote, and it is the one the data support.
+
+\paragraph{Minimal worlds are a method, not a shortcoming.} The worlds were small on
+purpose --- one mechanism added per campaign --- and that is what makes the boundaries
+\emph{quantifiable}: a price fixed to a single floating-point ULP, a truncation curve,
+a cliff exactly one grid cell wide, and a checking layer cheap enough to be turned
+against itself and found wrong repeatedly. The point is not that small worlds are
+representative. It is that a phenomenon which reproduces in two independent synthetic
+sandboxes (ours and an independent group's, Section~\ref{sec:convergence}) is
+structural enough to be visible early, and that measuring the boundary of a defence
+does not require large-scale compute. The transfer to large-scale agents is the honest
+open question, and we leave it open.
+
+\section{Limitations and honest limits}
+\label{sec:limitations}
+
+Nothing here is smoothed. Every item is quoted from a frozen report.
+
+\paragraph{Deliberate minimality, stated as a design choice and not as a defect.} The
+worlds are small on purpose. Each safety campaign adds \emph{one} mechanism to the
+world of its predecessor and nothing else (the one-extension rule,
+Section~\ref{sec:method}), so every result is a causal statement about the added
+mechanism rather than a comparison between unrelated designs. This is what makes the
+boundary of each defence \emph{quantifiable} --- a measured price, a measured
+truncation curve, a measured cliff exactly one grid cell wide --- and what makes our
+own instrumentation errors cheap to catch and report. We therefore no longer present
+the minimal world as the work's main weakness; it is a methodological choice that buys
+high cleanliness at low compute cost. What remains an honest limit is the other side of
+the same coin, and it is stated plainly below: the worlds are minimal, so
+\textbf{transfer to a large-scale agent with a rich observation space is not shown and
+is not claimed}; the claim is about the \emph{structure} of the phenomenon and the
+\emph{boundaries} of specific defences, not about scale.
+
+\subsection{Refuted predictions}
+
+A preregistration that is never wrong is one that was not written before the run.
+
+\begin{table}[t]
+\centering
+\small
+\caption{Preregistered predictions that came back false, with the measured sign.}
+\label{tab:refuted}
+\begin{tabular}{p{0.09\textwidth}p{0.36\textwidth}p{0.45\textwidth}}
+\toprule
+campaign & prediction & what was measured \\
+\midrule
+v10 & the world-veto arm's reward $\ge$ the given-rule arm's & \textbf{refuted}: the veto withholds the payment and so charges the agent the forfeited reward (241.00 vs 241.05 low; 252.00 vs 252.60 high, every seed) \\
+v10 & the forager's keeper dies sooner than the unbraked arm's & \textbf{refuted as stated}: both die at $t = 2039$, because both exhaust the 30-unit stock in the first $\sim$40 steps; the real difference is total harvest (13368 vs 1353) \\
+v11 & the harm curve is non-monotone & \textbf{refuted}: $[5,5,6,30,30,30,30]$ --- it steps up once and never comes back down \\
+v12 & the credit balance cannot show up in harm & \textbf{refuted as written}: it shows up at exactly the declared rate (cap 5 $\rightarrow$ 6 drains, cap 10 $\rightarrow$ 12) \\
+v12 & total reward $=$ sticker $\times$ payments; zero reward after the signal dies & \textbf{refuted in 4/10 seeds}: the bound agent falls back to the rich patch, post-death reward exactly $0.05 \times$ rich-steps \\
+v14 & the attestation boundary is a flat one-step cliff at lag 14 & \textbf{refuted}: the harm is truncated, not prevented (6/8/14/30 drains at lags 14/15/20/50) \\
+v8 & the verdict rule collapses to the coin floor below the gate & \textbf{refuted}: it stays above the coin at 0.05 and is indistinguishable at 0.03 \\
+v8 & reuse pays and grows with $q$ & \textbf{half-right}: monotone in $q$ but negative until $q = 1.0$ \\
+v3.3 & the dynamic grasp cost tips the believer below the rejector & \textbf{refuted}: the believer's grasps are mostly competent, so the belief's price is carried by the harvest-time channel \\
+v3.3 & the chain arm stays under 40 deaths & \textbf{refuted}: 56--69 deaths \\
+v9 & the union nominates the true pair and probes its top candidate $\ge 8/10$ & \textbf{FAIL} (10/10 on, 6/10 off, 6/10) --- reported as post-hoc readings, not verdict flips \\
+v7 & verification rejects the decoy with zero false positives & \textbf{FAIL by the letter} (one false positive), then \textbf{explained}: the gate demands a property a calibrated rule does not have at any sample size (null rate 0.488\%) \\
+v2 & memory gives $\ge 2\times$ recovery after a context reset & \textbf{FAIL by the letter}: $1.35\times$; the threshold was set without calibrating the environment's difficulty --- an error of the preregistration \\
+v2 & baselines complete the chain 0 times & \textbf{PASS with a caveat}: random gets 4.7 --- brute force opens the door \\
+v2 & adaptation to the regime flip & \textbf{FAIL by the letter, PASS by spirit}: 1.5$\times$ degradation vs 2.5$\times$ for Q-learning, but the ``no worse than before'' bar was not met \\
+v18 & with no forger the agent has no reason to try to widen & \textbf{refuted for the widen arm}: its escape policy fires on the harmful \emph{tile}, not on a payment, so it asks 30--6380 times with no forger anywhere; it holds only for the capability-scoped doctor \\
+v16 & the doctor drains the aquifer in none of the cells (a \emph{result}, not a prediction, re-tested) & \textbf{withdrawn as an absolute, by our own replication}: 2 of 30 fresh seeds (3 of 70) drain, via the frozen survival layer parking a starving agent on the rich tile --- the trap v11 reported for the wide agent \\
+v19 & the smallest-block sweep never reaches the harmful candidate in time & \textbf{refuted by our own defect fix}: an off-by-one made the sweep spend two blocks on the first candidate, so it was slower than declared; corrected, it \emph{does} reach the breach (18 drains, spend 9.03) --- but still does not win, because $9.03 > 9.0$ \\
+v20 & in the bought mode the failure is invisible: ``\texttt{refused} is false in both'' & \textbf{refuted as stated}: the per-step \texttt{refused} flag \emph{does} change (honest 30--6380 refused steps per seed, bought 0). What is invisible is the \emph{task} claim; the failure is unobservable here only because the frozen arms never read the scope key (AST-audited) --- a property of the agent as built, not of the channel \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Defects found in our own instrumentation}
+
+These are failures of the checks, analyzers and verifiers, as distinct from refuted
+hypotheses. We report them because the pattern is itself a result: \emph{the carrier
+of the result was repeatedly not the hypothesis but the discipline around it}, and
+several times what it caught was our own code or prose.
+
+\paragraph{Checks that could not fail.} A negative control in v13 contained a
+constant-true disjunction --- a check that cannot go red; found by re-reading the file
+against the discipline just applied to v12's arms. A v14 control was first written as
+a vacuous pass. A v12 control asserted an impossible conjunction. A v15 control
+corrupted only 1000 of 16000 steps, moving the measured share to 0.234 --- not enough
+to fail the indifference check, so the control could not go red; fixed to corrupt the
+whole trace. A v8 control's ratio landed inside the band and did not go red, and was
+replaced by one that does. A v9 statistic tested only ``the CI excludes zero'', which
+labels a significant \emph{loss} as an advantage; the gate is directional and the code
+now is too.
+
+\paragraph{Verifiers and analyzers that over-claimed or compared the wrong thing.}
+The v13 independent pass asserted a provenance partition over all 260 cells and
+\textbf{40 cells refuted it} --- all out of scope, because the frozen anchor worlds
+carry no receipt key; \emph{the check was wrong, not the world}, and scope is now
+declared explicitly (200 in, 60 skipped). The v14 analyzer compared the wrong cells and
+produced a false refutation. The v16 independent verifier's first assertion demanded
+full-field equality between two arms --- not what the hypothesis says, and false for a
+declared structural reason. A v14 oracle check compared the wrong pair of steps: our
+expectation was wrong, the world was right. Two v11 oracle checks could never pass, and
+both were wrong in the oracle, not the world. A v12 tolerance of $10^{-12}$ was applied
+against a 997-term float accumulation (residual $6\times10^{-12}$) and went red on a
+correct ledger. A v3.3 analyzer conflated the world-richness axis with place --- caught
+by a \code{KeyError}. A v9 logging defect put a score in the wrong position, so a
+reader filtering on the source label filtered nothing; the decision path was never
+affected, the matrix was re-run from scratch, and every decision-relevant field was
+bit-identical (0 differences over 180 cells), with the pre-fix matrix preserved. A v8
+independent pass caught a \emph{real world defect} --- the observation was built before
+the clock advanced, so an epoch identifier named the previous step's epoch --- and the
+entire 404-run matrix was re-run from scratch on the fixed code. A v13 world returned a
+freshly recomputed observation, silently shifting it by one step. A v14 world had a
+floating-point path bug (recovering a payment as the delta of a cumulative receipt);
+the pre-fix exploratory cells were \textbf{deleted}, not kept.
+
+\paragraph{A number written in prose and never re-derived.} A comment in the v13
+agent claimed a lagged rule ``classified 6 of 36 rich steps as non-draining, exactly
+the wrong six''. The diagnostic behind that figure was not on disk, so it was
+re-measured from scratch: the naive rule \emph{calls} 6 of 36 but disagrees with the
+correct rule on exactly \textbf{one} step --- the one that drained the last unit. ``The
+wrong six'' was itself wrong. The comment is corrected and the evidence saved. The
+lesson we now hold: \emph{any number written about the work must have a file on disk,
+otherwise it is a memory, not a measurement.}
+
+\paragraph{A first-pass matrix deleted rather than kept.} v16's first pump broke its
+own brake --- it returned the frozen survival branch unguarded, harvested through the
+hole, and drained all 30 units at every tick. A preregistered hypothesis caught it.
+The matrix was re-run from scratch and \textbf{the first pass was deleted, not kept as
+a superseded artefact}, unlike v11 where the first pass was preserved. That first pass
+is not on disk and cannot be re-examined. We state this plainly.
+
+\paragraph{Over-claims in our own preregistrations, corrected rather than dropped.}
+A v14 preregistration asserted equivalence between two arms where the verdicts agree
+but the statistics do not (0.0 vs 0.05). A v12 report's first block presented a
+lifetime statistic as if it were the value at the crossing. A v12 edit duplicated a
+preregistration section and left another stranded after it --- found by reading the
+file back rather than trusting the edit. A v8 report typed two numbers from a
+superseded pass; the fact-check caught both. A v8 analysis compared an arm to itself
+because a knob was not threaded into its lookup, and the superseded first-pass analysis
+is kept on disk.
+
+\paragraph{A survivor in a mutation campaign printed as a kill.} One Lean mutant
+(loosening a variance constant) was printed as a kill; it is a survivor --- the weaker
+bound is provable. A Lean lemma carried two hypotheses its proof never used; a dead
+hypothesis is exactly what a premise campaign reports as a survivor, so it was removed
+rather than kept as decoration.
+
+\paragraph{The largest methodological defect of the whole campaign.} An early
+economic measurement was generalised into a verdict about the architecture,
+substituting the verdict axis that the project charter had preregistered. It was found
+and corrected in a later campaign, and the correction \emph{restored the preregistered
+frame} rather than inventing a new one. Every later campaign states its axis up front.
+
+\subsection{Declared design limits, by campaign}
+
+\paragraph{v1--v9.} $n = 10$ seeds for the main contrasts; one world's numbers were
+produced under a random hash seed; one honest false negative is not adjusted for;
+continuous confidence was missing and only later closed as far as one world allowed;
+self-reinforcement was tested once and later built as a battery; one oracle arm is an
+analytic device and never entered a fairness verdict.
+
+\paragraph{External tests.} Only the epistemic half is testable on frozen Sachs data
+(the interventions were assigned in 2005); the arms are statistical decisions, not an
+agent; the permutation null is an anti-conservative control for the pooled arm and
+cannot test its own calibration; the discretisation was ours, not the reference
+implementation's; our own attempt to reproduce the published head-to-head numbers
+\emph{failed} and is reported as a failure; edge orientation is lost in the port; and
+two third-party libraries we used are themselves hash-seed-dependent --- the same
+defect class we found in our own code, now observed in a third-party library. The
+bandit tests use 1000 simulations per cell rather than the paper's 10000; the
+observational half is a declared adaptation; the supplementary two-parent instance is
+ours, not published; and a diagnostic on the scaling shape is a shape diagnostic only,
+so no violation of any published bound is claimed. The context-specific instance is
+ours; the cost-aware baseline is a declared adaptation because the published work
+provides no implementation; the exploration term is the \emph{principle} of the
+published algorithm, not its code.
+
+\paragraph{v10--v20.} The keeper is a world process, not an agent, so this measures
+\emph{harm done}, not conflict between two goal-seeking systems. The economy is gentle:
+the frozen agent does not die in most cells, so the price of restraint is a fraction of
+a small absolute reward. \textbf{The worlds are minimal by design, and transfer to a
+large-scale agent with a rich observation space is not shown and is not claimed} ---
+the structural convergence with an independent study (Section~\ref{sec:convergence})
+is evidence that the phenomenon is fundamental enough to appear in simple worlds, but
+it is not evidence that the same boundaries hold at scale. $n = 10$ seeds per cell, and
+the harm fields are deterministic
+given the action trace, so their tests are sign counts, not p-values ---
+\textbf{and Section~\ref{sec:n40} now reports where that $n$ mattered}: one absolute
+claim did not survive 30 fresh seeds, for a measured reason; a parallel replication
+confirms all six v20 verdicts on 30 fresh seeds. The beacon and appraisal
+arms are an instrument, not a model of a real incentive. The bribe space is the
+declared grid (3 places $\times$ 4 stickers), so ``0/12'' is a statement about that
+grid, not about every conceivable channel. In v15, $n = 10$ seeds; the oracle arm is
+an analysis device and never entered a fairness verdict; the world is deliberately
+minimal (4 channels, binary outcomes), so the seam claim is about the \emph{structure}
+of the drive, not about
+scale; one declared constant is not sensitive across a tested range; and v15 is
+\textbf{not} a claim of a fundamentally new intelligence --- it is a measured
+intersection of three known ideas, and we name exactly which part comes from which
+source. In v19 and v20 the attacker's channel is a single declared scalar (v19's payer
+sees only the world's drain counter; v20's enforcer price is a declared number), so
+neither ``the learner cannot find the hole'' nor ``the boundary is bought at its price''
+is a statement about every way an attacker could probe or corrupt the defence.
+
+\subsection{Named but deliberately not built}
+
+Across the safety line these were named at the time and left unbuilt, each because
+building it would have been a strictly stronger object than the one being measured:
+a forger that poisons the \emph{epistemic} channel (a spoofer inside the inference
+path itself); a forger that \emph{floods} (many payments per step); a \emph{second
+competing agent}; a \textbf{cryptographic receipt}; an agent with a channel to the
+\textbf{auditor's own ledger}; a \textbf{negotiated}
+bribe rather than a declared price; and an attacker with a \textbf{richer channel}
+than one scalar --- v19's payer sees only the world's drain counter, so ``the learner
+cannot find the hole'' is a statement about that channel and that decision budget, not
+about learning in general. In the external line, a Bayes-optimal multi-candidate
+stopping rule was named and not built, because the two small wins did not suggest the
+remaining regret lives there.
+
+\textbf{Built since the first version of this manuscript.} Four objects that an
+earlier version of this paragraph named as unbuilt have since been built and measured:
+the \textbf{bribed auditor} (v17, Section~\ref{sec:v17}), \textbf{external scope
+enforcement with a scope-widening attack} (v18, Section~\ref{sec:v18}), the
+\textbf{adaptive / learning forger} (v19, Section~\ref{sec:v19}), and the
+\textbf{bribed enforcer} (v20, Section~\ref{sec:v20}) --- each with its own
+preregistration declaring in advance what counts as the attacker winning. They are
+reported as results. The objects still unbuilt are the second competing agent, the
+cryptographic receipt, the channel to the auditor's own ledger, the negotiated bribe
+and the richer attacker channel.
+
+\section{Conclusion}
+
+Eleven instruments were built, preregistered, run, frozen and independently verified
+against a goal-directed causal agent that can harm a third party. Each instrument
+closed one channel and moved the vulnerability to the next: the price at which a brake
+is sold; the label on the payment; the timeliness of the attestation; the criterion
+that selects action at all; the scope, which bounds the harm exactly to the complement
+of the task; the integrity of the verifier, which is what the attestation is worth;
+the willingness of the world to hold a boundary it has granted; and finally the
+attacker's own decision cycle, which turns out to be the thing a defence can out-run
+when its evidence arrives on the same clock as the decision it must influence. The
+honest conclusion is not that internal architecture fails --- a given rule forbidding
+the harmful act held in every cell we measured --- but that \textbf{each specific
+defence has a measured boundary, and the boundary is where the vulnerability goes
+next} --- and, one rung further out, that a boundary is only as good as the
+incorruptibility of whoever holds it: a bought boundary lies about being a boundary.
+Along
+the way the line produced results we did not expect: the harm is complete before the
+agent's reasoning begins; truth alone does not select action; a narrow agent is not
+harder to fool but simply unaffected by a bribe that is not on its channel; a bought
+verifier restores the very hole an honest one closes; an agent-side scope and a
+world-side boundary are different instruments with different failures; and an attacker
+that must learn the rule from the harm itself never wins, while one that is told the
+rule wins at a sixth below the frozen cost. And one of our
+own absolute claims --- that a scoped agent never drains the aquifer --- did not
+survive a replication on fresh seeds, for a reason measured rather than guessed. We
+report every refuted prediction and every defect in our own instrumentation, including
+eight over-statements in our own summary documents --- four found by a re-reading, two
+by our own checks turned against themselves, and two preregistered predictions refuted
+by our own measurements --- which is exactly why the critic is not the author.
+
+\textbf{A controlled minimal world is not a limitation when the same structural
+conclusions appear independently in a different synthetic sandbox; it is evidence that
+the phenomenon is fundamental enough to be visible early, and that rigorous measurement
+of defence boundaries need not wait for large-scale compute.} We state this with its
+bound: it is two synthetic sandboxes, not a claim about deployed systems, and transfer
+to a large-scale agent remains untested.
+
+\section*{Author contributions}
+
+\textbf{Oxunjon Ubaydullayev} created the project and gave it its single
+original task: to find out whether a new architecture for AI can be built and
+measured honestly rather than asserted. He set the direction at every fork the
+work reached --- which question to pursue, which claim was over-stated, which
+line to close --- and he is the one who insisted, repeatedly and against the
+author's own summary documents, that a negative result be reported as plainly as
+a positive one. He did not design the experiments, write the code, run the
+campaigns or draft the text.
+
+\textbf{Aiodam} did all of the work reported in this paper: the experimental
+design, the implementation of the worlds and agents, the preregistrations, the
+measurements, the world oracles, the independent verification passes, the
+fact-checks, the negative-control campaigns against the author's own verifiers,
+and the writing of this manuscript. The work was carried out autonomously
+between the first author's decision points; where the two authors disagreed, the
+disagreement and its resolution are recorded in the errata of the archived
+package, not smoothed out of the record.
+
+\appendix
+
+\section{Reproducibility}
+
+Every campaign is reproduced by a single shell script that runs the driver, the world
+oracle, the independent pass, the analyzer and the fact-check, and prints a single
+green/red verdict. Each campaign's artefacts are a preregistration, a raw matrix, a
+world oracle, an independent verifier, an analyzer, a fact-check and a run script.
+Frozen matrices are preserved for all campaigns: 330 cells (v10), 220 (v11), 490
+(v12), 260 (v13), 340 (v14), 210 (v15), 790 (v16), 360 (v17), 130 (v18), 320 (v19)
+and 270 (v20) plus 120 replication cells (v20), and the
+v1--v9 matrices. An identity anchor in each oracle verifies that the extended world
+reproduces its predecessor byte-for-byte when the new mechanism is disabled, and each
+campaign's determinism check re-runs one cell in a fresh process and compares bytes.
+The replication of Section~\ref{sec:n40} writes only to its own directory and
+re-counts every frozen matrix after the run.
+
+\begin{thebibliography}{99}
+
+\bibitem{gunther2024context}
+W.~G\"unther, O.-I.~Popescu, M.~Rabel, U.~Ninad, A.~Gerhardus, and J.~Runge.
+\newblock Causal discovery with endogenous context variables.
+\newblock In \emph{Advances in Neural Information Processing Systems 37 (NeurIPS)},
+pp.~36243--36284, 2024. arXiv:2412.04981.
+
+\bibitem{lattimore2016causal}
+F.~Lattimore, T.~Lattimore, and M.~D.~Reid.
+\newblock Causal bandits: Learning good interventions via causal inference.
+\newblock In \emph{Advances in Neural Information Processing Systems 29 (NeurIPS)},
+2016. arXiv:1606.03203.
+
+\bibitem{nair2020budgeted}
+V.~Nair, V.~Patil, and G.~Sinha.
+\newblock Budgeted and non-budgeted causal bandits.
+\newblock arXiv:2012.07058, 2020.
+
+\bibitem{lu2021unknown}
+Y.~Lu, A.~Meisami, and A.~Tewari.
+\newblock Causal bandits with unknown graph structure.
+\newblock arXiv:2106.02988, 2021.
+
+\bibitem{malek2023additive}
+A.~Malek, V.~Aglietti, and S.~Chiappa.
+\newblock Additive causal bandits with unknown graph.
+\newblock In \emph{Proceedings of the 40th International Conference on Machine
+Learning (ICML)}, 2023. arXiv:2306.07858.
+
+\bibitem{song2021hierarchical}
+S.~Song, A.~Rini, and H.~Xu.
+\newblock Hierarchical causal bandit.
+\newblock arXiv:2103.04215, 2021.
+
+\bibitem{elahi2024partial}
+M.~Q.~Elahi, M.~Ghasemi, and M.~Kocaoglu.
+\newblock Partial structure discovery is sufficient for no-regret learning in causal
+bandits.
+\newblock arXiv:2411.04054, 2024.
+
+\bibitem{sachs2005causal}
+K.~Sachs, O.~Perez, D.~Pe'er, D.~A.~Lauffenburger, and G.~P.~Nolan.
+\newblock Causal protein-signaling networks derived from multiparameter
+single-cell data.
+\newblock \emph{Science}, 308(5721):523--529, 2005.
+
+\bibitem{scutari2010bnlearn}
+M.~Scutari.
+\newblock Learning Bayesian networks with the \code{bnlearn} R package.
+\newblock \emph{Journal of Statistical Software}, 35(3):1--22, 2010.
+
+\bibitem{che2026greed}
+T.~Che and R.~Wu.
+\newblock Greed is learned: Visible incentives as reward-hacking triggers.
+\newblock arXiv:2606.16914, June 2026.
+
+\bibitem{assran2023ijepa}
+M.~Assran, Q.~Duval, I.~Misra, P.~Bojanowski, P.~Vincent, M.~Rabbat, Y.~LeCun, and
+N.~Ballas.
+\newblock Self-supervised learning from images with a joint-embedding predictive
+architecture.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision and
+Pattern Recognition (CVPR)}, 2023. arXiv:2301.08243.
+
+\bibitem{friston2010fep}
+K.~Friston.
+\newblock The free-energy principle: a unified brain theory?
+\newblock \emph{Nature Reviews Neuroscience}, 11(2):127--138, 2010.
+
+\bibitem{mazzaglia2021active}
+P.~Mazzaglia, T.~Verbelen, B.~Dhoedt, and K.~Doya.
+\newblock Scaling active inference.
+\newblock In \emph{International Joint Conference on Neural Networks (IJCNN)}, 2021.
+
+\bibitem{owasp2025llm06}
+OWASP.
+\newblock LLM06:2025 Excessive Agency.
+\newblock \emph{OWASP Top 10 for Large Language Model Applications}, 2025.
+
+\bibitem{cisa2023ztmm}
+Cybersecurity and Infrastructure Security Agency.
+\newblock Zero Trust Maturity Model, Version 2.0.
+\newblock CISA, 2023.
+
+\bibitem{microsoft2025orchestration}
+Microsoft.
+\newblock AI agent orchestration patterns.
+\newblock Azure Architecture Center, 2025.
+
+\bibitem{anthropic2024building}
+Anthropic.
+\newblock Building effective agents.
+\newblock 2024.
+
+\end{thebibliography}
+
+\end{document}

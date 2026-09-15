@@ -1,0 +1,20 @@
+{
+ "condition": "ngram",
+ "seed": 3,
+ "steps": 16000,
+ "env": "TerrariumLinger",
+ "total_reward": 26.0,
+ "deaths": 0,
+ "berries_eaten": 26,
+ "tree_fruits": 0,
+ "storm_duty": 0.245,
+ "ring_near_tree": 0.423,
+ "ring_far": 0.397,
+ "causal_edges": [],
+ "assoc_edges": [],
+ "identifier_version": null,
+ "decoy_in_causal": null,
+ "decoy_in_assoc": null,
+ "true_in_causal": {},
+ "harness_notes": []
+}

@@ -1,0 +1,53 @@
+[PASS] steps-field audit: all 30 runs are full 16000 steps files=30 truncated=[]
+
+=== MATRIX V3.2 (16000 steps, means over 3 seeds) ===
+condition         reward   deaths   fruits  berries   chimesgrasp@bellaltar_waitspatch_atetreasures  decoy  altar
+emca_v21         21744.8     21.0   2578.3    671.3     79.7   1574.3     51.0      522        0      3/3     0/3
+emca_v22         21744.8     21.0   2578.3    671.3     79.7   1574.3     51.0      522        0      3/3     0/3
+emca_v25c        21553.5     22.0   2507.7    660.3     86.3   1463.7     59.3      504        0      0/3     0/3
+emca_nocausal    21434.3     22.7   2531.0    679.0     73.3   1528.7     57.3      503        0      3/3     0/3
+prober           14413.5     23.7   1607.7    833.3     79.7    951.3    349.0      671        0      0/3     2/3
+curious_pure      -330.8     93.3      3.0     83.3     41.0     34.3    148.3       78        0      0/3     0/3
+curious_surv     39436.0      0.7   4683.0    511.7     68.7   3088.3     66.7      386        0      0/3     0/3
+random             -15.2     92.3     27.0    151.0     25.7    550.0     33.7       20        0      0/3     0/3
+qlearn             850.2     87.0     90.3    196.0      7.7   1018.0      0.7        0        0      0/3     0/3
+ngram             1273.2     88.0    163.3    204.3      4.3    739.3      1.0       11        0      0/3     0/3
+
+--- T1: sign inversion (v25c >= v21 per seed) ---
+  seed 1: v25c=24216 v21=22942 diff=1274
+  seed 2: v25c=17198 v21=20086 diff=-2888
+  seed 3: v25c=23246 v21=22206 diff=1040
+[PASS] T1 v2.5c >= v2.1 per seed in >=2/3 diffs=[1274, -2888, 1040]
+
+--- T2: the prober (do-interventions) ---
+  seed 1: altar verdict=UNRESOLVED trials={'target_yes': 44, 'target_no': 136, 'ctrl_yes': 32, 'ctrl_no': 148, 'blocks': 0}
+  seed 2: altar verdict=UNRESOLVED trials={'target_yes': 50, 'target_no': 130, 'ctrl_yes': 34, 'ctrl_no': 146, 'blocks': 0}
+  seed 3: altar verdict=CAUSAL trials={'target_yes': 58, 'target_no': 122, 'ctrl_yes': 21, 'ctrl_no': 159, 'blocks': 0}
+[PASS] T2a prober reaches a verdict in >=2/3 {1: 'UNRESOLVED', 2: 'UNRESOLVED', 3: 'CAUSAL'}
+[FAIL] T2b verdict CAUSAL in >=2/3 causal=1/3
+[PASS] T2c verdict gating (CAUSAL->present, REJECT->absent, UNRESOLVED->defer) 
+[PASS] T2d passive v2.5c lacks the altar edge in >=2/3 3/3
+
+--- T3: curious-survivor ---
+  seed 1: surv deaths=1 reward=39596 nov=16000 | pure deaths=93 reward=-317 nov=16000
+  seed 2: surv deaths=0 reward=37766 nov=16000 | pure deaths=94 reward=-354 nov=16000
+  seed 3: surv deaths=1 reward=40946 nov=16000 | pure deaths=93 reward=-321 nov=16000
+[PASS] T3a surv deaths < pure deaths in 3/3 3/3
+[PASS] T3b surv deaths <= 20 in >=2/3 
+[PASS] T3c surv keeps >= 50% of pure's exploration in 3/3 3/3
+
+--- T4: edges ---
+[PASS] T4a decoy in v2.1 causal >=2/3 3/3
+[PASS] T4b decoy NOT in v2.5c causal >=2/3 0/3
+[PASS] T4c true edges in v2.5c >=2/3 3/3
+
+--- T5: baselines ---
+[PASS] T5 every baseline dies more than every planner arm planner_min=0.7 baselines={'random': 92.33333333333333, 'qlearn': 87.0, 'ngram': 88.0}
+
+--- determinism audit ---
+  emca_v21 seed 1: BIT-IDENTICAL
+  emca_v25c seed 1: BIT-IDENTICAL
+  prober seed 1: BIT-IDENTICAL
+[PASS] determinism: fresh re-runs bit-identical 
+
+ANALYZE_V32_FAILED

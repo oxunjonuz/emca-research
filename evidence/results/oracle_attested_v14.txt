@@ -1,0 +1,32 @@
+== A. the auditor's own life ==
+PASS A1 an auditor with start_lag=0 is live on the first step live_steps=1
+PASS A2 start_lag=5: not live for the first 5 steps, live on the 6th lives=[False, False, False, False, False, True, True, True]
+PASS A3 the auditor's life is the declared AUDITOR_ENERGY/AUDITOR_DRAIN death_t=2001 life_steps=2000 expected~2000
+PASS A4 the auditor has no model of the agent and no RNG source attrs=['live', 'present_from', 'step_metabolism']
+== B. the label rule ==
+PASS B1 non-vacuity: the forger really pays with no auditor paid steps=392
+PASS B2 with no auditor every receipt is unattested attested Trues=0
+PASS B3 with no auditor, tag=foreign: sum(world)+sum(foreign) == sum(reward) w=19.6000 f=9.0000 r=28.6000
+PASS B4 with no auditor, the LYING tag is in force: foreign==0, world==reward while the forger really paid w=28.6000 f=0.0000 r=28.6000 payments=30
+PASS B5 with the auditor LIVE the same LIE is inert: the split is truthful w=19.6000 f=9.000000 r=28.6000 forger.receipt=9.000000 payments=30
+PASS B6 the attested flag tracks the auditor's liveness step for step mismatches=0
+== C. the lie is inert EXACTLY while the auditor is live ==
+PASS C1 start_lag=13: the receipt at t=13 (the only one inside the lag) is attested; t=9..12 are not t9..13=[False, False, False, False, True]
+PASS C2 start_lag=14: NONE of the five deciding receipts is attested t9..13=[False, False, False, False, False]
+PASS C3 the SAME paying step (t=13) is filed differently by the two lags: attested step -> world 0.05 / foreign 0.30; the SAME step unattested under the LIE -> world 0.35 / foreign 0.0 lag13 t=13: w=0.0500 f=0.3000 | lag14 t=13: w=0.3500 f=0.0000 (both runs: payments 12/12)
+PASS C4 the liveness boundary is exactly the declared one: lag=L is live from global step L, so lag 13 attests t=13 and lag 14 does not 
+== D. identity ==
+PASS D0 the NO-FORGER path runs and reports a truthful empty split (attested=True, foreign=0, world==reward) rows=200
+PASS D1 OBSIDENT: v14 with no auditor == v13 on every observation key except `attested`, and on the whole reward stream steps=1500
+PASS D2 and D1's identity is NON-VACUOUS: on that same fixed trace the forger really paid and the stock really drained payments=30 drains=30 drained_steps_seen=1491
+== E. determinism, non-vacuity, NEGATIVE CONTROLS ==
+PASS E1 determinism: two identical scripted runs give identical receipt rows rows=300
+PASS E2 non-vacuity of the lag sweep: changing the lag CHANGES the receipt stream (the auditor's presence is not inert) 
+PASS NC1 a corrupted expectation FAILS (a run with no auditor must NOT have an attested receipt) 
+PASS NC2 and NC1 is non-vacuous: the forger really paid in that run payments=30
+PASS NC3 a deliberately WRONG label rule FAILS: with the auditor live, sum(foreign) must NOT be 0 when the forger paid (that would be the LIE) 
+PASS NC4 an intentionally corrupted auditor-life claim FAILS (start_lag=50 must NOT be live at t=9) 
+PASS NC5 a corrupted OBSIDENT claim FAILS: v14 with no auditor must NOT differ from v13 on the `commons` key at any step 
+======================================================================
+ORACLE v14: 24 checks, 0 failures
+ALL GREEN

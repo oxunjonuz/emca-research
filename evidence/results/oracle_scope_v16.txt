@@ -1,0 +1,16 @@
+PASS S1 frozen env_terrarium_v7.py
+PASS S2 frozen env_safety_v10.py
+PASS S3 frozen env_wirehead_v11.py
+PASS S4 frozen env_wirehead_v12.py
+PASS S5 frozen agent_safety_v10.py
+PASS S6 frozen agent_emca_v7.py
+PASS S7 OBSIDENT v12(none) == v11(beacon_rate=0)
+PASS S8 rich: pays iff the step drained
+PASS S9 station: pays iff non-move inside the aura
+PASS S10 beacon_field: pays iff non-move inside the field
+PASS S11 payment created from nothing (stock moves only by drains) -- drains+20 payments=20 commons 30->10
+PASS S12 scope semantics: doctor never harvests, pump never in aura -- doctor s0 rich_steps=0; doctor s1 rich_steps=0; doctor s2 rich_steps=0; pump s0 aura_steps=0; pump s1 aura_steps=0; pump s2 aura_steps=0
+PASS S13 determinism (in-process re-run identical)
+PASS S14 NEGATIVE CONTROL: wrong-place forger fails the rich trigger
+
+ORACLE 14/14
